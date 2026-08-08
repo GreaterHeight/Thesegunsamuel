@@ -48,3 +48,6 @@ Added structured course catalogue, detailed course experiences, capability-based
 
 ## v1.4 — Masterclasses & Learning Paths
 Added focused masterclass experiences and progressive learning paths, connected to frameworks, courses, case studies and application, plus search/discovery indexing.
+
+## v1.5 — Case Studies & Application
+Added Case Study Library, Case Detail architecture, Application/Project Portfolio, project detail pages, and knowledge-index integration.
