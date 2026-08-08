@@ -27,3 +27,6 @@ Reality-tested case-study library connecting observation, pattern, interpretatio
 
 ## v0.7 — Application / Projects
 Practical projects, challenges and portfolio-ready application experiences connecting the SegunSamuel knowledge ecosystem to demonstrable capability.
+
+## v0.8 — Podcast / Knowledge Media
+Podcast landing page and episode routes added as an integrated media layer connecting the intellectual ecosystem.
