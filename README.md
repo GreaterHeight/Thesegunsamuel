@@ -12,3 +12,6 @@ No CMS/backend/payment/authentication is included in this v0.1 foundation. Place
 
 ## v0.2 Courses
 Static HTML/CSS/JS course catalogue, flagship course detail, quantity-aware localStorage cart and checkout UX. Payment gateways are placeholders until secure server-side integration is added.
+
+## v0.3 — Frameworks
+Framework library and individual framework detail routes added as the intellectual spine connecting courses, masterclasses, case studies and applications.
