@@ -15,3 +15,6 @@ Static HTML/CSS/JS course catalogue, flagship course detail, quantity-aware loca
 
 ## v0.3 — Frameworks
 Framework library and individual framework detail routes added as the intellectual spine connecting courses, masterclasses, case studies and applications.
+
+## v0.4 — Masterclasses
+Focused intellectual experiences with GitHub Pages-compatible detail routes.
