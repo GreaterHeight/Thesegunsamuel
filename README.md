@@ -42,3 +42,6 @@ Added a structured publishing layer for ideas, principles, mental models and lon
 
 ## v1.2 — Framework Library
 Added Framework Library, individual Framework Detail pages, framework components, IP registry positioning, and knowledge-graph cross-links/search integration.
+
+## v1.3 — Courses & Learning Architecture
+Added structured course catalogue, detailed course experiences, capability-based curriculum architecture, Nigerian working pricing/intake configuration, and a static quantity-aware course cart foundation.
