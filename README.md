@@ -51,3 +51,6 @@ Added focused masterclass experiences and progressive learning paths, connected 
 
 ## v1.5 — Case Studies & Application
 Added Case Study Library, Case Detail architecture, Application/Project Portfolio, project detail pages, and knowledge-index integration.
+
+## v1.6 — Podcast, Events & Engagement
+Added Podcast series and detail pages, Events calendar and event detail pages, Community/Engagement architecture, and knowledge-index integration.
