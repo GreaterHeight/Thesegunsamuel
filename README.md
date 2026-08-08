@@ -30,3 +30,6 @@ Practical projects, challenges and portfolio-ready application experiences conne
 
 ## v0.8 — Podcast / Knowledge Media
 Podcast landing page and episode routes added as an integrated media layer connecting the intellectual ecosystem.
+
+## v0.9 — Engagement
+Events, Mastermind and Community experiences added as the human interaction layer of the knowledge ecosystem.
