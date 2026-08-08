@@ -36,3 +36,6 @@ Events, Mastermind and Community experiences added as the human interaction laye
 
 ## v1.0 — Search, Discovery & Knowledge Graph
 Static searchable knowledge index and discovery experience added for GitHub Pages, with content-type filters and cross-ecosystem navigation.
+
+## v1.1 — Ideas / Articles / Intellectual Library
+Added a structured publishing layer for ideas, principles, mental models and long-form intellectual essays, integrated with the knowledge graph.
