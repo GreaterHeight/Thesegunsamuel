@@ -14,3 +14,6 @@
 .search-wrap{max-width:850px;margin:32px auto 18px}
 .search-wrap input{width:100%;box-sizing:border-box;padding:18px 22px;border:1px solid rgba(255,255,255,.22);border-radius:4px;background:rgba(255,255,255,.08);color:inherit;font:inherit;font-size:1.05rem;outline:none}
 .search-wrap input::placeholder{opacity:.65;color:inherit}.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.filter-btn{border:1px solid rgba(255,255,255,.22);background:transparent;color:inherit;padding:9px 14px;border-radius:999px;cursor:pointer}.filter-btn.active,.filter-btn:hover{background:rgba(255,255,255,.12)}.search-count{opacity:.7;margin-top:14px}.search-card p{max-width:60ch}
+
+/* v1.3 Courses & Learning Architecture */
+.quantity-control{display:flex;align-items:center;gap:18px;margin:18px 0}.quantity-control button{width:40px;height:40px;border:1px solid currentColor;background:transparent;color:inherit;border-radius:4px;font-size:1.2rem;cursor:pointer}.cart-summary{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.purchase-card{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
