@@ -45,3 +45,6 @@ Added Framework Library, individual Framework Detail pages, framework components
 
 ## v1.3 — Courses & Learning Architecture
 Added structured course catalogue, detailed course experiences, capability-based curriculum architecture, Nigerian working pricing/intake configuration, and a static quantity-aware course cart foundation.
+
+## v1.4 — Masterclasses & Learning Paths
+Added focused masterclass experiences and progressive learning paths, connected to frameworks, courses, case studies and application, plus search/discovery indexing.
