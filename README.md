@@ -18,3 +18,6 @@ Framework library and individual framework detail routes added as the intellectu
 
 ## v0.4 — Masterclasses
 Focused intellectual experiences with GitHub Pages-compatible detail routes.
+
+## v0.5 — Learning Paths
+Structured capability journeys connecting courses, frameworks, masterclasses and application.
