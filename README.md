@@ -21,3 +21,6 @@ Focused intellectual experiences with GitHub Pages-compatible detail routes.
 
 ## v0.5 — Learning Paths
 Structured capability journeys connecting courses, frameworks, masterclasses and application.
+
+## v0.6 — Case Studies
+Reality-tested case-study library connecting observation, pattern, interpretation, frameworks, action and transferable lessons.
