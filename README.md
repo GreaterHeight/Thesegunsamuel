@@ -9,3 +9,6 @@ Ecosystem: Ideas/Articles, Podcast/Conversations, Books/Research, Frameworks, Co
 Typography: Cormorant Garamond, Crimson Pro, Tenor Sans.
 
 No CMS/backend/payment/authentication is included in this v0.1 foundation. Placeholder links (#) intentionally mark unfinished detail/application flows.
+
+## v0.2 Courses
+Static HTML/CSS/JS course catalogue, flagship course detail, quantity-aware localStorage cart and checkout UX. Payment gateways are placeholders until secure server-side integration is added.

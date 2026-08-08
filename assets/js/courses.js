@@ -1,0 +1,21 @@
+
+const COURSE_DATA={
+"data-powerbi":{id:"data-powerbi",name:"Advanced Data Analytics & Power BI",price:450000,url:"advanced-data-analytics-power-bi.html"},
+"applied-ai":{id:"applied-ai",name:"Artificial Intelligence: From Zero to Applied AI",price:350000},
+"pattern-intelligence":{id:"pattern-intelligence",name:"Pattern Intelligence",price:250000},
+"strategic-foresight":{id:"strategic-foresight",name:"Strategic Foresight",price:300000},
+"systems-architecture":{id:"systems-architecture",name:"Systems & Strategic Architecture",price:300000},
+"leadership-intelligence":{id:"leadership-intelligence",name:"Leadership Intelligence",price:275000},
+"execution-intelligence":{id:"execution-intelligence",name:"Execution Intelligence",price:250000},
+"institutional-intelligence":{id:"institutional-intelligence",name:"Institutional Intelligence",price:275000},
+"thinking-clearly":{id:"thinking-clearly",name:"Thinking Clearly in a Complex World",price:200000}};
+const money=n=>"₦"+Number(n).toLocaleString("en-NG");
+const getCart=()=>{try{return JSON.parse(localStorage.getItem("segun_cart")||"[]")}catch(e){return[]}};
+const saveCart=c=>{localStorage.setItem("segun_cart",JSON.stringify(c));updateCartCount()};
+function updateCartCount(){const n=getCart().reduce((s,i)=>s+i.qty,0);document.querySelectorAll("[data-cart-count]").forEach(x=>x.textContent=n)}
+function addCourse(id,qty=1){const d=COURSE_DATA[id],c=getCart();if(!d)return;const x=c.find(i=>i.id===id);x?x.qty+=qty:c.push({...d,qty});saveCart(c)}
+function changeCart(id,delta){const c=getCart(),x=c.find(i=>i.id===id);if(!x)return;x.qty+=delta;if(x.qty<1)c.splice(c.indexOf(x),1);saveCart(c);renderCart()}
+function renderCart(){const el=document.querySelector("[data-cart-items]"),sum=document.querySelector("[data-cart-summary]");if(!el||!sum)return;const c=getCart();if(!c.length){el.innerHTML='<div class="empty-cart"><h3>Your cart is empty.</h3><p>Choose a course to begin.</p><a class="btn btn-primary" href="index.html">Explore Courses</a></div>';sum.innerHTML="";return}el.innerHTML=c.map(i=>`<div class="cart-item"><div><div class="eyebrow">Course</div><h3>${i.name}</h3><p class="muted">${money(i.price)} per learner</p></div><div class="qty-control"><button data-cart-minus="${i.id}">−</button><input value="${i.qty}" readonly><button data-cart-plus="${i.id}">+</button></div><strong>${money(i.price*i.qty)}</strong></div>`).join("");const total=c.reduce((s,i)=>s+i.price*i.qty,0);sum.innerHTML=`<div class="eyebrow">Order Summary</div><h3>Learning Investment</h3><div class="cart-total"><span>Total</span><span>${money(total)}</span></div><a class="btn btn-primary" style="width:100%;margin-top:18px" href="checkout.html">Continue to Checkout</a><p class="enrol-note">Payment routes: Paystack, Stripe, WhatsApp or bank transfer.</p>`}
+function setupDetail(){const add=document.querySelector("[data-add-detail]");if(!add)return;const q=document.querySelector("[data-qty]");document.querySelector("[data-qty-plus]")?.addEventListener("click",()=>q.value=Number(q.value)+1);document.querySelector("[data-qty-minus]")?.addEventListener("click",()=>q.value=Math.max(1,Number(q.value)-1));add.addEventListener("click",()=>addCourse("data-powerbi",Math.max(1,Number(q.value)||1)))}
+document.addEventListener("click",e=>{if(e.target.matches(".add-to-cart"))addCourse(e.target.dataset.id,1);if(e.target.matches("[data-cart-plus]"))changeCart(e.target.dataset.cartPlus,1);if(e.target.matches("[data-cart-minus]"))changeCart(e.target.dataset.cartMinus,-1)});
+document.addEventListener("DOMContentLoaded",()=>{updateCartCount();setupDetail();renderCart();document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-filter]").forEach(x=>x.classList.remove("active"));b.classList.add("active");const f=b.dataset.filter;let n=0;document.querySelectorAll(".course-card").forEach(c=>{const show=f==="all"||c.dataset.category===f;c.style.display=show?"flex":"none";if(show)n++});const x=document.getElementById("course-count");if(x)x.textContent=n+" courses"}))});
