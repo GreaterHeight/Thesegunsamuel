@@ -39,3 +39,6 @@ Static searchable knowledge index and discovery experience added for GitHub Page
 
 ## v1.1 — Ideas / Articles / Intellectual Library
 Added a structured publishing layer for ideas, principles, mental models and long-form intellectual essays, integrated with the knowledge graph.
+
+## v1.2 — Framework Library
+Added Framework Library, individual Framework Detail pages, framework components, IP registry positioning, and knowledge-graph cross-links/search integration.
