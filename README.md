@@ -24,3 +24,6 @@ Structured capability journeys connecting courses, frameworks, masterclasses and
 
 ## v0.6 — Case Studies
 Reality-tested case-study library connecting observation, pattern, interpretation, frameworks, action and transferable lessons.
+
+## v0.7 — Application / Projects
+Practical projects, challenges and portfolio-ready application experiences connecting the SegunSamuel knowledge ecosystem to demonstrable capability.
