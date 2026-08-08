@@ -33,3 +33,6 @@ Podcast landing page and episode routes added as an integrated media layer conne
 
 ## v0.9 — Engagement
 Events, Mastermind and Community experiences added as the human interaction layer of the knowledge ecosystem.
+
+## v1.0 — Search, Discovery & Knowledge Graph
+Static searchable knowledge index and discovery experience added for GitHub Pages, with content-type filters and cross-ecosystem navigation.
