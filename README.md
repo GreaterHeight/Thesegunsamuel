@@ -54,3 +54,6 @@ Added Case Study Library, Case Detail architecture, Application/Project Portfoli
 
 ## v1.6 — Podcast, Events & Engagement
 Added Podcast series and detail pages, Events calendar and event detail pages, Community/Engagement architecture, and knowledge-index integration.
+
+## v1.7 — Commerce & Student Experience
+Cart, quantity controls, checkout/payment routes and student dashboard front-end architecture added. Live payment credentials, webhooks, authentication and secure backend processing remain production integrations.
