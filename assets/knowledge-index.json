@@ -1140,5 +1140,61 @@
       "behaviour",
       "shadow"
     ]
+  },
+  {
+    "title": "See Reality Clearly Before You Try to Change It",
+    "type": "Insight",
+    "url": "articles/see-reality/",
+    "text": "Why accurate observation is the first discipline of strategy, leadership and intelligent action.",
+    "tags": [
+      "strategy",
+      "intelligence",
+      "observation"
+    ]
+  },
+  {
+    "title": "The Shadow Side of Power in Organisations",
+    "type": "Insight",
+    "url": "articles/shadow-power/",
+    "text": "A strategic examination of manipulation, control, incentives, status and hidden dynamics inside systems.",
+    "tags": [
+      "power",
+      "leadership",
+      "psychology",
+      "systems"
+    ]
+  },
+  {
+    "title": "Think Like an Architect, Not Merely a Problem Solver",
+    "type": "Insight",
+    "url": "articles/architecture-thinking/",
+    "text": "The difference between fixing isolated problems and designing systems that make better outcomes repeatable.",
+    "tags": [
+      "systems",
+      "architecture",
+      "design"
+    ]
+  },
+  {
+    "title": "Strategic Foresight Is Preparation, Not Prediction",
+    "type": "Insight",
+    "url": "articles/future-ready/",
+    "text": "The practical difference between predicting the future and preparing intelligently for multiple possible futures.",
+    "tags": [
+      "foresight",
+      "future",
+      "strategy"
+    ]
+  },
+  {
+    "title": "The Gap Between Knowing and Doing",
+    "type": "Insight",
+    "url": "articles/execution-gap/",
+    "text": "Why insight often fails to become results — and how execution architecture closes the gap.",
+    "tags": [
+      "execution",
+      "leadership",
+      "systems"
+    ]
   }
 ]
