@@ -129,15 +129,6 @@
     "connections": []
   },
   {
-    "title": "About SegunSamuel",
-    "type": "About",
-    "url": "about/index.html",
-    "text": "About SegunSamuel Segun Samuel Home About Learn Think Listen Ideas Community Explore ☰ About SegunSamuel An architect of intelligence, strategy, systems and human understanding. The work sits at the intersection of strategic foresight, pattern intelligence, systems and strategic architecture, leadership, execution, institutional intelligence, technology, psychology, philosophy, business and the deeper forces shaping human behaviour. The Centre SegunSamuel teaches people how to: See reality clearly. Interpret what they see. Think strategically. Design intelligently. Execute deliberately. Build systems. Lead people and organizations. Create institutions that endure. That is the centre. Technology, AI, data, leadership, philosophy, business, strategy and foresight are different expressions of that capability, not disconnected subjects. Beyond strategy and leadership, the work explores the u",
-    "tags": [],
-    "connected_layers": [],
-    "connections": []
-  },
-  {
     "title": "Application & Projects — SegunSamuel",
     "type": "Application",
     "url": "application/index.html",
@@ -1988,6 +1979,40 @@
         "title": "Leadership Intelligence",
         "relationship": "Insight → Framework"
       }
+    ]
+  },
+  {
+    "title": "About SegunSamuel",
+    "type": "Founder Experience",
+    "url": "about/",
+    "text": "The founder and architect behind the SegunSamuel knowledge ecosystem.",
+    "tags": [
+      "founder",
+      "architecture",
+      "intelligence"
+    ]
+  },
+  {
+    "title": "SegunSamuel Intellectual Position",
+    "type": "Founder Experience",
+    "url": "about/",
+    "text": "Engineering rigor, psychological theory, ancient wisdom, spiritual wisdom, philosophy, strategic intelligence and narrative storytelling.",
+    "tags": [
+      "philosophy",
+      "psychology",
+      "strategy",
+      "engineering"
+    ]
+  },
+  {
+    "title": "The Centre: See → Interpret → Think → Design → Execute → Build",
+    "type": "Knowledge System",
+    "url": "about/",
+    "text": "The central capability connecting the SegunSamuel ecosystem.",
+    "tags": [
+      "knowledge",
+      "architecture",
+      "strategy"
     ]
   }
 ]
