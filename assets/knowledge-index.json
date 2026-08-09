@@ -2014,5 +2014,42 @@
       "architecture",
       "strategy"
     ]
+  },
+  {
+    "title": "The War Within",
+    "type": "Book / IP",
+    "url": "books/the-war-within/",
+    "text": "A philosophical and strategic exploration of the internal battles that shape identity, attention, decisions and personal direction.",
+    "tags": [
+      "identity",
+      "time,-energy-&-attention",
+      "the-blind-warrior",
+      "internal-battles",
+      "strategic-self-mastery"
+    ]
+  },
+  {
+    "title": "The Laws of Strategic Thinking",
+    "type": "Book / IP",
+    "url": "books/laws-of-strategic-thinking/",
+    "text": "A developing body of principles for seeing reality, interpreting patterns, thinking strategically and making deliberate decisions.",
+    "tags": [
+      "strategic-thinking",
+      "mental-models",
+      "principles",
+      "foresight",
+      "decision-architecture"
+    ]
+  },
+  {
+    "title": "Books & Intellectual Property",
+    "type": "IP Library",
+    "url": "books/",
+    "text": "Books, manuscripts, originating intellectual works and their downstream expressions.",
+    "tags": [
+      "books",
+      "ip",
+      "intellectual-property"
+    ]
   }
 ]
