@@ -1,0 +1,9 @@
+const K="segunsamuel_cart_v17";
+const getCart=()=>JSON.parse(localStorage.getItem(K)||"[]");
+const saveCart=c=>{localStorage.setItem(K,JSON.stringify(c));};
+const money=n=>new Intl.NumberFormat("en-NG",{style:"currency",currency:"NGN",maximumFractionDigits:0}).format(n);
+function addToCart(item){let c=getCart(),x=c.find(i=>i.id===item.id);x?x.quantity++:c.push({...item,quantity:1});saveCart(c);}
+function renderCart(){let box=document.querySelector("#cart-items"),total=document.querySelector("#cart-total");if(!box)return;let c=getCart();if(!c.length){box.innerHTML='<div class="card"><h3>Your cart is empty.</h3><a class="btn btn-primary" href="../courses/">Explore Courses</a></div>';if(total)total.textContent=money(0);return}box.innerHTML=c.map(i=>`<div class="cart-row"><div><strong>${i.title}</strong><p>${i.type}</p></div><div class="qty"><button onclick="changeQty('${i.id}',-1)">−</button><span>${i.quantity}</span><button onclick="changeQty('${i.id}',1)">+</button></div><strong>${money(i.price*i.quantity)}</strong><button class="link-btn" onclick="removeItem('${i.id}')">Remove</button></div>`).join("");if(total)total.textContent=money(c.reduce((s,i)=>s+i.price*i.quantity,0));}
+function changeQty(id,n){let c=getCart(),i=c.find(x=>x.id===id);if(i)i.quantity=Math.max(1,i.quantity+n);saveCart(c);renderCart();}
+function removeItem(id){saveCart(getCart().filter(i=>i.id!==id));renderCart();}
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("[data-add-cart]").forEach(b=>b.onclick=()=>{addToCart({id:b.dataset.id,title:b.dataset.title,price:+b.dataset.price,type:b.dataset.type});b.textContent="Added ✓";});renderCart();});
