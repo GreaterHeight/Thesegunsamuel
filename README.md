@@ -1,60 +1,74 @@
-# SegunSamuel Website v0.1
+# SegunSamuel Website — v3.5 Complete Website Foundation
 
-Static HTML/CSS/JS implementation of the SegunSamuel knowledge ecosystem.
+This release uses **v2.2 — Books + Intellectual Property Library** as the clean base and consolidates the planned v2.3 through v3.5 website scope into one coherent build.
 
-Core architecture: SEE → INTERPRET → ARCHITECT → BUILD → GOVERN.
+## Included
+- Framework IP Registry and detail pages
+- Models, Principles and Mental Models Registry
+- Masterclasses and detail pages
+- Learning Paths and detail pages
+- Case Studies and detail pages
+- Applications / Projects
+- Podcast and episode pages
+- Events and event pages
+- Cart, quantity controls and removal
+- Checkout architecture
+- Paystack, Stripe, Bank Transfer and WhatsApp payment routes
+- Nigerian Naira pricing/intake data architecture
+- Student Area front-end architecture
+- Global Explore / Knowledge Graph
+- Search and cross-discovery
+- Responsive and semantic refinements
+- SEO metadata on generated pages
+- Consolidated Knowledge Graph index
+- Correct Markdown formatting
 
-Ecosystem: Ideas/Articles, Podcast/Conversations, Books/Research, Frameworks, Courses, Learning Paths, Case Studies, Events, Community.
+## Production boundary
+Payment UI is implemented as front-end architecture. Live Stripe/Paystack processing requires secure backend integration, production credentials, server-side verification, webhooks and transaction persistence.
 
-Typography: Cormorant Garamond, Crimson Pro, Tenor Sans.
+The Student Area is a front-end architecture. Real authentication, database-backed progress, access control and certificate issuance require a secure backend.
 
-No CMS/backend/payment/authentication is included in this v0.1 foundation. Placeholder links (#) intentionally mark unfinished detail/application flows.
+## Intellectual Architecture
+Book / Originating Work
+→ Framework
+→ Model / Principle / Mental Model
+→ Method / Operating System
+→ Course / Masterclass
+→ Learning Path
+→ Case Study
+→ Application / Evidence
 
-## v0.2 Courses
-Static HTML/CSS/JS course catalogue, flagship course detail, quantity-aware localStorage cart and checkout UX. Payment gateways are placeholders until secure server-side integration is added.
+Podcast, Insights and Events operate as distribution, conversation and engagement layers.
 
-## v0.3 — Frameworks
-Framework library and individual framework detail routes added as the intellectual spine connecting courses, masterclasses, case studies and applications.
+## Final website-foundation boundary
+**v3.5 is the final numbered website-foundation release.**
 
-## v0.4 — Masterclasses
-Focused intellectual experiences with GitHub Pages-compatible detail routes.
+Future work should be classified as:
+1. Content / IP development
+2. Maintenance / bug fixes
+3. Backend / platform expansion
 
-## v0.5 — Learning Paths
-Structured capability journeys connecting courses, frameworks, masterclasses and application.
+## Version history
+### v1.7 — Commerce & Student Experience
+Cart, quantity controls, checkout/payment routes and student dashboard front-end architecture.
 
-## v0.6 — Case Studies
-Reality-tested case-study library connecting observation, pattern, interpretation, frameworks, action and transferable lessons.
+### v1.8 — Knowledge Graph & Global Search
+Unified Explore/search and cross-discovery architecture.
 
-## v0.7 — Application / Projects
-Practical projects, challenges and portfolio-ready application experiences connecting the SegunSamuel knowledge ecosystem to demonstrable capability.
+### v1.9 — Editorial Insights
+Static editorial publishing architecture with Insights landing/detail pages and related concepts.
 
-## v0.8 — Podcast / Knowledge Media
-Podcast landing page and episode routes added as an integrated media layer connecting the intellectual ecosystem.
+### v2.0 — Knowledge Graph Explorer
+Dedicated graph interface, relationship metadata, connected-node discovery and filters.
 
-## v0.9 — Engagement
-Events, Mastermind and Community experiences added as the human interaction layer of the knowledge ecosystem.
+### v2.1 — Personal Brand / Founder Experience
+Founder-facing experience integrated into the wider knowledge ecosystem.
 
-## v1.0 — Search, Discovery & Knowledge Graph
-Static searchable knowledge index and discovery experience added for GitHub Pages, with content-type filters and cross-ecosystem navigation.
+### v2.2 — Books + Intellectual Property Library
+Books and originating intellectual-work architecture.
 
-## v1.1 — Ideas / Articles / Intellectual Library
-Added a structured publishing layer for ideas, principles, mental models and long-form intellectual essays, integrated with the knowledge graph.
+### v2.3–v3.5 — Consolidated
+Framework IP, Models/Principles, Masterclasses, Learning Paths, Case Studies, Applications, Podcast, Events, Commerce, Student Area, Search/Knowledge Graph finalization and production-quality refinements are consolidated in this release.
 
-## v1.2 — Framework Library
-Added Framework Library, individual Framework Detail pages, framework components, IP registry positioning, and knowledge-graph cross-links/search integration.
-
-## v1.3 — Courses & Learning Architecture
-Added structured course catalogue, detailed course experiences, capability-based curriculum architecture, Nigerian working pricing/intake configuration, and a static quantity-aware course cart foundation.
-
-## v1.4 — Masterclasses & Learning Paths
-Added focused masterclass experiences and progressive learning paths, connected to frameworks, courses, case studies and application, plus search/discovery indexing.
-
-## v1.5 — Case Studies & Application
-Added Case Study Library, Case Detail architecture, Application/Project Portfolio, project detail pages, and knowledge-index integration.
-
-## v1.6 — Podcast, Events & Engagement
-Added Podcast series and detail pages, Events calendar and event detail pages, Community/Engagement architecture, and knowledge-index integration.
-
-## v1.7 — Commerce & Student Experience
-Cart, quantity controls, checkout/payment routes and student dashboard front-end architecture added. Live payment credentials, webhooks, authentication and secure backend processing remain production integrations.
-\n## v1.8 — Knowledge Graph & Global Search\nAdded a unified Explore/search experience, client-side filtering across the knowledge index, core intellectual architecture records, and cross-discovery between the major ecosystem layers.\n\n## v1.9 — Editorial Insights\nAdded a static editorial publishing architecture with Insights landing page, article detail pages, searchable editorial index, related-concept links, and integration into the global knowledge index. No CMS/content model introduced.\n\n## v2.0 — Knowledge Graph Explorer\nAdded a dedicated knowledge-graph interface, relationship metadata, connected-node discovery, layer filters and graph navigation. The graph is static-data driven and remains compatible with the HTML/CSS/JS-only architecture.\n\n## v2.1 — Personal Brand / Founder Experience\nAdded a dedicated About/founder experience, central capability statement, intellectual positioning, human-behaviour/shadow lens, and founder-level knowledge nodes.\n\n## v2.2 — Books + Intellectual Property Library\nAdded Books/IP landing and detail architecture, IP hierarchy, originating-work relationships, and knowledge-index integration. No CMS introduced.\n
+## Important
+This is a **complete website foundation**, not a claim that all intellectual content, payment credentials, authentication, backend services or production data have been populated.
