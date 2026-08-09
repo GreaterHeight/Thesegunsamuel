@@ -57,3 +57,4 @@ Added Podcast series and detail pages, Events calendar and event detail pages, C
 
 ## v1.7 — Commerce & Student Experience
 Cart, quantity controls, checkout/payment routes and student dashboard front-end architecture added. Live payment credentials, webhooks, authentication and secure backend processing remain production integrations.
+\n## v1.8 — Knowledge Graph & Global Search\nAdded a unified Explore/search experience, client-side filtering across the knowledge index, core intellectual architecture records, and cross-discovery between the major ecosystem layers.\n
