@@ -106,16 +106,3 @@ The primary navigation represents the user's journey:
 **Learn → Think → Apply → Listen → Explore**
 
 Content types remain discoverable without forcing every content type into the top-level navigation.
-
-
-## v1.7 Final Source QA Fix
-
-The final uploaded source was structurally audited and corrected.
-
-- 200 HTML pages audited.
-- Global navigation normalized to one canonical shell.
-- Global footer normalized to one canonical shell.
-- All global shell internal links use the `/Thesegunsamuel/` canonical base.
-- One broken Explore/Knowledge Graph dynamic route was fixed.
-- Source-level release status: **GO**.
-- Browser/deployment smoke testing remains the final external verification.
