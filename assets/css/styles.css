@@ -485,3 +485,64 @@
 .empty-cart:hover h2 {
   color: var(--forest);
 }
+
+
+/* =========================================================
+   v1.9.1 — BRAND MARK + WORDMARK CONSISTENCY
+   ========================================================= */
+.ss-brand,
+.ss-footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+.ss-brand-mark {
+  width: 30px;
+  height: 43px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+.ss-brand-wordmark,
+.ss-footer-wordmark {
+  display: inline-block;
+}
+.ss-footer-mark {
+  width: 31px;
+  height: 45px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+.ss-brand-wordmark span,
+.ss-footer-wordmark span {
+  color: var(--cr, #8C0D0C);
+}
+
+/* =========================================================
+   v1.9.1 — DARK SECTION WHITE-CARD CONTRAST FIX
+   White cards inside dark sections must use dark typography.
+   This prevents .dark p from leaking into white cards.
+   ========================================================= */
+.section.dark .card:not(.course-card) {
+  background: var(--white);
+  color: var(--body);
+}
+.section.dark .card:not(.course-card) h3 {
+  color: var(--forest);
+}
+.section.dark .card:not(.course-card) .eyebrow {
+  color: var(--cr);
+}
+.section.dark .card:not(.course-card) p {
+  color: var(--body) !important;
+}
+.section.dark .card:not(.course-card):hover {
+  background: var(--wine);
+  color: var(--cream);
+}
+.section.dark .card:not(.course-card):hover h3,
+.section.dark .card:not(.course-card):hover p {
+  color: var(--cream) !important;
+}
+.section.dark .card:not(.course-card):hover .eyebrow {
+  color: var(--gold);
+}
