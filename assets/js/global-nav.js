@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Cart count remains global.
   function updateCartCount() {
     try {
-      const cart = JSON.parse(localStorage.getItem("segunsamuel_cart") || "[]");
+      const cart = JSON.parse(localStorage.getItem("segun_cart") || "[]");
       const count = cart.reduce(function (sum, item) { return sum + (Number(item.qty) || 0); }, 0);
       header.querySelectorAll("[data-cart-count]").forEach(function (node) {
         node.textContent = count;

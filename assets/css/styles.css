@@ -378,83 +378,50 @@
 }
 
 /* =========================================================
-   SEGUNSAMUEL — GLOBAL CONTRAST / READABILITY PATCH
-   v1.7.1
-   Purpose: prevent low-contrast text caused by component rules
-   being used on the wrong background.
+   SEGUNSAMUEL v1.7.2 — GLOBAL CONTRAST + COURSE UX FIX
    ========================================================= */
 
-/* 1. Curriculum/module component is used on BOTH light and dark
-      sections. Its original rule forced white text everywhere. */
-.section:not(.dark) .module {
-  border-top-color: var(--light);
-}
-.section:not(.dark) .module summary {
-  color: var(--forest);
-}
-.section:not(.dark) .module summary:after {
-  color: var(--cr);
-}
-.section:not(.dark) .module p {
-  color: var(--body);
-}
+/* Curriculum modules: readable on light sections, light on dark sections. */
+.section:not(.dark) .module { border-top-color: var(--light); }
+.section:not(.dark) .module summary { color: var(--forest); }
+.section:not(.dark) .module summary:after { color: var(--cr); }
+.section:not(.dark) .module p { color: var(--body); }
+.section.dark .module summary { color: var(--white); }
+.section.dark .module p { color: #d6e1dc; }
+.section.dark .module summary:after { color: var(--cr); }
 
-/* 2. Preserve the intended light text when modules are actually
-      placed inside a dark section. */
-.section.dark .module summary {
-  color: var(--white);
-}
-.section.dark .module p {
-  color: #d6e1dc;
-}
-.section.dark .module summary:after {
-  color: var(--cr);
-}
+/* IMPORTANT: outcome cards are white inside a dark section.
+   They must NOT inherit dark-section paragraph text. */
+.section.dark .outcome { background: var(--white); color: var(--body); }
+.section.dark .outcome p { color: var(--body) !important; }
+.section.dark .outcome strong { color: var(--forest); }
+.section.dark .outcome:hover { background: var(--white); color: var(--body); }
+.section.dark .outcome:hover p { color: var(--body) !important; }
 
-/* 3. Muted text was being reused on dark backgrounds.
-      #6A6A64 on #003020 is only about 2.67:1, so it is too weak
-      for normal body text. */
+/* Muted copy must remain readable on dark green backgrounds. */
 .dark .muted,
-.dark .section-head > p {
-  color: #d6e1dc;
-}
+.dark .section-head > p { color: #d6e1dc; }
+.dark p { color: #d6e1dc; }
 
-/* 4. Gold is a decorative accent, but small body text in gold on
-      cream is too low-contrast. Use the brand crimson instead. */
-.question {
-  color: var(--cr) !important;
-}
+/* Decorative accent colours should not be used for small body copy. */
+.question { color: var(--cr) !important; }
 
-/* 5. Ensure ordinary body copy in dark sections remains readable
-      even where .muted is not explicitly applied. */
-.dark p {
-  color: #d6e1dc;
-}
-.dark .section-head p,
-.dark .section-head > p {
-  color: #d6e1dc;
-}
+/* Enrollment card: if the card uses the site's hover treatment, keep
+   the price and supporting copy readable against the wine background. */
+.purchase-card:hover { background: var(--wine); color: var(--cream); }
+.purchase-card:hover h2 { color: var(--cream); }
+.purchase-card:hover p { color: #f4eee7; }
+.purchase-card:hover .eyebrow { color: var(--gold); }
 
-/* 6. Links/buttons on light surfaces: maintain readable brand color. */
+/* Keep light-surface links readable. */
 .section:not(.dark) a:not(.btn),
 .page-hero a:not(.btn),
-.detail-hero a:not(.btn) {
-  color: var(--forest);
-}
+.detail-hero a:not(.btn) { color: var(--forest); }
 .section:not(.dark) a:not(.btn):hover,
 .page-hero a:not(.btn):hover,
-.detail-hero a:not(.btn):hover {
-  color: var(--cr);
-}
+.detail-hero a:not(.btn):hover { color: var(--cr); }
 
-/* 7. Do not weaken intentionally white text on dark cards/strips. */
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.feature-strip h2,
-.feature-strip h3,
-.cta h2,
-.cta h3 {
-  color: var(--white);
-}
+/* Dark section headings remain intentionally light. */
+.dark h1,.dark h2,.dark h3,.dark h4,
+.feature-strip h2,.feature-strip h3,.cta h2,.cta h3 { color: var(--white); }
+
