@@ -10,3 +10,6 @@ Disallow: /student/
 Sitemap: https://greaterheight.github.io/Thesegunsamuel/sitemap.xml
 
 Disallow: /Thesegunsamuel/student/
+
+Disallow: /Thesegunsamuel/learning/
+Disallow: /Thesegunsamuel/checkout/

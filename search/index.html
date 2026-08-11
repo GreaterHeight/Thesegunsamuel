@@ -1,0 +1,20 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Search | Segun Samuel</title><meta name="description" content="Search the Segun Samuel knowledge ecosystem.">
+<link rel="canonical" href="https://greaterheight.github.io/Thesegunsamuel/search/">
+<link rel="stylesheet" href="/Thesegunsamuel/assets/css/styles.css">
+<style>.search-wrap{max-width:1100px;margin:auto;padding:60px 24px}.search-input{width:100%;padding:15px;border:1px solid #ccc;border-radius:8px}.item{padding:18px 0;border-bottom:1px solid #ddd}.item h2{color:#003020}.item a{color:#8c0d0c}</style>
+</head><body><nav data-site-nav></nav><main class="search-wrap"><p>EXPLORE</p><h1>Search the ecosystem</h1>
+<input class="search-input" id="q" placeholder="Search…" aria-label="Search">
+<div id="results"></div></main><footer data-site-footer></footer>
+<script src="/Thesegunsamuel/js/site-shell.js"></script><script>
+const index=[
+['Frameworks','/Thesegunsamuel/frameworks/'],['Courses','/Thesegunsamuel/courses/'],
+['Learning Paths','/Thesegunsamuel/learning-paths/'],['Insights','/Thesegunsamuel/insights/'],
+['Podcast','/Thesegunsamuel/podcast/'],['Explore','/Thesegunsamuel/explore/'],
+['About','/Thesegunsamuel/about/'],['Student Area','/Thesegunsamuel/student/']
+];
+const q=document.getElementById('q'),r=document.getElementById('results');
+function draw(){const s=q.value.toLowerCase();r.innerHTML=index.filter(x=>x[0].toLowerCase().includes(s)).map(x=>'<article class="item"><h2>'+x[0]+'</h2><a href="'+x[1]+'">OPEN →</a></article>').join('')}
+q.addEventListener('input',draw);draw();
+</script></body></html>

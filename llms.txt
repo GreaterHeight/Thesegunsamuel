@@ -1,38 +1,28 @@
-# SegunSamuel
+# Segun Samuel
 
-> SegunSamuel is a knowledge, learning and intellectual ecosystem focused on seeing reality clearly, building useful frameworks, developing strategic capability, and turning ideas into practical application.
+> Segun Samuel is a strategic, intellectual and learning ecosystem connecting frameworks, courses, books, insights, podcast, application and knowledge discovery.
 
-## Canonical Website
-- Home: https://greaterheight.github.io/Thesegunsamuel/
-- Frameworks: https://greaterheight.github.io/Thesegunsamuel/frameworks/
+## Primary navigation
+- HOME: https://greaterheight.github.io/Thesegunsamuel/
+- LEARN: https://greaterheight.github.io/Thesegunsamuel/courses/
+- THINK: https://greaterheight.github.io/Thesegunsamuel/frameworks/
+- APPLY: https://greaterheight.github.io/Thesegunsamuel/applications/
+- LISTEN: https://greaterheight.github.io/Thesegunsamuel/podcast/
+- EXPLORE: https://greaterheight.github.io/Thesegunsamuel/explore/
+
+## Core frameworks
+- TEA™ — Time, Energy, Attention: resource management.
+- FIAGS™ — Fear, Impatience, Anxiety, Greed, Sentiment: emotional and psychological barriers.
+- 5PTES™ — People, Processes, Places, Principality, Pains, Times, Events, Seasons: multi-dimensional diagnosis.
+- Pattern Intelligence: detecting signals, recognising patterns, interpreting relationships and converting observations into strategic insight.
+
+## Platform
 - Courses: https://greaterheight.github.io/Thesegunsamuel/courses/
 - Learning Paths: https://greaterheight.github.io/Thesegunsamuel/learning-paths/
-- Masterclasses: https://greaterheight.github.io/Thesegunsamuel/masterclasses/
-- Intellectual Library: https://greaterheight.github.io/Thesegunsamuel/library/
-- Books: https://greaterheight.github.io/Thesegunsamuel/books/
-- Insights: https://greaterheight.github.io/Thesegunsamuel/articles/
-- Case Studies: https://greaterheight.github.io/Thesegunsamuel/case-studies/
-- Applications: https://greaterheight.github.io/Thesegunsamuel/application/
+- Frameworks: https://greaterheight.github.io/Thesegunsamuel/frameworks/
+- Insights: https://greaterheight.github.io/Thesegunsamuel/insights/
 - Podcast: https://greaterheight.github.io/Thesegunsamuel/podcast/
-- Events: https://greaterheight.github.io/Thesegunsamuel/events/
-- Explore / Knowledge Graph: https://greaterheight.github.io/Thesegunsamuel/explore/
+- Explore: https://greaterheight.github.io/Thesegunsamuel/explore/
 
-## Core Intellectual Areas
-- Strategic Foresight
-- Pattern Intelligence
-- Strategic Architecture
-- Execution Intelligence
-- Institutional Intelligence
-- Leadership Intelligence
-- Models, principles and mental models
-
-## Named Frameworks
-- TEA™ — Time, Energy, Attention
-- FIAGS™ — Fear, Impatience, Anxiety, Greed, Sentiment
-- 5PTES™ — People, Processes, Places, Principality, Pains, Times, Events, Seasons
-
-## Books and Intellectual Work
-The website connects books, frameworks, courses, learning paths, insights, case studies, podcast conversations and practical applications into a connected knowledge ecosystem.
-
-## Machine-readable full index
-See https://greaterheight.github.io/Thesegunsamuel/llms-full.txt for the expanded public-page index.
+## Notes
+The public website is a static GitHub Pages frontend. Authentication, payment verification, private course access, persistent progress and certificates require a secure backend.
