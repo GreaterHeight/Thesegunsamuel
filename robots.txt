@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Transactional/private areas
+Disallow: /cart/
+Disallow: /courses/cart.html
+Disallow: /courses/checkout.html
+Disallow: /student/
+
+Sitemap: https://greaterheight.github.io/Thesegunsamuel/sitemap.xml

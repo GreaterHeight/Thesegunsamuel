@@ -1,0 +1,38 @@
+# SegunSamuel
+
+> SegunSamuel is a knowledge, learning and intellectual ecosystem focused on seeing reality clearly, building useful frameworks, developing strategic capability, and turning ideas into practical application.
+
+## Canonical Website
+- Home: https://greaterheight.github.io/Thesegunsamuel/
+- Frameworks: https://greaterheight.github.io/Thesegunsamuel/frameworks/
+- Courses: https://greaterheight.github.io/Thesegunsamuel/courses/
+- Learning Paths: https://greaterheight.github.io/Thesegunsamuel/learning-paths/
+- Masterclasses: https://greaterheight.github.io/Thesegunsamuel/masterclasses/
+- Intellectual Library: https://greaterheight.github.io/Thesegunsamuel/library/
+- Books: https://greaterheight.github.io/Thesegunsamuel/books/
+- Insights: https://greaterheight.github.io/Thesegunsamuel/articles/
+- Case Studies: https://greaterheight.github.io/Thesegunsamuel/case-studies/
+- Applications: https://greaterheight.github.io/Thesegunsamuel/application/
+- Podcast: https://greaterheight.github.io/Thesegunsamuel/podcast/
+- Events: https://greaterheight.github.io/Thesegunsamuel/events/
+- Explore / Knowledge Graph: https://greaterheight.github.io/Thesegunsamuel/explore/
+
+## Core Intellectual Areas
+- Strategic Foresight
+- Pattern Intelligence
+- Strategic Architecture
+- Execution Intelligence
+- Institutional Intelligence
+- Leadership Intelligence
+- Models, principles and mental models
+
+## Named Frameworks
+- TEA™ — Time, Energy, Attention
+- FIAGS™ — Fear, Impatience, Anxiety, Greed, Sentiment
+- 5PTES™ — People, Processes, Places, Principality, Pains, Times, Events, Seasons
+
+## Books and Intellectual Work
+The website connects books, frameworks, courses, learning paths, insights, case studies, podcast conversations and practical applications into a connected knowledge ecosystem.
+
+## Machine-readable full index
+See https://greaterheight.github.io/Thesegunsamuel/llms-full.txt for the expanded public-page index.
