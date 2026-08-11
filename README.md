@@ -72,3 +72,37 @@ Framework IP, Models/Principles, Masterclasses, Learning Paths, Case Studies, Ap
 
 ## Important
 This is a **complete website foundation**, not a claim that all intellectual content, payment credentials, authentication, backend services or production data have been populated.
+
+
+## Global Navigation — v3.5 Navigation Fix
+
+The website now uses one canonical navigation system across all HTML pages.
+
+### Primary navigation
+- Home
+- Learn
+  - Courses
+  - Learning Paths
+  - Masterclasses
+- Think
+  - Frameworks
+  - Models & Principles
+  - Books
+  - Insights
+- Apply
+  - Case Studies
+  - Applications
+- Listen
+- Events
+- Explore
+- Student Area
+- Cart
+
+The navigation is implemented centrally through `assets/js/global-nav.js` and a shared navigation structure. Page depth is handled automatically so deep pages do not change or break the menu.
+
+### Design principle
+The primary navigation represents the user's journey:
+
+**Learn → Think → Apply → Listen → Explore**
+
+Content types remain discoverable without forcing every content type into the top-level navigation.
