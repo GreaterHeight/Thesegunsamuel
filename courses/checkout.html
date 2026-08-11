@@ -87,4 +87,4 @@
       </div>
     </div>
   </div>
-</footer><script src="../assets/js/main.js"></script><script src="../assets/js/courses.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{const c=getCart(),el=document.getElementById("checkout-items"),total=c.reduce((s,i)=>s+i.price*i.qty,0);el.innerHTML=c.length?c.map(i=>`<p><strong>${i.name}</strong><br>${i.qty} × ${money(i.price)}</p>`).join(""):"<p class='muted'>Your cart is empty.</p>";document.getElementById("checkout-total").textContent=money(total)})</script><script src="../assets/js/global-nav.js" defer></script></body></html>
+</footer><script src="../assets/js/main.js"></script><script src="../assets/js/courses.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{const c=getCart(),el=document.getElementById("checkout-items"),total=c.reduce((s,i)=>s+i.price*i.qty,0);el.innerHTML=c.length?c.map(i=>`<p><strong>${i.title||i.name}</strong><br>${i.qty} × ${money(i.price)}</p>`).join(""):"<p class='muted'>Your cart is empty.</p>";document.getElementById("checkout-total").textContent=money(total)})</script><script src="../assets/js/global-nav.js" defer></script></body></html>
