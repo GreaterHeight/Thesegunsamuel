@@ -21,7 +21,7 @@
     if(!el)return;
     const total=cart.reduce((n,x)=>n+(Number(x.price)||0)*(Number(x.qty)||0),0);
     if(!cart.length){
-      el.innerHTML='<div class="card"><h2>Your cart is empty.</h2><a class="btn btn-primary" href="../courses/">Browse Courses</a></div>';
+      el.innerHTML='<div class="empty-cart"><h2>Your cart is empty.</h2><a class="btn btn-primary" href="../courses/">Browse Courses</a></div>';
       return;
     }
     el.innerHTML=cart.map(x=>`<div class="card" style="margin-bottom:12px"><h3>${x.title}</h3><p>${money(x.price)}</p><div class="quantity"><button type="button" data-minus="${x.id}" aria-label="Decrease quantity">−</button><strong>${x.qty}</strong><button type="button" data-plus="${x.id}" aria-label="Increase quantity">+</button></div><p>Subtotal: ${money(x.price*x.qty)}</p><button type="button" class="btn btn-secondary" data-remove="${x.id}">Remove</button></div>`).join("")+`<div class="card"><h2>Total: ${money(total)}</h2><a class="btn btn-primary" href="../checkout/">Proceed to Checkout</a></div>`;

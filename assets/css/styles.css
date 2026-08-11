@@ -424,4 +424,64 @@
 /* Dark section headings remain intentionally light. */
 .dark h1,.dark h2,.dark h3,.dark h4,
 .feature-strip h2,.feature-strip h3,.cta h2,.cta h3 { color: var(--white); }
+/* =========================================================
+   v1.7.3 — COURSE CARD + CART EMPTY-STATE CONTRAST FIX
+   ========================================================= */
 
+/* Course cards live inside the dark current-courses section.
+   They are intentionally WHITE cards, so dark-section typography
+   must not leak into them. */
+.section.dark .card.course-card {
+  background: var(--white);
+  color: var(--body);
+}
+.section.dark .card.course-card .eyebrow {
+  color: var(--cr);
+}
+.section.dark .card.course-card h3 {
+  color: var(--forest);
+}
+.section.dark .card.course-card p {
+  color: var(--body) !important;
+}
+.section.dark .card.course-card .course-meta {
+  color: var(--muted);
+}
+
+/* On hover the course card becomes wine. Make EVERY information
+   layer switch together so duration, price and intake remain visible. */
+.section.dark .card.course-card:hover {
+  background: var(--wine);
+  color: var(--cream);
+}
+.section.dark .card.course-card:hover .eyebrow {
+  color: var(--gold);
+}
+.section.dark .card.course-card:hover h3 {
+  color: var(--cream);
+}
+.section.dark .card.course-card:hover p,
+.section.dark .card.course-card:hover .course-meta {
+  color: #f4eee7 !important;
+}
+
+/* Empty cart is informational, not an interactive product card.
+   Do not apply the wine hover treatment to it. */
+.empty-cart {
+  text-align: center;
+  padding: 60px 25px;
+  background: var(--white);
+  border: 1px solid var(--light);
+  color: var(--body);
+}
+.empty-cart h2 {
+  color: var(--forest);
+}
+.empty-cart:hover {
+  background: var(--white);
+  color: var(--body);
+  transform: none;
+}
+.empty-cart:hover h2 {
+  color: var(--forest);
+}
