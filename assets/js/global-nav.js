@@ -24,9 +24,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
       header.querySelectorAll(".ss-nav-group.ss-open").forEach(function (item) {
         item.classList.remove("ss-open");
+        const toggle = item.querySelector(".ss-nav-group-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
       });
 
-      if (!isOpen) group.classList.add("ss-open");
+      if (!isOpen) {
+        group.classList.add("ss-open");
+        button.setAttribute("aria-expanded", "true");
+      }
     });
   });
 
@@ -34,6 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!event.target.closest(".ss-nav-group")) {
       header.querySelectorAll(".ss-nav-group.ss-open").forEach(function (item) {
         item.classList.remove("ss-open");
+        const toggle = item.querySelector(".ss-nav-group-toggle");
+        if (toggle) toggle.setAttribute("aria-expanded", "false");
       });
     }
   });
