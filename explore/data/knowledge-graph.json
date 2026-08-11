@@ -1,0 +1,89 @@
+{
+  "nodes": [
+    {
+      "id": "pattern-intelligence",
+      "label": "Pattern Intelligence",
+      "type": "framework",
+      "url": "/Thesegunsamuel/frameworks/pattern-intelligence/"
+    },
+    {
+      "id": "pattern-course",
+      "label": "Pattern Intelligence Course",
+      "type": "course",
+      "url": "/Thesegunsamuel/courses/pattern-intelligence/"
+    },
+    {
+      "id": "strategic-foresight",
+      "label": "Strategic Foresight",
+      "type": "framework",
+      "url": "/Thesegunsamuel/frameworks/strategic-foresight/"
+    },
+    {
+      "id": "tea",
+      "label": "TEA™",
+      "type": "framework",
+      "url": "/Thesegunsamuel/frameworks/tea/"
+    },
+    {
+      "id": "fiags",
+      "label": "FIAGS™",
+      "type": "framework",
+      "url": "/Thesegunsamuel/frameworks/fiags/"
+    },
+    {
+      "id": "5ptes",
+      "label": "5PTES™",
+      "type": "framework",
+      "url": "/Thesegunsamuel/frameworks/5ptes/"
+    },
+    {
+      "id": "insights",
+      "label": "Insights",
+      "type": "editorial",
+      "url": "/Thesegunsamuel/insights/"
+    },
+    {
+      "id": "podcast",
+      "label": "Podcast",
+      "type": "audio",
+      "url": "/Thesegunsamuel/podcast/"
+    }
+  ],
+  "edges": [
+    [
+      "pattern-intelligence",
+      "pattern-course",
+      "teaches"
+    ],
+    [
+      "pattern-intelligence",
+      "strategic-foresight",
+      "supports"
+    ],
+    [
+      "pattern-intelligence",
+      "insights",
+      "explained-by"
+    ],
+    [
+      "pattern-intelligence",
+      "podcast",
+      "discussed-in"
+    ],
+    [
+      "tea",
+      "pattern-intelligence",
+      "resource-lens"
+    ],
+    [
+      "fiags",
+      "pattern-intelligence",
+      "emotional-lens"
+    ],
+    [
+      "5ptes",
+      "pattern-intelligence",
+      "diagnostic-lens"
+    ]
+  ]
+}
