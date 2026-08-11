@@ -1,40 +1,79 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const header = document.querySelector("[data-global-nav]");
   if (!header) return;
 
-  const toggle = header.querySelector(".nav-toggle");
-  const nav = header.querySelector(".nav-links");
+  const menuButton = header.querySelector(".ss-nav-toggle");
+  const nav = header.querySelector(".ss-primary-nav");
 
-  if (toggle && nav) {
-    toggle.addEventListener("click", () => {
-      const open = nav.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", String(open));
+  // Mobile menu
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", function () {
+      const open = nav.classList.toggle("ss-mobile-open");
+      menuButton.setAttribute("aria-expanded", String(open));
+      menuButton.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+      document.body.classList.toggle("ss-nav-open", open);
     });
   }
 
-  header.querySelectorAll(".nav-dropdown-toggle").forEach(btn => {
-    btn.addEventListener("click", e => {
-      e.stopPropagation();
-      const parent = btn.closest(".nav-dropdown");
-      header.querySelectorAll(".nav-dropdown.open").forEach(x => {
-        if (x !== parent) x.classList.remove("open");
+  // Dropdowns: click on desktop and mobile.
+  header.querySelectorAll(".ss-nav-group-toggle").forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      event.stopPropagation();
+      const group = button.closest(".ss-nav-group");
+      const isOpen = group.classList.contains("ss-open");
+
+      header.querySelectorAll(".ss-nav-group.ss-open").forEach(function (item) {
+        item.classList.remove("ss-open");
       });
-      parent.classList.toggle("open");
+
+      if (!isOpen) group.classList.add("ss-open");
     });
   });
 
-  document.addEventListener("click", e => {
-    if (!e.target.closest(".nav-dropdown")) {
-      header.querySelectorAll(".nav-dropdown.open").forEach(x => x.classList.remove("open"));
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest(".ss-nav-group")) {
+      header.querySelectorAll(".ss-nav-group.ss-open").forEach(function (item) {
+        item.classList.remove("ss-open");
+      });
     }
   });
 
-  const path = window.location.pathname.replace(/\/+$/, "");
-  header.querySelectorAll("a[href]").forEach(a => {
+  // Highlight the current primary section.
+  const current = window.location.pathname.replace(/\/+$/, "") || "/";
+  header.querySelectorAll("a[href]").forEach(function (link) {
     try {
-      const u = new URL(a.href, window.location.href);
-      const target = u.pathname.replace(/\/+$/, "");
-      if (target && target === path) a.classList.add("active");
+      const target = new URL(link.href, window.location.href).pathname.replace(/\/+$/, "") || "/";
+      if (target === current) {
+        link.classList.add("ss-current");
+        const group = link.closest(".ss-nav-group");
+        if (group) group.querySelector(".ss-nav-group-toggle").classList.add("ss-current");
+      }
     } catch (_) {}
   });
+
+  // Close mobile menu after navigation.
+  header.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (nav) nav.classList.remove("ss-mobile-open");
+      if (menuButton) {
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation");
+      }
+      document.body.classList.remove("ss-nav-open");
+    });
+  });
+
+  // Cart count remains global.
+  function updateCartCount() {
+    try {
+      const cart = JSON.parse(localStorage.getItem("segunsamuel_cart") || "[]");
+      const count = cart.reduce(function (sum, item) { return sum + (Number(item.qty) || 0); }, 0);
+      header.querySelectorAll("[data-cart-count]").forEach(function (node) {
+        node.textContent = count;
+      });
+    } catch (_) {}
+  }
+
+  updateCartCount();
+  window.addEventListener("storage", updateCartCount);
 });
