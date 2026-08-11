@@ -17,3 +17,27 @@
 
 /* v1.3 Courses & Learning Architecture */
 .quantity-control{display:flex;align-items:center;gap:18px;margin:18px 0}.quantity-control button{width:40px;height:40px;border:1px solid currentColor;background:transparent;color:inherit;border-radius:4px;font-size:1.2rem;cursor:pointer}.cart-summary{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}.purchase-card{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+
+/* === v3.5 Global Navigation System === */
+.site-header { position: sticky; top: 0; z-index: 1000; }
+.site-header .nav { display:flex; align-items:center; gap:22px; min-height:72px; }
+.nav-links { display:flex; align-items:center; gap:6px; margin-left:auto; }
+.nav-links > a, .nav-dropdown-toggle, .nav-actions a { text-decoration:none; padding:10px 11px; }
+.nav-dropdown { position:relative; }
+.nav-dropdown-toggle { background:none; border:0; font:inherit; cursor:pointer; }
+.nav-dropdown-menu { display:none; position:absolute; top:100%; left:0; min-width:210px; padding:8px; border:1px solid rgba(0,0,0,.12); background:#fff; box-shadow:0 12px 30px rgba(0,0,0,.12); border-radius:8px; }
+.nav-dropdown.open .nav-dropdown-menu, .nav-dropdown:hover .nav-dropdown-menu { display:block; }
+.nav-dropdown-menu a { display:block; padding:10px 12px; text-decoration:none; border-radius:5px; }
+.nav-dropdown-menu a:hover { background:rgba(0,0,0,.05); }
+.nav-actions { display:flex; align-items:center; gap:6px; }
+.cart-badge { display:inline-flex; min-width:20px; height:20px; align-items:center; justify-content:center; border-radius:999px; padding:0 5px; font-size:12px; }
+.nav-toggle { display:none; border:0; background:none; font-size:24px; cursor:pointer; }
+@media (max-width: 1050px) {
+  .site-header .nav { flex-wrap:wrap; }
+  .nav-toggle { display:block; margin-left:auto; }
+  .nav-links { display:none; width:100%; flex-direction:column; align-items:stretch; margin-left:0; padding:12px 0; }
+  .nav-links.open { display:flex; }
+  .nav-dropdown-menu { position:static; box-shadow:none; border:0; padding-left:18px; }
+  .nav-dropdown.open .nav-dropdown-menu { display:block; }
+  .nav-actions { width:100%; justify-content:flex-start; padding-bottom:12px; }
+}
