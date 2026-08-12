@@ -13,3 +13,5 @@ Disallow: /Thesegunsamuel/student/
 
 Disallow: /Thesegunsamuel/learning/
 Disallow: /Thesegunsamuel/checkout/
+
+Disallow: /Thesegunsamuel/cart/
