@@ -8,11 +8,11 @@
 .explore-wrap{max-width:1180px;margin:auto;padding:60px 24px}.search{width:100%;padding:14px;border:1px solid #cfc7bc;border-radius:8px;font:inherit}
 .results{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.node{background:#fff;border:1px solid #ddd6cc;border-radius:14px;padding:20px}.node h2{color:#003020}.node a{color:#8c0d0c}
 @media(max-width:850px){.results{grid-template-columns:1fr}}
-</style></head><body><nav data-site-nav></nav>
+</style><link rel="stylesheet" href="../assets/css/privacy.css"><link rel="stylesheet" href="../assets/css/accessibility-v31.css"><link rel="icon" href="../assets/images/segunsamuel-logo-badge-01.png"></head><body><nav data-site-nav></nav>
 <main class="explore-wrap"><p>EXPLORE</p><h1>Knowledge Graph</h1>
 <p>Search across connected intellectual and learning entities.</p>
 <input id="q" class="search" placeholder="Search frameworks, courses, insights…" aria-label="Search knowledge graph">
-<div id="results" class="results"></div></main><footer data-site-footer></footer>
+<div id="results" class="results"></div></main><footer data-site-footer><div class="ss-footer-legal" style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;font-size:12px"><span>DEVELOPED BY <a href="http://greaterheight.tech" rel="noopener">GREATERHEIGHT TECHNOLOGIES</a></span><a href="../privacy/index.html">PRIVACY POLICY</a><a href="../terms/index.html">TERMS & CONDITIONS</a><a href="../disclaimer/index.html">DISCLAIMER</a><a href="../cookie-preferences/index.html">COOKIE PREFERENCES</a><a href="../data-processing/index.html">DATA PROCESSING</a><a href="../data-requests/index.html">DATA REQUESTS</a></div></footer>
 <script src="/Thesegunsamuel/js/site-shell.js"></script><script>
 (async function(){
  const d=await (await fetch('/Thesegunsamuel/explore/data/knowledge-graph.json')).json();
@@ -24,4 +24,4 @@
  }
  q.addEventListener('input',render); render();
 })();
-</script></body></html>
+</script><script src="../assets/js/privacy.js" defer></script></body></html>
