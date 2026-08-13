@@ -39,14 +39,6 @@
 </style>
 
 </head><body>
-
-<nav class="v3131-ecosystem-nav" aria-label="Primary ecosystem navigation">
-  <a href="/Thesegunsamuel/">HOME</a>
-  <a href="/Thesegunsamuel/courses/">LEARN</a>
-  <a href="/Thesegunsamuel/frameworks/">THINK</a>
-  <a href="/Thesegunsamuel/apply/">APPLY</a>
-  <a href="/Thesegunsamuel/podcast/">LISTEN</a>
-</nav>
 <nav data-site-nav></nav>
 <main class="explore-wrap"><p>EXPLORE</p><h1>Knowledge Graph</h1>
 <p>Search across connected intellectual and learning entities.</p>
@@ -222,7 +214,7 @@
       const route = publicPath(e.route);
       const relCount = related(e.id).length;
       const action = route
-        ? `<a class="kg-open" href="${esc(route)}">OPEN →</a>`
+        ? `<a class="kg-open" href="${route || "#"}">OPEN →</a>`
         : `<button class="kg-connections" type="button" data-kg-id="${esc(e.id)}">VIEW CONNECTIONS →</button>`;
 
       return `<article class="kg-card" data-entity-id="${esc(e.id)}">

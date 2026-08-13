@@ -86,7 +86,7 @@ input:focus{box-shadow:0 0 0 4px rgba(0,48,32,.15)}
         <div class="type">${esc(e.type)}</div>
         <h2>${esc(e.name)}</h2>
         <p>${esc(e.short_definition||'Explore this entity in the Segun Samuel knowledge ecosystem.')}</p>
-        ${e.route?`<a href="${esc(path(e.route))}">OPEN →</a>`:`<span class="type">VIEW CONNECTIONS →</span>`}
+        ${e.route?`<a href="${e.route ? path(e.route) : "#"}">OPEN →</a>`:`<span class="type">VIEW CONNECTIONS →</span>`}
       </article>`).join(''):'<div class="empty">No matching knowledge entities. Try a different search term or filter.</div>';
   }
 
