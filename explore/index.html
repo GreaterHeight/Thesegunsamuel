@@ -58,32 +58,99 @@
 
 <script src="/Thesegunsamuel/js/site-shell.js"></script><script>
 (async function(){
- const d=await (await fetch('/Thesegunsamuel/explore/data/knowledge-graph.json')).json();
- const out=document.getElementById('results'), q=document.getElementById('q');
- function render(){
-  const s=q.value.toLowerCase().trim();
-  const nodes=d.nodes.filter(n=>((n.title||'')+' '+(n.type||'')+' '+((n.tags||[]).join(' '))+' '+(n.text||'')).toLowerCase().includes(s));
-  out.innerHTML=nodes.map(n=>{
-  const route=String(n.url||'').trim();
-  const href=route ? (route.startsWith('/') ? route : '/Thesegunsamuel/'+route.replace(/^\\//,'')) : '';
-  const action=href
-    ? '<a class="node-open" href="'+href+'">OPEN →</a>'
-    : '<button class="node-open node-rel" type="button" data-node-id="'+String(n.id||'')+'">VIEW CONNECTIONS →</button>';
-  return '<article class="node" data-node-id="'+String(n.id||'')+'"><p>'+String(n.type||'').toUpperCase()+'</p><h2>'+String(n.title||'Untitled node')+'</h2>'+action+'</article>';
-}).join('');
-out.querySelectorAll('.node-rel').forEach(btn=>btn.addEventListener('click',()=>{
-  const node=nodes.find(x=>String(x.id)===String(btn.dataset.nodeId));
-  if(!node)return;
-  const existing=btn.parentElement.querySelector('.node-connections');
-  if(existing){existing.remove();return;}
-  const wrap=document.createElement('div'); wrap.className='node-connections';
-  const conns=Array.isArray(node.connections)?node.connections:[];
-  wrap.innerHTML=conns.length
-    ? '<p><strong>Connected to</strong></p><ul>'+conns.map(c=>'<li>'+String(c.title||'')+' <small>— '+String(c.relationship||'')+'</small></li>').join('')+'</ul>'
-    : '<p>No confirmed outward relationships are currently recorded for this node.</p>';
-  btn.parentElement.appendChild(wrap);
-}));
- }
- q.addEventListener('input',render); render();
+  const out=document.getElementById('results'), q=document.getElementById('q');
+  if(!out || !q) return;
+
+  function escapeHtml(value){
+    return String(value ?? '').replace(/[&<>"']/g,function(m){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m];
+    });
+  }
+
+  function normaliseGraph(data){
+    if(Array.isArray(data.nodes)) return data.nodes;
+    if(!Array.isArray(data.entities)) return [];
+    const rels=Array.isArray(data.relationships)?data.relationships:[];
+    const byId=new Map(data.entities.map(e=>[String(e.id),e]));
+    return data.entities.map(e=>({
+      id:e.id,
+      title:e.name,
+      type:e.type,
+      text:e.short_definition || e.long_definition || '',
+      tags:Array.isArray(e.tags)?e.tags:[],
+      url:e.route || null,
+      connections:rels
+        .filter(r=>String(r.source_id)===String(e.id))
+        .map(r=>({
+          title:(byId.get(String(r.target_id))||{}).name || String(r.target_id),
+          relationship:r.type
+        }))
+    }));
+  }
+
+  let nodes=[];
+  try{
+    const response=await fetch('/Thesegunsamuel/explore/data/knowledge-graph.json',{cache:'no-store'});
+    if(!response.ok) throw new Error('HTTP '+response.status);
+    nodes=normaliseGraph(await response.json());
+  }catch(error){
+    out.innerHTML='<article class="node"><h2>Knowledge Graph unavailable.</h2><p>Please refresh the page. If the problem continues, the graph data could not be loaded.</p></article>';
+    return;
+  }
+
+  function safeHref(route){
+    const value=String(route||'').trim();
+    if(!value) return '';
+    if(value.startsWith('http://') || value.startsWith('https://')) return value;
+    if(value.startsWith('/Thesegunsamuel/')) return value;
+    if(value.startsWith('/')) return '/Thesegunsamuel'+value;
+    return '/Thesegunsamuel/'+value.replace(/^\/+/,'');
+  }
+
+  function render(){
+    const s=q.value.toLowerCase().trim();
+    const filtered=nodes.filter(function(n){
+      const hay=[n.title,n.type,n.text].concat(Array.isArray(n.tags)?n.tags:[]).join(' ').toLowerCase();
+      return hay.includes(s);
+    });
+
+    out.innerHTML=filtered.length ? filtered.map(function(n){
+      const href=safeHref(n.url);
+      const action=href
+        ? '<a class="node-open" href="'+escapeHtml(href)+'">OPEN →</a>'
+        : '<button class="node-open node-rel" type="button" data-node-id="'+escapeHtml(n.id)+'">VIEW CONNECTIONS →</button>';
+
+      return '<article class="node" data-node-id="'+escapeHtml(n.id)+'">'+
+        '<p>'+escapeHtml(String(n.type||'').toUpperCase())+'</p>'+
+        '<h2>'+escapeHtml(n.title||'Untitled node')+'</h2>'+
+        action+
+      '</article>';
+    }).join('') :
+      '<article class="node"><h2>No matching knowledge found.</h2><p>Try another search term.</p></article>';
+
+    out.querySelectorAll('.node-rel').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        const node=filtered.find(x=>String(x.id)===String(btn.dataset.nodeId));
+        if(!node) return;
+        const existing=btn.parentElement.querySelector('.node-connections');
+        if(existing){ existing.remove(); return; }
+
+        const wrap=document.createElement('div');
+        wrap.className='node-connections';
+        const conns=Array.isArray(node.connections)?node.connections:[];
+        wrap.innerHTML=conns.length
+          ? '<p><strong>Connected to</strong></p><ul>'+
+              conns.map(function(c){
+                return '<li>'+escapeHtml(c.title||'')+' <small>— '+escapeHtml(c.relationship||'')+'</small></li>';
+              }).join('')+
+            '</ul>'
+          : '<p>No confirmed outward relationships are currently recorded for this node.</p>';
+        btn.parentElement.appendChild(wrap);
+      });
+    });
+  }
+
+  q.addEventListener('input',render);
+  render();
 })();
 </script><script src="../assets/js/privacy.js" defer></script></body></html>
