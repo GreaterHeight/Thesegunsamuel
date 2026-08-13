@@ -1,63 +1,112 @@
-<!doctype html><html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Search | Segun Samuel</title><meta name="description" content="Search the Segun Samuel knowledge ecosystem.">
-<link rel="canonical" href="https://greaterheight.github.io/Thesegunsamuel/search/">
-<link rel="stylesheet" href="/Thesegunsamuel/assets/css/styles.css">
-<style>.search-wrap{max-width:1100px;margin:auto;padding:60px 24px}.search-input{width:100%;padding:15px;border:1px solid #ccc;border-radius:8px}.item{padding:18px 0;border-bottom:1px solid #ddd}.item h2{color:#003020}.item a{color:#8c0d0c}</style>
-<link rel="stylesheet" href="../assets/css/privacy.css"><link rel="stylesheet" href="../assets/css/accessibility-v31.css"><link rel="icon" href="../assets/images/segunsamuel-logo-badge-01.png"><!-- v3.1.1 footer -->
-
-<style id="v311-footer">
-.site-footer{background:#003020;color:#fdfaf4;padding:54px 4vw 26px;font-family:inherit}
-.site-footer a{color:#fdfaf4;text-decoration:none}
-.site-footer a:hover,.site-footer a:focus{text-decoration:underline}
-.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr 1.35fr;gap:36px;max-width:1280px;margin:0 auto}
-.footer-brand img{width:34px;height:34px;object-fit:contain;vertical-align:middle;margin-right:8px}
-.footer-wordmark{font-family:Georgia,serif;font-size:25px;letter-spacing:.04em;color:#8c0d0c;margin-bottom:25px}
-.footer-brand p{max-width:440px;line-height:1.8;font-size:12px;letter-spacing:.08em;color:#fdfaf4}
-.site-footer h3{font-size:11px;letter-spacing:.12em;margin:4px 0 18px;color:#fdfaf4}
-.site-footer nav{display:flex;flex-direction:column;gap:11px}
-.site-footer nav a{font-size:10px;letter-spacing:.09em}
-.footer-bottom{max-width:1280px;margin:42px auto 0;padding-top:20px;border-top:1px solid rgba(253,250,244,.16);display:flex;gap:24px;justify-content:space-between;align-items:center;flex-wrap:wrap;font-size:9px;letter-spacing:.08em}
-.footer-bottom a{font-size:9px}
-@media(max-width:1050px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}.footer-grid nav:last-child{grid-column:2 / -1}}
-@media(max-width:700px){.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1 / -1}.footer-grid nav:last-child{grid-column:auto}.footer-bottom{flex-direction:column;align-items:flex-start}}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search the Ecosystem | Segun Samuel</title>
+<meta name="description" content="Search the Segun Samuel knowledge ecosystem across courses, frameworks, ideas, learning paths, masterclasses, podcasts, case studies and applications.">
+<link rel="canonical" href="/Thesegunsamuel/search/">
+<style>
+:root{--cream:#fdfaf4;--green:#003020;--deep:#0d3d28;--soft:#eaf5f1;--wine:#8c0d0c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--green);font-family:Arial,sans-serif}
+main{max-width:1180px;margin:auto;padding:64px 24px 90px}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;font-weight:700}
+h1{font-family:Georgia,serif;font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.02;margin:.4rem 0 1rem}
+.intro{max-width:760px;font-size:1.08rem;line-height:1.7}
+.searchbox{margin:34px 0 20px;display:flex;gap:12px}
+input{width:100%;font:inherit;padding:17px 18px;border:2px solid var(--green);border-radius:8px;background:white;color:var(--green);outline:none}
+input:focus{box-shadow:0 0 0 4px rgba(0,48,32,.15)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filter{border:1px solid var(--green);background:white;color:var(--green);border-radius:999px;padding:9px 14px;cursor:pointer}
+.filter[aria-pressed=true]{background:var(--green);color:white}
+.status{margin:18px 0;font-size:.95rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{background:white;border:1px solid rgba(0,48,32,.14);border-radius:12px;padding:22px;display:flex;flex-direction:column;min-height:230px}
+.type{text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:700}
+.card h2{font-family:Georgia,serif;font-size:1.45rem;margin:.5rem 0}
+.card p{line-height:1.55;color:#274d40;flex:1}
+.card a{font-weight:700;color:var(--wine);text-decoration:none}
+.empty{padding:30px;background:var(--soft);border-radius:12px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){main{padding:44px 16px}.grid{grid-template-columns:1fr}.searchbox{display:block}}
 </style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Segun Samuel · Knowledge Ecosystem</div>
+<h1>Search the Ecosystem</h1>
+<p class="intro">Explore the connected body of courses, frameworks, ideas, learning paths, masterclasses, podcasts, case studies, applications and other canonical knowledge entities.</p>
+<div class="searchbox">
+<label for="ecosystemSearch" style="position:absolute;left:-10000px">Search the ecosystem</label>
+<input id="ecosystemSearch" type="search" autocomplete="off" placeholder="Search courses, frameworks, ideas, podcasts..." aria-describedby="searchStatus">
+</div>
+<div id="filters" class="filters" aria-label="Filter by type"></div>
+<div id="searchStatus" class="status" aria-live="polite">Loading ecosystem…</div>
+<section id="results" class="grid" aria-label="Search results"></section>
+</main>
+<script>
+(() => {
+  const DATA='/Thesegunsamuel/data/ecosystem-search.json';
+  const input=document.getElementById('ecosystemSearch');
+  const filters=document.getElementById('filters');
+  const status=document.getElementById('searchStatus');
+  const results=document.getElementById('results');
+  let items=[], type='all', query='';
 
+  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const path=r=>{
+    if(!r)return '';
+    if(/^https?:\/\//i.test(r))return r;
+    return r.startsWith('/') ? r : '/Thesegunsamuel/'+r;
+  };
 
-<style id="v32-footer-wordmark-fix">
-.site-footer .footer-wordmark,.site-footer .footer-wordmark span{color:#fdfaf4!important}
-</style><meta content="Search | Segun Samuel" property="og:title"/></head><body><nav data-site-nav></nav><main class="search-wrap"><p>EXPLORE</p><h1>Search the ecosystem</h1>
-<input class="search-input" id="q" placeholder="Search…" aria-label="Search">
-<div id="results"></div></main>
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="footer-wordmark v33-footer-signature"><img src="/Thesegunsamuel/assets/images/segunsamuel-signature-gold.png" alt="Segun Samuel — Marketplace Architect · Strategic Foresight Mentor"></div>
-      <p>SEE REALITY CLEARLY. INTERPRET WHAT YOU SEE. THINK STRATEGICALLY. DESIGN INTELLIGENTLY. EXECUTE DELIBERATELY. BUILD SYSTEMS. LEAD PEOPLE AND ORGANIZATIONS. CREATE INSTITUTIONS THAT ENDURE.</p>
-    </div>
-    <nav aria-label="Footer Explore"><h3>EXPLORE</h3>
-      <a href="/Thesegunsamuel/courses/">COURSES</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/podcast/">PODCAST</a>
-    </nav>
-    <nav aria-label="Footer Knowledge"><h3>KNOWLEDGE</h3>
-      <a href="/Thesegunsamuel/articles/">INSIGHTS</a><a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a><a href="/Thesegunsamuel/events/">EVENTS</a><a href="/Thesegunsamuel/explore/">KNOWLEDGE GRAPH</a>
-    </nav>
-    <nav aria-label="Footer Participate"><h3>PARTICIPATE</h3>
-      <a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a><a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a><a href="/Thesegunsamuel/student/">STUDENT AREA</a><a href="/Thesegunsamuel/community/">COMMUNITY</a>
-    </nav>
-    <nav aria-label="Footer Legal"><h3>LEGAL &amp; PRIVACY</h3>
-      <a href="/Thesegunsamuel/privacy/">PRIVACY POLICY</a><a href="/Thesegunsamuel/terms/">TERMS &amp; CONDITIONS</a><a href="/Thesegunsamuel/disclaimer/">DISCLAIMER</a><a href="/Thesegunsamuel/cookie-preferences/">COOKIE PREFERENCES</a><a href="/Thesegunsamuel/data-processing/">DATA PROCESSING</a><a href="/Thesegunsamuel/data-requests/">DATA REQUESTS</a>
-    </nav>
-  </div>
-  <div class="footer-bottom v33-footer-bottom"><span>© 2026 SEGUN SAMUEL. ALL RIGHTS RESERVED.</span><span class="v33-footer-center">DEVELOPED BY <a href="https://greaterheight.tech" rel="noopener">GREATERHEIGHT TECHNOLOGIES</a></span><span class="v33-footer-right"><a href="/Thesegunsamuel/about/">ABOUT</a><a href="/Thesegunsamuel/explore/">EXPLORE THE KNOWLEDGE GRAPH</a></span></div></footer>
+  function score(e){
+    const q=query.toLowerCase().trim();
+    if(!q)return 0;
+    const n=(e.name||'').toLowerCase(), t=(e.type||'').toLowerCase();
+    const d=(e.short_definition||'').toLowerCase(), tags=(e.tags||[]).join(' ').toLowerCase();
+    let s=0;
+    if(n===q)s+=100; else if(n.startsWith(q))s+=60; else if(n.includes(q))s+=40;
+    if(t.includes(q))s+=20;
+    if(d.includes(q))s+=10;
+    if(tags.includes(q))s+=8;
+    return s;
+  }
 
-<script src="/Thesegunsamuel/js/site-shell.js"></script><script>
-const index=[
-['Frameworks','/Thesegunsamuel/frameworks/'],['Courses','/Thesegunsamuel/courses/'],
-['Learning Paths','/Thesegunsamuel/learning-paths/'],['Insights','/Thesegunsamuel/articles/'],
-['Podcast','/Thesegunsamuel/podcast/'],['Explore','/Thesegunsamuel/explore/'],
-['About','/Thesegunsamuel/about/'],['Student Area','/Thesegunsamuel/student/']
-];
-const q=document.getElementById('q'),r=document.getElementById('results');
-function draw(){const s=q.value.toLowerCase();r.innerHTML=index.filter(x=>x[0].toLowerCase().includes(s)).map(x=>'<article class="item"><h2>'+x[0]+'</h2><a href="'+x[1]+'">OPEN →</a></article>').join('')}
-q.addEventListener('input',draw);draw();
-</script><script src="../assets/js/privacy.js" defer></script></body></html>
+  function render(){
+    let filtered=items.filter(e=>{
+      const hay=[e.name,e.type,e.short_definition,e.long_definition,(e.tags||[]).join(' ')].join(' ').toLowerCase();
+      return (!query || hay.includes(query.toLowerCase().trim())) && (type==='all'||e.type===type);
+    });
+    filtered.sort((a,b)=>score(b)-score(a)||a.name.localeCompare(b.name));
+    status.textContent=`${filtered.length} result${filtered.length===1?'':'s'}${query?` for “${query}”`:''}`;
+    results.innerHTML=filtered.length?filtered.map(e=>`
+      <article class="card">
+        <div class="type">${esc(e.type)}</div>
+        <h2>${esc(e.name)}</h2>
+        <p>${esc(e.short_definition||'Explore this entity in the Segun Samuel knowledge ecosystem.')}</p>
+        ${e.route?`<a href="${esc(path(e.route))}">Explore →</a>`:`<span class="type">Knowledge Graph entity</span>`}
+      </article>`).join(''):'<div class="empty">No matching knowledge entities. Try a different search term or filter.</div>';
+  }
+
+  function buildFilters(){
+    const types=[...new Set(items.map(e=>e.type))].sort();
+    filters.innerHTML=`<button class="filter" aria-pressed="true" data-type="all">All</button>`+
+      types.map(t=>`<button class="filter" aria-pressed="false" data-type="${esc(t)}">${esc(t.replace(/_/g,' '))}</button>`).join('');
+    filters.addEventListener('click',ev=>{
+      const b=ev.target.closest('[data-type]'); if(!b)return;
+      type=b.dataset.type;
+      filters.querySelectorAll('.filter').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
+      render();
+    });
+  }
+
+  input.addEventListener('input',()=>{query=input.value;render()});
+  fetch(DATA,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()})
+    .then(d=>{items=d.entities||[];buildFilters();render()})
+    .catch(()=>{status.textContent='The ecosystem search index could not be loaded.'});
+})();
+</script>
+</body>
+</html>
