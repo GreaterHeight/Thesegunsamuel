@@ -27,6 +27,20 @@ a{color:var(--wine);font-weight:700;text-decoration:none}
 @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){main{padding:45px 16px}.grid{grid-template-columns:1fr}}
 </style>
+
+<style id="v3133-pillar-refinement">
+:root{--cream:#fdfaf4;--green:#003020;--deep:#0d3d28;--soft:#eaf5f1;--wine:#8c0d0c}
+body{background:var(--cream);color:var(--green)}
+.v3133-hero{background:var(--soft);border-radius:0 0 18px 18px;padding:54px 30px 48px;margin:0 0 34px}
+.v3133-hero .eyebrow{color:var(--wine)}
+.v3133-hero h1{margin:.35rem 0 .65rem}
+.v3133-toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin:28px 0 18px}
+.v3133-count{font-size:.82rem;letter-spacing:.04em;font-weight:700}
+.v3133-card{transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+.v3133-card:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,48,32,.09);border-color:rgba(0,48,32,.25)}
+.v3133-card a{display:inline-flex;align-items:center;gap:6px}
+</style>
+
 </head>
 <body>
 <nav class="v3131-ecosystem-nav" aria-label="Primary ecosystem navigation">
@@ -36,15 +50,15 @@ a{color:var(--wine);font-weight:700;text-decoration:none}
   <a href="/Thesegunsamuel/apply/">APPLY</a>
   <a href="/Thesegunsamuel/listen/">LISTEN</a>
 </nav>
-<main>
-<div class="eyebrow">Segun Samuel · Knowledge Ecosystem</div>
+<main class="v3133-main">
+<div class="v3133-hero"><div class="eyebrow">Segun Samuel · Knowledge Ecosystem</div>
 <h1>APPLY</h1>
 <p class="tagline">Move knowledge into execution.</p>
-<p class="intro">Case studies, applications and practical expressions of the ecosystem.</p>
-<div class="toolbar">
+<p class="intro">Case studies, applications and practical expressions of the ecosystem.</p></div>
+<div class="v3133-toolbar"><div class="toolbar">
 <label for="filter" style="position:absolute;left:-10000px">Filter APPLY</label>
 <input id="filter" type="search" placeholder="Filter this ecosystem..." autocomplete="off">
-</div>
+</div><div class="v3133-count" id="pillarCount"></div></div>
 <div id="status" class="status">0 available experiences</div>
 <section id="grid" class="grid"><div class="empty">No canonical experiences are currently mapped to this pillar.</div></section>
 </main>
@@ -56,5 +70,17 @@ input.addEventListener('input',()=>{
  status.textContent=n+' available experience'+(n===1?'':'s')+(q?' matching “'+q+'”':'');
 });
 </script>
+
+<script>
+(function(){
+ const status=document.getElementById('status');
+ const count=document.getElementById('pillarCount');
+ if(!status||!count)return;
+ const sync=()=>{count.textContent=status.textContent};
+ sync();
+ new MutationObserver(sync).observe(status,{childList:true,characterData:true,subtree:true});
+})();
+</script>
+
 </body>
 </html>
