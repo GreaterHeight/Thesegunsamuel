@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/Thesegunsamuel/assets/css/styles.css">
 <style>
 .explore-wrap{max-width:1180px;margin:auto;padding:60px 24px}.search{width:100%;padding:14px;border:1px solid #cfc7bc;border-radius:8px;font:inherit}
-.results{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.node{background:#fff;border:1px solid #ddd6cc;border-radius:14px;padding:20px}.node h2{color:#003020}.node a{color:#8c0d0c}
+.results{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.node{background:#fff;border:1px solid #ddd6cc;border-radius:14px;padding:20px}.node h2{color:#003020}.node a,.node-open{color:#8c0d0c}.node-open{display:inline-block;margin-top:8px;background:none;border:0;padding:0;font:inherit;cursor:pointer}.node-open:hover,.node-open:focus{text-decoration:underline}.node-connections{margin-top:14px;padding-top:12px;border-top:1px solid #ddd6cc}.node-connections ul{padding-left:18px}.node-connections li{margin:6px 0}
 @media(max-width:850px){.results{grid-template-columns:1fr}}
 </style><link rel="stylesheet" href="../assets/css/privacy.css"><link rel="stylesheet" href="../assets/css/accessibility-v31.css"><link rel="icon" href="../assets/images/segunsamuel-logo-badge-01.png"><!-- v3.1.1 footer -->
 
@@ -63,7 +63,26 @@
  function render(){
   const s=q.value.toLowerCase().trim();
   const nodes=d.nodes.filter(n=>((n.title||'')+' '+(n.type||'')+' '+((n.tags||[]).join(' '))+' '+(n.text||'')).toLowerCase().includes(s));
-  out.innerHTML=nodes.map(n=>'<article class="node"><p>'+String(n.type||'').toUpperCase()+'</p><h2>'+String(n.title||'Untitled node')+'</h2>'+(n.url?'<a href="'+n.url+'">OPEN →</a>':'<span>GRAPH NODE</span>')+'</article>').join('');
+  out.innerHTML=nodes.map(n=>{
+  const route=String(n.url||'').trim();
+  const href=route ? (route.startsWith('/') ? route : '/Thesegunsamuel/'+route.replace(/^\\//,'')) : '';
+  const action=href
+    ? '<a class="node-open" href="'+href+'">OPEN →</a>'
+    : '<button class="node-open node-rel" type="button" data-node-id="'+String(n.id||'')+'">VIEW CONNECTIONS →</button>';
+  return '<article class="node" data-node-id="'+String(n.id||'')+'"><p>'+String(n.type||'').toUpperCase()+'</p><h2>'+String(n.title||'Untitled node')+'</h2>'+action+'</article>';
+}).join('');
+out.querySelectorAll('.node-rel').forEach(btn=>btn.addEventListener('click',()=>{
+  const node=nodes.find(x=>String(x.id)===String(btn.dataset.nodeId));
+  if(!node)return;
+  const existing=btn.parentElement.querySelector('.node-connections');
+  if(existing){existing.remove();return;}
+  const wrap=document.createElement('div'); wrap.className='node-connections';
+  const conns=Array.isArray(node.connections)?node.connections:[];
+  wrap.innerHTML=conns.length
+    ? '<p><strong>Connected to</strong></p><ul>'+conns.map(c=>'<li>'+String(c.title||'')+' <small>— '+String(c.relationship||'')+'</small></li>').join('')+'</ul>'
+    : '<p>No confirmed outward relationships are currently recorded for this node.</p>';
+  btn.parentElement.appendChild(wrap);
+}));
  }
  q.addEventListener('input',render); render();
 })();
