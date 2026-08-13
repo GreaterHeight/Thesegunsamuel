@@ -34,7 +34,7 @@
 <main class="explore-wrap"><p>EXPLORE</p><h1>Knowledge Graph</h1>
 <p>Search across connected intellectual and learning entities.</p>
 <input id="q" class="search" placeholder="Search frameworks, courses, insights…" aria-label="Search knowledge graph">
-<div id="results" class="results"></div></main>
+<div id="results" class="results"></div><div id="knowledgeGraphCards" class="knowledge-graph-grid"></div></main>
 <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
@@ -153,4 +153,115 @@
   q.addEventListener('input',render);
   render();
 })();
-</script><script src="../assets/js/privacy.js" defer></script></body></html>
+</script><script src="../assets/js/privacy.js" defer></script>
+<script id="knowledge-graph-v394">
+(() => {
+  const DATA_URL = './data/knowledge-graph.json';
+  const root = document.querySelector('[data-knowledge-graph], #knowledgeGraph, .knowledge-graph, main');
+  const search = document.querySelector('#knowledgeGraphSearch, [data-kg-search], input[type="search"]');
+  const cards = document.querySelector('#knowledgeGraphCards, [data-kg-cards], .knowledge-graph-grid, .kg-grid');
+  if (!cards) return;
+
+  let graph = {entities: [], relationships: []};
+  let query = '';
+
+  const esc = (v) => String(v ?? '').replace(/[&<>"']/g, c => ({
+    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+  }[c]));
+
+  const normalize = (v) => String(v ?? '').toLowerCase().trim();
+
+  function publicPath(route) {
+    if (!route) return '';
+    let r = String(route).trim();
+    if (!r) return '';
+    if (/^https?:\/\//i.test(r)) return r;
+    if (!r.startsWith('/')) r = '/' + r;
+    if (r.startsWith('/Thesegunsamuel/')) return r;
+    return '/Thesegunsamuel' + r;
+  }
+
+  function matches(e) {
+    if (!query) return true;
+    const hay = [
+      e.name, e.slug, e.type, e.status,
+      e.short_definition, e.long_definition,
+      ...(Array.isArray(e.tags) ? e.tags : [])
+    ].map(normalize).join(' ');
+    return hay.includes(normalize(query));
+  }
+
+  function related(eid) {
+    return graph.relationships.filter(r => r.source === eid || r.target === eid);
+  }
+
+  function render(list) {
+    if (!list.length) {
+      cards.innerHTML = '<div class="kg-empty" role="status">No knowledge entities match your search.</div>';
+      return;
+    }
+
+    cards.innerHTML = list.map(e => {
+      const route = publicPath(e.route);
+      const relCount = related(e.id).length;
+      const action = route
+        ? `<a class="kg-open" href="${esc(route)}">OPEN →</a>`
+        : `<button class="kg-connections" type="button" data-kg-id="${esc(e.id)}">VIEW CONNECTIONS →</button>`;
+
+      return `<article class="kg-card" data-entity-id="${esc(e.id)}">
+        <div class="kg-card-type">${esc(e.type)}</div>
+        <h3>${esc(e.name)}</h3>
+        ${e.short_definition ? `<p>${esc(e.short_definition)}</p>` : ''}
+        <div class="kg-card-meta">${relCount} connection${relCount === 1 ? '' : 's'}</div>
+        <div class="kg-card-action">${action}</div>
+      </article>`;
+    }).join('');
+  }
+
+  async function init() {
+    try {
+      const response = await fetch(DATA_URL, {cache: 'no-store'});
+      if (!response.ok) throw new Error('Knowledge Graph data could not be loaded.');
+      const json = await response.json();
+      graph = {
+        entities: Array.isArray(json.entities) ? json.entities : [],
+        relationships: Array.isArray(json.relationships) ? json.relationships : []
+      };
+      render(graph.entities.filter(matches));
+    } catch (err) {
+      cards.innerHTML = `<div class="kg-empty kg-error" role="alert">${esc(err.message)}</div>`;
+    }
+  }
+
+  if (search) {
+    search.addEventListener('input', () => {
+      query = search.value;
+      render(graph.entities.filter(matches));
+    });
+  }
+
+  cards.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-kg-id]');
+    if (!button) return;
+    const entity = graph.entities.find(e => e.id === button.dataset.kgId);
+    if (!entity) return;
+
+    const connections = related(entity.id);
+    const ids = new Set([entity.id]);
+    connections.forEach(r => { ids.add(r.source); ids.add(r.target); });
+
+    const names = [...ids]
+      .map(id => graph.entities.find(e => e.id === id))
+      .filter(Boolean)
+      .map(e => e.name);
+
+    const text = names.join(' • ');
+    button.closest('.kg-card').querySelector('.kg-card-meta').textContent =
+      connections.length ? `${connections.length} connection${connections.length === 1 ? '' : 's'}: ${text}` : 'No recorded connections';
+  });
+
+  init();
+})();
+</script>
+
+</body></html>

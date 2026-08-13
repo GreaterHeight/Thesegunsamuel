@@ -1,7 +1,6 @@
 {
-  "version": "1.5",
-  "source_of_truth": "SegunSamuel Master Knowledge & IP Registry v1.3",
-  "schema": "SegunSamuel Knowledge Graph Schema v1.4",
+  "schema_version": "1.5",
+  "source": "Master Knowledge & IP Registry",
   "entities": [
     {
       "id": "SS-001",
@@ -11,7 +10,7 @@
       "status": "canonical",
       "short_definition": "Overarching intellectual territory and ecosystem identity.",
       "parent_id": null,
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -31,7 +30,7 @@
       "status": "canonical",
       "short_definition": "SEE → INTERPRET → ARCHITECT → BUILD → GOVERN.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -98,7 +97,7 @@
       "status": "canonical",
       "short_definition": "ARCHITECT — design what the future requires.",
       "parent_id": "SS-002",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -158,7 +157,7 @@
       "status": "provisional",
       "short_definition": "Technology × Spirituality × Business.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -240,7 +239,7 @@
       "status": "provisional",
       "short_definition": "SEE → INTERPRET → ARCHITECT → BUILD → GOVERN.",
       "parent_id": "SS-002",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -280,7 +279,7 @@
       "status": "canonical",
       "short_definition": "Direction → Identity → Stewardship.",
       "parent_id": "WW-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [
         "WW-002"
@@ -302,7 +301,7 @@
       "status": "canonical",
       "short_definition": "Internal, contextual and relational purging.",
       "parent_id": "WW-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [
         "WW-003"
@@ -324,7 +323,7 @@
       "status": "canonical",
       "short_definition": "Systems and disciplines that sustain growth.",
       "parent_id": "WW-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [
         "WW-004"
@@ -346,7 +345,7 @@
       "status": "canonical",
       "short_definition": "Mindset, social self, discipline and intellectual development.",
       "parent_id": "WW-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [
         "WW-005"
@@ -368,7 +367,7 @@
       "status": "canonical",
       "short_definition": "Character, financial stewardship and execution.",
       "parent_id": "WW-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [
         "WW-006"
@@ -390,7 +389,7 @@
       "status": "canonical",
       "short_definition": "Confusion of Purpose, Destiny, Calling, Vision and Goals.",
       "parent_id": "WW-002",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -412,7 +411,7 @@
       "status": "canonical",
       "short_definition": "Crisis of the Absence of a Personal Identity Statement.",
       "parent_id": "WW-002",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -434,7 +433,7 @@
       "status": "canonical",
       "short_definition": "How You Waste Your Time, Energy and Attention.",
       "parent_id": "WW-002",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -456,7 +455,7 @@
       "status": "canonical",
       "short_definition": "Fear, Impatience, Anxiety, Greed and Sentiment.",
       "parent_id": "WW-003",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -478,7 +477,7 @@
       "status": "canonical",
       "short_definition": "The Curse of Ingratitude — 5PTES.",
       "parent_id": "WW-003",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -500,7 +499,7 @@
       "status": "canonical",
       "short_definition": "Communication and negotiation.",
       "parent_id": "WW-003",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -522,7 +521,7 @@
       "status": "canonical",
       "short_definition": "Poor relationship and network management.",
       "parent_id": "WW-003",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -544,7 +543,7 @@
       "status": "canonical",
       "short_definition": "Life without accountability or systems.",
       "parent_id": "WW-004",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -566,7 +565,7 @@
       "status": "canonical",
       "short_definition": "The cost of a weak prayer life.",
       "parent_id": "WW-004",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [
@@ -588,7 +587,7 @@
       "status": "canonical",
       "short_definition": "Exercise, energy and discipline.",
       "parent_id": "WW-004",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -608,7 +607,7 @@
       "status": "canonical",
       "short_definition": "Destructive mindset and limiting beliefs.",
       "parent_id": "WW-005",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -628,7 +627,7 @@
       "status": "canonical",
       "short_definition": "Social skills and potential.",
       "parent_id": "WW-005",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -648,7 +647,7 @@
       "status": "canonical",
       "short_definition": "Laziness and comfort addiction.",
       "parent_id": "WW-005",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -668,7 +667,7 @@
       "status": "canonical",
       "short_definition": "Reading, learning and intellectual architecture.",
       "parent_id": "WW-005",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -688,7 +687,7 @@
       "status": "canonical",
       "short_definition": "Pride and the illusion of glory.",
       "parent_id": "WW-006",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -708,7 +707,7 @@
       "status": "canonical",
       "short_definition": "Poor money management and financial immaturity.",
       "parent_id": "WW-006",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -728,7 +727,7 @@
       "status": "canonical",
       "short_definition": "Procrastination and failure to act.",
       "parent_id": "WW-006",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -774,7 +773,7 @@
       "status": "canonical",
       "short_definition": "Fear · Impatience · Anxiety · Greed · Sentiment; five poisons with disguises and antidotes.",
       "parent_id": "WW-104",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-104"
       ],
@@ -798,7 +797,7 @@
       "status": "canonical",
       "short_definition": "People · Processes · Places · Principality · Pains · Times · Events · Seasons.",
       "parent_id": "WW-105",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-105"
       ],
@@ -822,7 +821,7 @@
       "status": "canonical",
       "short_definition": "Mechanism for defining and anchoring personal identity.",
       "parent_id": "WW-102",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-102"
       ],
@@ -844,7 +843,7 @@
       "status": "canonical",
       "short_definition": "Five distinct territories of becoming.",
       "parent_id": "WW-101",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-101"
       ],
@@ -866,7 +865,7 @@
       "status": "provisional",
       "short_definition": "Relational dimensions, currencies, enemies, audit and repair.",
       "parent_id": "WW-107",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-107"
       ],
@@ -888,7 +887,7 @@
       "status": "provisional",
       "short_definition": "Sleep, movement, nutrition, stress and assessment.",
       "parent_id": "WW-110",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-110"
       ],
@@ -910,7 +909,7 @@
       "status": "provisional",
       "short_definition": "Origins and destructive patterns of limiting beliefs.",
       "parent_id": "WW-111",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-111"
       ],
@@ -932,7 +931,7 @@
       "status": "provisional",
       "short_definition": "Five dimensions of social mastery and pathway from isolation to connection.",
       "parent_id": "WW-112",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-112"
       ],
@@ -954,7 +953,7 @@
       "status": "provisional",
       "short_definition": "Roots and patterns of comfort addiction.",
       "parent_id": "WW-113",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-113"
       ],
@@ -976,7 +975,7 @@
       "status": "provisional",
       "short_definition": "Reading, learning, intellectual discipline and cognitive development.",
       "parent_id": "WW-114",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-114"
       ],
@@ -998,7 +997,7 @@
       "status": "provisional",
       "short_definition": "Financial pathologies, wealth formula and five financial systems.",
       "parent_id": "WW-116",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-116"
       ],
@@ -1020,7 +1019,7 @@
       "status": "provisional",
       "short_definition": "Gap between dreams and reality; preparation to action.",
       "parent_id": "WW-117",
-      "route": null,
+      "route": "",
       "source_ids": [
         "WW-117"
       ],
@@ -1042,7 +1041,7 @@
       "status": "canonical",
       "short_definition": "Structured learning products.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1067,7 +1066,7 @@
       "status": "canonical",
       "short_definition": "Focused intensive learning experiences.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1087,7 +1086,7 @@
       "status": "canonical",
       "short_definition": "Sequenced journeys with prerequisites, milestones, assessments, capstones and progress.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1107,7 +1106,7 @@
       "status": "canonical",
       "short_definition": "Evidence and contextual application.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1129,7 +1128,7 @@
       "status": "canonical",
       "short_definition": "Practical implementation and evidence of use.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1149,7 +1148,7 @@
       "status": "canonical",
       "short_definition": "Conversation and audio knowledge layer.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1169,7 +1168,7 @@
       "status": "canonical",
       "short_definition": "Editorial explanation and extension of knowledge.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1189,7 +1188,7 @@
       "status": "canonical",
       "short_definition": "Live learning and interaction.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1209,7 +1208,7 @@
       "status": "canonical",
       "short_definition": "Discussion and peer engagement.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1229,7 +1228,7 @@
       "status": "canonical",
       "short_definition": "AI implementation, prompts, recommendations and semantic discovery.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1249,7 +1248,7 @@
       "status": "canonical",
       "short_definition": "Cross-discovery across intellectual entities and relationships.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1271,7 +1270,7 @@
       "status": "canonical",
       "short_definition": "Applied advisory and architecture service.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1291,7 +1290,7 @@
       "status": "canonical",
       "short_definition": "Applied communication and thought leadership.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1311,7 +1310,7 @@
       "status": "canonical",
       "short_definition": "Executable implementations of knowledge.",
       "parent_id": "SS-001",
-      "route": null,
+      "route": "",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1326,1636 +1325,299 @@
   ],
   "relationships": [
     {
-      "source_id": "SS-001",
-      "target_id": "SS-002",
+      "source": "SS-001",
+      "target": "SS-002",
       "type": "contains"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "SS-003",
+      "source": "SS-002",
+      "target": "SS-003",
       "type": "contains"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "SS-004",
+      "source": "SS-002",
+      "target": "SS-004",
       "type": "contains"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "SS-005",
+      "source": "SS-002",
+      "target": "SS-005",
       "type": "contains"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "SS-006",
+      "source": "SS-002",
+      "target": "SS-006",
       "type": "contains"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "SS-007",
+      "source": "SS-002",
+      "target": "SS-007",
       "type": "contains"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "SS-012",
+      "source": "SS-002",
+      "target": "SS-012",
       "type": "possible_alias_of"
     },
     {
-      "source_id": "SS-010",
-      "target_id": "SS-011",
+      "source": "SS-010",
+      "target": "SS-011",
       "type": "possible_alias_of"
     },
     {
-      "source_id": "WW-001",
-      "target_id": "WW-002",
+      "source": "WW-001",
+      "target": "WW-002",
       "type": "contains"
     },
     {
-      "source_id": "WW-001",
-      "target_id": "WW-003",
+      "source": "WW-001",
+      "target": "WW-003",
       "type": "contains"
     },
     {
-      "source_id": "WW-001",
-      "target_id": "WW-004",
+      "source": "WW-001",
+      "target": "WW-004",
       "type": "contains"
     },
     {
-      "source_id": "WW-001",
-      "target_id": "WW-005",
+      "source": "WW-001",
+      "target": "WW-005",
       "type": "contains"
     },
     {
-      "source_id": "WW-001",
-      "target_id": "WW-006",
+      "source": "WW-001",
+      "target": "WW-006",
       "type": "contains"
     },
     {
-      "source_id": "WW-002",
-      "target_id": "WW-101",
+      "source": "WW-002",
+      "target": "WW-101",
       "type": "contains"
     },
     {
-      "source_id": "WW-002",
-      "target_id": "WW-102",
+      "source": "WW-002",
+      "target": "WW-102",
       "type": "contains"
     },
     {
-      "source_id": "WW-002",
-      "target_id": "WW-103",
+      "source": "WW-002",
+      "target": "WW-103",
       "type": "contains"
     },
     {
-      "source_id": "WW-003",
-      "target_id": "WW-104",
+      "source": "WW-003",
+      "target": "WW-104",
       "type": "contains"
     },
     {
-      "source_id": "WW-003",
-      "target_id": "WW-105",
+      "source": "WW-003",
+      "target": "WW-105",
       "type": "contains"
     },
     {
-      "source_id": "WW-003",
-      "target_id": "WW-106",
+      "source": "WW-003",
+      "target": "WW-106",
       "type": "contains"
     },
     {
-      "source_id": "WW-003",
-      "target_id": "WW-107",
+      "source": "WW-003",
+      "target": "WW-107",
       "type": "contains"
     },
     {
-      "source_id": "WW-004",
-      "target_id": "WW-108",
+      "source": "WW-004",
+      "target": "WW-108",
       "type": "contains"
     },
     {
-      "source_id": "WW-004",
-      "target_id": "WW-109",
+      "source": "WW-004",
+      "target": "WW-109",
       "type": "contains"
     },
     {
-      "source_id": "WW-004",
-      "target_id": "WW-110",
+      "source": "WW-004",
+      "target": "WW-110",
       "type": "contains"
     },
     {
-      "source_id": "WW-005",
-      "target_id": "WW-111",
+      "source": "WW-005",
+      "target": "WW-111",
       "type": "contains"
     },
     {
-      "source_id": "WW-005",
-      "target_id": "WW-112",
+      "source": "WW-005",
+      "target": "WW-112",
       "type": "contains"
     },
     {
-      "source_id": "WW-005",
-      "target_id": "WW-113",
+      "source": "WW-005",
+      "target": "WW-113",
       "type": "contains"
     },
     {
-      "source_id": "WW-005",
-      "target_id": "WW-114",
+      "source": "WW-005",
+      "target": "WW-114",
       "type": "contains"
     },
     {
-      "source_id": "WW-006",
-      "target_id": "WW-115",
+      "source": "WW-006",
+      "target": "WW-115",
       "type": "contains"
     },
     {
-      "source_id": "WW-006",
-      "target_id": "WW-116",
+      "source": "WW-006",
+      "target": "WW-116",
       "type": "contains"
     },
     {
-      "source_id": "WW-006",
-      "target_id": "WW-117",
+      "source": "WW-006",
+      "target": "WW-117",
       "type": "contains"
     },
     {
-      "source_id": "WW-103",
-      "target_id": "WW-IP-01",
+      "source": "WW-103",
+      "target": "WW-IP-01",
       "type": "source_of"
     },
     {
-      "source_id": "WW-104",
-      "target_id": "WW-IP-02",
+      "source": "WW-104",
+      "target": "WW-IP-02",
       "type": "source_of"
     },
     {
-      "source_id": "WW-105",
-      "target_id": "WW-IP-03",
+      "source": "WW-105",
+      "target": "WW-IP-03",
       "type": "source_of"
     },
     {
-      "source_id": "WW-102",
-      "target_id": "WW-IP-04",
+      "source": "WW-102",
+      "target": "WW-IP-04",
       "type": "source_of"
     },
     {
-      "source_id": "WW-101",
-      "target_id": "WW-IP-05",
+      "source": "WW-101",
+      "target": "WW-IP-05",
       "type": "source_of"
     },
     {
-      "source_id": "WW-107",
-      "target_id": "WW-IP-06",
+      "source": "WW-107",
+      "target": "WW-IP-06",
       "type": "source_of"
     },
     {
-      "source_id": "WW-110",
-      "target_id": "WW-IP-07",
+      "source": "WW-110",
+      "target": "WW-IP-07",
       "type": "source_of"
     },
     {
-      "source_id": "WW-111",
-      "target_id": "WW-IP-08",
+      "source": "WW-111",
+      "target": "WW-IP-08",
       "type": "source_of"
     },
     {
-      "source_id": "WW-112",
-      "target_id": "WW-IP-09",
+      "source": "WW-112",
+      "target": "WW-IP-09",
       "type": "source_of"
     },
     {
-      "source_id": "WW-113",
-      "target_id": "WW-IP-10",
+      "source": "WW-113",
+      "target": "WW-IP-10",
       "type": "source_of"
     },
     {
-      "source_id": "WW-114",
-      "target_id": "WW-IP-11",
+      "source": "WW-114",
+      "target": "WW-IP-11",
       "type": "source_of"
     },
     {
-      "source_id": "WW-116",
-      "target_id": "WW-IP-12",
+      "source": "WW-116",
+      "target": "WW-IP-12",
       "type": "source_of"
     },
     {
-      "source_id": "WW-117",
-      "target_id": "WW-IP-13",
+      "source": "WW-117",
+      "target": "WW-IP-13",
       "type": "source_of"
     },
     {
-      "source_id": "WW-IP-01",
-      "target_id": "PLAT-001",
+      "source": "WW-IP-01",
+      "target": "PLAT-001",
       "type": "teaches"
     },
     {
-      "source_id": "WW-IP-01",
-      "target_id": "PLAT-006",
+      "source": "WW-IP-01",
+      "target": "PLAT-006",
       "type": "delivered_through"
     },
     {
-      "source_id": "WW-IP-01",
-      "target_id": "PLAT-007",
+      "source": "WW-IP-01",
+      "target": "PLAT-007",
       "type": "extends"
     },
     {
-      "source_id": "WW-IP-02",
-      "target_id": "PLAT-001",
+      "source": "WW-IP-02",
+      "target": "PLAT-001",
       "type": "teaches"
     },
     {
-      "source_id": "WW-IP-03",
-      "target_id": "PLAT-001",
+      "source": "WW-IP-03",
+      "target": "PLAT-001",
       "type": "teaches"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "PLAT-001",
+      "source": "SS-002",
+      "target": "PLAT-001",
       "type": "connects_to"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "PLAT-002",
+      "source": "SS-002",
+      "target": "PLAT-002",
       "type": "connects_to"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "PLAT-003",
+      "source": "SS-002",
+      "target": "PLAT-003",
       "type": "connects_to"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "PLAT-006",
+      "source": "SS-002",
+      "target": "PLAT-006",
       "type": "connects_to"
     },
     {
-      "source_id": "SS-002",
-      "target_id": "PLAT-007",
+      "source": "SS-002",
+      "target": "PLAT-007",
       "type": "connects_to"
     },
     {
-      "source_id": "PLAT-001",
-      "target_id": "PLAT-003",
+      "source": "PLAT-001",
+      "target": "PLAT-003",
       "type": "connects_to"
     },
     {
-      "source_id": "PLAT-001",
-      "target_id": "PLAT-006",
+      "source": "PLAT-001",
+      "target": "PLAT-006",
       "type": "connects_to"
     },
     {
-      "source_id": "PLAT-001",
-      "target_id": "PLAT-007",
+      "source": "PLAT-001",
+      "target": "PLAT-007",
       "type": "connects_to"
     },
     {
-      "source_id": "PLAT-001",
-      "target_id": "PLAT-004",
+      "source": "PLAT-001",
+      "target": "PLAT-004",
       "type": "connects_to"
     },
     {
-      "source_id": "PLAT-004",
-      "target_id": "PLAT-005",
+      "source": "PLAT-004",
+      "target": "PLAT-005",
       "type": "demonstrates"
     },
     {
-      "source_id": "PLAT-011",
-      "target_id": "SS-001",
+      "source": "PLAT-011",
+      "target": "SS-001",
       "type": "connects_to"
-    }
-  ],
-  "nodes": [
-    {
-      "id": "SS-001",
-      "title": "Marketplace Architect",
-      "type": "worldview",
-      "text": "Overarching intellectual territory and ecosystem identity.",
-      "tags": [
-        "worldview positioning",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Strategic Foresight–Architecture Framework",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "SS-002",
-      "title": "Strategic Foresight–Architecture Framework",
-      "type": "master_framework",
-      "text": "SEE → INTERPRET → ARCHITECT → BUILD → GOVERN.",
-      "tags": [
-        "master framework",
-        "confirmed / evolving"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Strategic Foresight",
-          "relationship": "contains"
-        },
-        {
-          "title": "Pattern Intelligence",
-          "relationship": "contains"
-        },
-        {
-          "title": "Strategic Architecture",
-          "relationship": "contains"
-        },
-        {
-          "title": "Execution Intelligence",
-          "relationship": "contains"
-        },
-        {
-          "title": "Institutional Intelligence",
-          "relationship": "contains"
-        },
-        {
-          "title": "Five-Stage Intelligence Architecture",
-          "relationship": "possible_alias_of"
-        },
-        {
-          "title": "Courses",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Masterclasses",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Learning Paths",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Podcast",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Insights / Articles",
-          "relationship": "connects_to"
-        }
-      ]
-    },
-    {
-      "id": "SS-003",
-      "title": "Strategic Foresight",
-      "type": "concept",
-      "text": "SEE — detect what is emerging.",
-      "tags": [
-        "core intelligence capability",
-        "confirmed"
-      ],
-      "url": "frameworks/strategic-foresight/",
-      "connections": []
-    },
-    {
-      "id": "SS-004",
-      "title": "Pattern Intelligence",
-      "type": "concept",
-      "text": "INTERPRET — transform information into meaning and insight.",
-      "tags": [
-        "core intelligence capability",
-        "confirmed"
-      ],
-      "url": "frameworks/pattern-intelligence/",
-      "connections": []
-    },
-    {
-      "id": "SS-005",
-      "title": "Strategic Architecture",
-      "type": "concept",
-      "text": "ARCHITECT — design what the future requires.",
-      "tags": [
-        "core intelligence capability",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "SS-006",
-      "title": "Execution Intelligence",
-      "type": "concept",
-      "text": "BUILD — convert strategy into systems, operations and results.",
-      "tags": [
-        "core intelligence capability",
-        "confirmed"
-      ],
-      "url": "frameworks/execution-intelligence/",
-      "connections": []
-    },
-    {
-      "id": "SS-007",
-      "title": "Institutional Intelligence",
-      "type": "concept",
-      "text": "GOVERN — make systems endure and adapt.",
-      "tags": [
-        "core intelligence capability",
-        "confirmed"
-      ],
-      "url": "frameworks/institutional-intelligence/",
-      "connections": []
-    },
-    {
-      "id": "SS-008",
-      "title": "TECHSPIBUS",
-      "type": "framework",
-      "text": "Technology × Spirituality × Business.",
-      "tags": [
-        "ecosystem philosophy framework candidate",
-        "established / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "SS-009",
-      "title": "IBONK",
-      "type": "system",
-      "text": "Individual · Business · Organisation · Nation · Kingdom.",
-      "tags": [
-        "systems ecosystem framework candidate",
-        "established / type open"
-      ],
-      "url": "frameworks/ibonk/",
-      "connections": []
-    },
-    {
-      "id": "SS-010",
-      "title": "The Prepared Mind Method™",
-      "type": "method",
-      "text": "Strategic operating method for preparation and action.",
-      "tags": [
-        "method operating system candidate",
-        "provisional"
-      ],
-      "url": "models/the-prepared-mind-method/",
-      "connections": [
-        {
-          "title": "PLAN Framework",
-          "relationship": "possible_alias_of"
-        }
-      ]
-    },
-    {
-      "id": "SS-011",
-      "title": "PLAN Framework",
-      "type": "method",
-      "text": "Strategic planning / operating framework.",
-      "tags": [
-        "method operating framework candidate",
-        "unresolved relationship"
-      ],
-      "url": "models/plan-strategic-framework/",
-      "connections": []
-    },
-    {
-      "id": "SS-012",
-      "title": "Five-Stage Intelligence Architecture",
-      "type": "model",
-      "text": "SEE → INTERPRET → ARCHITECT → BUILD → GOVERN.",
-      "tags": [
-        "model architecture possible alias",
-        "provisional alias"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-001",
-      "title": "The War Within — 17 Battles",
-      "type": "book",
-      "text": "Long-form work organized across five stages and seventeen battles.",
-      "tags": [
-        "book knowledge work",
-        "confirmed"
-      ],
-      "url": "books/the-war-within/",
-      "connections": [
-        {
-          "title": "Stage I — Awakening",
-          "relationship": "contains"
-        },
-        {
-          "title": "Stage II — Purging",
-          "relationship": "contains"
-        },
-        {
-          "title": "Stage III — Structuring",
-          "relationship": "contains"
-        },
-        {
-          "title": "Stage IV — Reprogramming",
-          "relationship": "contains"
-        },
-        {
-          "title": "Stage V — Ascension",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "WW-002",
-      "title": "Stage I — Awakening",
-      "type": "stage",
-      "text": "Direction → Identity → Stewardship.",
-      "tags": [
-        "book stage",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Battle 1 — The Blind Warrior",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 2 — The Mask of Confusion",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 3 — The Draining Spiral",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "WW-003",
-      "title": "Stage II — Purging",
-      "type": "stage",
-      "text": "Internal, contextual and relational purging.",
-      "tags": [
-        "book stage",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Battle 4 — The Poisoned Heart",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 5 — The Closed Heaven",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 6 — The Tongue and the Trade",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 7 — Broken Bridges",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "WW-004",
-      "title": "Stage III — Structuring",
-      "type": "stage",
-      "text": "Systems and disciplines that sustain growth.",
-      "tags": [
-        "book stage",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Battle 8 — The Invisible Prison",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 9 — When the Spirit Starves",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 10 — The Neglected Temple",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "WW-005",
-      "title": "Stage IV — Reprogramming",
-      "type": "stage",
-      "text": "Mindset, social self, discipline and intellectual development.",
-      "tags": [
-        "book stage",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Battle 11 — The Inner Saboteur",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 12 — The Isolation Trap",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 13 — The Comfort Trap",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 14 — The Starved Mind",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "WW-006",
-      "title": "Stage V — Ascension",
-      "type": "stage",
-      "text": "Character, financial stewardship and execution.",
-      "tags": [
-        "book stage",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Battle 15 — The Fallen Crown",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 16 — The Leaking Purse",
-          "relationship": "contains"
-        },
-        {
-          "title": "Battle 17 — The Execution Gap",
-          "relationship": "contains"
-        }
-      ]
-    },
-    {
-      "id": "WW-101",
-      "title": "Battle 1 — The Blind Warrior",
-      "type": "battle",
-      "text": "Confusion of Purpose, Destiny, Calling, Vision and Goals.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Purpose–Calling–Destiny–Vision–Goals",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-102",
-      "title": "Battle 2 — The Mask of Confusion",
-      "type": "battle",
-      "text": "Crisis of the Absence of a Personal Identity Statement.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Personal Identity Statement",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-103",
-      "title": "Battle 3 — The Draining Spiral",
-      "type": "battle",
-      "text": "How You Waste Your Time, Energy and Attention.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "TEA™",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-104",
-      "title": "Battle 4 — The Poisoned Heart",
-      "type": "battle",
-      "text": "Fear, Impatience, Anxiety, Greed and Sentiment.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "FIAGS™",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-105",
-      "title": "Battle 5 — The Closed Heaven",
-      "type": "battle",
-      "text": "The Curse of Ingratitude — 5PTES.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "5PTES™",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-106",
-      "title": "Battle 6 — The Tongue and the Trade",
-      "type": "battle",
-      "text": "Communication and negotiation.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-107",
-      "title": "Battle 7 — Broken Bridges",
-      "type": "battle",
-      "text": "Poor relationship and network management.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Relational Architecture",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-108",
-      "title": "Battle 8 — The Invisible Prison",
-      "type": "battle",
-      "text": "Life without accountability or systems.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-109",
-      "title": "Battle 9 — When the Spirit Starves",
-      "type": "battle",
-      "text": "The cost of a weak prayer life.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-110",
-      "title": "Battle 10 — The Neglected Temple",
-      "type": "battle",
-      "text": "Exercise, energy and discipline.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Physical Stewardship Architecture",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-111",
-      "title": "Battle 11 — The Inner Saboteur",
-      "type": "battle",
-      "text": "Destructive mindset and limiting beliefs.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Limiting-Belief Diagnostic",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-112",
-      "title": "Battle 12 — The Isolation Trap",
-      "type": "battle",
-      "text": "Social skills and potential.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Social Mastery Architecture",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-113",
-      "title": "Battle 13 — The Comfort Trap",
-      "type": "battle",
-      "text": "Laziness and comfort addiction.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Comfort Addiction Diagnostic",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-114",
-      "title": "Battle 14 — The Starved Mind",
-      "type": "battle",
-      "text": "Reading, learning and intellectual architecture.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Learning / Intellectual Architecture",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-115",
-      "title": "Battle 15 — The Fallen Crown",
-      "type": "battle",
-      "text": "Pride and the illusion of glory.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-116",
-      "title": "Battle 16 — The Leaking Purse",
-      "type": "battle",
-      "text": "Poor money management and financial immaturity.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Financial Stewardship Architecture",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-117",
-      "title": "Battle 17 — The Execution Gap",
-      "type": "battle",
-      "text": "Procrastination and failure to act.",
-      "tags": [
-        "battle",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Execution Gap",
-          "relationship": "source_of"
-        }
-      ]
-    },
-    {
-      "id": "WW-IP-01",
-      "title": "TEA™",
-      "type": "framework",
-      "text": "Time · Energy · Attention; resource/stewardship framework.",
-      "tags": [
-        "named framework",
-        "locked"
-      ],
-      "url": "frameworks/tea/",
-      "connections": [
-        {
-          "title": "Courses",
-          "relationship": "teaches"
-        },
-        {
-          "title": "Podcast",
-          "relationship": "delivered_through"
-        },
-        {
-          "title": "Insights / Articles",
-          "relationship": "extends"
-        }
-      ]
-    },
-    {
-      "id": "WW-IP-02",
-      "title": "FIAGS™",
-      "type": "system",
-      "text": "Fear · Impatience · Anxiety · Greed · Sentiment; five poisons with disguises and antidotes.",
-      "tags": [
-        "named framework system",
-        "locked"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Courses",
-          "relationship": "teaches"
-        }
-      ]
-    },
-    {
-      "id": "WW-IP-03",
-      "title": "5PTES™",
-      "type": "framework",
-      "text": "People · Processes · Places · Principality · Pains · Times · Events · Seasons.",
-      "tags": [
-        "named framework",
-        "locked"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Courses",
-          "relationship": "teaches"
-        }
-      ]
-    },
-    {
-      "id": "WW-IP-04",
-      "title": "Personal Identity Statement",
-      "type": "tool",
-      "text": "Mechanism for defining and anchoring personal identity.",
-      "tags": [
-        "tool method component",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-05",
-      "title": "Purpose–Calling–Destiny–Vision–Goals",
-      "type": "concept",
-      "text": "Five distinct territories of becoming.",
-      "tags": [
-        "concept set diagnostic",
-        "confirmed"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-06",
-      "title": "Relational Architecture",
-      "type": "model",
-      "text": "Relational dimensions, currencies, enemies, audit and repair.",
-      "tags": [
-        "model architecture",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-07",
-      "title": "Physical Stewardship Architecture",
-      "type": "model",
-      "text": "Sleep, movement, nutrition, stress and assessment.",
-      "tags": [
-        "model architecture",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-08",
-      "title": "Limiting-Belief Diagnostic",
-      "type": "diagnostic",
-      "text": "Origins and destructive patterns of limiting beliefs.",
-      "tags": [
-        "diagnostic model",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-09",
-      "title": "Social Mastery Architecture",
-      "type": "model",
-      "text": "Five dimensions of social mastery and pathway from isolation to connection.",
-      "tags": [
-        "model architecture",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-10",
-      "title": "Comfort Addiction Diagnostic",
-      "type": "diagnostic",
-      "text": "Roots and patterns of comfort addiction.",
-      "tags": [
-        "diagnostic model",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-11",
-      "title": "Learning / Intellectual Architecture",
-      "type": "model",
-      "text": "Reading, learning, intellectual discipline and cognitive development.",
-      "tags": [
-        "learning model",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-12",
-      "title": "Financial Stewardship Architecture",
-      "type": "framework",
-      "text": "Financial pathologies, wealth formula and five financial systems.",
-      "tags": [
-        "framework system candidate",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "WW-IP-13",
-      "title": "Execution Gap",
-      "type": "model",
-      "text": "Gap between dreams and reality; preparation to action.",
-      "tags": [
-        "execution model framework candidate",
-        "confirmed / type open"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-001",
-      "title": "Courses",
-      "type": "course",
-      "text": "Structured learning products.",
-      "tags": [
-        "learning product type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Learning Paths",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Podcast",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Insights / Articles",
-          "relationship": "connects_to"
-        },
-        {
-          "title": "Case Studies",
-          "relationship": "connects_to"
-        }
-      ]
-    },
-    {
-      "id": "PLAT-002",
-      "title": "Masterclasses",
-      "type": "masterclass",
-      "text": "Focused intensive learning experiences.",
-      "tags": [
-        "learning product type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-003",
-      "title": "Learning Paths",
-      "type": "learning_path",
-      "text": "Sequenced journeys with prerequisites, milestones, assessments, capstones and progress.",
-      "tags": [
-        "learning product type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-004",
-      "title": "Case Studies",
-      "type": "case_study",
-      "text": "Evidence and contextual application.",
-      "tags": [
-        "application type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Applications / Projects",
-          "relationship": "demonstrates"
-        }
-      ]
-    },
-    {
-      "id": "PLAT-005",
-      "title": "Applications / Projects",
-      "type": "application",
-      "text": "Practical implementation and evidence of use.",
-      "tags": [
-        "application type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-006",
-      "title": "Podcast",
-      "type": "podcast",
-      "text": "Conversation and audio knowledge layer.",
-      "tags": [
-        "media distribution type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-007",
-      "title": "Insights / Articles",
-      "type": "insight",
-      "text": "Editorial explanation and extension of knowledge.",
-      "tags": [
-        "media distribution type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-008",
-      "title": "Events",
-      "type": "event",
-      "text": "Live learning and interaction.",
-      "tags": [
-        "engagement type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-009",
-      "title": "Community",
-      "type": "community",
-      "text": "Discussion and peer engagement.",
-      "tags": [
-        "engagement type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-010",
-      "title": "AI Prompts / AI Systems",
-      "type": "tool",
-      "text": "AI implementation, prompts, recommendations and semantic discovery.",
-      "tags": [
-        "ai implementation type",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-011",
-      "title": "Explore / Knowledge Graph",
-      "type": "graph",
-      "text": "Cross-discovery across intellectual entities and relationships.",
-      "tags": [
-        "discovery system",
-        "confirmed platform type"
-      ],
-      "url": null,
-      "connections": [
-        {
-          "title": "Marketplace Architect",
-          "relationship": "connects_to"
-        }
-      ]
-    },
-    {
-      "id": "PLAT-012",
-      "title": "Consulting",
-      "type": "service",
-      "text": "Applied advisory and architecture service.",
-      "tags": [
-        "professional output",
-        "confirmed output type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-013",
-      "title": "Speaking",
-      "type": "service",
-      "text": "Applied communication and thought leadership.",
-      "tags": [
-        "professional output",
-        "confirmed output type"
-      ],
-      "url": null,
-      "connections": []
-    },
-    {
-      "id": "PLAT-014",
-      "title": "Software / Tools",
-      "type": "tool",
-      "text": "Executable implementations of knowledge.",
-      "tags": [
-        "implementation output",
-        "confirmed output type"
-      ],
-      "url": null,
-      "connections": []
-    }
-  ],
-  "edges": [
-    [
-      "SS-001",
-      "SS-002",
-      "contains"
-    ],
-    [
-      "SS-002",
-      "SS-003",
-      "contains"
-    ],
-    [
-      "SS-002",
-      "SS-004",
-      "contains"
-    ],
-    [
-      "SS-002",
-      "SS-005",
-      "contains"
-    ],
-    [
-      "SS-002",
-      "SS-006",
-      "contains"
-    ],
-    [
-      "SS-002",
-      "SS-007",
-      "contains"
-    ],
-    [
-      "SS-002",
-      "SS-012",
-      "possible_alias_of"
-    ],
-    [
-      "SS-010",
-      "SS-011",
-      "possible_alias_of"
-    ],
-    [
-      "WW-001",
-      "WW-002",
-      "contains"
-    ],
-    [
-      "WW-001",
-      "WW-003",
-      "contains"
-    ],
-    [
-      "WW-001",
-      "WW-004",
-      "contains"
-    ],
-    [
-      "WW-001",
-      "WW-005",
-      "contains"
-    ],
-    [
-      "WW-001",
-      "WW-006",
-      "contains"
-    ],
-    [
-      "WW-002",
-      "WW-101",
-      "contains"
-    ],
-    [
-      "WW-002",
-      "WW-102",
-      "contains"
-    ],
-    [
-      "WW-002",
-      "WW-103",
-      "contains"
-    ],
-    [
-      "WW-003",
-      "WW-104",
-      "contains"
-    ],
-    [
-      "WW-003",
-      "WW-105",
-      "contains"
-    ],
-    [
-      "WW-003",
-      "WW-106",
-      "contains"
-    ],
-    [
-      "WW-003",
-      "WW-107",
-      "contains"
-    ],
-    [
-      "WW-004",
-      "WW-108",
-      "contains"
-    ],
-    [
-      "WW-004",
-      "WW-109",
-      "contains"
-    ],
-    [
-      "WW-004",
-      "WW-110",
-      "contains"
-    ],
-    [
-      "WW-005",
-      "WW-111",
-      "contains"
-    ],
-    [
-      "WW-005",
-      "WW-112",
-      "contains"
-    ],
-    [
-      "WW-005",
-      "WW-113",
-      "contains"
-    ],
-    [
-      "WW-005",
-      "WW-114",
-      "contains"
-    ],
-    [
-      "WW-006",
-      "WW-115",
-      "contains"
-    ],
-    [
-      "WW-006",
-      "WW-116",
-      "contains"
-    ],
-    [
-      "WW-006",
-      "WW-117",
-      "contains"
-    ],
-    [
-      "WW-103",
-      "WW-IP-01",
-      "source_of"
-    ],
-    [
-      "WW-104",
-      "WW-IP-02",
-      "source_of"
-    ],
-    [
-      "WW-105",
-      "WW-IP-03",
-      "source_of"
-    ],
-    [
-      "WW-102",
-      "WW-IP-04",
-      "source_of"
-    ],
-    [
-      "WW-101",
-      "WW-IP-05",
-      "source_of"
-    ],
-    [
-      "WW-107",
-      "WW-IP-06",
-      "source_of"
-    ],
-    [
-      "WW-110",
-      "WW-IP-07",
-      "source_of"
-    ],
-    [
-      "WW-111",
-      "WW-IP-08",
-      "source_of"
-    ],
-    [
-      "WW-112",
-      "WW-IP-09",
-      "source_of"
-    ],
-    [
-      "WW-113",
-      "WW-IP-10",
-      "source_of"
-    ],
-    [
-      "WW-114",
-      "WW-IP-11",
-      "source_of"
-    ],
-    [
-      "WW-116",
-      "WW-IP-12",
-      "source_of"
-    ],
-    [
-      "WW-117",
-      "WW-IP-13",
-      "source_of"
-    ],
-    [
-      "WW-IP-01",
-      "PLAT-001",
-      "teaches"
-    ],
-    [
-      "WW-IP-01",
-      "PLAT-006",
-      "delivered_through"
-    ],
-    [
-      "WW-IP-01",
-      "PLAT-007",
-      "extends"
-    ],
-    [
-      "WW-IP-02",
-      "PLAT-001",
-      "teaches"
-    ],
-    [
-      "WW-IP-03",
-      "PLAT-001",
-      "teaches"
-    ],
-    [
-      "SS-002",
-      "PLAT-001",
-      "connects_to"
-    ],
-    [
-      "SS-002",
-      "PLAT-002",
-      "connects_to"
-    ],
-    [
-      "SS-002",
-      "PLAT-003",
-      "connects_to"
-    ],
-    [
-      "SS-002",
-      "PLAT-006",
-      "connects_to"
-    ],
-    [
-      "SS-002",
-      "PLAT-007",
-      "connects_to"
-    ],
-    [
-      "PLAT-001",
-      "PLAT-003",
-      "connects_to"
-    ],
-    [
-      "PLAT-001",
-      "PLAT-006",
-      "connects_to"
-    ],
-    [
-      "PLAT-001",
-      "PLAT-007",
-      "connects_to"
-    ],
-    [
-      "PLAT-001",
-      "PLAT-004",
-      "connects_to"
-    ],
-    [
-      "PLAT-004",
-      "PLAT-005",
-      "demonstrates"
-    ],
-    [
-      "PLAT-011",
-      "SS-001",
-      "connects_to"
-    ]
-  ],
-  "open_decisions": [
-    {
-      "item": "PLAN Framework",
-      "status": "UNRESOLVED"
-    },
-    {
-      "item": "PIS",
-      "status": "UNRESOLVED"
-    },
-    {
-      "item": "TECHSPIBUS",
-      "status": "OPEN"
-    },
-    {
-      "item": "IBONK",
-      "status": "OPEN"
-    },
-    {
-      "item": "Five-Stage Intelligence Architecture",
-      "status": "ALIAS LIKELY"
-    },
-    {
-      "item": "Battle 6 / Communication & Negotiation",
-      "status": "OPEN"
-    },
-    {
-      "item": "Battle 15 / Pride & Humility",
-      "status": "OPEN"
     }
   ]
 }
