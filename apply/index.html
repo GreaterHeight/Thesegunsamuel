@@ -38,7 +38,7 @@ body{background:var(--cream);color:var(--green)}
 .v3133-count{font-size:.82rem;letter-spacing:.04em;font-weight:700}
 .v3133-card{transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
 .v3133-card:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,48,32,.09);border-color:rgba(0,48,32,.25)}
-.v3133-card a{display:inline-flex;align-items:center;gap:6px}
+.v3133-card a{display:inline-flex;align-items:center;gap:6px}.cta-disabled{color:#003020;font-weight:700}
 </style>
 
 </head>
@@ -59,8 +59,26 @@ body{background:var(--cream);color:var(--green)}
 <label for="filter" style="position:absolute;left:-10000px">Filter APPLY</label>
 <input id="filter" type="search" placeholder="Filter this ecosystem..." autocomplete="off">
 </div><div class="v3133-count" id="pillarCount"></div></div>
-<div id="status" class="status">0 available experiences</div>
-<section id="grid" class="grid"><div class="empty">No canonical experiences are currently mapped to this pillar.</div></section>
+<div id="status" class="status">3 available experiences</div>
+<section id="grid" class="grid">
+<article class="card v3133-card">
+  <div class="type">application</div>
+  <h2>Applications / Projects</h2>
+  <p>Practical implementation and evidence of use.</p>
+  <span class="cta-disabled">VIEW CONNECTIONS →</span>
+</article>
+<article class="card v3133-card">
+  <div class="type">case_study</div>
+  <h2>Case Studies</h2>
+  <p>Evidence and contextual application.</p>
+  <span class="cta-disabled">VIEW CONNECTIONS →</span>
+</article>
+<article class="card v3133-card">
+  <div class="type">event</div>
+  <h2>Events</h2>
+  <p>Live learning and interaction.</p>
+  <span class="cta-disabled">VIEW CONNECTIONS →</span>
+</article></section>
 </main>
 <script>
 const input=document.getElementById('filter'), cards=[...document.querySelectorAll('.card')], status=document.getElementById('status');
