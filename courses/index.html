@@ -33,6 +33,12 @@
 @media(max-width:1050px){.site-footer .footer-grid{grid-template-columns:2fr 1fr 1fr 1fr!important}.site-footer .footer-grid nav:last-child{grid-column:2/-1}}
 @media(max-width:700px){.site-footer .footer-grid{grid-template-columns:1fr 1fr!important}.site-footer .footer-brand{grid-column:1/-1}.site-footer .footer-grid nav:last-child{grid-column:auto}.site-footer .footer-bottom{grid-template-columns:1fr!important;justify-items:start!important}.site-footer .v33-footer-center{text-align:left!important;white-space:normal!important}.site-footer .v33-footer-right{justify-content:flex-start!important;flex-wrap:wrap!important;white-space:normal!important}}
 </style>
+<meta content="Courses — Segun Samuel" property="og:title"/><style id="v338-testimonial-empty-guard">
+.v334-testimonial-media.is-empty{background:linear-gradient(145deg,#eaf5f1,#d9ebe5)!important}
+.v334-testimonial-media.is-empty:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,#eaf5f1,#d9ebe5);z-index:0}
+.v334-testimonial-media.is-empty:after{z-index:2}
+.v334-testimonial-media.is-empty video,.v334-testimonial-media.is-empty img{display:none!important}
+</style>
 </head>
 <body>
 <header class="site-header ss-global-header">
@@ -471,5 +477,26 @@
 <script src="../assets/js/course-share.js" defer></script>
 <script src="../assets/js/privacy.js" defer></script>
 <script src="../assets/js/courses-catalogue-v331.js" defer></script>
+<script data-v338-testimonial-fallback>
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('[data-v334-testimonial]').forEach(function(box){
+    var video=box.querySelector('video');
+    var image=box.querySelector('img.testimonial-fallback-image');
+    var hasVideo=!!(video && (video.getAttribute('src') || video.querySelector('source[src]')));
+    var hasImage=!!(image && image.getAttribute('src'));
+    function empty(){ box.classList.remove('is-image'); box.classList.add('is-empty'); if(video){video.removeAttribute('controls');} }
+    function imageState(){ box.classList.remove('is-empty'); box.classList.add('is-image'); }
+    if(hasVideo){
+      box.classList.remove('is-empty','is-image');
+      video.addEventListener('error',empty,{once:true});
+    } else if(hasImage){
+      imageState();
+      image.addEventListener('error',empty,{once:true});
+    } else {
+      empty();
+    }
+  });
+});
+</script>
 </body>
 </html>
