@@ -62,8 +62,8 @@
  const out=document.getElementById('results'), q=document.getElementById('q');
  function render(){
   const s=q.value.toLowerCase().trim();
-  const nodes=d.nodes.filter(n=>(n.label+' '+n.type).toLowerCase().includes(s));
-  out.innerHTML=nodes.map(n=>'<article class="node"><p>'+n.type.toUpperCase()+'</p><h2>'+n.label+'</h2><a href="'+n.url+'">OPEN →</a></article>').join('');
+  const nodes=d.nodes.filter(n=>((n.title||'')+' '+(n.type||'')+' '+((n.tags||[]).join(' '))+' '+(n.text||'')).toLowerCase().includes(s));
+  out.innerHTML=nodes.map(n=>'<article class="node"><p>'+String(n.type||'').toUpperCase()+'</p><h2>'+String(n.title||'Untitled node')+'</h2>'+(n.url?'<a href="'+n.url+'">OPEN →</a>':'<span>GRAPH NODE</span>')+'</article>').join('');
  }
  q.addEventListener('input',render); render();
 })();
