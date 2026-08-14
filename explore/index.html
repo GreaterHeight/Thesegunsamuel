@@ -74,6 +74,112 @@
 .site-footer .v33-footer-right{justify-self:center!important;justify-content:center!important;flex-wrap:wrap!important}
 }
 </style>
+
+
+
+
+<style id="final-explore-layout-fix">
+/* FINAL /EXPLORE KNOWLEDGE GRAPH LAYOUT
+   The actual generated cards use #knowledgeGraphCards / .knowledge-graph-grid.
+   Keep the page fluid and prevent any inherited rule from collapsing it. */
+
+html, body {
+  width: 100%;
+  min-width: 0;
+  overflow-x: hidden;
+}
+
+.explore-wrap {
+  width: min(1180px, calc(100% - 48px)) !important;
+  max-width: 1180px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#knowledgeGraphCards,
+.knowledge-graph-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-top: 20px !important;
+  box-sizing: border-box !important;
+}
+
+#knowledgeGraphCards .kg-card,
+.knowledge-graph-grid .kg-card {
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  background: #fff !important;
+  border: 1px solid #ddd6cc !important;
+  border-radius: 14px !important;
+  padding: 20px !important;
+}
+
+#knowledgeGraphCards .kg-card h3,
+.knowledge-graph-grid .kg-card h3 {
+  margin: 10px 0 !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
+
+#knowledgeGraphCards .kg-card p,
+.knowledge-graph-grid .kg-card p {
+  overflow-wrap: anywhere !important;
+}
+
+#knowledgeGraphCards .kg-card-action,
+.knowledge-graph-grid .kg-card-action {
+  min-height: 22px !important;
+}
+
+#knowledgeGraphCards .kg-open,
+.knowledge-graph-grid .kg-open,
+#knowledgeGraphCards .kg-connections,
+.knowledge-graph-grid .kg-connections {
+  display: inline-block !important;
+  white-space: normal !important;
+}
+
+.explore-wrap .search {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 900px) {
+  .explore-wrap {
+    width: calc(100% - 32px) !important;
+  }
+
+  #knowledgeGraphCards,
+  .knowledge-graph-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .explore-wrap {
+    width: calc(100% - 24px) !important;
+  }
+
+  #knowledgeGraphCards,
+  .knowledge-graph-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+}
+</style>
+
 </head><body>
 <nav data-site-nav></nav>
 <main class="explore-wrap"><p>EXPLORE</p><h1>Knowledge Graph</h1>
