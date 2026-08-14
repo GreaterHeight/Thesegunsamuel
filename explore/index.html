@@ -4,10 +4,22 @@
 <meta name="description" content="Explore relationships among Segun Samuel frameworks, courses, insights and podcast knowledge.">
 <link rel="canonical" href="https://greaterheight.github.io/Thesegunsamuel/explore/">
 <link rel="stylesheet" href="/Thesegunsamuel/assets/css/styles.css">
-<style>
-.explore-wrap{max-width:1180px;margin:auto;padding:60px 24px}.search{width:100%;padding:14px;border:1px solid #cfc7bc;border-radius:8px;font:inherit}
-.results{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.node{background:#fff;border:1px solid #ddd6cc;border-radius:14px;padding:20px}.node h2{color:#003020}.node a,.node-open{color:#8c0d0c}.node-open{display:inline-block;margin-top:8px;background:none;border:0;padding:0;font:inherit;cursor:pointer}.node-open:hover,.node-open:focus{text-decoration:underline}.node-connections{margin-top:14px;padding-top:12px;border-top:1px solid #ddd6cc}.node-connections ul{padding-left:18px}.node-connections li{margin:6px 0}
-@media(max-width:850px){.results{grid-template-columns:1fr}}
+<style id="explore-page-layout">
+.explore-wrap{width:min(1180px,calc(100% - 48px));max-width:1180px;margin:0 auto;padding:60px 0 80px;box-sizing:border-box}
+.explore-wrap h1{margin:8px 0 12px}
+.explore-wrap>p{max-width:760px}
+.search{display:block;width:100%;padding:14px 16px;border:1px solid #cfc7bc;border-radius:8px;font:inherit;box-sizing:border-box;background:#fff}
+.results{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:24px;align-items:stretch}
+.results .node{display:flex;flex-direction:column;min-width:0;min-height:190px;background:#fff;border:1px solid #ddd6cc;border-radius:14px;padding:20px;box-sizing:border-box;overflow:hidden}
+.results .node>p:first-child{margin:0 0 8px;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.results .node h2{margin:0;color:#003020;line-height:1.05;overflow-wrap:anywhere}
+.results .node .node-open{display:inline-block;align-self:flex-start;margin-top:auto;padding-top:18px;color:#8c0d0d;font-size:11px;letter-spacing:.04em;text-decoration:none;background:none;border:0;cursor:pointer}
+.results .node .node-open:hover,.results .node .node-open:focus{text-decoration:underline}
+.results .node-connections{margin-top:14px;padding-top:12px;border-top:1px solid #ddd6cc;line-height:1.5}
+.results .node-connections ul{padding-left:18px;margin-bottom:0}
+.results .node-connections li{margin:6px 0}
+@media(max-width:1050px){.explore-wrap{width:calc(100% - 36px)}.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.explore-wrap{width:calc(100% - 24px);padding-top:40px}.results{grid-template-columns:1fr;gap:14px}.results .node{min-height:160px}}
 </style><link rel="stylesheet" href="../assets/css/privacy.css"><link rel="stylesheet" href="../assets/css/accessibility-v31.css"><link rel="icon" href="../assets/images/segunsamuel-logo-badge-01.png"><!-- v3.1.1 footer -->
 
 <style id="v311-footer">
@@ -74,118 +86,12 @@
 .site-footer .v33-footer-right{justify-self:center!important;justify-content:center!important;flex-wrap:wrap!important}
 }
 </style>
-
-
-
-
-<style id="final-explore-layout-fix">
-/* FINAL /EXPLORE KNOWLEDGE GRAPH LAYOUT
-   The actual generated cards use #knowledgeGraphCards / .knowledge-graph-grid.
-   Keep the page fluid and prevent any inherited rule from collapsing it. */
-
-html, body {
-  width: 100%;
-  min-width: 0;
-  overflow-x: hidden;
-}
-
-.explore-wrap {
-  width: min(1180px, calc(100% - 48px)) !important;
-  max-width: 1180px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-  box-sizing: border-box !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-#knowledgeGraphCards,
-.knowledge-graph-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-  gap: 18px !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-top: 20px !important;
-  box-sizing: border-box !important;
-}
-
-#knowledgeGraphCards .kg-card,
-.knowledge-graph-grid .kg-card {
-  display: block !important;
-  width: auto !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  overflow: hidden !important;
-  background: #fff !important;
-  border: 1px solid #ddd6cc !important;
-  border-radius: 14px !important;
-  padding: 20px !important;
-}
-
-#knowledgeGraphCards .kg-card h3,
-.knowledge-graph-grid .kg-card h3 {
-  margin: 10px 0 !important;
-  overflow-wrap: anywhere !important;
-  word-break: normal !important;
-}
-
-#knowledgeGraphCards .kg-card p,
-.knowledge-graph-grid .kg-card p {
-  overflow-wrap: anywhere !important;
-}
-
-#knowledgeGraphCards .kg-card-action,
-.knowledge-graph-grid .kg-card-action {
-  min-height: 22px !important;
-}
-
-#knowledgeGraphCards .kg-open,
-.knowledge-graph-grid .kg-open,
-#knowledgeGraphCards .kg-connections,
-.knowledge-graph-grid .kg-connections {
-  display: inline-block !important;
-  white-space: normal !important;
-}
-
-.explore-wrap .search {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-}
-
-@media (max-width: 900px) {
-  .explore-wrap {
-    width: calc(100% - 32px) !important;
-  }
-
-  #knowledgeGraphCards,
-  .knowledge-graph-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .explore-wrap {
-    width: calc(100% - 24px) !important;
-  }
-
-  #knowledgeGraphCards,
-  .knowledge-graph-grid {
-    grid-template-columns: 1fr !important;
-    gap: 14px !important;
-  }
-}
-</style>
-
 </head><body>
 <nav data-site-nav></nav>
 <main class="explore-wrap"><p>EXPLORE</p><h1>Knowledge Graph</h1>
 <p>Search across connected intellectual and learning entities.</p>
 <input id="q" class="search" placeholder="Search frameworks, courses, insights…" aria-label="Search knowledge graph">
-<div id="results" class="results"></div><div id="knowledgeGraphCards" class="knowledge-graph-grid"></div></main>
+<div id="results" class="results" aria-live="polite"></div></main>
 <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
@@ -298,114 +204,4 @@ html, body {
   render();
 })();
 </script><script src="../assets/js/privacy.js" defer></script>
-<script id="knowledge-graph-v394">
-(() => {
-  const DATA_URL = './data/knowledge-graph.json';
-  const root = document.querySelector('[data-knowledge-graph], #knowledgeGraph, .knowledge-graph, main');
-  const search = document.querySelector('#knowledgeGraphSearch, [data-kg-search], input[type="search"]');
-  const cards = document.querySelector('#knowledgeGraphCards, [data-kg-cards], .knowledge-graph-grid, .kg-grid');
-  if (!cards) return;
-
-  let graph = {entities: [], relationships: []};
-  let query = '';
-
-  const esc = (v) => String(v ?? '').replace(/[&<>"']/g, c => ({
-    '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
-  }[c]));
-
-  const normalize = (v) => String(v ?? '').toLowerCase().trim();
-
-  function publicPath(route) {
-    if (!route) return '';
-    let r = String(route).trim();
-    if (!r) return '';
-    if (/^https?:\/\//i.test(r)) return r;
-    if (!r.startsWith('/')) r = '/' + r;
-    if (r.startsWith('/Thesegunsamuel/')) return r;
-    return '/Thesegunsamuel' + r;
-  }
-
-  function matches(e) {
-    if (!query) return true;
-    const hay = [
-      e.name, e.slug, e.type, e.status,
-      e.short_definition, e.long_definition,
-      ...(Array.isArray(e.tags) ? e.tags : [])
-    ].map(normalize).join(' ');
-    return hay.includes(normalize(query));
-  }
-
-  function related(eid) {
-    return graph.relationships.filter(r => r.source === eid || r.target === eid);
-  }
-
-  function render(list) {
-    if (!list.length) {
-      cards.innerHTML = '<div class="kg-empty" role="status">No knowledge entities match your search.</div>';
-      return;
-    }
-
-    cards.innerHTML = list.map(e => {
-      const route = publicPath(e.route);
-      const relCount = related(e.id).length;
-      const action = route
-        ? `<a class="kg-open" href="${route || "#"}">OPEN →</a>`
-        : `<button class="kg-connections" type="button" data-kg-id="${esc(e.id)}">VIEW CONNECTIONS →</button>`;
-
-      return `<article class="kg-card" data-entity-id="${esc(e.id)}">
-        <div class="kg-card-type">${esc(e.type)}</div>
-        <h3>${esc(e.name)}</h3>
-        ${e.short_definition ? `<p>${esc(e.short_definition)}</p>` : ''}
-        <div class="kg-card-meta">${relCount} connection${relCount === 1 ? '' : 's'}</div>
-        <div class="kg-card-action">${action}</div>
-      </article>`;
-    }).join('');
-  }
-
-  async function init() {
-    try {
-      const response = await fetch(DATA_URL, {cache: 'no-store'});
-      if (!response.ok) throw new Error('Knowledge Graph data could not be loaded.');
-      const json = await response.json();
-      graph = {
-        entities: Array.isArray(json.entities) ? json.entities : [],
-        relationships: Array.isArray(json.relationships) ? json.relationships : []
-      };
-      render(graph.entities.filter(matches));
-    } catch (err) {
-      cards.innerHTML = `<div class="kg-empty kg-error" role="alert">${esc(err.message)}</div>`;
-    }
-  }
-
-  if (search) {
-    search.addEventListener('input', () => {
-      query = search.value;
-      render(graph.entities.filter(matches));
-    });
-  }
-
-  cards.addEventListener('click', (event) => {
-    const button = event.target.closest('[data-kg-id]');
-    if (!button) return;
-    const entity = graph.entities.find(e => e.id === button.dataset.kgId);
-    if (!entity) return;
-
-    const connections = related(entity.id);
-    const ids = new Set([entity.id]);
-    connections.forEach(r => { ids.add(r.source); ids.add(r.target); });
-
-    const names = [...ids]
-      .map(id => graph.entities.find(e => e.id === id))
-      .filter(Boolean)
-      .map(e => e.name);
-
-    const text = names.join(' • ');
-    button.closest('.kg-card').querySelector('.kg-card-meta').textContent =
-      connections.length ? `${connections.length} connection${connections.length === 1 ? '' : 's'}: ${text}` : 'No recorded connections';
-  });
-
-  init();
-})();
-</script>
-
 </body></html>
