@@ -159,6 +159,15 @@
 .books-page-button.is-active{background:#8c0d0c;border-color:#8c0d0c;color:#fff}
 .books-page-button:disabled{opacity:.35;cursor:not-allowed}
 </style>
+<style id="books-page-interactions-css">
+.books-reading-card[hidden],.books-product[hidden]{display:none!important}
+.books-reading-pagination{display:flex;justify-content:center;align-items:center;gap:7px;margin:34px 0 8px}
+.books-page-numbers{display:flex;gap:7px}
+.books-page-button{min-width:36px;height:36px;padding:0 9px;border:1px solid #d7aaa4;background:transparent;color:inherit;cursor:pointer;font:inherit;font-size:.82rem}
+.books-page-button.is-active{background:#8c0d0c;border-color:#8c0d0c;color:#fff}
+.books-page-button:disabled{opacity:.35;cursor:not-allowed}
+.books-reading-controls>.books-empty{margin:16px 0 0}
+</style>
 </head><body>
 <header class="site-header ss-global-header" data-global-nav="">
 <div class="container ss-nav-container">
@@ -343,6 +352,7 @@
 <button type="button" data-filter="warfare">Warfare</button>
 <button type="button" data-filter="religion">Religion</button>
 </div>
+<p class="books-empty" id="books-reading-empty" hidden>No books match your current search and filters. <button type="button" id="books-reading-clear">Clear all filters</button></p>
     </div>
 
     <div class="books-reading-grid" id="books-reading-grid">
@@ -467,12 +477,13 @@
   <span class="books-reading-tooltip"><strong>Systematic Theology</strong><br>Wayne Grudem&#x27;s exhaustive introduction to biblical doctrine — the standard reference for serious study of Christian theology, chapter by chapter.</span>
 </a>
 </div>
-    <nav class="books-reading-pagination" id="books-reading-pagination" aria-label="Recommended books pages">
+<nav class="books-reading-pagination" id="books-reading-pagination" aria-label="Recommended books pages">
 <button type="button" class="books-page-button" id="books-reading-prev" aria-label="Previous page">←</button>
 <div class="books-page-numbers" id="books-page-numbers"></div>
 <button type="button" class="books-page-button" id="books-reading-next" aria-label="Next page">→</button>
 </nav>
-<p class="books-empty" id="books-reading-empty" hidden>No books match your current search and filters. <button type="button" id="books-reading-clear">Clear all filters</button></p>
+    
+
   </div>
 </section>
 
@@ -545,34 +556,104 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<script id="books-reading-controller">
-document.addEventListener("DOMContentLoaded",function(){
- const input=document.getElementById("books-reading-search"),grid=document.getElementById("books-reading-grid"),
- empty=document.getElementById("books-reading-empty"),cards=[...document.querySelectorAll(".books-reading-card")],
- buttons=[...document.querySelectorAll("#books-filter-chips button")],pager=document.getElementById("books-reading-pagination"),
- nums=document.getElementById("books-page-numbers"),prev=document.getElementById("books-reading-prev"),next=document.getElementById("books-reading-next");
- const SIZE=10; let page=1; const active=new Set();
- function filtered(){
-   const q=(input?.value||"").trim().toLowerCase();
-   return cards.filter(c=>{
-     const title=(c.dataset.title||"").toLowerCase(), cats=(c.dataset.cat||"").split(/\s+/);
-     return (!q||title.includes(q)) && (!active.size||[...active].some(f=>cats.includes(f)));
-   });
- }
- function render(){
-   const list=filtered(), pages=Math.max(1,Math.ceil(list.length/SIZE)); if(page>pages) page=pages;
-   cards.forEach(c=>c.hidden=true);
-   list.slice((page-1)*SIZE,page*SIZE).forEach(c=>c.hidden=false);
-   grid.hidden=!list.length; empty.hidden=!!list.length; nums.innerHTML="";
-   pager.hidden=pages<=1; prev.disabled=page===1; next.disabled=page===pages;
-   for(let i=1;i<=pages;i++){const b=document.createElement("button");b.type="button";b.className="books-page-button"+(i===page?" is-active":"");b.textContent=i;b.setAttribute("aria-label","Go to page "+i);if(i===page)b.setAttribute("aria-current","page");b.onclick=()=>{page=i;render()};nums.appendChild(b);}
- }
- buttons.forEach(b=>{b.setAttribute("aria-pressed","false");b.onclick=()=>{const f=b.dataset.filter;active.has(f)?(active.delete(f),b.classList.remove("is-active")):(active.add(f),b.classList.add("is-active"));b.setAttribute("aria-pressed",active.has(f));page=1;render();};});
- input?.addEventListener("input",()=>{page=1;render()});
- prev.onclick=()=>{if(page>1){page--;render()}};
- next.onclick=()=>{const p=Math.ceil(filtered().length/SIZE);if(page<p){page++;render()}};
- document.getElementById("books-reading-clear")?.addEventListener("click",()=>{active.clear();buttons.forEach(b=>{b.classList.remove("is-active");b.setAttribute("aria-pressed","false")});if(input)input.value="";page=1;render();input?.focus()});
- render();
+
+<script id="books-page-interactions">
+document.addEventListener("DOMContentLoaded", function () {
+  const shelfInput=document.getElementById("books-shelf-search");
+  const shelfGrid=document.getElementById("books-shelf-grid");
+  const shelfEmpty=document.getElementById("books-shelf-empty");
+  const shelfCards=[...document.querySelectorAll("#books-shelf-grid .books-product")];
+
+  function renderShelf(){
+    const q=(shelfInput?.value||"").trim().toLowerCase();
+    let count=0;
+    shelfCards.forEach(card=>{
+      const title=(card.dataset.title||"").toLowerCase();
+      const show=!q||title.includes(q);
+      card.hidden=!show;
+      if(show) count++;
+    });
+    if(shelfGrid) shelfGrid.hidden=count===0;
+    if(shelfEmpty) shelfEmpty.hidden=count!==0;
+  }
+  shelfInput?.addEventListener("input",renderShelf);
+  renderShelf();
+
+  const input=document.getElementById("books-reading-search");
+  const grid=document.getElementById("books-reading-grid");
+  const empty=document.getElementById("books-reading-empty");
+  const cards=[...document.querySelectorAll("#books-reading-grid .books-reading-card")];
+  const buttons=[...document.querySelectorAll("#books-filter-chips button")];
+  const pager=document.getElementById("books-reading-pagination");
+  const nums=document.getElementById("books-page-numbers");
+  const prev=document.getElementById("books-reading-prev");
+  const next=document.getElementById("books-reading-next");
+  const clear=document.getElementById("books-reading-clear");
+  const PAGE_SIZE=10;
+  let page=1;
+  const active=new Set();
+
+  function filtered(){
+    const q=(input?.value||"").trim().toLowerCase();
+    return cards.filter(card=>{
+      const title=(card.dataset.title||"").toLowerCase();
+      const cats=(card.dataset.cat||"").split(/\s+/).filter(Boolean);
+      return (!q||title.includes(q)) &&
+             (!active.size||[...active].some(f=>cats.includes(f)));
+    });
+  }
+
+  function render(){
+    const list=filtered();
+    const total=Math.max(1,Math.ceil(list.length/PAGE_SIZE));
+    if(page>total) page=total;
+
+    cards.forEach(c=>c.hidden=true);
+    list.slice((page-1)*PAGE_SIZE,page*PAGE_SIZE).forEach(c=>c.hidden=false);
+
+    const has=list.length>0;
+    if(grid) grid.hidden=!has;
+    if(empty) empty.hidden=has;
+    if(pager) pager.hidden=total<=1;
+
+    if(nums){
+      nums.innerHTML="";
+      for(let i=1;i<=total;i++){
+        const b=document.createElement("button");
+        b.type="button";
+        b.className="books-page-button"+(i===page?" is-active":"");
+        b.textContent=i;
+        b.setAttribute("aria-label","Go to page "+i);
+        if(i===page)b.setAttribute("aria-current","page");
+        b.addEventListener("click",()=>{page=i;render();});
+        nums.appendChild(b);
+      }
+    }
+    if(prev) prev.disabled=page<=1;
+    if(next) next.disabled=page>=total;
+  }
+
+  buttons.forEach(b=>{
+    b.setAttribute("aria-pressed","false");
+    b.addEventListener("click",()=>{
+      const f=b.dataset.filter;
+      if(active.has(f)){active.delete(f);b.classList.remove("is-active");}
+      else{active.add(f);b.classList.add("is-active");}
+      b.setAttribute("aria-pressed",active.has(f)?"true":"false");
+      page=1; render();
+    });
+  });
+
+  input?.addEventListener("input",()=>{page=1;render();});
+  prev?.addEventListener("click",()=>{if(page>1){page--;render();}});
+  next?.addEventListener("click",()=>{const total=Math.ceil(filtered().length/PAGE_SIZE);if(page<total){page++;render();}});
+  clear?.addEventListener("click",()=>{
+    active.clear();
+    buttons.forEach(b=>{b.classList.remove("is-active");b.setAttribute("aria-pressed","false");});
+    if(input)input.value="";
+    page=1;render();input?.focus();
+  });
+  render();
 });
 </script>
 </body></html>
