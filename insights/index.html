@@ -52,6 +52,47 @@
 .site-footer .v33-footer-right{justify-self:center!important;justify-content:center!important;flex-wrap:wrap!important}
 }
 </style>
+
+<style id="global-placeholder-system">
+.arch-frame[data-placeholder="image"],
+.image-placeholder[data-placeholder="image"],
+[data-placeholder="image"] {
+  --teal-lite: #dceee9;
+  --teal-pale: #eef7f4;
+  --cream-3: #f4eee3;
+  position: relative !important;
+  overflow: hidden !important;
+  background: linear-gradient(160deg, var(--teal-lite) 0%, var(--teal-pale) 45%, var(--cream-3) 100%) !important;
+}
+.arch-frame[data-placeholder="image"]::after,
+.image-placeholder[data-placeholder="image"]::after,
+[data-placeholder="image"]::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center / min(42%, 180px) auto no-repeat !important;
+  opacity: .88 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.arch-frame[data-placeholder="image"] > *,
+.image-placeholder[data-placeholder="image"] > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+.arch-frame[data-placeholder="image"] img,
+.image-placeholder[data-placeholder="image"] img {
+  opacity: 0 !important;
+}
+@media (max-width:700px) {
+  .arch-frame[data-placeholder="image"]::after,
+  .image-placeholder[data-placeholder="image"]::after,
+  [data-placeholder="image"]::after {
+    background-size: min(48%, 140px) auto !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <p>Redirecting to <a href="../articles/">Insights &amp; Articles</a>…</p>
@@ -68,5 +109,37 @@
   </div>
   <div class="footer-bottom v33-footer-bottom"><span>© 2026 SEGUN SAMUEL. ALL RIGHTS RESERVED.</span><span class="v33-footer-center">DEVELOPED BY <a href="https://greaterheight.tech" rel="noopener">GREATERHEIGHT TECHNOLOGIES</a></span><span class="v33-footer-right"><a href="/Thesegunsamuel/about/">ABOUT</a><a href="/Thesegunsamuel/explore/">EXPLORE THE KNOWLEDGE GRAPH</a></span></div>
 </footer>
+
+<script id="global-placeholder-runtime">
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.arch-frame[data-placeholder="image"], .image-placeholder[data-placeholder="image"]').forEach(function (frame) {
+    var img = frame.querySelector("img");
+    if (!img) return;
+
+    function showRealImage() {
+      frame.removeAttribute("data-placeholder");
+      frame.classList.remove("image-placeholder");
+      img.style.opacity = "";
+      img.style.display = "";
+    }
+
+    function showPlaceholder() {
+      frame.setAttribute("data-placeholder", "image");
+      img.style.opacity = "0";
+      img.style.display = "";
+    }
+
+    if (img.complete && img.naturalWidth > 0) {
+      showRealImage();
+    } else if (img.complete && img.naturalWidth === 0) {
+      showPlaceholder();
+    }
+
+    img.addEventListener("load", showRealImage, { once: true });
+    img.addEventListener("error", showPlaceholder);
+  });
+});
+</script>
+
 </body>
 </html>

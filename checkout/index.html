@@ -79,6 +79,78 @@
 .site-footer .v33-footer-right{justify-self:center!important;justify-content:center!important;flex-wrap:wrap!important}
 }
 </style>
+<style id="final-checkout-typography-fix">
+/* FINAL CHECKOUT TYPOGRAPHY — scoped to the actual checkout DOM */
+.checkout-wrap h1 {
+  font-size: clamp(3rem, 4vw, 3.8rem) !important;
+  line-height: 0.98 !important;
+  letter-spacing: -0.02em !important;
+  margin-bottom: 18px !important;
+}
+
+.checkout-wrap .checkout-card h2 {
+  font-size: clamp(2rem, 2.6vw, 2.45rem) !important;
+  line-height: 1.0 !important;
+  letter-spacing: -0.015em !important;
+}
+
+.checkout-wrap .checkout-card:last-child h2 {
+  font-size: clamp(1.95rem, 2.5vw, 2.35rem) !important;
+}
+
+@media (max-width: 700px) {
+  .checkout-wrap h1 {
+    font-size: 2.65rem !important;
+  }
+
+  .checkout-wrap .checkout-card h2,
+  .checkout-wrap .checkout-card:last-child h2 {
+    font-size: 2rem !important;
+  }
+}
+</style>
+
+
+<style id="global-placeholder-system">
+.arch-frame[data-placeholder="image"],
+.image-placeholder[data-placeholder="image"],
+[data-placeholder="image"] {
+  --teal-lite: #dceee9;
+  --teal-pale: #eef7f4;
+  --cream-3: #f4eee3;
+  position: relative !important;
+  overflow: hidden !important;
+  background: linear-gradient(160deg, var(--teal-lite) 0%, var(--teal-pale) 45%, var(--cream-3) 100%) !important;
+}
+.arch-frame[data-placeholder="image"]::after,
+.image-placeholder[data-placeholder="image"]::after,
+[data-placeholder="image"]::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center / min(42%, 180px) auto no-repeat !important;
+  opacity: .88 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.arch-frame[data-placeholder="image"] > *,
+.image-placeholder[data-placeholder="image"] > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+.arch-frame[data-placeholder="image"] img,
+.image-placeholder[data-placeholder="image"] img {
+  opacity: 0 !important;
+}
+@media (max-width:700px) {
+  .arch-frame[data-placeholder="image"]::after,
+  .image-placeholder[data-placeholder="image"]::after,
+  [data-placeholder="image"]::after {
+    background-size: min(48%, 140px) auto !important;
+  }
+}
+</style>
+
 </head>
 <body>
 <nav data-site-nav></nav>
@@ -120,4 +192,36 @@
    document.getElementById('status').textContent='Payment integration boundary reached. Connect this action to the secure payment API in production.';
  };
 })();
-</script><script src="../assets/js/privacy.js" defer></script></body></html>
+</script><script src="../assets/js/privacy.js" defer></script>
+<script id="global-placeholder-runtime">
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.arch-frame[data-placeholder="image"], .image-placeholder[data-placeholder="image"]').forEach(function (frame) {
+    var img = frame.querySelector("img");
+    if (!img) return;
+
+    function showRealImage() {
+      frame.removeAttribute("data-placeholder");
+      frame.classList.remove("image-placeholder");
+      img.style.opacity = "";
+      img.style.display = "";
+    }
+
+    function showPlaceholder() {
+      frame.setAttribute("data-placeholder", "image");
+      img.style.opacity = "0";
+      img.style.display = "";
+    }
+
+    if (img.complete && img.naturalWidth > 0) {
+      showRealImage();
+    } else if (img.complete && img.naturalWidth === 0) {
+      showPlaceholder();
+    }
+
+    img.addEventListener("load", showRealImage, { once: true });
+    img.addEventListener("error", showPlaceholder);
+  });
+});
+</script>
+
+</body></html>

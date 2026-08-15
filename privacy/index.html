@@ -64,6 +64,47 @@
 .site-footer .v33-footer-right{justify-self:center!important;justify-content:center!important;flex-wrap:wrap!important}
 }
 </style>
+
+<style id="global-placeholder-system">
+.arch-frame[data-placeholder="image"],
+.image-placeholder[data-placeholder="image"],
+[data-placeholder="image"] {
+  --teal-lite: #dceee9;
+  --teal-pale: #eef7f4;
+  --cream-3: #f4eee3;
+  position: relative !important;
+  overflow: hidden !important;
+  background: linear-gradient(160deg, var(--teal-lite) 0%, var(--teal-pale) 45%, var(--cream-3) 100%) !important;
+}
+.arch-frame[data-placeholder="image"]::after,
+.image-placeholder[data-placeholder="image"]::after,
+[data-placeholder="image"]::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background: url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center / min(42%, 180px) auto no-repeat !important;
+  opacity: .88 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.arch-frame[data-placeholder="image"] > *,
+.image-placeholder[data-placeholder="image"] > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+.arch-frame[data-placeholder="image"] img,
+.image-placeholder[data-placeholder="image"] img {
+  opacity: 0 !important;
+}
+@media (max-width:700px) {
+  .arch-frame[data-placeholder="image"]::after,
+  .image-placeholder[data-placeholder="image"]::after,
+  [data-placeholder="image"]::after {
+    background-size: min(48%, 140px) auto !important;
+  }
+}
+</style>
+
 </head><body>
 <header class="site-header ss-global-header"><div class="container ss-nav-container"><a aria-label="Segun Samuel Home" class="brand ss-brand" href="/Thesegunsamuel/index.html"><img class="ss-brand-mark" src="/Thesegunsamuel/assets/images/segunsamuel-logo.png" alt="" aria-hidden="true"><span class="ss-brand-wordmark">SEGUN <span>SAMUEL</span></span></a><button aria-expanded="false" aria-label="Open navigation" class="ss-nav-toggle" type="button"><span></span><span></span><span></span></button><nav aria-label="Primary navigation" class="ss-primary-nav"><a href="/Thesegunsamuel/index.html">HOME</a><div class="ss-nav-group"><button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">LEARN <span aria-hidden="true">⌄</span></button><div class="ss-nav-dropdown"><a href="/Thesegunsamuel/learn/">LEARN OVERVIEW</a><a href="/Thesegunsamuel/courses/">COURSES</a><a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a><a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a></div></div><div class="ss-nav-group"><button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">THINK <span aria-hidden="true">⌄</span></button><div class="ss-nav-dropdown"><a href="/Thesegunsamuel/think/">THINK OVERVIEW</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/articles/">INSIGHTS</a></div></div><div class="ss-nav-group"><button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">APPLY <span aria-hidden="true">⌄</span></button><div class="ss-nav-dropdown"><a href="/Thesegunsamuel/apply/">APPLY OVERVIEW</a><a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a><a href="/Thesegunsamuel/application/">APPLICATIONS</a><a href="/Thesegunsamuel/events/">EVENTS</a></div></div><a href="/Thesegunsamuel/podcast/">LISTEN</a><a href="/Thesegunsamuel/explore/">EXPLORE</a></nav><div class="ss-nav-actions"><a href="/Thesegunsamuel/student/">STUDENT AREA</a><a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count="">0</span></a></div></div></header><main class="ss-legal-page"><div class="eyebrow">LEGAL</div><h1>Privacy Policy</h1><p class="ss-legal-callout">Implementation template for this GitHub Pages site. The canonical privacy policy on segunsamuel.com should remain the legal source of truth until counsel approves a site-specific version.</p>
 <h2>Data controller</h2><p>GreaterHeight Technologies Limited. Privacy requests: <a href="mailto:info@techspibus.com">info@techspibus.com</a> with subject “Data Request”.</p>
@@ -84,4 +125,36 @@
   </div>
   <div class="footer-bottom v33-footer-bottom"><span>© 2026 SEGUN SAMUEL. ALL RIGHTS RESERVED.</span><span class="v33-footer-center">DEVELOPED BY <a href="https://greaterheight.tech" rel="noopener">GREATERHEIGHT TECHNOLOGIES</a></span><span class="v33-footer-right"><a href="/Thesegunsamuel/about/">ABOUT</a><a href="/Thesegunsamuel/explore/">EXPLORE THE KNOWLEDGE GRAPH</a></span></div>
 </footer>
-<script src="../assets/js/global-nav.js" defer></script><script src="../assets/js/privacy.js" defer></script></body></html>
+<script src="../assets/js/global-nav.js" defer></script><script src="../assets/js/privacy.js" defer></script>
+<script id="global-placeholder-runtime">
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.arch-frame[data-placeholder="image"], .image-placeholder[data-placeholder="image"]').forEach(function (frame) {
+    var img = frame.querySelector("img");
+    if (!img) return;
+
+    function showRealImage() {
+      frame.removeAttribute("data-placeholder");
+      frame.classList.remove("image-placeholder");
+      img.style.opacity = "";
+      img.style.display = "";
+    }
+
+    function showPlaceholder() {
+      frame.setAttribute("data-placeholder", "image");
+      img.style.opacity = "0";
+      img.style.display = "";
+    }
+
+    if (img.complete && img.naturalWidth > 0) {
+      showRealImage();
+    } else if (img.complete && img.naturalWidth === 0) {
+      showPlaceholder();
+    }
+
+    img.addEventListener("load", showRealImage, { once: true });
+    img.addEventListener("error", showPlaceholder);
+  });
+});
+</script>
+
+</body></html>
