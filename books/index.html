@@ -132,6 +132,26 @@
 @media(max-width:650px){.books-integrated .container{width:calc(100% - 28px)}.books-featured,.books-shelf,.books-reading,.books-newsletter{padding:58px 0}.books-section-head{display:block}.books-search{width:100%;margin-top:20px}.books-shelf-grid{grid-template-columns:1fr;gap:34px}.books-reading-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.books-affiliate__inner{padding:28px 24px}.books-featured__copy h2{font-size:3rem}}
 </style>
 
+
+<style id="books-page-hero-integration">
+.books-page-hero{padding-bottom:76px}
+.books-page-hero__container{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.72fr);gap:64px;align-items:center}
+.books-page-hero__copy{min-width:0}
+.books-page-hero__copy h1{max-width:760px}
+.books-page-hero__copy .lead{max-width:700px}
+.books-page-hero__featured{min-width:0;background:#eaf5f1;padding:28px;border-radius:var(--r-4,18px)}
+.books-page-hero__featured .books-featured__copy h2{font-size:clamp(2.2rem,4vw,3.8rem)}
+.books-page-hero__featured .books-featured__container{display:contents}
+.books-page-hero__featured .books-featured__cover{max-width:280px;margin:26px auto 0}
+.books-page-hero__featured .books-featured__copy p{max-width:100%}
+.books-page-hero__featured .books-actions{margin-top:16px}
+@media(max-width:900px){
+  .books-page-hero__container{grid-template-columns:1fr;gap:38px}
+  .books-page-hero__featured{padding:24px}
+  .books-page-hero__featured .books-featured__cover{max-width:300px}
+}
+</style>
+
 </head><body>
 <header class="site-header ss-global-header" data-global-nav="">
 <div class="container ss-nav-container">
@@ -174,11 +194,16 @@
 <a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count="">0</span></a>
 </div>
 </div>
-</header><main><section class="page-hero"><div class="container"><div class="eyebrow">Books · Intellectual Property</div><h1>Ideas that become bodies of work.</h1><p class="lead">Books are originating intellectual assets. They can give birth to frameworks, courses, masterclasses, learning paths, case studies, conversations and applications.</p></div></section><section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">Current Works</div><h2>The intellectual library.</h2></div><p>Each work has its own concepts, relationships and downstream expressions.</p></div><div class="card-grid"><article class="card course-card"><div><div class="eyebrow">Book / Manuscript · Primary Manuscript</div><h3>The War Within</h3><p>A philosophical and strategic exploration of the internal battles that shape identity, attention, decisions and personal direction.</p></div><a class="btn btn-primary" href="the-war-within/">Explore Book</a></article><article class="card course-card"><div><div class="eyebrow">Book / Intellectual Work · Concept / Framework System</div><h3>The Laws of Strategic Thinking</h3><p>A developing body of principles for seeing reality, interpreting patterns, thinking strategically and making deliberate decisions.</p></div><a class="btn btn-primary" href="laws-of-strategic-thinking/">Explore Book</a></article></div></div></section><section class="section dark"><div class="container"><div class="section-head"><div><div class="eyebrow">IP Hierarchy</div><h2>Protect the source. Expand the expression.</h2></div><p class="muted">Not everything on the website has the same intellectual status. Some assets are source works; others are derivative learning or application experiences.</p></div><div class="outcome-grid"><div class="outcome"><strong>Originating Works</strong><p>Books, manuscripts, doctrines and major intellectual bodies of work.</p></div><div class="outcome"><strong>Proprietary Systems</strong><p>Frameworks, models, principles, architectures and named methodologies.</p></div><div class="outcome"><strong>Learning Products</strong><p>Courses, masterclasses, learning paths and educational experiences.</p></div><div class="outcome"><strong>Applied Expressions</strong><p>Case studies, projects, applications, podcasts, events and editorial work.</p></div></div></div></section>
-<!-- BOOKS INTEGRATED EXPERIENCE — START -->
-<section class="books-integrated books-featured" id="books-integrated-experience" aria-labelledby="books-featured-title">
-  <div class="container books-featured__container">
-    <div class="books-featured__copy">
+</header><main>
+<section class="page-hero books-page-hero">
+  <div class="container books-page-hero__container">
+    <div class="books-page-hero__copy">
+      <div class="eyebrow">Books · Intellectual Property</div>
+      <h1>Ideas that become bodies of work.</h1>
+      <p class="lead">Books are originating intellectual assets. They can give birth to frameworks, courses, masterclasses, learning paths, case studies, conversations and applications.</p>
+    </div>
+    <div class="books-page-hero__featured">
+      <div class="books-featured__copy">
       <div class="eyebrow">Featured</div>
       <h2 id="books-featured-title">The War <em>Within.</em></h2>
       <span class="books-rule" aria-hidden="true"></span>
@@ -192,9 +217,9 @@
     <div class="books-featured__cover">
       <img src="../assets/images/books-page/featured-war-within.jpg" alt="The War Within book cover from the supplied reference" loading="lazy">
     </div>
+    </div>
   </div>
 </section>
-
 <section class="books-integrated books-shelf" aria-labelledby="books-shelf-title">
   <div class="container">
     <div class="books-section-head">
@@ -262,6 +287,7 @@
   </div>
 </section>
 
+
 <section class="books-integrated books-affiliate" aria-labelledby="books-affiliate-title">
   <div class="container">
     <div class="books-affiliate__inner">
@@ -274,6 +300,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="books-integrated books-reading" aria-labelledby="books-reading-title">
   <div class="container">
@@ -314,6 +341,11 @@
   </div>
 </section>
 
+
+<section class="section dark"><div class="container"><div class="section-head"><div><div class="eyebrow">IP Hierarchy</div><h2>Protect the source. Expand the expression.</h2></div><p class="muted">Not everything on the website has the same intellectual status. Some assets are source works; others are derivative learning or application experiences.</p></div><div class="outcome-grid"><div class="outcome"><strong>Originating Works</strong><p>Books, manuscripts, doctrines and major intellectual bodies of work.</p></div><div class="outcome"><strong>Proprietary Systems</strong><p>Frameworks, models, principles, architectures and named methodologies.</p></div><div class="outcome"><strong>Learning Products</strong><p>Courses, masterclasses, learning paths and educational experiences.</p></div><div class="outcome"><strong>Applied Expressions</strong><p>Case studies, projects, applications, podcasts, events and editorial work.</p></div></div></div></section>
+<!-- BOOKS INTEGRATED EXPERIENCE — START -->
+
+<section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">Current Works</div><h2>The intellectual library.</h2></div><p>Each work has its own concepts, relationships and downstream expressions.</p></div><div class="card-grid"><article class="card course-card"><div><div class="eyebrow">Book / Manuscript · Primary Manuscript</div><h3>The War Within</h3><p>A philosophical and strategic exploration of the internal battles that shape identity, attention, decisions and personal direction.</p></div><a class="btn btn-primary" href="the-war-within/">Explore Book</a></article><article class="card course-card"><div><div class="eyebrow">Book / Intellectual Work · Concept / Framework System</div><h3>The Laws of Strategic Thinking</h3><p>A developing body of principles for seeing reality, interpreting patterns, thinking strategically and making deliberate decisions.</p></div><a class="btn btn-primary" href="laws-of-strategic-thinking/">Explore Book</a></article></div></div></section>
 <section class="books-integrated books-newsletter" aria-labelledby="books-newsletter-title">
   <div class="container">
     <div class="eyebrow">Stay in Formation</div>
@@ -324,6 +356,7 @@
   </div>
 </section>
 <!-- BOOKS INTEGRATED EXPERIENCE — END -->
+
 
 </main>
 <footer class="site-footer">
