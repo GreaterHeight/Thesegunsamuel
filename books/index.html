@@ -152,6 +152,13 @@
 }
 </style>
 
+<style id="books-reading-pagination-css">
+.books-reading-pagination{display:flex;justify-content:center;align-items:center;gap:7px;margin:34px 0 8px}
+.books-page-numbers{display:flex;gap:7px}
+.books-page-button{min-width:36px;height:36px;padding:0 9px;border:1px solid #d7aaa4;background:transparent;color:inherit;cursor:pointer;font:inherit;font-size:.82rem}
+.books-page-button.is-active{background:#8c0d0c;border-color:#8c0d0c;color:#fff}
+.books-page-button:disabled{opacity:.35;cursor:not-allowed}
+</style>
 </head><body>
 <header class="site-header ss-global-header" data-global-nav="">
 <div class="container ss-nav-container">
@@ -275,12 +282,12 @@
         <div class="books-actions"><a class="btn btn-primary" href="../contact/">Enquire to Enrol</a><a class="btn btn-secondary" href="../masterclasses/">Programme Details</a></div>
       </article>
 
-      <article class="books-product" data-title="TECHSPIBUS Masterclass">
+      <article class="books-product" data-title="The Laws of Strategic Thinking">
         <div class="books-product__cover"><img src="../assets/images/books-page/course-techspibus-masterclass.jpg" alt="TECHSPIBUS Masterclass cover" loading="lazy"></div>
-        <div class="eyebrow">Masterclass</div>
-        <h3>TECHSPIBUS™ Masterclass</h3>
-        <p>The framework taught end-to-end — Technology, Spirituality, Business as one operating system, scaled through the five IBONK levels.</p>
-        <div class="books-actions"><a class="btn btn-primary" href="../contact/">Enquire to Enrol</a><a class="btn btn-secondary" href="../frameworks/">The Framework</a></div>
+        <div class="eyebrow">BOOK</div>
+        <h3>The Laws of Strategic Thinking</h3>
+        <p>A developing body of principles for seeing reality, interpreting patterns, thinking strategically and making deliberate decisions.</p>
+        <div class="books-actions"><a class="btn btn-primary" href="../contact/">Enquire to Enrol</a><a class="btn btn-secondary" href="laws-of-strategic-thinking/">Explore Book</a></div>
       </article>
     </div>
     <p class="books-empty" id="books-shelf-empty" hidden>No titles match that search.</p>
@@ -460,7 +467,12 @@
   <span class="books-reading-tooltip"><strong>Systematic Theology</strong><br>Wayne Grudem&#x27;s exhaustive introduction to biblical doctrine — the standard reference for serious study of Christian theology, chapter by chapter.</span>
 </a>
 </div>
-    <p class="books-empty" id="books-reading-empty" hidden>No books match your current search and filters. <button type="button" id="books-reading-clear">Clear all filters</button></p>
+    <nav class="books-reading-pagination" id="books-reading-pagination" aria-label="Recommended books pages">
+<button type="button" class="books-page-button" id="books-reading-prev" aria-label="Previous page">←</button>
+<div class="books-page-numbers" id="books-page-numbers"></div>
+<button type="button" class="books-page-button" id="books-reading-next" aria-label="Next page">→</button>
+</nav>
+<p class="books-empty" id="books-reading-empty" hidden>No books match your current search and filters. <button type="button" id="books-reading-clear">Clear all filters</button></p>
   </div>
 </section>
 
@@ -468,7 +480,7 @@
 <section class="section dark"><div class="container"><div class="section-head"><div><div class="eyebrow">IP Hierarchy</div><h2>Protect the source. Expand the expression.</h2></div><p class="muted">Not everything on the website has the same intellectual status. Some assets are source works; others are derivative learning or application experiences.</p></div><div class="outcome-grid"><div class="outcome"><strong>Originating Works</strong><p>Books, manuscripts, doctrines and major intellectual bodies of work.</p></div><div class="outcome"><strong>Proprietary Systems</strong><p>Frameworks, models, principles, architectures and named methodologies.</p></div><div class="outcome"><strong>Learning Products</strong><p>Courses, masterclasses, learning paths and educational experiences.</p></div><div class="outcome"><strong>Applied Expressions</strong><p>Case studies, projects, applications, podcasts, events and editorial work.</p></div></div></div></section>
 <!-- BOOKS INTEGRATED EXPERIENCE — START -->
 
-<section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">Current Works</div><h2>The intellectual library.</h2></div><p>Each work has its own concepts, relationships and downstream expressions.</p></div><div class="card-grid"><article class="card course-card"><div><div class="eyebrow">Book / Manuscript · Primary Manuscript</div><h3>The War Within</h3><p>A philosophical and strategic exploration of the internal battles that shape identity, attention, decisions and personal direction.</p></div><a class="btn btn-primary" href="the-war-within/">Explore Book</a></article><article class="card course-card"><div><div class="eyebrow">Book / Intellectual Work · Concept / Framework System</div><h3>The Laws of Strategic Thinking</h3><p>A developing body of principles for seeing reality, interpreting patterns, thinking strategically and making deliberate decisions.</p></div><a class="btn btn-primary" href="laws-of-strategic-thinking/">Explore Book</a></article></div></div></section>
+
 <section class="books-integrated books-newsletter" aria-labelledby="books-newsletter-title">
   <div class="container">
     <div class="eyebrow">Stay in Formation</div>
@@ -531,48 +543,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
 <script id="books-reading-controller">
 document.addEventListener("DOMContentLoaded",function(){
-  const input=document.getElementById("books-reading-search");
-  const grid=document.getElementById("books-reading-grid");
-  const empty=document.getElementById("books-reading-empty");
-  const cards=[...document.querySelectorAll(".books-reading-card")];
-  const buttons=[...document.querySelectorAll("#books-filter-chips button")];
-  const active=new Set();
-
-  function apply(){
-    const q=(input?.value||"").trim().toLowerCase();
-    let count=0;
-    cards.forEach(card=>{
-      const title=(card.dataset.title||"").toLowerCase();
-      const cats=(card.dataset.cat||"").split(/\s+/);
-      const showSearch=!q||title.includes(q);
-      const showCategory=active.size===0||[...active].some(k=>cats.includes(k));
-      card.hidden=!(showSearch&&showCategory);
-      if(showSearch&&showCategory) count++;
-    });
-    if(grid) grid.hidden=count===0;
-    if(empty) empty.hidden=count!==0;
-  }
-
-  buttons.forEach(button=>{
-    button.setAttribute("aria-pressed","false");
-    button.addEventListener("click",()=>{
-      const key=button.dataset.filter;
-      if(active.has(key)){ active.delete(key); button.classList.remove("is-active"); }
-      else { active.add(key); button.classList.add("is-active"); }
-      button.setAttribute("aria-pressed",active.has(key)?"true":"false");
-      apply();
-    });
-  });
-  input?.addEventListener("input",apply);
-  document.getElementById("books-reading-clear")?.addEventListener("click",()=>{
-    active.clear();
-    buttons.forEach(b=>{b.classList.remove("is-active");b.setAttribute("aria-pressed","false");});
-    if(input) input.value="";
-    apply(); input?.focus();
-  });
+ const input=document.getElementById("books-reading-search"),grid=document.getElementById("books-reading-grid"),
+ empty=document.getElementById("books-reading-empty"),cards=[...document.querySelectorAll(".books-reading-card")],
+ buttons=[...document.querySelectorAll("#books-filter-chips button")],pager=document.getElementById("books-reading-pagination"),
+ nums=document.getElementById("books-page-numbers"),prev=document.getElementById("books-reading-prev"),next=document.getElementById("books-reading-next");
+ const SIZE=10; let page=1; const active=new Set();
+ function filtered(){
+   const q=(input?.value||"").trim().toLowerCase();
+   return cards.filter(c=>{
+     const title=(c.dataset.title||"").toLowerCase(), cats=(c.dataset.cat||"").split(/\s+/);
+     return (!q||title.includes(q)) && (!active.size||[...active].some(f=>cats.includes(f)));
+   });
+ }
+ function render(){
+   const list=filtered(), pages=Math.max(1,Math.ceil(list.length/SIZE)); if(page>pages) page=pages;
+   cards.forEach(c=>c.hidden=true);
+   list.slice((page-1)*SIZE,page*SIZE).forEach(c=>c.hidden=false);
+   grid.hidden=!list.length; empty.hidden=!!list.length; nums.innerHTML="";
+   pager.hidden=pages<=1; prev.disabled=page===1; next.disabled=page===pages;
+   for(let i=1;i<=pages;i++){const b=document.createElement("button");b.type="button";b.className="books-page-button"+(i===page?" is-active":"");b.textContent=i;b.setAttribute("aria-label","Go to page "+i);if(i===page)b.setAttribute("aria-current","page");b.onclick=()=>{page=i;render()};nums.appendChild(b);}
+ }
+ buttons.forEach(b=>{b.setAttribute("aria-pressed","false");b.onclick=()=>{const f=b.dataset.filter;active.has(f)?(active.delete(f),b.classList.remove("is-active")):(active.add(f),b.classList.add("is-active"));b.setAttribute("aria-pressed",active.has(f));page=1;render();};});
+ input?.addEventListener("input",()=>{page=1;render()});
+ prev.onclick=()=>{if(page>1){page--;render()}};
+ next.onclick=()=>{const p=Math.ceil(filtered().length/SIZE);if(page<p){page++;render()}};
+ document.getElementById("books-reading-clear")?.addEventListener("click",()=>{active.clear();buttons.forEach(b=>{b.classList.remove("is-active");b.setAttribute("aria-pressed","false")});if(input)input.value="";page=1;render();input?.focus()});
+ render();
 });
 </script>
-
 </body></html>
