@@ -87,52 +87,40 @@
 }
 </style>
 
-<style id="final-explore-card-typography">
-#knowledgeGraphCards .kg-card,
-.knowledge-graph-grid .kg-card {
-  font-size: 0.82rem !important;
-}
-#knowledgeGraphCards .kg-card h3,
-.knowledge-graph-grid .kg-card h3 {
+<style id="final-explore-actual-card-typography">
+/* The live Explore renderer uses .results .node h2.
+   Keep Knowledge Graph titles compact enough for a dense 3-column graph. */
+.results .node h2 {
   font-family: "Cormorant Garamond", Georgia, serif !important;
-  font-size: clamp(1.25rem, 1.55vw, 1.65rem) !important;
-  line-height: 1.02 !important;
+  font-size: clamp(1.20rem, 1.8vw, 1.50rem) !important;
+  line-height: 1.05 !important;
   font-weight: 500 !important;
-  letter-spacing: -0.01em !important;
-  margin: 8px 0 10px !important;
+  letter-spacing: -0.005em !important;
+  margin: 0 !important;
+  overflow-wrap: anywhere !important;
 }
-#knowledgeGraphCards .kg-card p,
-.knowledge-graph-grid .kg-card p {
-  font-size: 0.78rem !important;
-  line-height: 1.35 !important;
+
+.results .node {
+  padding: 16px !important;
+  min-height: 170px !important;
 }
-#knowledgeGraphCards .kg-card-type,
-.knowledge-graph-grid .kg-card-type {
+
+.results .node-open {
   font-family: "Tenor Sans", Arial, sans-serif !important;
   font-size: 0.58rem !important;
   line-height: 1.2 !important;
-  letter-spacing: 0.06em !important;
-  text-transform: uppercase !important;
 }
-#knowledgeGraphCards .kg-card-meta,
-.knowledge-graph-grid .kg-card-meta {
-  font-family: "Tenor Sans", Arial, sans-serif !important;
-  font-size: 0.58rem !important;
-  line-height: 1.25 !important;
-}
-#knowledgeGraphCards .kg-card-action,
-.knowledge-graph-grid .kg-card-action {
-  font-family: "Tenor Sans", Arial, sans-serif !important;
-  font-size: 0.62rem !important;
-  line-height: 1.2 !important;
-}
+
 @media (max-width: 900px) {
-  #knowledgeGraphCards .kg-card h3,
-  .knowledge-graph-grid .kg-card h3 { font-size: 1.35rem !important; }
+  .results .node h2 {
+    font-size: 1.28rem !important;
+  }
 }
+
 @media (max-width: 600px) {
-  #knowledgeGraphCards .kg-card h3,
-  .knowledge-graph-grid .kg-card h3 { font-size: 1.45rem !important; }
+  .results .node h2 {
+    font-size: 1.35rem !important;
+  }
 }
 </style>
 
