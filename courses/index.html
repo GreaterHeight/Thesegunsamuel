@@ -103,12 +103,12 @@
 }
 </style>
 
-
 <style id="final-courses-placeholder-fix">
-/* FINAL COURSES IMAGE PLACEHOLDER
-   This is the temporary image state until a real course image is assigned. */
-.courses-page .arch-frame[data-placeholder="image"],
-body .arch-frame[data-placeholder="image"] {
+/* FINAL /courses/ TEMPORARY IMAGE STATE
+   The JPGs currently in these frames are not the assigned final artwork.
+   Therefore data-real-image="false" keeps the placeholder active. */
+.courses-page .arch-frame[data-real-image="false"],
+body .arch-frame[data-real-image="false"] {
   position: relative !important;
   overflow: hidden !important;
   aspect-ratio: 4 / 5 !important;
@@ -121,21 +121,19 @@ body .arch-frame[data-placeholder="image"] {
   border-radius: var(--r-4, 18px) var(--r-4, 18px) var(--r-2, 12px) var(--r-2, 12px) !important;
 }
 
-/* Hide the old textual placeholder title; the badge is the visual placeholder. */
-.courses-page .arch-frame[data-placeholder="image"] .course-placeholder-title,
-body .arch-frame[data-placeholder="image"] .course-placeholder-title {
+.courses-page .arch-frame[data-real-image="false"] .course-placeholder-title,
+body .arch-frame[data-real-image="false"] .course-placeholder-title {
   display: none !important;
 }
 
-/* Hide a failed/temporary course image so it cannot cover the gradient. */
-.courses-page .arch-frame[data-placeholder="image"] > img,
-body .arch-frame[data-placeholder="image"] > img {
+.courses-page .arch-frame[data-real-image="false"] > img,
+body .arch-frame[data-real-image="false"] > img {
   opacity: 0 !important;
+  visibility: hidden !important;
 }
 
-/* Center the supplied Segun Samuel badge over the gradient. */
-.courses-page .arch-frame[data-placeholder="image"]::after,
-body .arch-frame[data-placeholder="image"]::after {
+.courses-page .arch-frame[data-real-image="false"]::after,
+body .arch-frame[data-real-image="false"]::after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
@@ -146,6 +144,16 @@ body .arch-frame[data-placeholder="image"]::after {
   background-size: min(42%, 180px) auto !important;
   opacity: .88 !important;
   pointer-events: none !important;
+}
+
+.courses-page .arch-frame[data-real-image="true"],
+body .arch-frame[data-real-image="true"] {
+  background: none !important;
+}
+
+.courses-page .arch-frame[data-real-image="true"]::after,
+body .arch-frame[data-real-image="true"]::after {
+  display: none !important;
 }
 </style>
 
@@ -609,41 +617,9 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 
-<script id="global-placeholder-runtime">
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll('.arch-frame[data-placeholder="image"], .image-placeholder[data-placeholder="image"]').forEach(function (frame) {
-    var img = frame.querySelector("img");
-    if (!img) return;
-
-    function showRealImage() {
-      frame.removeAttribute("data-placeholder");
-      frame.classList.remove("image-placeholder");
-      img.style.opacity = "";
-      img.style.display = "";
-    }
-
-    function showPlaceholder() {
-      frame.setAttribute("data-placeholder", "image");
-      img.style.opacity = "0";
-      img.style.display = "";
-    }
-
-    if (img.complete && img.naturalWidth > 0) {
-      showRealImage();
-    } else if (img.complete && img.naturalWidth === 0) {
-      showPlaceholder();
-    }
-
-    img.addEventListener("load", showRealImage, { once: true });
-    img.addEventListener("error", showPlaceholder);
-  });
-});
-</script>
-
-
 <script id="courses-placeholder-runtime">
 document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".arch-frame[data-placeholder='image']").forEach(function (frame) {
+  document.querySelectorAll(".arch-frame").forEach(function (frame) {
     var img = frame.querySelector("img");
     if (!img) return;
 
@@ -651,10 +627,12 @@ document.addEventListener("DOMContentLoaded", function () {
       frame.removeAttribute("data-placeholder");
       frame.classList.remove("image-placeholder");
       img.style.opacity = "";
-      img.style.display = "";
+      img.style.visibility = "";
     } else {
       frame.setAttribute("data-placeholder", "image");
+      frame.setAttribute("data-real-image", "false");
       img.style.opacity = "0";
+      img.style.visibility = "hidden";
     }
   });
 });
