@@ -1,0 +1,139 @@
+{
+  "duplicate_id_before": 2,
+  "duplicate_id_after": 1,
+  "literal_search_artifact_pages": [],
+  "explore_shell": {
+    "has_header": false,
+    "has_nav": true,
+    "has_footer": true,
+    "body_classes": []
+  },
+  "checkout_shell": {
+    "has_header": false,
+    "has_nav": true,
+    "has_footer": true,
+    "body_classes": []
+  },
+  "markdown_classification": {
+    "BOOKS_PAGE_INTEGRATION_NOTES.md": {
+      "classification": "ARCHIVE / MOVE OUT OF PRODUCTION ROOT",
+      "size_bytes": 789,
+      "first_heading": "Books Page Integration"
+    },
+    "FINAL_100_PERCENT_READINESS_REPORT.md": {
+      "classification": "ARCHIVE / MOVE OUT OF PRODUCTION ROOT",
+      "size_bytes": 1211,
+      "first_heading": "SegunSamuel.com \u2014 Final 100% Readiness Report"
+    },
+    "FINAL_CHECKOUT_AND_PLACEHOLDER_STANDARD.md": {
+      "classification": "ARCHIVE / MOVE OUT OF PRODUCTION ROOT",
+      "size_bytes": 731,
+      "first_heading": "Final Checkout & Placeholder Standard"
+    },
+    "FINAL_COMMERCE_CLOSURE.md": {
+      "classification": "ARCHIVE / MOVE OUT OF PRODUCTION ROOT",
+      "size_bytes": 277,
+      "first_heading": "Final Commerce Closure \u2014 Advanced Data Analytics & Power BI"
+    },
+    "FINAL_COMMERCE_PRICE_CORRECTION.md": {
+      "classification": "ARCHIVE / MOVE OUT OF PRODUCTION ROOT",
+      "size_bytes": 485,
+      "first_heading": "Final Commerce Price Correction"
+    },
+    "FINAL_FOOTER_AND_PRODUCTION_CLEANUP.md": {
+      "classification": "ARCHIVE / MOVE OUT OF PRODUCTION ROOT",
+      "size_bytes": 2052,
+      "first_heading": "Final Footer & Production Cleanup"
+    },
+    "README.md": {
+      "classification": "KEEP",
+      "size_bytes": 3867,
+      "first_heading": "SegunSamuel Website \u2014 v3.5 Complete Website Foundation"
+    }
+  },
+  "moved_to_project_docs": [
+    "BOOKS_PAGE_INTEGRATION_NOTES.md",
+    "FINAL_100_PERCENT_READINESS_REPORT.md",
+    "FINAL_CHECKOUT_AND_PLACEHOLDER_STANDARD.md",
+    "FINAL_COMMERCE_CLOSURE.md",
+    "FINAL_COMMERCE_PRICE_CORRECTION.md",
+    "FINAL_FOOTER_AND_PRODUCTION_CLEANUP.md"
+  ],
+  "footer_signatures": [
+    "0dd980533e1e"
+  ],
+  "broken_local_links": [
+    [
+      "search/index.html",
+      "${e.route ? path(e.route) : "
+    ]
+  ],
+  "duplicate_ids": [],
+  "important_routes": {
+    "/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/learn/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/think/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/apply/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/listen/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/explore/": {
+      "exists": true,
+      "header": false,
+      "footer": true
+    },
+    "/courses/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/books/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/frameworks/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/models/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/masterclasses/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/contact/": {
+      "exists": true,
+      "header": true,
+      "footer": true
+    },
+    "/checkout/": {
+      "exists": true,
+      "header": false,
+      "footer": true
+    }
+  }
+}
