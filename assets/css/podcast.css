@@ -55,3 +55,131 @@
 .podcast-player-shell{margin-top:20px;padding:22px;border-radius:12px;background:var(--pod-green);color:#fff}.podcast-player-controls{display:flex;align-items:center;gap:14px}.podcast-play{width:52px;height:52px;border-radius:50%;border:1px solid rgba(255,255,255,.35);background:#fff;color:var(--pod-green);cursor:pointer;font:700 15px var(--sans,"Tenor Sans",sans-serif);display:grid;place-items:center}.podcast-play:hover{transform:translateY(-1px)}.podcast-player-title{font:600 10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;text-transform:uppercase}.podcast-player-sub{margin:4px 0 0;color:#dce9e3;font:1rem var(--body,"Crimson Pro",serif)}.podcast-player-message{margin-top:14px;padding:11px 13px;border-radius:7px;background:rgba(255,255,255,.1);font:600 10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.05em;display:none}.podcast-player-message.is-visible{display:block}
 .podcast-transcript{margin-top:20px;border:1px solid var(--pod-line);border-radius:9px;background:#fffdf9}.podcast-transcript summary{padding:15px 17px;cursor:pointer;font:600 10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em;text-transform:uppercase}.podcast-transcript-body{padding:0 18px 18px;font:1rem/1.65 var(--body,"Crimson Pro",serif);color:#304b40}
 @media(max-width:700px){.podcast-two-col{grid-template-columns:1fr}.podcast-layer{padding:48px 0}.podcast-layer-head{margin-bottom:16px}.podcast-quote{font-size:1.3rem}}
+
+/* Podcast detail compact presentation — aligned to the boxed panel language
+   used by the Principles That Survive Change episode. */
+.podcast-shell .podcast-episode-banner,
+.podcast-shell > .breadcrumbs{display:none!important}
+
+.podcast-shell .podcast-detail-hero{
+  padding:52px 0 38px;
+}
+.podcast-shell .podcast-detail-hero .podcast-detail-grid{
+  gap:32px;
+}
+.podcast-shell .podcast-detail-hero h1{
+  font-size:clamp(3rem,6vw,5.5rem);
+}
+.podcast-shell .podcast-detail-main{
+  padding:30px 0 62px;
+}
+.podcast-shell .podcast-layer{
+  max-width:1120px;
+  margin:0 auto 18px;
+  padding:28px 30px;
+  border:1px solid var(--pod-line);
+  border-radius:13px;
+  background:#fffdf9;
+}
+.podcast-shell .podcast-layer .container,
+.podcast-shell .podcast-layer .container--narrow{
+  max-width:none;
+  padding:0;
+}
+.podcast-shell .podcast-layer-head{
+  margin-bottom:10px;
+}
+.podcast-shell .podcast-layer h2{
+  font-size:clamp(1.8rem,3vw,2.55rem);
+  margin:0 0 14px;
+}
+.podcast-shell .podcast-layer h3{
+  font-size:1.35rem;
+  margin:16px 0 10px;
+}
+.podcast-shell .podcast-layer--consume,
+.podcast-shell .podcast-layer--understand,
+.podcast-shell .podcast-layer--apply,
+.podcast-shell .podcast-layer--build{
+  background:#fffdf9;
+}
+.podcast-shell .podcast-two-col{
+  gap:16px;
+}
+.podcast-shell .podcast-two-col > div,
+.podcast-shell .podcast-apply-card{
+  border:1px solid var(--pod-line);
+  border-radius:10px;
+  background:#fff;
+  padding:18px;
+}
+.podcast-shell .podcast-frameworks{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.podcast-shell .podcast-framework{
+  border:1px solid var(--pod-line);
+  border-radius:8px;
+  padding:10px 13px;
+  background:#f7fbf8;
+  text-decoration:none;
+  color:var(--pod-green);
+  font:600 9px var(--sans,"Tenor Sans",sans-serif);
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.podcast-shell .podcast-link-list{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+.podcast-shell .podcast-link-list li{
+  margin:0;
+}
+.podcast-shell .podcast-link-list li a{
+  display:block;
+  height:100%;
+  border:1px solid var(--pod-line);
+  border-radius:10px;
+  padding:16px;
+  background:#fff;
+  color:var(--pod-green);
+  text-decoration:none;
+  font:500 1.15rem/1.2 var(--display,"Cormorant Garamond",serif);
+}
+.podcast-shell .podcast-link-list li a:hover{
+  border-color:rgba(0,48,32,.35);
+  transform:translateY(-2px);
+}
+.podcast-shell .podcast-cta-band{
+  background:#0d3d28!important;
+  color:#fff!important;
+  margin-top:18px;
+  padding:34px 0!important;
+}
+.podcast-shell .podcast-cta-band .podcast-btn-secondary{
+  background:#fffdf9!important;
+  color:var(--pod-green)!important;
+  border-color:#fffdf9!important;
+}
+.podcast-shell .podcast-related-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.podcast-shell .podcast-related-card{
+  min-height:150px;
+  display:flex;
+  flex-direction:column;
+}
+.podcast-shell .podcast-related-card p{
+  flex:1;
+}
+@media(max-width:700px){
+  .podcast-shell .podcast-layer{padding:22px 18px}
+  .podcast-shell .podcast-link-list,
+  .podcast-shell .podcast-related-grid{grid-template-columns:1fr}
+}
