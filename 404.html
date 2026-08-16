@@ -171,59 +171,105 @@
 </div>
 </header>
 
-<style id="404-page-final">
-.error-hero{min-height:68vh;display:flex;align-items:center;padding:96px 0 110px;}
-.error-hero .container.center{text-align:center;max-width:980px;margin-inline:auto;}
-.error-code{font-family:var(--display,"Cormorant Garamond",serif);font-size:clamp(7rem,18vw,13rem);line-height:.72;margin:0 0 26px;letter-spacing:-.055em;color:var(--teal,#147c73);opacity:.18;}
-.error-hero .eyebrow{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;}
-.error-hero .page-title{font-family:var(--display,"Cormorant Garamond",serif);font-size:clamp(2.5rem,5vw,5rem);line-height:1.02;max-width:850px;margin:16px auto;}
-.error-hero .page-title em{font-style:italic;}
-.error-hero .grad-rule{width:96px;height:2px;border:0;margin:26px auto;background:linear-gradient(90deg,var(--teal,#147c73),var(--gold,#f5c800));}
-.error-hero .lead{max-width:700px;font-size:clamp(1rem,1.4vw,1.2rem);line-height:1.75;}
-.error-hero .search-bar{display:flex;max-width:680px;margin:32px auto 0;gap:10px;}
-.error-hero .search-bar input{flex:1;min-width:0;padding:15px 18px;border:1px solid rgba(13,61,40,.22);border-radius:8px;background:var(--cream-1,#fffdf7);font:inherit;}
-.error-hero .btn-row{display:flex;gap:12px;flex-wrap:wrap;}
-.error-hero .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;}
-.error-hero .btn svg{width:16px;height:16px;}
-.error-hero .footer-legal{display:flex;gap:18px;flex-wrap:wrap;list-style:none;padding:0;}
-@media(max-width:680px){
- .error-hero{min-height:auto;padding:72px 0 80px;}
- .error-hero .search-bar{flex-direction:column;}
- .error-hero .search-bar .btn{width:100%;}
- .error-hero .btn-row{flex-direction:column;align-items:stretch;}
- .error-hero .btn-row .btn{width:100%;}
- .error-hero .footer-legal{justify-content:center;gap:10px 16px;}
+<style id="segun-404-final-design">
+:root{--404-cream:#f8f5ed;--404-green:#003f2d;--404-green-2:#0b5945;--404-gold:#c99a27;--404-line:rgba(0,63,45,.18)}
+.error404-page{background:var(--404-cream);color:var(--404-green);overflow:hidden}
+.error404-hero{position:relative;min-height:660px;display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);background:var(--404-cream)}
+.error404-copy{position:relative;z-index:3;padding:92px clamp(28px,8vw,118px) 72px;display:flex;flex-direction:column;justify-content:center}
+.error404-eyebrow{font-family:var(--sans,"Tenor Sans",sans-serif);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.error404-eyebrow:after{content:"";width:72px;height:2px;background:var(--404-gold)}
+.error404-code{font-family:var(--display,"Cormorant Garamond",serif);font-size:clamp(8rem,15vw,13rem);line-height:.7;letter-spacing:-.06em;font-weight:500;margin:0;color:var(--404-green)}
+.error404-title{font-family:var(--display,"Cormorant Garamond",serif);font-size:clamp(3rem,5.3vw,5.8rem);line-height:.94;letter-spacing:-.035em;font-weight:500;margin:38px 0 25px;color:#111}
+.error404-title em{font-style:italic}
+.error404-rule{width:78px;height:2px;background:linear-gradient(90deg,var(--404-green),var(--404-gold));margin-bottom:25px}
+.error404-lead{font-family:var(--body,"Crimson Pro",serif);font-size:20px;line-height:1.5;max-width:590px;color:#18362c;margin:0 0 25px}
+.error404-search{display:flex;max-width:610px;height:54px;margin-bottom:18px}
+.error404-search input{flex:1;min-width:0;border:1px solid var(--404-line);border-right:0;border-radius:7px 0 0 7px;background:#fffdf8;padding:0 18px;font:16px var(--body,"Crimson Pro",serif);color:var(--404-green)}
+.error404-search button{border:0;border-radius:0 7px 7px 0;background:var(--404-green);color:#fff;padding:0 27px;font:600 10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.15em;text-transform:uppercase;cursor:pointer}
+.error404-actions{display:flex;gap:13px;flex-wrap:wrap}
+.error404-btn{min-height:49px;padding:0 22px;border-radius:6px;display:inline-flex;align-items:center;gap:12px;font:600 10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.error404-btn-primary{background:var(--404-green);color:#fff}
+.error404-btn-secondary{border:1px solid rgba(0,63,45,.45);color:var(--404-green);background:rgba(255,255,255,.38)}
+.error404-art{position:relative;min-height:660px;background-image:linear-gradient(90deg,var(--404-cream) 0%,rgba(248,245,237,.35) 18%,rgba(248,245,237,0) 45%),url("/Thesegunsamuel/assets/images/404-mountain-path.jpg");background-size:cover;background-position:center;overflow:hidden}
+.error404-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(248,245,237,.04),rgba(0,63,45,.12))}
+.error404-compass{position:absolute;z-index:2;right:9%;top:9%;width:170px;height:170px;border:1px dashed rgba(0,63,45,.3);border-radius:50%;opacity:.65}
+.error404-compass:before,.error404-compass:after{content:"";position:absolute;left:50%;top:50%;background:rgba(0,63,45,.45);transform-origin:center}
+.error404-compass:before{width:1px;height:145px;transform:translate(-50%,-50%)}
+.error404-compass:after{height:1px;width:145px;transform:translate(-50%,-50%)}
+.error404-compass span{position:absolute;font:10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em}
+.error404-compass .n{top:-18px;left:50%;transform:translateX(-50%)}.error404-compass .e{right:-18px;top:50%;transform:translateY(-50%)}.error404-compass .s{bottom:-18px;left:50%;transform:translateX(-50%)}.error404-compass .w{left:-18px;top:50%;transform:translateY(-50%)}
+.error404-routes{background:#fffdf8;padding:52px clamp(24px,7vw,110px) 65px;border-top:1px solid rgba(0,63,45,.1)}
+.error404-routes-head{text-align:center;margin-bottom:28px}
+.error404-routes-mark{font-size:31px;color:var(--404-gold);line-height:1;margin-bottom:10px}
+.error404-routes-title{font:600 13px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.25em;text-transform:uppercase;margin:0;color:#142d25}
+.error404-route-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;max-width:1100px;margin:0 auto}
+.error404-route{min-height:155px;border:1px solid rgba(0,63,45,.13);border-radius:7px;padding:23px 17px;text-align:center;text-decoration:none;color:var(--404-green);background:#fffdf9;transition:transform .2s ease,box-shadow .2s ease}
+.error404-route:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(0,63,45,.08)}
+.error404-route-icon{width:48px;height:48px;margin:0 auto 13px;border-radius:50%;display:grid;place-items:center;background:#e8eee9;font-size:22px}
+.error404-route h3{font:500 19px var(--display,"Cormorant Garamond",serif);margin:0 0 5px}
+.error404-route p{font:14px var(--body,"Crimson Pro",serif);line-height:1.3;margin:0 0 7px;color:#40544c}
+.error404-route-arrow{font:17px var(--body,"Crimson Pro",serif)}
+@media(max-width:900px){
+ .error404-hero{grid-template-columns:1fr;min-height:auto}
+ .error404-copy{padding:70px 28px 55px}
+ .error404-art{min-height:420px;order:-1;background-position:center}
+ .error404-compass{width:130px;height:130px;right:8%;top:8%}
+ .error404-route-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:520px){
+ .error404-copy{padding:58px 20px 48px}
+ .error404-code{font-size:7rem}
+ .error404-title{font-size:3rem;margin-top:30px}
+ .error404-lead{font-size:18px}
+ .error404-search{height:auto;display:grid;grid-template-columns:1fr}
+ .error404-search input{height:52px;border-right:1px solid var(--404-line);border-radius:7px;margin-bottom:8px}
+ .error404-search button{height:50px;border-radius:7px}
+ .error404-actions{display:grid;grid-template-columns:1fr}
+ .error404-btn{justify-content:center}
+ .error404-art{min-height:320px}
+ .error404-route-grid{grid-template-columns:1fr}
 }
 </style>
 
-<section class="error-hero" aria-labelledby="nf-title">
-  <div class="container center">
-    <p class="error-code" aria-hidden="true">404</p>
-    <p class="eyebrow eyebrow--plain" style="justify-content:center;" data-reveal>Off the Map</p>
-    <h1 class="page-title" id="nf-title" data-reveal>This page was never <em>in the plan.</em></h1>
-    <hr class="grad-rule grad-rule--center" data-reveal>
-    <p class="lead" style="margin-inline:auto;" data-reveal>The address you followed doesn't exist here — it may have moved, or the link was mistyped. Pause. Look inward. Assess outward. Then navigate:</p>
-    <form class="search-bar" role="search" data-reveal onsubmit="window.location='https://www.google.com/search?q=site%3Agreaterheight.github.io%2FThesegunsamuel%20'+encodeURIComponent(this.q.value);return false;">
-      <label class="visually-hidden" for="nf-search">Search this site</label>
-      <input id="nf-search" name="q" type="search" placeholder="Search segunsamuel.com…">
-      <button class="btn btn--green" type="submit">Search</button>
+
+<main class="error404-page" id="main-content">
+<section class="error404-hero" aria-labelledby="error404-title">
+  <div class="error404-copy">
+    <div class="error404-eyebrow">Off the Map</div>
+    <div class="error404-code" aria-hidden="true">404</div>
+    <h1 class="error404-title" id="error404-title">This page was never <em>in the plan.</em></h1>
+    <div class="error404-rule"></div>
+    <p class="error404-lead">The address you followed doesn't exist here — it may have moved, or the link was mistyped. Pause. Look inward. Assess outward. Then navigate:</p>
+    <form class="error404-search" role="search" action="/Thesegunsamuel/explore/" method="get">
+      <input type="search" name="q" aria-label="Search Segun Samuel" placeholder="Search segunsamuel.com...">
+      <button type="submit">Search</button>
     </form>
-    <div class="btn-row mt-6" style="justify-content:center;" data-reveal>
-      <a class="btn btn--primary" href="/Thesegunsamuel/">Back to Home <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
-      <a class="btn btn--secondary" href="/Thesegunsamuel/contact/">Report a Broken Link</a>
+    <div class="error404-actions">
+      <a class="error404-btn error404-btn-primary" href="/Thesegunsamuel/">Back to Home <span>→</span></a>
+      <a class="error404-btn error404-btn-secondary" href="/Thesegunsamuel/contact/?subject=Broken%20Link">Report a Broken Link <span>↗</span></a>
     </div>
-    <nav class="mt-8" aria-label="Suggested pages" data-reveal>
-      <p class="card-kicker" style="justify-content:center;text-align:center;">Most travelled routes</p>
-      <ul class="footer-legal" style="justify-content:center;margin-top:0.75rem;">
-        <li><a href="/Thesegunsamuel/about/">About</a></li>
-        <li><a href="/Thesegunsamuel/books/#the-war-within">The War Within</a></li>
-        <li><a href="/Thesegunsamuel/techspibus/">TECHSPIBUS™</a></li>
-        <li><a href="/Thesegunsamuel/speaking/">Speaking</a></li>
-        <li><a href="/Thesegunsamuel/faq/">FAQ</a></li>
-      </ul>
-    </nav>
+  </div>
+  <div class="error404-art" aria-label="Mountain path leading forward">
+    <div class="error404-compass" aria-hidden="true">
+      <span class="n">N</span><span class="e">E</span><span class="s">S</span><span class="w">W</span>
+    </div>
   </div>
 </section>
+<section class="error404-routes" aria-labelledby="routes-title">
+  <div class="error404-routes-head">
+    <div class="error404-routes-mark" aria-hidden="true">✦</div>
+    <h2 class="error404-routes-title" id="routes-title">Most Travelled Routes</h2>
+  </div>
+  <div class="error404-route-grid">
+    <a class="error404-route" href="/Thesegunsamuel/about/"><div class="error404-route-icon">♙</div><h3>About</h3><p>Discover the mission<br>and the man</p><span class="error404-route-arrow">→</span></a>
+    <a class="error404-route" href="/Thesegunsamuel/books/"><div class="error404-route-icon">▱</div><h3>The War Within</h3><p>The 17 battles every<br>leader must face</p><span class="error404-route-arrow">→</span></a>
+    <a class="error404-route" href="/Thesegunsamuel/techspibus/"><div class="error404-route-icon">♛</div><h3>TECHSPIBUS™</h3><p>Technology · Spirituality ·<br>Business</p><span class="error404-route-arrow">→</span></a>
+    <a class="error404-route" href="/Thesegunsamuel/speaking/"><div class="error404-route-icon">♬</div><h3>Speaking</h3><p>Engage Segun Samuel<br>for your event</p><span class="error404-route-arrow">→</span></a>
+    <a class="error404-route" href="/Thesegunsamuel/faq/"><div class="error404-route-icon">?</div><h3>FAQ</h3><p>Find answers to common<br>questions</p><span class="error404-route-arrow">→</span></a>
+  </div>
+</section>
+</main>
+
 <footer class="site-footer">
   <div class="footer-grid">
     <div class="footer-brand">
