@@ -1,0 +1,26 @@
+{
+  "episode_template_layers": [
+    "Identity",
+    "Consume",
+    "Understand",
+    "Apply",
+    "Build",
+    "Continue"
+  ],
+  "source_episode_created": true,
+  "source_episode_treated_as_real": true,
+  "audio_player_present": true,
+  "audio_fallback_message": "The audio is coming soon",
+  "audio_url_available": false,
+  "transcript_present": true,
+  "key_questions_present": true,
+  "major_ideas_present": true,
+  "frameworks_present": true,
+  "key_quotes_present": true,
+  "reflection_questions_present": true,
+  "action_steps_present": true,
+  "learning_journey_present": true,
+  "related_articles_present": true,
+  "related_episodes_present": true,
+  "cta_present": true
+}

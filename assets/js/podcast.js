@@ -12,3 +12,32 @@
   fetch(url).then(r=>r.json()).then(d=>{episodes=Array.isArray(d)?d:[];filtersUI();render();}).catch(()=>{status.textContent="Podcast library unavailable.";empty.hidden=false;});
   search.addEventListener("input",()=>{page=1;render();});
 })();
+
+// Audio fallback: keep the play control present even without an audio asset.
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("[data-podcast-play]");
+  if (!button) return;
+  const player = button.closest("[data-podcast-player]");
+  if (!player) return;
+  const audio = player.querySelector("audio");
+  const message = player.querySelector("[data-podcast-player-message]");
+  if (!audio || !audio.getAttribute("src")) {
+    if (message) {
+      message.textContent = "The audio is coming soon";
+      message.classList.add("is-visible");
+    }
+    return;
+  }
+  if (audio.paused) audio.play().catch(()=>{});
+  else audio.pause();
+});
+document.addEventListener("play", e => {
+  const player=e.target.closest?.("[data-podcast-player]");
+  const button=player?.querySelector("[data-podcast-play]");
+  if(button) button.textContent="Ⅱ";
+}, true);
+document.addEventListener("pause", e => {
+  const player=e.target.closest?.("[data-podcast-player]");
+  const button=player?.querySelector("[data-podcast-play]");
+  if(button) button.textContent="▶";
+}, true);
