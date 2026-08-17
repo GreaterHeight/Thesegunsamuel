@@ -47,18 +47,38 @@ document.addEventListener("pause", e => {
     document.querySelectorAll('[data-image-slot]').forEach(function(slot){
       var filename=slot.getAttribute('data-image-slot');
       var base=slot.getAttribute('data-image-base') || '/Thesegunsamuel/assets/images/';
-      var src=base.replace(/\/?$/,'/')+filename;
-      var test=new Image();
-      test.onload=function(){
+      var realSrc=base.replace(/\/?$/,'/')+filename;
+      var img=slot.querySelector('[data-image-placeholder-image]');
+      var fallback=slot.getAttribute('data-image-fallback') || '/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png';
+
+      if(!img){
+        img=document.createElement('img');
+        img.setAttribute('data-image-placeholder-image','');
+        slot.appendChild(img);
+      }
+
+      /* Start in fallback state. */
+      slot.classList.remove('image-slot--real');
+      img.src=fallback;
+      img.alt=slot.getAttribute('data-image-alt') || '';
+
+      /* Probe the exact production asset. */
+      var probe=new Image();
+      probe.onload=function(){
         slot.classList.add('image-slot--real');
-        var img=slot.querySelector('[data-image-placeholder-image]');
-        if(!img){img=document.createElement('img');img.setAttribute('data-image-placeholder-image','');slot.appendChild(img);}
-        img.src=src; img.alt=slot.getAttribute('data-image-alt')||'';
+        img.src=realSrc;
       };
-      test.onerror=function(){slot.classList.remove('image-slot--real');};
-      test.src=src+(src.indexOf('?')>-1?'&':'?')+'slotcheck=1';
+      probe.onerror=function(){
+        slot.classList.remove('image-slot--real');
+        img.src=fallback;
+      };
+      probe.src=realSrc + (realSrc.indexOf('?')>-1?'&':'?') + 'v=' + Date.now();
     });
   }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',resolveImageSlots);
-  else resolveImageSlots();
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',resolveImageSlots);
+  }else{
+    resolveImageSlots();
+  }
 })();
