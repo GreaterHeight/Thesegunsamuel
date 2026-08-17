@@ -459,3 +459,65 @@
 [data-image-slot].image-slot--fallback [data-image-placeholder-image][src=""]{
   display:none!important;
 }
+
+
+/* PODCAST FALLBACK FIX v4
+   The resolver must be loaded by the page.
+   The universal placeholder.jpg is the complete fallback composition:
+   gradient + Segun Samuel badge.
+   No pseudo-element badge is used here.
+*/
+.podcast-shell .podcast-detail-art[data-image-slot]::before,
+.podcast-shell .podcast-detail-art[data-image-slot]::after,
+.podcast-shell .podcast-visual[data-image-slot]::before,
+.podcast-shell .podcast-visual[data-image-slot]::after{
+  display:none!important;
+  content:none!important;
+  background:none!important;
+}
+.podcast-shell .podcast-detail-art[data-image-slot]{
+  position:relative!important;
+  overflow:hidden!important;
+  min-width:0!important;
+  min-height:280px!important;
+  background:linear-gradient(160deg,#dcefea 0%,#eaf5f1 45%,#f3eee4 100%)!important;
+}
+.podcast-shell .podcast-detail-art[data-image-slot] [data-image-placeholder-image]{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  max-width:none!important;
+  max-height:none!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:inherit!important;
+  object-fit:cover!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.podcast-shell .podcast-detail-art[data-image-slot].image-slot--loading [data-image-placeholder-image]{
+  visibility:hidden!important;
+  opacity:0!important;
+}
+.podcast-shell .podcast-detail-art[data-image-slot].image-slot--real [data-image-placeholder-image]{
+  visibility:visible!important;
+  opacity:1!important;
+  object-fit:cover!important;
+}
+.podcast-shell .podcast-detail-art[data-image-slot].image-slot--fallback{
+  background:linear-gradient(160deg,#dcefea 0%,#eaf5f1 45%,#f3eee4 100%)!important;
+}
+.podcast-shell .podcast-detail-art[data-image-slot].image-slot--fallback [data-image-placeholder-image]{
+  visibility:visible!important;
+  opacity:1!important;
+  object-fit:cover!important;
+}
+/* Never expose browser-generated broken-image/alt rendering. */
+.podcast-shell .podcast-detail-art[data-image-slot] img[aria-hidden="true"]{
+  font-size:0!important;
+  color:transparent!important;
+}
