@@ -158,12 +158,6 @@ input:focus{box-shadow:0 0 0 4px rgba(0,48,32,.15)}
     return s;
   }
 
-  function path(route){
-    if(!route) return "#";
-    if(/^https?:\/\//i.test(route)) return route;
-    route=String(route).replace(/^\/+/, "");
-    return "/Thesegunsamuel/" + route;
-  }
   function render(){
     let filtered=items.filter(e=>{
       const hay=[e.name,e.type,e.short_definition,e.long_definition,(e.tags||[]).join(' ')].join(' ').toLowerCase();
