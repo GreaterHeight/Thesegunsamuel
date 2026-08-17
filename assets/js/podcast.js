@@ -41,3 +41,24 @@ document.addEventListener("pause", e => {
   const button=player?.querySelector("[data-podcast-play]");
   if(button) button.textContent="▶";
 }, true);
+
+(function(){
+  function resolveImageSlots(){
+    document.querySelectorAll('[data-image-slot]').forEach(function(slot){
+      var filename=slot.getAttribute('data-image-slot');
+      var base=slot.getAttribute('data-image-base') || '/Thesegunsamuel/assets/images/';
+      var src=base.replace(/\/?$/,'/')+filename;
+      var test=new Image();
+      test.onload=function(){
+        slot.classList.add('image-slot--real');
+        var img=slot.querySelector('[data-image-placeholder-image]');
+        if(!img){img=document.createElement('img');img.setAttribute('data-image-placeholder-image','');slot.appendChild(img);}
+        img.src=src; img.alt=slot.getAttribute('data-image-alt')||'';
+      };
+      test.onerror=function(){slot.classList.remove('image-slot--real');};
+      test.src=src+(src.indexOf('?')>-1?'&':'?')+'slotcheck=1';
+    });
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',resolveImageSlots);
+  else resolveImageSlots();
+})();

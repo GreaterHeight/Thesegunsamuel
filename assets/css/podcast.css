@@ -250,3 +250,18 @@
     grid-template-columns:1fr;
   }
 }
+
+/* Final Podcast contrast corrections */
+.podcast-shell .podcast-feature-card .podcast-btn-primary,
+.podcast-shell .podcast-feature-card a.podcast-btn-primary{background:#8c0d0c!important;color:#fff!important;-webkit-text-fill-color:#fff!important;opacity:1!important}
+.podcast-shell .podcast-player-note{color:#fff!important;-webkit-text-fill-color:#fff!important;opacity:1!important}
+
+/* Production image slots: gradient + badge is fallback only. */
+[data-image-slot]{position:relative;overflow:hidden}
+[data-image-slot] [data-image-placeholder-image]{display:block}
+[data-image-slot].image-slot--real{background:none!important}
+[data-image-slot].image-slot--real [data-image-placeholder-image]{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;padding:0!important;margin:0!important;border:0!important;border-radius:inherit!important;background:none!important;box-shadow:none!important;opacity:1!important}
+.podcast-shell .podcast-image-slot{background:linear-gradient(160deg,#cfe7df 0%,#eaf5f1 45%,#f2eadb 100%);aspect-ratio:1}
+.podcast-shell .podcast-detail-art.podcast-image-slot{display:grid;place-items:center}
+.podcast-shell .podcast-detail-art.podcast-image-slot [data-image-placeholder-image]{width:34%!important;height:34%!important;object-fit:contain!important;padding:16px!important;border-radius:50%!important;background:rgba(255,255,255,.76)!important;position:relative!important;inset:auto!important}
+.podcast-shell .podcast-image-slot>span{position:absolute;left:18px;bottom:18px;z-index:2;font:600 8px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.16em;text-transform:uppercase}
