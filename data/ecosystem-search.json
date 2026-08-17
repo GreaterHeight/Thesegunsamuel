@@ -1,5 +1,5 @@
 {
-  "version": "v4.1",
+  "version": "v4.4",
   "source": "canonical graph + published ecosystem pages + registered relationship layer",
   "entities": [
     {
@@ -809,334 +809,334 @@
       "source": "canonical-knowledge-graph"
     },
     {
-      "id": "PAGE-FR-ai-digital-intelligence",
+      "id": "FR-001",
       "name": "AI & Digital Intelligence",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/ai-digital-intelligence/",
       "text": "Understand technology as an amplifier of human and organisational capability.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-architect-within",
+      "id": "FR-002",
       "name": "The Architect Within",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/architect-within/",
       "text": "Examine the inner architecture that influences how a person sees, decides and acts.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-execution-intelligence",
+      "id": "FR-003",
       "name": "Execution Intelligence",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/execution-intelligence/",
       "text": "A lens for translating insight and strategy into deliberate execution, feedback and measurable outcomes.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-five-stage-intelligence",
+      "id": "FR-004",
       "name": "Five-Stage Intelligence Architecture",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/five-stage-intelligence/",
       "text": "A structured architecture for moving from perception to interpretation, strategy, design and deliberate execution.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-human-behaviour-power",
+      "id": "FR-005",
       "name": "Human Behaviour & Power",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/human-behaviour-power/",
       "text": "Examine behaviour, influence, incentives and shadow dynamics as signals within human systems.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-human-behaviour-shadow-dynamics",
+      "id": "FR-006",
       "name": "Human Behaviour & Shadow Dynamics",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/human-behaviour-shadow-dynamics/",
       "text": "A lens for examining behaviour, manipulation, control, power dynamics and shadow aspects of human nature in context.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-ibonk",
+      "id": "FR-007",
       "name": "IBONK Framework",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/ibonk/",
       "text": "Individual · Business · Organisation · Nation · Kingdom: a multi-level lens for understanding how human activity scales into systems and institutions.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-institutional-intelligence",
+      "id": "FR-008",
       "name": "Institutional Intelligence",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/institutional-intelligence/",
       "text": "A lens for building organisations and institutions with memory, capability, continuity and purpose.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-leadership-intelligence",
+      "id": "FR-009",
       "name": "Leadership Intelligence",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/leadership-intelligence/",
       "text": "A lens for understanding leadership, people, power, decisions and organisational dynamics.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-pattern-intelligence",
+      "id": "FR-010",
       "name": "Pattern Intelligence",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/pattern-intelligence/",
       "text": "A lens for seeing recurring structures, signals, relationships and meaning beneath surface events.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-plan",
+      "id": "FR-011",
       "name": "PLAN Strategic Framework",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/plan/",
       "text": "A practical operating framework for turning intention into deliberate direction, action and measurable progress.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-strategic-foresight",
+      "id": "FR-012",
       "name": "Strategic Foresight",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/strategic-foresight/",
       "text": "A lens for interpreting uncertainty, weak signals, plausible futures and deliberate preparation.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-strategic-thinking",
+      "id": "FR-013",
       "name": "Strategic Thinking",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/strategic-thinking/",
       "text": "Interpret complexity, identify what matters and make deliberate choices.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-systems-strategic-architecture",
+      "id": "FR-014",
       "name": "Systems & Strategic Architecture",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/systems-strategic-architecture/",
       "text": "A design lens for understanding and deliberately constructing systems, structures, processes and organisations.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-FR-tea",
+      "id": "FR-015",
       "name": "TEA Framework",
       "type": "framework",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/frameworks/tea/",
       "text": "Time, Energy and Attention—the three finite resources that determine what a person can actually direct toward meaningful outcomes.",
       "tags": [],
-      "source": "framework-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-ai-enabled-professional-workflow",
+      "id": "CS-001",
       "name": "AI-Enabled Professional Workflow",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/ai-enabled-professional-workflow/",
       "text": "A practical case for connecting AI to research, analysis, decision support and workflow design.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-architecting-a-sustainable-operating-system",
+      "id": "CS-002",
       "name": "Architecting a Sustainable Operating System",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/architecting-a-sustainable-operating-system/",
       "text": "Systems & Strategic Architecture",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-attention-as-strategy",
+      "id": "CS-003",
       "name": "Attention as Strategy",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/attention-as-strategy/",
       "text": "How the allocation of time, energy and attention quietly determines what a person, team or organisation can actually accomplish.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-building-institutional-memory",
+      "id": "CS-004",
       "name": "Building Institutional Memory",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/building-institutional-memory/",
       "text": "A case about converting individual knowledge into organisational memory and continuity.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-business-performance-turnaround",
+      "id": "CS-005",
       "name": "Business Performance Turnaround",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/business-performance-turnaround/",
       "text": "How pattern intelligence, systems thinking and execution architecture can be combined to diagnose persistent performance problems.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-institution-after-the-founder",
+      "id": "CS-006",
       "name": "Institution After the Founder",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/institution-after-the-founder/",
       "text": "What happens when an organisation depends too heavily on the person who created it.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-leadership-under-pressure",
+      "id": "CS-007",
       "name": "Leadership Under Pressure",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/leadership-under-pressure/",
       "text": "A leadership case exploring judgment, power, incentives, trust and behaviour when pressure changes the human system.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-pattern-intelligence-in-a-business-decision",
+      "id": "CS-008",
       "name": "Pattern Intelligence in a Business Decision",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/pattern-intelligence-in-a-business-decision/",
       "text": "Pattern Intelligence",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-power-without-authority",
+      "id": "CS-009",
       "name": "Power Without Authority",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/power-without-authority/",
       "text": "How influence operates when formal authority is absent—and what this reveals about incentives, relationships, perception and power.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-redesigning-an-organisation",
+      "id": "CS-010",
       "name": "Redesigning an Organisation",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/redesigning-an-organisation/",
       "text": "A systems architecture case showing how relationships, flows, governance and feedback can be redesigned.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-signals-before-the-shift",
+      "id": "CS-011",
       "name": "Signals Before the Shift",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/signals-before-the-shift/",
       "text": "How weak signals can reveal meaningful change before it becomes obvious to everyone.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-strategic-foresight-under-uncertainty",
+      "id": "CS-012",
       "name": "Strategic Foresight Under Uncertainty",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/strategic-foresight-under-uncertainty/",
       "text": "Strategic Foresight",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-strategy-that-could-not-execute",
+      "id": "CS-013",
       "name": "The Strategy That Could Not Execute",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/strategy-that-could-not-execute/",
       "text": "A strategy can be intellectually sound and still fail because the architecture required to execute it was never designed.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-strategy-under-uncertainty",
+      "id": "CS-014",
       "name": "Strategy Under Uncertainty",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/strategy-under-uncertainty/",
       "text": "A strategic planning case built around signals, drivers, scenarios and preparedness rather than prediction.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-the-hidden-game",
+      "id": "CS-015",
       "name": "The Hidden Game",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/the-hidden-game/",
       "text": "A case-study lens for examining how manipulation, incentives, status, fear, identity and power can influence apparently rational behaviour.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-the-shadow-side-of-organisational-power",
+      "id": "CS-016",
       "name": "The Shadow Side of Organisational Power",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/the-shadow-side-of-organisational-power/",
       "text": "Human Behaviour & Shadow Dynamics",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-the-system-is-the-problem",
+      "id": "CS-017",
       "name": "The System Is the Problem",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/the-system-is-the-problem/",
       "text": "Why repeatedly fixing individual symptoms can leave the underlying system untouched.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-CS-when-data-is-not-insight",
+      "id": "CS-018",
       "name": "When Data Is Not Insight",
       "type": "case_study",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/case-studies/when-data-is-not-insight/",
       "text": "Why having more data does not automatically produce better decisions.",
       "tags": [],
-      "source": "case-study-registry.json"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-COURSE-courses",
@@ -1151,88 +1151,88 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-COURSE-generalist-data-ai-skills-academy",
+      "id": "CRS-001",
       "name": "Generalist Data & AI Skills Academy | Segun Samuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/generalist-data-ai-skills-academy/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-python-for-data-analytics",
+      "id": "CRS-002",
       "name": "Python for Data Analytics | Segun Samuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/python-for-data-analytics/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-execution-intelligence",
+      "id": "CRS-003",
       "name": "Execution Intelligence — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/execution-intelligence/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-thinking-clearly",
+      "id": "CRS-004",
       "name": "Thinking Clearly in a Complex World — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/thinking-clearly/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-sql-database-development",
+      "id": "CRS-005",
       "name": "SQL & Database Development | Segun Samuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/sql-database-development/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-institutional-intelligence",
+      "id": "CRS-006",
       "name": "Institutional Intelligence — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/institutional-intelligence/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-ai-mastery-from-zero-to-ai-practitioner",
+      "id": "CRS-007",
       "name": "AI Mastery: From Zero to AI Practitioner | Segun Samuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/ai-mastery-from-zero-to-ai-practitioner/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-COURSE-systems-strategic-architecture",
@@ -1247,76 +1247,76 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-COURSE-pattern-intelligence",
+      "id": "CRS-008",
       "name": "Pattern Intelligence — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/pattern-intelligence/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-applied-ai",
+      "id": "CRS-009",
       "name": "Artificial Intelligence: From Zero to Applied AI — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/applied-ai/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-advanced-data-analytics-power-bi",
+      "id": "CRS-010",
       "name": "Advanced Data Analytics & Power BI — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/advanced-data-analytics-power-bi/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-ai-for-business-professional-productivity",
+      "id": "CRS-011",
       "name": "AI for Business & Professional Productivity | Segun Samuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/ai-for-business-professional-productivity/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-strategic-foresight",
+      "id": "CRS-012",
       "name": "Strategic Foresight — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/strategic-foresight/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-COURSE-ai-for-strategic-capability",
+      "id": "CRS-013",
       "name": "AI for Strategic Capability — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/ai-for-strategic-capability/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-COURSE-systems-architecture",
@@ -1331,16 +1331,16 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-COURSE-leadership-intelligence",
+      "id": "CRS-014",
       "name": "Leadership Intelligence — SegunSamuel",
       "type": "course",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/courses/leadership-intelligence/",
       "text": "",
       "tags": [
         "courses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-BOOK-books",
@@ -1355,28 +1355,28 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-BOOK-laws-of-strategic-thinking",
+      "id": "BK-001",
       "name": "The Laws of Strategic Thinking — SegunSamuel",
       "type": "book",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/books/laws-of-strategic-thinking/",
       "text": "",
       "tags": [
         "books"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-BOOK-the-war-within",
+      "id": "BK-002",
       "name": "The War Within — SegunSamuel",
       "type": "book",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/books/the-war-within/",
       "text": "",
       "tags": [
         "books"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-PODCAST-podcast",
@@ -1391,16 +1391,16 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-PODCAST-the-strategic-architect",
+      "id": "POD-001",
       "name": "The Strategic Architect — Podcast | SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/the-strategic-architect/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-PODCAST-the-architecture-of-seeing",
@@ -1427,208 +1427,208 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-PODCAST-principles-that-survive-change",
+      "id": "POD-002",
       "name": "Principles That Survive Change — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/principles-that-survive-change/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-strategy-in-an-uncertain-world",
+      "id": "POD-003",
       "name": "Strategy in an Uncertain World — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/strategy-in-an-uncertain-world/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-the-architecture-of-reality",
+      "id": "POD-004",
       "name": "The Architecture of Reality — Podcast | SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/the-architecture-of-reality/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-power-people-the-shadow",
+      "id": "POD-005",
       "name": "Power, People & the Shadow — SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/power-people-the-shadow/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-strategic-foresight-conversations",
+      "id": "POD-006",
       "name": "Strategic Foresight Conversations — Podcast | SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/strategic-foresight-conversations/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-the-hidden-game-of-power",
+      "id": "POD-007",
       "name": "The Hidden Game of Power — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/the-hidden-game-of-power/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-the-strategic-foresight-conversation",
+      "id": "POD-008",
       "name": "The Strategic Foresight Conversation — SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/the-strategic-foresight-conversation/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-power-human-behaviour",
+      "id": "POD-009",
       "name": "Power & Human Behaviour — Podcast | SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/power-human-behaviour/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-the-system-behind-the-problem",
+      "id": "POD-010",
       "name": "The System Behind the Problem — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/the-system-behind-the-problem/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-patterns-beneath-the-surface",
+      "id": "POD-011",
       "name": "Patterns Beneath the Surface — Podcast | SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/patterns-beneath-the-surface/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-when-strategy-meets-reality",
+      "id": "POD-012",
       "name": "When Strategy Meets Reality — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/when-strategy-meets-reality/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-the-war-within",
+      "id": "POD-013",
       "name": "The War Within — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/the-war-within/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-building-beyond-the-founder",
+      "id": "POD-014",
       "name": "Building Beyond the Founder — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/building-beyond-the-founder/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-building-institutions-that-endure",
+      "id": "POD-015",
       "name": "Building Institutions That Endure — SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/building-institutions-that-endure/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-intelligence-in-practice",
+      "id": "POD-016",
       "name": "Intelligence in Practice — Podcast | SegunSamuel",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/intelligence-in-practice/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-thinking-beyond-the-obvious",
+      "id": "POD-017",
       "name": "Thinking Beyond the Obvious — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/thinking-beyond-the-obvious/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-PODCAST-technology-as-leverage",
+      "id": "POD-018",
       "name": "Technology as Leverage — SegunSamuel Podcast",
       "type": "podcast",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/podcast/technology-as-leverage/",
       "text": "",
       "tags": [
         "podcast"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-INSIGHT-articles",
@@ -1643,64 +1643,64 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-INSIGHT-shadow-power",
+      "id": "INS-001",
       "name": "The Shadow Side of Power in Organisations — SegunSamuel",
       "type": "insight",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/articles/shadow-power/",
       "text": "",
       "tags": [
         "articles"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-INSIGHT-see-reality",
+      "id": "INS-002",
       "name": "See Reality Clearly Before You Try to Change It — SegunSamuel",
       "type": "insight",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/articles/see-reality/",
       "text": "",
       "tags": [
         "articles"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-INSIGHT-architecture-thinking",
+      "id": "INS-003",
       "name": "Think Like an Architect, Not Merely a Problem Solver — SegunSamuel",
       "type": "insight",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/articles/architecture-thinking/",
       "text": "",
       "tags": [
         "articles"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-INSIGHT-future-ready",
+      "id": "INS-004",
       "name": "Strategic Foresight Is Preparation, Not Prediction — SegunSamuel",
       "type": "insight",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/articles/future-ready/",
       "text": "",
       "tags": [
         "articles"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-INSIGHT-execution-gap",
+      "id": "INS-005",
       "name": "The Gap Between Knowing and Doing — SegunSamuel",
       "type": "insight",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/articles/execution-gap/",
       "text": "",
       "tags": [
         "articles"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-LEARNING_PATH-learning-paths",
@@ -1715,220 +1715,220 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-LEARNING_PATH-data-analytical-intelligence",
+      "id": "LP-001",
       "name": "Data & Analytical Intelligence — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/data-analytical-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-architect-within",
+      "id": "LP-002",
       "name": "The Architect Within — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/architect-within/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-ai-data-career-launchpad",
+      "id": "LP-003",
       "name": "AI & Data Career Launchpad — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/ai-data-career-launchpad/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-ai-digital-intelligence",
+      "id": "LP-004",
       "name": "AI & Digital Intelligence — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/ai-digital-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-execution-intelligence",
+      "id": "LP-005",
       "name": "Execution Intelligence — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/execution-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-strategic-architect",
+      "id": "LP-006",
       "name": "The Strategic Architect Path — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/strategic-architect/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-institutional-intelligence",
+      "id": "LP-007",
       "name": "Institutional Intelligence — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/institutional-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-strategic-thinking",
+      "id": "LP-008",
       "name": "Strategic Thinking & Mental Models — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/strategic-thinking/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-digital-intelligence-professional",
+      "id": "LP-009",
       "name": "Digital Intelligence Professional — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/digital-intelligence-professional/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-architect-of-strategic-intelligence",
+      "id": "LP-010",
       "name": "Architect of Strategic Intelligence — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/architect-of-strategic-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-systems-strategic-architecture",
+      "id": "LP-011",
       "name": "Systems & Strategic Architecture — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/systems-strategic-architecture/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-the-prepared-mind",
+      "id": "LP-012",
       "name": "The Prepared Mind — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/the-prepared-mind/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-pattern-intelligence",
+      "id": "LP-013",
       "name": "Pattern Intelligence — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/pattern-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-strategic-intelligence-foresight",
+      "id": "LP-014",
       "name": "Strategic Intelligence & Foresight — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/strategic-intelligence-foresight/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-leader-and-institution-builder",
+      "id": "LP-015",
       "name": "Leader & Institution Builder — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/leader-and-institution-builder/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-leadership-power-human-behaviour",
+      "id": "LP-016",
       "name": "Leadership, Power & Human Behaviour — SegunSamuel",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/leadership-power-human-behaviour/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-strategic-foresight",
+      "id": "LP-017",
       "name": "Strategic Foresight — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/strategic-foresight/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-LEARNING_PATH-leadership-intelligence",
+      "id": "LP-018",
       "name": "Leadership Intelligence — SegunSamuel Learning Path",
       "type": "learning_path",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/learning-paths/leadership-intelligence/",
       "text": "",
       "tags": [
         "learning paths"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-MASTERCLASS-masterclasses",
@@ -1943,220 +1943,220 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-MASTERCLASS-institution-that-endures",
+      "id": "MC-001",
       "name": "Building Institutions That Endure — SegunSamuel Masterclass",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/institution-that-endures/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-thinking-in-systems",
+      "id": "MC-002",
       "name": "Thinking in Systems — SegunSamuel Masterclass",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/thinking-in-systems/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-architecting-systems-that-endure",
+      "id": "MC-003",
       "name": "Architecting Systems That Endure — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/architecting-systems-that-endure/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-strategic-foresight-intensive",
+      "id": "MC-004",
       "name": "Strategic Foresight Intensive — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/strategic-foresight-intensive/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-the-shadow-side-of-power",
+      "id": "MC-005",
       "name": "The Shadow Side of Power — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/the-shadow-side-of-power/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-seeing-the-hidden-game",
+      "id": "MC-006",
       "name": "Seeing the Hidden Game — SegunSamuel Masterclass",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/seeing-the-hidden-game/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-ai-as-strategic-capability",
+      "id": "MC-007",
       "name": "AI as Strategic Capability — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/ai-as-strategic-capability/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-execution-intelligence-intensive",
+      "id": "MC-008",
       "name": "Execution Intelligence Intensive — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/execution-intelligence-intensive/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-leading-when-reality-changes",
+      "id": "MC-009",
       "name": "Leading When Reality Changes — SegunSamuel Masterclass",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/leading-when-reality-changes/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-strategic-foresight-under-uncertainty",
+      "id": "MC-010",
       "name": "Strategic Foresight Under Uncertainty — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/strategic-foresight-under-uncertainty/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-power-leadership-and-human-systems",
+      "id": "MC-011",
       "name": "Power, Leadership & Human Systems — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/power-leadership-and-human-systems/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-five-stages-of-intelligence",
+      "id": "MC-012",
       "name": "From Perception to Execution — SegunSamuel Masterclass",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/five-stages-of-intelligence/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-pattern-intelligence-lab",
+      "id": "MC-013",
       "name": "Pattern Intelligence Lab — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/pattern-intelligence-lab/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-the-war-within",
+      "id": "MC-014",
       "name": "The War Within: The Architecture of the Inner Battle — SegunSamuel Masterclass",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/the-war-within/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-architecture-of-execution",
+      "id": "MC-015",
       "name": "The Architecture of Execution — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/architecture-of-execution/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-leadership-intelligence-power-people-systems",
+      "id": "MC-016",
       "name": "Leadership Intelligence: Power, People & Systems — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/leadership-intelligence-power-people-systems/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-building-enduring-institutions",
+      "id": "MC-017",
       "name": "Building Enduring Institutions — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/building-enduring-institutions/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MASTERCLASS-mastering-pattern-intelligence",
+      "id": "MC-018",
       "name": "Mastering Pattern Intelligence — SegunSamuel",
       "type": "masterclass",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/masterclasses/mastering-pattern-intelligence/",
       "text": "",
       "tags": [
         "masterclasses"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-EVENT-events",
@@ -2171,112 +2171,112 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-EVENT-institution-builders-forum",
+      "id": "EVT-001",
       "name": "Institution Builders Forum — Events | SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/institution-builders-forum/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-architects-roundtable",
+      "id": "EVT-002",
       "name": "The Architects Roundtable — Events | SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/architects-roundtable/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-strategic-intelligence-intensive",
+      "id": "EVT-003",
       "name": "Strategic Intelligence Intensive — SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/strategic-intelligence-intensive/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-strategic-intelligence-live",
+      "id": "EVT-004",
       "name": "Strategic Intelligence Live — Events | SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/strategic-intelligence-live/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-case-study-lab",
+      "id": "EVT-005",
       "name": "Case Study Lab — Events | SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/case-study-lab/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-prepared-mind-live",
+      "id": "EVT-006",
       "name": "Prepared Mind Live — SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/prepared-mind-live/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-ai-strategy-workshop",
+      "id": "EVT-007",
       "name": "AI & Strategic Capability Workshop — Events | SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/ai-strategy-workshop/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-frameworks-in-practice",
+      "id": "EVT-008",
       "name": "Frameworks in Practice — Events | SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/frameworks-in-practice/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-EVENT-leadership-power-systems-workshop",
+      "id": "EVT-009",
       "name": "Leadership, Power & Systems Workshop — SegunSamuel",
       "type": "event",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/events/leadership-power-systems-workshop/",
       "text": "",
       "tags": [
         "events"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
       "id": "PAGE-MODEL-models",
@@ -2291,64 +2291,344 @@
       "source": "published-page"
     },
     {
-      "id": "PAGE-MODEL-the-prepared-mind-method",
+      "id": "MOD-001",
       "name": "The Prepared Mind Method™ — SegunSamuel",
       "type": "model",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/models/the-prepared-mind-method/",
       "text": "",
       "tags": [
         "models"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MODEL-plan-strategic-framework",
+      "id": "MOD-002",
       "name": "PLAN Strategic Framework — SegunSamuel",
       "type": "model",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/models/plan-strategic-framework/",
       "text": "",
       "tags": [
         "models"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MODEL-five-stage-intelligence-architecture",
+      "id": "MOD-003",
       "name": "Five-Stage Intelligence Architecture — SegunSamuel",
       "type": "model",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/models/five-stage-intelligence-architecture/",
       "text": "",
       "tags": [
         "models"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MODEL-tea-time-energy-attention",
+      "id": "MOD-004",
       "name": "TEA — Time, Energy & Attention — SegunSamuel",
       "type": "model",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/models/tea-time-energy-attention/",
       "text": "",
       "tags": [
         "models"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
     },
     {
-      "id": "PAGE-MODEL-the-laws-of-strategic-thinking",
+      "id": "MOD-005",
       "name": "The Laws of Strategic Thinking — SegunSamuel",
       "type": "model",
-      "status": "published",
+      "status": "canonical",
       "route": "/Thesegunsamuel/models/the-laws-of-strategic-thinking/",
       "text": "",
       "tags": [
         "models"
       ],
-      "source": "published-page"
+      "source": "canonical-asset-registry"
+    },
+    {
+      "id": "APP-001",
+      "name": "AI Business Workflow Redesign — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/ai-business-workflow/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-002",
+      "name": "AI Capability Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/ai-capability-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-003",
+      "name": "AI & Data Portfolio Project — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/ai-data-portfolio-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-004",
+      "name": "Analytics-to-Decision System — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/analytics-decision-system/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-005",
+      "name": "Analytics Portfolio Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/analytics-portfolio-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-006",
+      "name": "The Architect Within Practice — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/architect-within-practice/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-007",
+      "name": "Execution Operating System — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/execution-operating-system/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-008",
+      "name": "Execution War Room — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/execution-war-room/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-009",
+      "name": "Future Scenario Studio — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/future-scenario-studio/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-010",
+      "name": "Institution Builder Challenge — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/institution-builder/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-011",
+      "name": "Institutional Design Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/institutional-design-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-012",
+      "name": "Leadership Intelligence Field Application — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/leadership-intelligence-field-application/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-013",
+      "name": "Leadership Intelligence Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/leadership-intelligence-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-014",
+      "name": "Leadership & Power Dynamics Simulation — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/leadership-power-dynamics/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-015",
+      "name": "Pattern Analysis Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/pattern-analysis-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-016",
+      "name": "Pattern Detection Lab — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/pattern-detection-lab/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-017",
+      "name": "Strategic Decision Lab — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/strategic-decision-lab/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-018",
+      "name": "Strategic Foresight Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/strategic-foresight-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-019",
+      "name": "Strategic Thinking Decision Lab — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/strategic-thinking-case/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-020",
+      "name": "Systems Architecture Project — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/systems-architecture-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "APP-021",
+      "name": "Systems Redesign Project — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/application/systems-redesign-project/",
+      "text": "Practical application and evidence of use.",
+      "tags": [
+        "application"
+      ],
+      "source": "canonical-application-registry"
+    },
+    {
+      "id": "NEWS-001",
+      "name": "Newsletter",
+      "type": "newsletter",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/newsletter/",
+      "text": "A direct editorial channel for essays, observations, frameworks, strategy, human nature, technology and transformation.",
+      "tags": [
+        "newsletter",
+        "editorial"
+      ],
+      "source": "canonical-editorial-registry"
+    },
+    {
+      "id": "LEARN-001",
+      "name": "Student Learning Environment",
+      "type": "learning_system",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/student/",
+      "text": "Authenticated learning environment for enrolment, course progress, lessons, learning paths and future certificates.",
+      "tags": [
+        "learning system",
+        "student",
+        "courses",
+        "progress"
+      ],
+      "source": "canonical-learning-registry"
     }
   ],
   "relationships": [
@@ -2935,5 +3215,7 @@
     }
   ],
   "relationship_source": "knowledge/data/knowledge-relationships.json",
-  "relationship_count": 142
+  "relationship_count": 170,
+  "canonicalization_version": "1.0",
+  "canonical_entity_count": 184
 }

@@ -242,38 +242,7 @@
 </footer>
 
 <script src="/Thesegunsamuel/js/site-shell.js"></script>
-<script>
-(async function(){
- const data = await (await fetch('/Thesegunsamuel/learning/data/pattern-intelligence.json')).json();
- let current = null;
- const allLessons = data.modules.flatMap(m=>m.lessons);
- const progress = () => Math.round(allLessons.filter(l=>l.state==='completed').length/allLessons.length*100);
- const modules = document.getElementById('modules');
- modules.innerHTML = data.modules.map(m=>`
-  <div class="module"><button type="button">${m.title}</button>
-  ${m.lessons.map(l=>`<button class="lesson" data-id="${l.id}" type="button">${l.title}<br><small class="state">${l.state.replace('_',' ')}</small></button>`).join('')}
-  </div>`).join('');
- function render(id){
-   current=allLessons.find(l=>l.id===id); if(!current) return;
-   document.querySelectorAll('.lesson').forEach(x=>x.classList.toggle('active',x.dataset.id===id));
-   document.getElementById('lesson-title').textContent=current.title;
-   document.getElementById('lesson-state').textContent=current.state.replace('_',' ').toUpperCase();
-   document.getElementById('lesson-copy').textContent='This lesson is part of the Pattern Intelligence learning sequence. In the production platform, lesson content will be retrieved from the authenticated learning API.';
-   document.getElementById('lesson-progress').style.width=(current.state==='completed'?100:current.state==='in_progress'?50:0)+'%';
-   document.getElementById('course-progress').textContent='Course progress: '+progress()+'%';
- }
- document.querySelectorAll('.lesson').forEach(x=>x.addEventListener('click',()=>render(x.dataset.id)));
- document.getElementById('complete-btn').addEventListener('click',()=>{
-   if(!current)return;
-   current.state='completed';
-   render(current.id);
-   document.querySelector('[data-id="'+current.id+'"] .state');
-   const el=document.querySelector('[data-id="'+current.id+'"]');
-   if(el) el.innerHTML=current.title+'<br><small class="state">COMPLETED</small>';
- });
- render('l5');
-})();
-</script>
+
 <script src="../assets/js/privacy.js" defer></script>
 <script id="global-placeholder-runtime">
 document.addEventListener("DOMContentLoaded", function () {

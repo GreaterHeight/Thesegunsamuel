@@ -1168,7 +1168,7 @@
       "status": "canonical",
       "short_definition": "Editorial explanation and extension of knowledge.",
       "parent_id": "SS-001",
-      "route": "",
+      "route": "/Thesegunsamuel/editorial/",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1188,7 +1188,7 @@
       "status": "canonical",
       "short_definition": "Live learning and interaction.",
       "parent_id": "SS-001",
-      "route": "",
+      "route": "/Thesegunsamuel/events/",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1270,7 +1270,7 @@
       "status": "canonical",
       "short_definition": "Applied advisory and architecture service.",
       "parent_id": "SS-001",
-      "route": "",
+      "route": "/Thesegunsamuel/consulting/",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1290,7 +1290,7 @@
       "status": "canonical",
       "short_definition": "Applied communication and thought leadership.",
       "parent_id": "SS-001",
-      "route": "",
+      "route": "/Thesegunsamuel/speaking/",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1319,6 +1319,3198 @@
       "tags": [
         "implementation output",
         "confirmed output type"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-001",
+      "slug": "PAGE-FR-ai-digital-intelligence",
+      "name": "AI & Digital Intelligence",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "Understand technology as an amplifier of human and organisational capability.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/ai-digital-intelligence/",
+      "source_ids": [
+        "PAGE-FR-ai-digital-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-002",
+      "slug": "PAGE-FR-architect-within",
+      "name": "The Architect Within",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "Examine the inner architecture that influences how a person sees, decides and acts.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/architect-within/",
+      "source_ids": [
+        "PAGE-FR-architect-within"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-003",
+      "slug": "PAGE-FR-execution-intelligence",
+      "name": "Execution Intelligence",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A lens for translating insight and strategy into deliberate execution, feedback and measurable outcomes.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/execution-intelligence/",
+      "source_ids": [
+        "PAGE-FR-execution-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-004",
+      "slug": "PAGE-FR-five-stage-intelligence",
+      "name": "Five-Stage Intelligence Architecture",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A structured architecture for moving from perception to interpretation, strategy, design and deliberate execution.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/five-stage-intelligence/",
+      "source_ids": [
+        "PAGE-FR-five-stage-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-005",
+      "slug": "PAGE-FR-human-behaviour-power",
+      "name": "Human Behaviour & Power",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "Examine behaviour, influence, incentives and shadow dynamics as signals within human systems.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/human-behaviour-power/",
+      "source_ids": [
+        "PAGE-FR-human-behaviour-power"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-006",
+      "slug": "PAGE-FR-human-behaviour-shadow-dynamics",
+      "name": "Human Behaviour & Shadow Dynamics",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A lens for examining behaviour, manipulation, control, power dynamics and shadow aspects of human nature in context.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/human-behaviour-shadow-dynamics/",
+      "source_ids": [
+        "PAGE-FR-human-behaviour-shadow-dynamics"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-007",
+      "slug": "PAGE-FR-ibonk",
+      "name": "IBONK Framework",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "Individual · Business · Organisation · Nation · Kingdom: a multi-level lens for understanding how human activity scales into systems and institutions.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/ibonk/",
+      "source_ids": [
+        "PAGE-FR-ibonk"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-008",
+      "slug": "PAGE-FR-institutional-intelligence",
+      "name": "Institutional Intelligence",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A lens for building organisations and institutions with memory, capability, continuity and purpose.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/institutional-intelligence/",
+      "source_ids": [
+        "PAGE-FR-institutional-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-009",
+      "slug": "PAGE-FR-leadership-intelligence",
+      "name": "Leadership Intelligence",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A lens for understanding leadership, people, power, decisions and organisational dynamics.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/leadership-intelligence/",
+      "source_ids": [
+        "PAGE-FR-leadership-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-010",
+      "slug": "PAGE-FR-pattern-intelligence",
+      "name": "Pattern Intelligence",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A lens for seeing recurring structures, signals, relationships and meaning beneath surface events.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/pattern-intelligence/",
+      "source_ids": [
+        "PAGE-FR-pattern-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-011",
+      "slug": "PAGE-FR-plan",
+      "name": "PLAN Strategic Framework",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A practical operating framework for turning intention into deliberate direction, action and measurable progress.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/plan/",
+      "source_ids": [
+        "PAGE-FR-plan"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-012",
+      "slug": "PAGE-FR-strategic-foresight",
+      "name": "Strategic Foresight",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A lens for interpreting uncertainty, weak signals, plausible futures and deliberate preparation.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/strategic-foresight/",
+      "source_ids": [
+        "PAGE-FR-strategic-foresight"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-013",
+      "slug": "PAGE-FR-strategic-thinking",
+      "name": "Strategic Thinking",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "Interpret complexity, identify what matters and make deliberate choices.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/strategic-thinking/",
+      "source_ids": [
+        "PAGE-FR-strategic-thinking"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-014",
+      "slug": "PAGE-FR-systems-strategic-architecture",
+      "name": "Systems & Strategic Architecture",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "A design lens for understanding and deliberately constructing systems, structures, processes and organisations.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/systems-strategic-architecture/",
+      "source_ids": [
+        "PAGE-FR-systems-strategic-architecture"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FR-015",
+      "slug": "PAGE-FR-tea",
+      "name": "TEA Framework",
+      "type": "framework",
+      "status": "canonical",
+      "short_definition": "Time, Energy and Attention—the three finite resources that determine what a person can actually direct toward meaningful outcomes.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/frameworks/tea/",
+      "source_ids": [
+        "PAGE-FR-tea"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "framework",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-001",
+      "slug": "PAGE-CS-ai-enabled-professional-workflow",
+      "name": "AI-Enabled Professional Workflow",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A practical case for connecting AI to research, analysis, decision support and workflow design.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/ai-enabled-professional-workflow/",
+      "source_ids": [
+        "PAGE-CS-ai-enabled-professional-workflow"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-002",
+      "slug": "PAGE-CS-architecting-a-sustainable-operating-system",
+      "name": "Architecting a Sustainable Operating System",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "Systems & Strategic Architecture",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/architecting-a-sustainable-operating-system/",
+      "source_ids": [
+        "PAGE-CS-architecting-a-sustainable-operating-system"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-003",
+      "slug": "PAGE-CS-attention-as-strategy",
+      "name": "Attention as Strategy",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "How the allocation of time, energy and attention quietly determines what a person, team or organisation can actually accomplish.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/attention-as-strategy/",
+      "source_ids": [
+        "PAGE-CS-attention-as-strategy"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-004",
+      "slug": "PAGE-CS-building-institutional-memory",
+      "name": "Building Institutional Memory",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A case about converting individual knowledge into organisational memory and continuity.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/building-institutional-memory/",
+      "source_ids": [
+        "PAGE-CS-building-institutional-memory"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-005",
+      "slug": "PAGE-CS-business-performance-turnaround",
+      "name": "Business Performance Turnaround",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "How pattern intelligence, systems thinking and execution architecture can be combined to diagnose persistent performance problems.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/business-performance-turnaround/",
+      "source_ids": [
+        "PAGE-CS-business-performance-turnaround"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-006",
+      "slug": "PAGE-CS-institution-after-the-founder",
+      "name": "Institution After the Founder",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "What happens when an organisation depends too heavily on the person who created it.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/institution-after-the-founder/",
+      "source_ids": [
+        "PAGE-CS-institution-after-the-founder"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-007",
+      "slug": "PAGE-CS-leadership-under-pressure",
+      "name": "Leadership Under Pressure",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A leadership case exploring judgment, power, incentives, trust and behaviour when pressure changes the human system.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/leadership-under-pressure/",
+      "source_ids": [
+        "PAGE-CS-leadership-under-pressure"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-008",
+      "slug": "PAGE-CS-pattern-intelligence-in-a-business-decision",
+      "name": "Pattern Intelligence in a Business Decision",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "Pattern Intelligence",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/pattern-intelligence-in-a-business-decision/",
+      "source_ids": [
+        "PAGE-CS-pattern-intelligence-in-a-business-decision"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-009",
+      "slug": "PAGE-CS-power-without-authority",
+      "name": "Power Without Authority",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "How influence operates when formal authority is absent—and what this reveals about incentives, relationships, perception and power.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/power-without-authority/",
+      "source_ids": [
+        "PAGE-CS-power-without-authority"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-010",
+      "slug": "PAGE-CS-redesigning-an-organisation",
+      "name": "Redesigning an Organisation",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A systems architecture case showing how relationships, flows, governance and feedback can be redesigned.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/redesigning-an-organisation/",
+      "source_ids": [
+        "PAGE-CS-redesigning-an-organisation"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-011",
+      "slug": "PAGE-CS-signals-before-the-shift",
+      "name": "Signals Before the Shift",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "How weak signals can reveal meaningful change before it becomes obvious to everyone.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/signals-before-the-shift/",
+      "source_ids": [
+        "PAGE-CS-signals-before-the-shift"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-012",
+      "slug": "PAGE-CS-strategic-foresight-under-uncertainty",
+      "name": "Strategic Foresight Under Uncertainty",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "Strategic Foresight",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/strategic-foresight-under-uncertainty/",
+      "source_ids": [
+        "PAGE-CS-strategic-foresight-under-uncertainty"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-013",
+      "slug": "PAGE-CS-strategy-that-could-not-execute",
+      "name": "The Strategy That Could Not Execute",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A strategy can be intellectually sound and still fail because the architecture required to execute it was never designed.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/strategy-that-could-not-execute/",
+      "source_ids": [
+        "PAGE-CS-strategy-that-could-not-execute"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-014",
+      "slug": "PAGE-CS-strategy-under-uncertainty",
+      "name": "Strategy Under Uncertainty",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A strategic planning case built around signals, drivers, scenarios and preparedness rather than prediction.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/strategy-under-uncertainty/",
+      "source_ids": [
+        "PAGE-CS-strategy-under-uncertainty"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-015",
+      "slug": "PAGE-CS-the-hidden-game",
+      "name": "The Hidden Game",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "A case-study lens for examining how manipulation, incentives, status, fear, identity and power can influence apparently rational behaviour.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/the-hidden-game/",
+      "source_ids": [
+        "PAGE-CS-the-hidden-game"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-016",
+      "slug": "PAGE-CS-the-shadow-side-of-organisational-power",
+      "name": "The Shadow Side of Organisational Power",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "Human Behaviour & Shadow Dynamics",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/the-shadow-side-of-organisational-power/",
+      "source_ids": [
+        "PAGE-CS-the-shadow-side-of-organisational-power"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-017",
+      "slug": "PAGE-CS-the-system-is-the-problem",
+      "name": "The System Is the Problem",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "Why repeatedly fixing individual symptoms can leave the underlying system untouched.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/the-system-is-the-problem/",
+      "source_ids": [
+        "PAGE-CS-the-system-is-the-problem"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CS-018",
+      "slug": "PAGE-CS-when-data-is-not-insight",
+      "name": "When Data Is Not Insight",
+      "type": "case_study",
+      "status": "canonical",
+      "short_definition": "Why having more data does not automatically produce better decisions.",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/case-studies/when-data-is-not-insight/",
+      "source_ids": [
+        "PAGE-CS-when-data-is-not-insight"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "case study",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-001",
+      "slug": "generalist-data-ai-skills-academy",
+      "name": "Generalist Data & AI Skills Academy | Segun Samuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/generalist-data-ai-skills-academy/",
+      "source_ids": [
+        "PAGE-COURSE-generalist-data-ai-skills-academy"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-002",
+      "slug": "python-for-data-analytics",
+      "name": "Python for Data Analytics | Segun Samuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/python-for-data-analytics/",
+      "source_ids": [
+        "PAGE-COURSE-python-for-data-analytics"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-003",
+      "slug": "execution-intelligence",
+      "name": "Execution Intelligence — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/execution-intelligence/",
+      "source_ids": [
+        "PAGE-COURSE-execution-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-004",
+      "slug": "thinking-clearly",
+      "name": "Thinking Clearly in a Complex World — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/thinking-clearly/",
+      "source_ids": [
+        "PAGE-COURSE-thinking-clearly"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-005",
+      "slug": "sql-database-development",
+      "name": "SQL & Database Development | Segun Samuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/sql-database-development/",
+      "source_ids": [
+        "PAGE-COURSE-sql-database-development"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-006",
+      "slug": "institutional-intelligence",
+      "name": "Institutional Intelligence — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/institutional-intelligence/",
+      "source_ids": [
+        "PAGE-COURSE-institutional-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-007",
+      "slug": "ai-mastery-from-zero-to-ai-practitioner",
+      "name": "AI Mastery: From Zero to AI Practitioner | Segun Samuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/ai-mastery-from-zero-to-ai-practitioner/",
+      "source_ids": [
+        "PAGE-COURSE-ai-mastery-from-zero-to-ai-practitioner"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-008",
+      "slug": "pattern-intelligence",
+      "name": "Pattern Intelligence — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/pattern-intelligence/",
+      "source_ids": [
+        "PAGE-COURSE-pattern-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-009",
+      "slug": "applied-ai",
+      "name": "Artificial Intelligence: From Zero to Applied AI — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/applied-ai/",
+      "source_ids": [
+        "PAGE-COURSE-applied-ai"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-010",
+      "slug": "advanced-data-analytics-power-bi",
+      "name": "Advanced Data Analytics & Power BI — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/advanced-data-analytics-power-bi/",
+      "source_ids": [
+        "PAGE-COURSE-advanced-data-analytics-power-bi"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-011",
+      "slug": "ai-for-business-professional-productivity",
+      "name": "AI for Business & Professional Productivity | Segun Samuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/ai-for-business-professional-productivity/",
+      "source_ids": [
+        "PAGE-COURSE-ai-for-business-professional-productivity"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-012",
+      "slug": "strategic-foresight",
+      "name": "Strategic Foresight — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/strategic-foresight/",
+      "source_ids": [
+        "PAGE-COURSE-strategic-foresight"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-013",
+      "slug": "ai-for-strategic-capability",
+      "name": "AI for Strategic Capability — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/ai-for-strategic-capability/",
+      "source_ids": [
+        "PAGE-COURSE-ai-for-strategic-capability"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "CRS-014",
+      "slug": "leadership-intelligence",
+      "name": "Leadership Intelligence — SegunSamuel",
+      "type": "course",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/courses/leadership-intelligence/",
+      "source_ids": [
+        "PAGE-COURSE-leadership-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "course",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BK-001",
+      "slug": "laws-of-strategic-thinking",
+      "name": "The Laws of Strategic Thinking — SegunSamuel",
+      "type": "book",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/books/laws-of-strategic-thinking/",
+      "source_ids": [
+        "PAGE-BOOK-laws-of-strategic-thinking"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "book",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BK-002",
+      "slug": "the-war-within",
+      "name": "The War Within — SegunSamuel",
+      "type": "book",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/books/the-war-within/",
+      "source_ids": [
+        "PAGE-BOOK-the-war-within"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "book",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-001",
+      "slug": "the-strategic-architect",
+      "name": "The Strategic Architect — Podcast | SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/the-strategic-architect/",
+      "source_ids": [
+        "PAGE-PODCAST-the-strategic-architect"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-002",
+      "slug": "principles-that-survive-change",
+      "name": "Principles That Survive Change — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/principles-that-survive-change/",
+      "source_ids": [
+        "PAGE-PODCAST-principles-that-survive-change"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-003",
+      "slug": "strategy-in-an-uncertain-world",
+      "name": "Strategy in an Uncertain World — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/strategy-in-an-uncertain-world/",
+      "source_ids": [
+        "PAGE-PODCAST-strategy-in-an-uncertain-world"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-004",
+      "slug": "the-architecture-of-reality",
+      "name": "The Architecture of Reality — Podcast | SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/the-architecture-of-reality/",
+      "source_ids": [
+        "PAGE-PODCAST-the-architecture-of-reality"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-005",
+      "slug": "power-people-the-shadow",
+      "name": "Power, People & the Shadow — SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/power-people-the-shadow/",
+      "source_ids": [
+        "PAGE-PODCAST-power-people-the-shadow"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-006",
+      "slug": "strategic-foresight-conversations",
+      "name": "Strategic Foresight Conversations — Podcast | SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/strategic-foresight-conversations/",
+      "source_ids": [
+        "PAGE-PODCAST-strategic-foresight-conversations"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-007",
+      "slug": "the-hidden-game-of-power",
+      "name": "The Hidden Game of Power — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/the-hidden-game-of-power/",
+      "source_ids": [
+        "PAGE-PODCAST-the-hidden-game-of-power"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-008",
+      "slug": "the-strategic-foresight-conversation",
+      "name": "The Strategic Foresight Conversation — SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/the-strategic-foresight-conversation/",
+      "source_ids": [
+        "PAGE-PODCAST-the-strategic-foresight-conversation"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-009",
+      "slug": "power-human-behaviour",
+      "name": "Power & Human Behaviour — Podcast | SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/power-human-behaviour/",
+      "source_ids": [
+        "PAGE-PODCAST-power-human-behaviour"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-010",
+      "slug": "the-system-behind-the-problem",
+      "name": "The System Behind the Problem — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/the-system-behind-the-problem/",
+      "source_ids": [
+        "PAGE-PODCAST-the-system-behind-the-problem"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-011",
+      "slug": "patterns-beneath-the-surface",
+      "name": "Patterns Beneath the Surface — Podcast | SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/patterns-beneath-the-surface/",
+      "source_ids": [
+        "PAGE-PODCAST-patterns-beneath-the-surface"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-012",
+      "slug": "when-strategy-meets-reality",
+      "name": "When Strategy Meets Reality — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/when-strategy-meets-reality/",
+      "source_ids": [
+        "PAGE-PODCAST-when-strategy-meets-reality"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-013",
+      "slug": "the-war-within",
+      "name": "The War Within — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/the-war-within/",
+      "source_ids": [
+        "PAGE-PODCAST-the-war-within"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-014",
+      "slug": "building-beyond-the-founder",
+      "name": "Building Beyond the Founder — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/building-beyond-the-founder/",
+      "source_ids": [
+        "PAGE-PODCAST-building-beyond-the-founder"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-015",
+      "slug": "building-institutions-that-endure",
+      "name": "Building Institutions That Endure — SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/building-institutions-that-endure/",
+      "source_ids": [
+        "PAGE-PODCAST-building-institutions-that-endure"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-016",
+      "slug": "intelligence-in-practice",
+      "name": "Intelligence in Practice — Podcast | SegunSamuel",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/intelligence-in-practice/",
+      "source_ids": [
+        "PAGE-PODCAST-intelligence-in-practice"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-017",
+      "slug": "thinking-beyond-the-obvious",
+      "name": "Thinking Beyond the Obvious — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/thinking-beyond-the-obvious/",
+      "source_ids": [
+        "PAGE-PODCAST-thinking-beyond-the-obvious"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "POD-018",
+      "slug": "technology-as-leverage",
+      "name": "Technology as Leverage — SegunSamuel Podcast",
+      "type": "podcast",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/podcast/technology-as-leverage/",
+      "source_ids": [
+        "PAGE-PODCAST-technology-as-leverage"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "podcast",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "INS-001",
+      "slug": "shadow-power",
+      "name": "The Shadow Side of Power in Organisations — SegunSamuel",
+      "type": "insight",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/articles/shadow-power/",
+      "source_ids": [
+        "PAGE-INSIGHT-shadow-power"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "insight",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "INS-002",
+      "slug": "see-reality",
+      "name": "See Reality Clearly Before You Try to Change It — SegunSamuel",
+      "type": "insight",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/articles/see-reality/",
+      "source_ids": [
+        "PAGE-INSIGHT-see-reality"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "insight",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "INS-003",
+      "slug": "architecture-thinking",
+      "name": "Think Like an Architect, Not Merely a Problem Solver — SegunSamuel",
+      "type": "insight",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/articles/architecture-thinking/",
+      "source_ids": [
+        "PAGE-INSIGHT-architecture-thinking"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "insight",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "INS-004",
+      "slug": "future-ready",
+      "name": "Strategic Foresight Is Preparation, Not Prediction — SegunSamuel",
+      "type": "insight",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/articles/future-ready/",
+      "source_ids": [
+        "PAGE-INSIGHT-future-ready"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "insight",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "INS-005",
+      "slug": "execution-gap",
+      "name": "The Gap Between Knowing and Doing — SegunSamuel",
+      "type": "insight",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/articles/execution-gap/",
+      "source_ids": [
+        "PAGE-INSIGHT-execution-gap"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "insight",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-001",
+      "slug": "data-analytical-intelligence",
+      "name": "Data & Analytical Intelligence — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/data-analytical-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-data-analytical-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-002",
+      "slug": "architect-within",
+      "name": "The Architect Within — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/architect-within/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-architect-within"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-003",
+      "slug": "ai-data-career-launchpad",
+      "name": "AI & Data Career Launchpad — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/ai-data-career-launchpad/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-ai-data-career-launchpad"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-004",
+      "slug": "ai-digital-intelligence",
+      "name": "AI & Digital Intelligence — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/ai-digital-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-ai-digital-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-005",
+      "slug": "execution-intelligence",
+      "name": "Execution Intelligence — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/execution-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-execution-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-006",
+      "slug": "strategic-architect",
+      "name": "The Strategic Architect Path — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/strategic-architect/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-strategic-architect"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-007",
+      "slug": "institutional-intelligence",
+      "name": "Institutional Intelligence — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/institutional-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-institutional-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-008",
+      "slug": "strategic-thinking",
+      "name": "Strategic Thinking & Mental Models — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/strategic-thinking/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-strategic-thinking"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-009",
+      "slug": "digital-intelligence-professional",
+      "name": "Digital Intelligence Professional — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/digital-intelligence-professional/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-digital-intelligence-professional"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-010",
+      "slug": "architect-of-strategic-intelligence",
+      "name": "Architect of Strategic Intelligence — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/architect-of-strategic-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-architect-of-strategic-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-011",
+      "slug": "systems-strategic-architecture",
+      "name": "Systems & Strategic Architecture — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/systems-strategic-architecture/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-systems-strategic-architecture"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-012",
+      "slug": "the-prepared-mind",
+      "name": "The Prepared Mind — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/the-prepared-mind/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-the-prepared-mind"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-013",
+      "slug": "pattern-intelligence",
+      "name": "Pattern Intelligence — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/pattern-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-pattern-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-014",
+      "slug": "strategic-intelligence-foresight",
+      "name": "Strategic Intelligence & Foresight — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/strategic-intelligence-foresight/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-strategic-intelligence-foresight"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-015",
+      "slug": "leader-and-institution-builder",
+      "name": "Leader & Institution Builder — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/leader-and-institution-builder/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-leader-and-institution-builder"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-016",
+      "slug": "leadership-power-human-behaviour",
+      "name": "Leadership, Power & Human Behaviour — SegunSamuel",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/leadership-power-human-behaviour/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-leadership-power-human-behaviour"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-017",
+      "slug": "strategic-foresight",
+      "name": "Strategic Foresight — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/strategic-foresight/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-strategic-foresight"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LP-018",
+      "slug": "leadership-intelligence",
+      "name": "Leadership Intelligence — SegunSamuel Learning Path",
+      "type": "learning_path",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/learning-paths/leadership-intelligence/",
+      "source_ids": [
+        "PAGE-LEARNING_PATH-leadership-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning path",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-001",
+      "slug": "institution-that-endures",
+      "name": "Building Institutions That Endure — SegunSamuel Masterclass",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/institution-that-endures/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-institution-that-endures"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-002",
+      "slug": "thinking-in-systems",
+      "name": "Thinking in Systems — SegunSamuel Masterclass",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/thinking-in-systems/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-thinking-in-systems"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-003",
+      "slug": "architecting-systems-that-endure",
+      "name": "Architecting Systems That Endure — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/architecting-systems-that-endure/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-architecting-systems-that-endure"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-004",
+      "slug": "strategic-foresight-intensive",
+      "name": "Strategic Foresight Intensive — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/strategic-foresight-intensive/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-strategic-foresight-intensive"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-005",
+      "slug": "the-shadow-side-of-power",
+      "name": "The Shadow Side of Power — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/the-shadow-side-of-power/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-the-shadow-side-of-power"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-006",
+      "slug": "seeing-the-hidden-game",
+      "name": "Seeing the Hidden Game — SegunSamuel Masterclass",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/seeing-the-hidden-game/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-seeing-the-hidden-game"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-007",
+      "slug": "ai-as-strategic-capability",
+      "name": "AI as Strategic Capability — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/ai-as-strategic-capability/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-ai-as-strategic-capability"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-008",
+      "slug": "execution-intelligence-intensive",
+      "name": "Execution Intelligence Intensive — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/execution-intelligence-intensive/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-execution-intelligence-intensive"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-009",
+      "slug": "leading-when-reality-changes",
+      "name": "Leading When Reality Changes — SegunSamuel Masterclass",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/leading-when-reality-changes/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-leading-when-reality-changes"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-010",
+      "slug": "strategic-foresight-under-uncertainty",
+      "name": "Strategic Foresight Under Uncertainty — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/strategic-foresight-under-uncertainty/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-strategic-foresight-under-uncertainty"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-011",
+      "slug": "power-leadership-and-human-systems",
+      "name": "Power, Leadership & Human Systems — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/power-leadership-and-human-systems/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-power-leadership-and-human-systems"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-012",
+      "slug": "five-stages-of-intelligence",
+      "name": "From Perception to Execution — SegunSamuel Masterclass",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/five-stages-of-intelligence/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-five-stages-of-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-013",
+      "slug": "pattern-intelligence-lab",
+      "name": "Pattern Intelligence Lab — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/pattern-intelligence-lab/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-pattern-intelligence-lab"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-014",
+      "slug": "the-war-within",
+      "name": "The War Within: The Architecture of the Inner Battle — SegunSamuel Masterclass",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/the-war-within/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-the-war-within"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-015",
+      "slug": "architecture-of-execution",
+      "name": "The Architecture of Execution — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/architecture-of-execution/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-architecture-of-execution"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-016",
+      "slug": "leadership-intelligence-power-people-systems",
+      "name": "Leadership Intelligence: Power, People & Systems — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/leadership-intelligence-power-people-systems/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-leadership-intelligence-power-people-systems"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-017",
+      "slug": "building-enduring-institutions",
+      "name": "Building Enduring Institutions — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/building-enduring-institutions/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-building-enduring-institutions"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MC-018",
+      "slug": "mastering-pattern-intelligence",
+      "name": "Mastering Pattern Intelligence — SegunSamuel",
+      "type": "masterclass",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/masterclasses/mastering-pattern-intelligence/",
+      "source_ids": [
+        "PAGE-MASTERCLASS-mastering-pattern-intelligence"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "masterclass",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-001",
+      "slug": "institution-builders-forum",
+      "name": "Institution Builders Forum — Events | SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/institution-builders-forum/",
+      "source_ids": [
+        "PAGE-EVENT-institution-builders-forum"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-002",
+      "slug": "architects-roundtable",
+      "name": "The Architects Roundtable — Events | SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/architects-roundtable/",
+      "source_ids": [
+        "PAGE-EVENT-architects-roundtable"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-003",
+      "slug": "strategic-intelligence-intensive",
+      "name": "Strategic Intelligence Intensive — SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/strategic-intelligence-intensive/",
+      "source_ids": [
+        "PAGE-EVENT-strategic-intelligence-intensive"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-004",
+      "slug": "strategic-intelligence-live",
+      "name": "Strategic Intelligence Live — Events | SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/strategic-intelligence-live/",
+      "source_ids": [
+        "PAGE-EVENT-strategic-intelligence-live"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-005",
+      "slug": "case-study-lab",
+      "name": "Case Study Lab — Events | SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/case-study-lab/",
+      "source_ids": [
+        "PAGE-EVENT-case-study-lab"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-006",
+      "slug": "prepared-mind-live",
+      "name": "Prepared Mind Live — SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/prepared-mind-live/",
+      "source_ids": [
+        "PAGE-EVENT-prepared-mind-live"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-007",
+      "slug": "ai-strategy-workshop",
+      "name": "AI & Strategic Capability Workshop — Events | SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/ai-strategy-workshop/",
+      "source_ids": [
+        "PAGE-EVENT-ai-strategy-workshop"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-008",
+      "slug": "frameworks-in-practice",
+      "name": "Frameworks in Practice — Events | SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/frameworks-in-practice/",
+      "source_ids": [
+        "PAGE-EVENT-frameworks-in-practice"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "EVT-009",
+      "slug": "leadership-power-systems-workshop",
+      "name": "Leadership, Power & Systems Workshop — SegunSamuel",
+      "type": "event",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/events/leadership-power-systems-workshop/",
+      "source_ids": [
+        "PAGE-EVENT-leadership-power-systems-workshop"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "event",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MOD-001",
+      "slug": "the-prepared-mind-method",
+      "name": "The Prepared Mind Method™ — SegunSamuel",
+      "type": "model",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/models/the-prepared-mind-method/",
+      "source_ids": [
+        "PAGE-MODEL-the-prepared-mind-method"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "model",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MOD-002",
+      "slug": "plan-strategic-framework",
+      "name": "PLAN Strategic Framework — SegunSamuel",
+      "type": "model",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/models/plan-strategic-framework/",
+      "source_ids": [
+        "PAGE-MODEL-plan-strategic-framework"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "model",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MOD-003",
+      "slug": "five-stage-intelligence-architecture",
+      "name": "Five-Stage Intelligence Architecture — SegunSamuel",
+      "type": "model",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/models/five-stage-intelligence-architecture/",
+      "source_ids": [
+        "PAGE-MODEL-five-stage-intelligence-architecture"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "model",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MOD-004",
+      "slug": "tea-time-energy-attention",
+      "name": "TEA — Time, Energy & Attention — SegunSamuel",
+      "type": "model",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/models/tea-time-energy-attention/",
+      "source_ids": [
+        "PAGE-MODEL-tea-time-energy-attention"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "model",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "MOD-005",
+      "slug": "the-laws-of-strategic-thinking",
+      "name": "The Laws of Strategic Thinking — SegunSamuel",
+      "type": "model",
+      "status": "canonical",
+      "short_definition": "",
+      "parent_id": null,
+      "route": "/Thesegunsamuel/models/the-laws-of-strategic-thinking/",
+      "source_ids": [
+        "PAGE-MODEL-the-laws-of-strategic-thinking"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "model",
+        "canonicalized from published page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-001",
+      "slug": "ai-business-workflow",
+      "name": "AI Business Workflow Redesign — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/ai-business-workflow/",
+      "source_ids": [
+        "PAGE-APPLICATION-ai-business-workflow"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-002",
+      "slug": "ai-capability-project",
+      "name": "AI Capability Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/ai-capability-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-ai-capability-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-003",
+      "slug": "ai-data-portfolio-project",
+      "name": "AI & Data Portfolio Project — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/ai-data-portfolio-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-ai-data-portfolio-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-004",
+      "slug": "analytics-decision-system",
+      "name": "Analytics-to-Decision System — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/analytics-decision-system/",
+      "source_ids": [
+        "PAGE-APPLICATION-analytics-decision-system"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-005",
+      "slug": "analytics-portfolio-project",
+      "name": "Analytics Portfolio Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/analytics-portfolio-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-analytics-portfolio-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-006",
+      "slug": "architect-within-practice",
+      "name": "The Architect Within Practice — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/architect-within-practice/",
+      "source_ids": [
+        "PAGE-APPLICATION-architect-within-practice"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-007",
+      "slug": "execution-operating-system",
+      "name": "Execution Operating System — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/execution-operating-system/",
+      "source_ids": [
+        "PAGE-APPLICATION-execution-operating-system"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-008",
+      "slug": "execution-war-room",
+      "name": "Execution War Room — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/execution-war-room/",
+      "source_ids": [
+        "PAGE-APPLICATION-execution-war-room"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-009",
+      "slug": "future-scenario-studio",
+      "name": "Future Scenario Studio — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/future-scenario-studio/",
+      "source_ids": [
+        "PAGE-APPLICATION-future-scenario-studio"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-010",
+      "slug": "institution-builder",
+      "name": "Institution Builder Challenge — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/institution-builder/",
+      "source_ids": [
+        "PAGE-APPLICATION-institution-builder"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-011",
+      "slug": "institutional-design-project",
+      "name": "Institutional Design Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/institutional-design-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-institutional-design-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-012",
+      "slug": "leadership-intelligence-field-application",
+      "name": "Leadership Intelligence Field Application — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/leadership-intelligence-field-application/",
+      "source_ids": [
+        "PAGE-APPLICATION-leadership-intelligence-field-application"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-013",
+      "slug": "leadership-intelligence-project",
+      "name": "Leadership Intelligence Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/leadership-intelligence-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-leadership-intelligence-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-014",
+      "slug": "leadership-power-dynamics",
+      "name": "Leadership & Power Dynamics Simulation — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/leadership-power-dynamics/",
+      "source_ids": [
+        "PAGE-APPLICATION-leadership-power-dynamics"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-015",
+      "slug": "pattern-analysis-project",
+      "name": "Pattern Analysis Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/pattern-analysis-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-pattern-analysis-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-016",
+      "slug": "pattern-detection-lab",
+      "name": "Pattern Detection Lab — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/pattern-detection-lab/",
+      "source_ids": [
+        "PAGE-APPLICATION-pattern-detection-lab"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-017",
+      "slug": "strategic-decision-lab",
+      "name": "Strategic Decision Lab — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/strategic-decision-lab/",
+      "source_ids": [
+        "PAGE-APPLICATION-strategic-decision-lab"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-018",
+      "slug": "strategic-foresight-project",
+      "name": "Strategic Foresight Project — Application | SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/strategic-foresight-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-strategic-foresight-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-019",
+      "slug": "strategic-thinking-case",
+      "name": "Strategic Thinking Decision Lab — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/strategic-thinking-case/",
+      "source_ids": [
+        "PAGE-APPLICATION-strategic-thinking-case"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-020",
+      "slug": "systems-architecture-project",
+      "name": "Systems Architecture Project — SegunSamuel",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/systems-architecture-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-systems-architecture-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "APP-021",
+      "slug": "systems-redesign-project",
+      "name": "Systems Redesign Project — SegunSamuel Application",
+      "type": "application",
+      "status": "canonical",
+      "short_definition": "Practical application and evidence of use.",
+      "parent_id": "PLAT-005",
+      "route": "/Thesegunsamuel/application/systems-redesign-project/",
+      "source_ids": [
+        "PAGE-APPLICATION-systems-redesign-project"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "application",
+        "canonicalized from application detail page"
+      ],
+      "featured": false
+    },
+    {
+      "id": "NEWS-001",
+      "slug": "newsletter",
+      "name": "Newsletter",
+      "type": "newsletter",
+      "status": "canonical",
+      "short_definition": "A direct editorial channel for essays, observations, frameworks, strategy, human nature, technology and transformation.",
+      "parent_id": "PLAT-007",
+      "route": "/Thesegunsamuel/newsletter/",
+      "source_ids": [
+        "PAGE-NEWSLETTER-newsletter"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "newsletter",
+        "editorial"
+      ],
+      "featured": false
+    },
+    {
+      "id": "LEARN-001",
+      "slug": "student-learning-environment",
+      "name": "Student Learning Environment",
+      "type": "learning_system",
+      "status": "canonical",
+      "short_definition": "Authenticated learning environment for enrolment, course progress, lessons, learning paths and future certificates.",
+      "parent_id": "PLAT-001",
+      "route": "/Thesegunsamuel/student/",
+      "source_ids": [
+        "PAGE-STUDENT-student"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "learning system",
+        "student",
+        "courses",
+        "progress"
       ],
       "featured": false
     }
@@ -2497,5 +5689,11 @@
       }
     ]
   },
-  "integration_version": "v3.10"
+  "integration_version": "v3.10",
+  "metadata": {
+    "canonicalization_version": "1.0",
+    "canonical_entities": 184,
+    "canonicalized_assets_added": 122,
+    "application_system_version": "1.0"
+  }
 }

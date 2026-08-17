@@ -264,60 +264,7 @@
 </footer>
 
 <script src="/Thesegunsamuel/js/site-shell.js"></script>
-<script>
-(async function(){
-  const root = '/Thesegunsamuel/';
-  const fallback = {user:{name:'Student'},enrollments:[],saved:[],notifications:[]};
-  try{
-    const r=await fetch(root+'student/data/student-state.json',{cache:'no-store'});
-    const d=await r.json();
-    const serverCourses=d.enrollments||[];
-    const demoCourses=(window.SegunSamuelEnrollment&&window.SegunSamuelEnrollment.get)?window.SegunSamuelEnrollment.get():[];
-    const byId={}; serverCourses.forEach(x=>byId[x.courseId]=x); demoCourses.forEach(x=>byId[x.courseId]={...byId[x.courseId],...x});
-    const courses=Object.values(byId);
-    const totalCompleted=courses.reduce((s,c)=>s+(Number(c.completedLessons)||0),0);
-    const totalLessons=courses.reduce((s,c)=>s+(Number(c.totalLessons)||0),0);
-    const avg=courses.length?Math.round(courses.reduce((s,c)=>s+(Number(c.progress)||0),0)/courses.length):0;
 
-    document.getElementById('course-count').textContent=courses.length;
-    document.getElementById('overall-progress').textContent=avg+'%';
-    document.getElementById('lessons-completed').textContent=totalCompleted+' / '+totalLessons;
-    document.getElementById('certificate-count').textContent=(d.certificates||[]).length;
-    document.getElementById('saved-count').textContent=(d.saved||[]).length+' saved item'+((d.saved||[]).length===1?'':'s');
-
-    const active=courses.find(c=>c.status==='active')||courses[0];
-    if(active){
-      document.getElementById('continue-course').innerHTML=
-        '<div class="student-continue">'+
-          '<div><p class="eyebrow">CONTINUE · '+(active.progress||0)+'% COMPLETE</p>'+
-          '<h3>'+escapeHtml(active.title)+'</h3>'+
-          '<p>'+(active.lastLesson?'Next from: '+escapeHtml(active.lastLesson):'Your next lesson is ready.')+'</p>'+
-          '<a class="student-btn" href="'+root+'learning/?course='+encodeURIComponent(active.courseId)+'">CONTINUE LEARNING →</a></div>'+
-          '<div class="student-progress" style="min-width:160px"><span style="width:'+Math.min(100,Number(active.progress)||0)+'%"></span></div>'+
-        '</div>';
-      document.getElementById('next-move-title').textContent='Continue '+active.title;
-      document.getElementById('next-move-copy').textContent='Return to your current lesson and keep building momentum.';
-      document.getElementById('next-move-link').href=root+'learning/?course='+encodeURIComponent(active.courseId);
-      document.getElementById('next-move-link').textContent='CONTINUE LEARNING →';
-    }else{
-      document.getElementById('continue-course').innerHTML='<div class="student-continue"><div><p class="eyebrow">YOUR NEXT STEP</p><h3>Choose a course to begin.</h3><p>Explore the catalogue and build your first learning plan.</p><a class="student-btn" href="'+root+'courses/">BROWSE COURSES →</a></div></div>';
-    }
-
-    document.getElementById('courses').innerHTML=courses.length?courses.map(c=>
-      '<article class="student-course">'+
-        '<div><span class="student-course-meta">'+escapeHtml(c.status||'active')+'</span><h3>'+escapeHtml(c.title)+'</h3>'+
-        '<p>'+(c.lastLesson?'Last lesson: '+escapeHtml(c.lastLesson):'Ready to begin.')+'</p>'+
-        '<div class="student-progress"><span style="width:'+Math.min(100,Number(c.progress)||0)+'%"></span></div>'+
-        '<span class="student-progress-label">'+(Number(c.progress)||0)+'% · '+(Number(c.completedLessons)||0)+' / '+(Number(c.totalLessons)||0)+' lessons</span></div>'+
-        '<a class="student-btn" href="'+root+'learning/?course='+encodeURIComponent(c.courseId)+'">OPEN</a>'+
-      '</article>'
-    ).join(''):'<article class="student-course"><div><span class="student-course-meta">NO ENROLMENTS</span><h3>Your learning portfolio is empty.</h3><p>Explore the catalogue to choose your next capability.</p></div><a class="student-btn" href="'+root+'courses/">BROWSE</a></article>';
-  }catch(e){
-    document.getElementById('continue-course').innerHTML='<div class="student-continue"><div><p class="eyebrow">DEMO STATE</p><h3>Student data is unavailable.</h3><p>The frontend is ready; production enrolment data will come from the secure learning API.</p></div></div>';
-  }
-  function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-})();
-</script>
 <script src="../assets/js/privacy.js" defer></script>
 <script id="global-placeholder-runtime">
 document.addEventListener("DOMContentLoaded", function () {
@@ -350,5 +297,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+<script src="/Thesegunsamuel/assets/js/student-dashboard-v1.js"></script>
 </body>
 </html>

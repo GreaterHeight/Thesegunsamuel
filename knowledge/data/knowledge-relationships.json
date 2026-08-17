@@ -1,5 +1,5 @@
 {
-  "schema_version": "2.1",
+  "schema_version": "3.0",
   "purpose": "Unified explicit relationship registry for global ecosystem discovery.",
   "source_layers": [
     "explore/data/knowledge-graph.json",
@@ -974,32 +974,228 @@
       "confidence": "explicit"
     },
     {
-      "source_id": "PAGE-CS-architecting-a-sustainable-operating-system",
-      "target_id": "PAGE-FR-systems-strategic-architecture",
+      "source_id": "CS-002",
+      "target_id": "FR-014",
       "type": "USES_FRAMEWORK",
       "provenance": "case-study-registry.json (existing case-study page metadata)",
       "confidence": "explicit-page-metadata"
     },
     {
-      "source_id": "PAGE-CS-pattern-intelligence-in-a-business-decision",
+      "source_id": "CS-008",
       "target_id": "SS-004",
       "type": "USES_FRAMEWORK",
       "provenance": "case-study-registry.json (existing case-study page metadata)",
       "confidence": "explicit-page-metadata"
     },
     {
-      "source_id": "PAGE-CS-strategic-foresight-under-uncertainty",
+      "source_id": "CS-012",
       "target_id": "SS-003",
       "type": "USES_FRAMEWORK",
       "provenance": "case-study-registry.json (existing case-study page metadata)",
       "confidence": "explicit-page-metadata"
     },
     {
-      "source_id": "PAGE-CS-the-shadow-side-of-organisational-power",
-      "target_id": "PAGE-FR-human-behaviour-shadow-dynamics",
+      "source_id": "CS-016",
+      "target_id": "FR-006",
       "type": "USES_FRAMEWORK",
       "provenance": "case-study-registry.json (existing case-study page metadata)",
       "confidence": "explicit-page-metadata"
+    },
+    {
+      "source_id": "APP-001",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-002",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-003",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-004",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-005",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-006",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-007",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-008",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-009",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-010",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-011",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-012",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-013",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-014",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-015",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-016",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-017",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-018",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-019",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-020",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "APP-021",
+      "target_id": "PLAT-005",
+      "type": "part_of",
+      "provenance": "application detail registry",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-005",
+      "target_id": "PLAT-012",
+      "type": "connects_to",
+      "provenance": "professional engagement architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-005",
+      "target_id": "PLAT-013",
+      "type": "connects_to",
+      "provenance": "professional engagement architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-007",
+      "target_id": "NEWS-001",
+      "type": "contains",
+      "provenance": "editorial system architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-007",
+      "target_id": "PLAT-008",
+      "type": "connects_to",
+      "provenance": "editorial system architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "NEWS-001",
+      "target_id": "PLAT-007",
+      "type": "part_of",
+      "provenance": "editorial system architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-001",
+      "target_id": "LEARN-001",
+      "type": "delivered_through",
+      "provenance": "learning ecosystem architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-003",
+      "target_id": "LEARN-001",
+      "type": "connects_to",
+      "provenance": "learning ecosystem architecture",
+      "confidence": "explicit-architecture"
     }
   ],
   "derived_relationships": [
@@ -1303,5 +1499,6 @@
     "Additional USES_FRAMEWORK edges come from existing case-study page metadata.",
     "No semantic relationship has been promoted to confirmed merely because two assets share keywords."
   ],
-  "relationship_count": 142
+  "relationship_count": 170,
+  "canonicalized_asset_count": 122
 }

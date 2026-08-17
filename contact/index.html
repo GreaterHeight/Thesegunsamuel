@@ -158,13 +158,22 @@
     thinking, frameworks, learning, speaking, collaboration or other opportunities.
   </p>
   <section class="contact-card" aria-labelledby="contact-form-title">
+<p style="font-size:11px;line-height:1.6;color:#596c63;margin-bottom:18px"><strong>For professional engagements:</strong> you can <a href="/Thesegunsamuel/engagement/intake/">start with the structured Engagement Intake</a> so the conversation arrives with useful context.</p>
     <h2 id="contact-form-title">Send a message</h2>
     <form id="contactForm" action="mailto:" method="post" enctype="text/plain">
       <label for="name">Name</label>
       <input id="name" name="name" autocomplete="name" required>
       <label for="email">Email</label>
       <input id="email" name="email" type="email" autocomplete="email" required>
-      <label for="message">Message</label>
+      <label for="engagementType">Engagement type</label>
+<input id="engagementType" name="engagementType" autocomplete="off">
+<label for="organisation">Organisation / Company</label>
+<input id="organisation" name="organisation" autocomplete="organization">
+<label for="context">Problem / Context</label>
+<textarea id="context" name="context"></textarea>
+<label for="outcome">Desired outcome</label>
+<textarea id="outcome" name="outcome"></textarea>
+<label for="message">Message</label>
       <textarea id="message" name="message" required></textarea>
       <button type="submit">Send message</button>
       <div id="contactStatus" class="contact-status" aria-live="polite"></div>
@@ -224,5 +233,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-</body>
+<script>
+(function(){
+try{
+ const raw=sessionStorage.getItem("segunEngagementDraft"); if(!raw)return;
+ const d=JSON.parse(raw);
+ const map={name:"name",email:"email",organisation:"organisation",engagementType:"engagementType",context:"context",outcome:"outcome"};
+ Object.keys(map).forEach(k=>{const el=document.getElementById(map[k]);if(el&&d[k])el.value=d[k]});
+ if(d.engagement){const e=document.getElementById("engagementType");if(e)e.value=d.engagement}
+ sessionStorage.removeItem("segunEngagementDraft");
+}catch(e){}
+})();
+</script></body>
 </html>

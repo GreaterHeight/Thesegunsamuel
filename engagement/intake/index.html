@@ -1,0 +1,77 @@
+
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Engagement Intake — SegunSamuel</title>
+<meta name="description" content="Structured engagement intake for consulting, speaking, advisory, workshops and applied projects.">
+<link rel="stylesheet" href="/Thesegunsamuel/assets/css/styles.css">
+<style>
+.ei-main{max-width:1120px;margin:auto;padding:54px 24px 88px}
+.ei-hero{padding:42px 0 30px}
+.ei-hero h1{font:600 clamp(38px,6vw,64px)/1.02 Georgia,serif;color:#003020;margin:8px 0 14px}
+.ei-hero .lead{max-width:780px;color:#53685e;line-height:1.75;font-size:15px}
+.ei-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.7fr);gap:28px;align-items:start}
+.ei-card{background:#fff;border:1px solid rgba(0,48,32,.13);border-radius:16px;padding:26px}
+.ei-card h2{font:600 28px Georgia,serif;color:#003020;margin:0 0 18px}
+.ei-field{margin-bottom:17px}.ei-field label{display:block;font:700 9px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#50665c;margin-bottom:7px}
+.ei-field input,.ei-field select,.ei-field textarea{width:100%;box-sizing:border-box;padding:12px 13px;border:1px solid rgba(0,48,32,.18);border-radius:8px;background:#fff;color:#17372b;font:inherit}
+.ei-field textarea{min-height:130px;resize:vertical}
+.ei-options{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.ei-option{position:relative}.ei-option input{position:absolute;opacity:0}.ei-option label{display:block;border:1px solid rgba(0,48,32,.14);border-radius:9px;padding:12px;font-size:11px;line-height:1.35;cursor:pointer;height:100%;box-sizing:border-box}
+.ei-option input:checked+label{border-color:#003020;background:#eaf5f1;box-shadow:inset 0 0 0 1px #003020}
+.ei-submit{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:20px}
+.ei-submit button,.ei-submit a{border:0;border-radius:8px;padding:12px 16px;font:700 9px Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer}
+.ei-submit button{background:#003020;color:#fff}.ei-submit a{border:1px solid rgba(0,48,32,.2);color:#003020;background:#fff}
+.ei-note{font-size:10px;color:#718079;line-height:1.55}
+.ei-side{background:linear-gradient(150deg,#eaf5f1,#f4eee3);border-radius:16px;padding:24px;position:sticky;top:20px}
+.ei-side h3{font:600 23px Georgia,serif;color:#003020;margin:0 0 12px}.ei-side p{font-size:11px;line-height:1.65;color:#52675d}
+.ei-side ol{margin:18px 0 0;padding-left:20px}.ei-side li{font-size:11px;line-height:1.6;margin-bottom:10px;color:#425950}
+.ei-status{margin-top:15px;padding:12px;border-radius:8px;background:#f4eee3;color:#4d5f57;font-size:11px;display:none}
+@media(max-width:780px){.ei-layout{grid-template-columns:1fr}.ei-side{position:static}.ei-options{grid-template-columns:1fr}}
+</style>
+</head>
+<body><nav data-site-nav></nav>
+<main class="ei-main">
+<section class="ei-hero"><div class="eyebrow">ENGAGEMENT · INTAKE</div><h1>Start with the problem.</h1><p class="lead">A focused intake helps determine whether the right route is consulting, strategic advisory, speaking, a workshop, an executive session or an applied project.</p></section>
+<div class="ei-layout">
+<section class="ei-card"><h2>Tell us what you are trying to solve.</h2>
+<form id="engagementIntake">
+<div class="ei-field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+<div class="ei-field"><label for="organisation">Organisation / Company</label><input id="organisation" name="organisation" autocomplete="organization"></div>
+<div class="ei-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+<div class="ei-field"><label>What kind of engagement are you considering?</label>
+<div class="ei-options">
+<div class="ei-option"><input id="consulting" type="checkbox" name="engagement" value="Consulting"><label for="consulting">Strategic Consulting</label></div>
+<div class="ei-option"><input id="advisory" type="checkbox" name="engagement" value="Strategic Advisory"><label for="advisory">Strategic Advisory</label></div>
+<div class="ei-option"><input id="speaking" type="checkbox" name="engagement" value="Speaking / Keynote"><label for="speaking">Speaking / Keynote</label></div>
+<div class="ei-option"><input id="workshop" type="checkbox" name="engagement" value="Workshop / Intensive"><label for="workshop">Workshop / Intensive</label></div>
+<div class="ei-option"><input id="executive" type="checkbox" name="engagement" value="Executive Session"><label for="executive">Executive Session</label></div>
+<div class="ei-option"><input id="application" type="checkbox" name="engagement" value="Applied Project"><label for="application">Applied Project</label></div>
+</div></div>
+<div class="ei-field"><label for="context">What is the situation or problem?</label><textarea id="context" name="context" placeholder="Describe the situation, challenge, decision or opportunity." required></textarea></div>
+<div class="ei-field"><label for="outcome">What would a useful outcome look like?</label><textarea id="outcome" name="outcome" placeholder="What would you want to be different after the engagement?"></textarea></div>
+<div class="ei-field"><label for="timeline">Timing</label><select id="timeline" name="timeline"><option value="">Select if known</option><option>Exploring</option><option>Within 30 days</option><option>Within 60 days</option><option>Within 90 days</option><option>Specific date / event</option></select></div>
+<div class="ei-submit"><button type="submit">Prepare Engagement Brief</button><a href="/Thesegunsamuel/contact/">Contact Directly</a></div>
+<div id="eiStatus" class="ei-status" aria-live="polite"></div>
+<p class="ei-note">This form prepares the enquiry for review. It does not imply acceptance, availability or a commercial commitment.</p>
+</form></section>
+<aside class="ei-side"><h3>A better enquiry produces a better conversation.</h3><p>The intake is designed to capture enough context to route the conversation intelligently without forcing the problem into a predefined package.</p>
+<ol><li><strong>Classify</strong> the engagement.</li><li><strong>Understand</strong> the problem and context.</li><li><strong>Clarify</strong> the desired outcome.</li><li><strong>Route</strong> the conversation to the appropriate professional pathway.</li></ol></aside>
+</div></main>
+<script src="/Thesegunsamuel/js/site-shell.js"></script>
+<script>
+(function(){
+const form=document.getElementById("engagementIntake");
+if(!form)return;
+const status=document.getElementById("eiStatus");
+form.addEventListener("submit",function(e){
+ e.preventDefault();
+ const data=Object.fromEntries(new FormData(form).entries());
+ const selected=[...form.querySelectorAll('input[name="engagement"]:checked')].map(x=>x.value);
+ data.engagement=selected.join(", ");
+ sessionStorage.setItem("segunEngagementDraft",JSON.stringify(data));
+ status.style.display="block";
+ status.textContent="Your engagement brief has been prepared. Continue to Contact to review it before sending.";
+ setTimeout(()=>{location.href="/Thesegunsamuel/contact/?source=intake"},450);
+});
+})();
+</script>
+</body></html>
