@@ -1,0 +1,110 @@
+[
+  {
+    "title": "AI-Enabled Professional Workflow",
+    "slug": "ai-enabled-professional-workflow",
+    "route": "/Thesegunsamuel/case-studies/ai-enabled-professional-workflow/",
+    "framework": "A practical case for connecting AI to research, analysis, decision support and workflow design."
+  },
+  {
+    "title": "Architecting a Sustainable Operating System",
+    "slug": "architecting-a-sustainable-operating-system",
+    "route": "/Thesegunsamuel/case-studies/architecting-a-sustainable-operating-system/",
+    "framework": "Systems & Strategic Architecture"
+  },
+  {
+    "title": "Attention as Strategy",
+    "slug": "attention-as-strategy",
+    "route": "/Thesegunsamuel/case-studies/attention-as-strategy/",
+    "framework": "How the allocation of time, energy and attention quietly determines what a person, team or organisation can actually accomplish."
+  },
+  {
+    "title": "Building Institutional Memory",
+    "slug": "building-institutional-memory",
+    "route": "/Thesegunsamuel/case-studies/building-institutional-memory/",
+    "framework": "A case about converting individual knowledge into organisational memory and continuity."
+  },
+  {
+    "title": "Business Performance Turnaround",
+    "slug": "business-performance-turnaround",
+    "route": "/Thesegunsamuel/case-studies/business-performance-turnaround/",
+    "framework": "How pattern intelligence, systems thinking and execution architecture can be combined to diagnose persistent performance problems."
+  },
+  {
+    "title": "Institution After the Founder",
+    "slug": "institution-after-the-founder",
+    "route": "/Thesegunsamuel/case-studies/institution-after-the-founder/",
+    "framework": "What happens when an organisation depends too heavily on the person who created it."
+  },
+  {
+    "title": "Leadership Under Pressure",
+    "slug": "leadership-under-pressure",
+    "route": "/Thesegunsamuel/case-studies/leadership-under-pressure/",
+    "framework": "A leadership case exploring judgment, power, incentives, trust and behaviour when pressure changes the human system."
+  },
+  {
+    "title": "Pattern Intelligence in a Business Decision",
+    "slug": "pattern-intelligence-in-a-business-decision",
+    "route": "/Thesegunsamuel/case-studies/pattern-intelligence-in-a-business-decision/",
+    "framework": "Pattern Intelligence"
+  },
+  {
+    "title": "Power Without Authority",
+    "slug": "power-without-authority",
+    "route": "/Thesegunsamuel/case-studies/power-without-authority/",
+    "framework": "How influence operates when formal authority is absent—and what this reveals about incentives, relationships, perception and power."
+  },
+  {
+    "title": "Redesigning an Organisation",
+    "slug": "redesigning-an-organisation",
+    "route": "/Thesegunsamuel/case-studies/redesigning-an-organisation/",
+    "framework": "A systems architecture case showing how relationships, flows, governance and feedback can be redesigned."
+  },
+  {
+    "title": "Signals Before the Shift",
+    "slug": "signals-before-the-shift",
+    "route": "/Thesegunsamuel/case-studies/signals-before-the-shift/",
+    "framework": "How weak signals can reveal meaningful change before it becomes obvious to everyone."
+  },
+  {
+    "title": "Strategic Foresight Under Uncertainty",
+    "slug": "strategic-foresight-under-uncertainty",
+    "route": "/Thesegunsamuel/case-studies/strategic-foresight-under-uncertainty/",
+    "framework": "Strategic Foresight"
+  },
+  {
+    "title": "The Strategy That Could Not Execute",
+    "slug": "strategy-that-could-not-execute",
+    "route": "/Thesegunsamuel/case-studies/strategy-that-could-not-execute/",
+    "framework": "A strategy can be intellectually sound and still fail because the architecture required to execute it was never designed."
+  },
+  {
+    "title": "Strategy Under Uncertainty",
+    "slug": "strategy-under-uncertainty",
+    "route": "/Thesegunsamuel/case-studies/strategy-under-uncertainty/",
+    "framework": "A strategic planning case built around signals, drivers, scenarios and preparedness rather than prediction."
+  },
+  {
+    "title": "The Hidden Game",
+    "slug": "the-hidden-game",
+    "route": "/Thesegunsamuel/case-studies/the-hidden-game/",
+    "framework": "A case-study lens for examining how manipulation, incentives, status, fear, identity and power can influence apparently rational behaviour."
+  },
+  {
+    "title": "The Shadow Side of Organisational Power",
+    "slug": "the-shadow-side-of-organisational-power",
+    "route": "/Thesegunsamuel/case-studies/the-shadow-side-of-organisational-power/",
+    "framework": "Human Behaviour & Shadow Dynamics"
+  },
+  {
+    "title": "The System Is the Problem",
+    "slug": "the-system-is-the-problem",
+    "route": "/Thesegunsamuel/case-studies/the-system-is-the-problem/",
+    "framework": "Why repeatedly fixing individual symptoms can leave the underlying system untouched."
+  },
+  {
+    "title": "When Data Is Not Insight",
+    "slug": "when-data-is-not-insight",
+    "route": "/Thesegunsamuel/case-studies/when-data-is-not-insight/",
+    "framework": "Why having more data does not automatically produce better decisions."
+  }
+]

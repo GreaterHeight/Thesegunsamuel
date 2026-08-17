@@ -51,6 +51,7 @@
       <a href="/Thesegunsamuel/explore/">EXPLORE</a>
     </nav>
     <div class="ss-nav-actions">
+      <a class="ss-search-link" href="/Thesegunsamuel/search/" aria-label="Search the Segun Samuel knowledge ecosystem">SEARCH</a>
       <a href="/Thesegunsamuel/student/">STUDENT AREA</a>
       <a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count>0</span></a>
     </div>

@@ -164,11 +164,32 @@
 }
 </style>
 
+
+<style id="knowledge-relationship-ui">
+.explore-controls{display:grid;grid-template-columns:minmax(0,1fr) 180px auto;gap:10px;margin-top:18px;align-items:center}
+.explore-controls .search{margin:0}
+#type-filter{width:100%;padding:14px 12px;border:1px solid #cfc7bc;border-radius:8px;background:#fff;font:10px "Tenor Sans",Arial,sans-serif;letter-spacing:.08em;color:#35423b}
+.explore-stats{font:9px "Tenor Sans",Arial,sans-serif;letter-spacing:.07em;color:#69716c;white-space:nowrap}
+.relationship-panel{grid-column:1/-1;margin-top:14px;padding-top:14px;border-top:1px solid #ddd6cc}
+.relationship-panel .rel-title{font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#8c0d0d}
+.relationship-panel ul{margin:7px 0 0;padding-left:17px}
+.relationship-panel li{margin:5px 0;font-size:11px;line-height:1.45}
+.relationship-panel a{color:#003020;text-decoration:none}
+.relationship-panel a:hover{text-decoration:underline}
+@media(max-width:850px){.explore-controls{grid-template-columns:1fr 160px}.explore-stats{grid-column:1/-1}}
+@media(max-width:600px){.explore-controls{grid-template-columns:1fr}.explore-stats{grid-column:auto}.explore-controls .search{width:100%}}
+</style>
 </head><body>
 <nav data-site-nav></nav>
 <main class="explore-wrap"><p>EXPLORE</p><h1>Knowledge Graph</h1>
 <p>Search across connected intellectual and learning entities.</p>
-<input id="q" class="search" placeholder="Search frameworks, courses, insights…" aria-label="Search knowledge graph">
+<div class="explore-controls">
+  <input id="q" class="search" placeholder="Search frameworks, courses, insights…" aria-label="Search knowledge graph">
+  <select id="type-filter" aria-label="Filter by knowledge type">
+    <option value="">ALL TYPES</option>
+  </select>
+  <div class="explore-stats" id="explore-stats">Loading knowledge relationships…</div>
+</div>
 <div id="results" class="results" aria-live="polite"></div></main>
 <footer class="site-footer">
   <div class="footer-grid">
@@ -187,99 +208,60 @@
 <script src="/Thesegunsamuel/js/site-shell.js"></script><script>
 (async function(){
   const out=document.getElementById('results'), q=document.getElementById('q');
+  const typeFilter=document.getElementById('type-filter'), stats=document.getElementById('explore-stats');
   if(!out || !q) return;
-
-  function escapeHtml(value){
-    return String(value ?? '').replace(/[&<>"']/g,function(m){
-      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m];
-    });
-  }
-
-  function normaliseGraph(data){
-    if(Array.isArray(data.nodes)) return data.nodes;
-    if(!Array.isArray(data.entities)) return [];
-    const rels=Array.isArray(data.relationships)?data.relationships:[];
-    const byId=new Map(data.entities.map(e=>[String(e.id),e]));
-    return data.entities.map(e=>({
-      id:e.id,
-      title:e.name,
-      type:e.type,
-      text:e.short_definition || e.long_definition || '',
-      tags:Array.isArray(e.tags)?e.tags:[],
-      url:e.route || null,
-      connections:rels
-        .filter(r=>String(r.source_id)===String(e.id))
-        .map(r=>({
-          title:(byId.get(String(r.target_id))||{}).name || String(r.target_id),
-          relationship:r.type
-        }))
-    }));
-  }
-
-  let nodes=[];
+  const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
+  const href=v=>{
+    v=String(v||'').trim();
+    if(!v)return '';
+    if(/^https?:\/\//.test(v)||v.startsWith('/Thesegunsamuel/'))return v;
+    return '/Thesegunsamuel/'+v.replace(/^\/+/,'');
+  };
+  let nodes=[], edges=[], assetMap=new Map();
   try{
-    const response=await fetch('/Thesegunsamuel/explore/data/knowledge-graph.json',{cache:'no-store'});
-    if(!response.ok) throw new Error('HTTP '+response.status);
-    nodes=normaliseGraph(await response.json());
-  }catch(error){
-    out.innerHTML='<article class="node"><h2>Knowledge Graph unavailable.</h2><p>Please refresh the page. If the problem continues, the graph data could not be loaded.</p></article>';
-    return;
+    const [g,r]=await Promise.all([
+      fetch('/Thesegunsamuel/explore/data/knowledge-graph.json',{cache:'no-store'}).then(x=>x.json()),
+      fetch('/Thesegunsamuel/knowledge/data/knowledge-relationships.json',{cache:'no-store'}).then(x=>x.json())
+    ]);
+    const byId=new Map((g.entities||[]).map(e=>[String(e.id),e]));
+    (r.asset_index||[]).forEach(x=>assetMap.set(String(x.id),x));
+    nodes=(g.entities||[]).map(e=>({
+      id:String(e.id),title:e.name,type:e.type,text:e.short_definition||e.long_definition||'',
+      tags:e.tags||[],url:e.route||null
+    })).concat((r.asset_index||[]).filter(x=>!byId.has(String(x.id))).map(x=>({
+      id:String(x.id),title:x.name,type:x.type,text:x.description||'',tags:[],url:x.route
+    })));
+    edges=r.relationships||[];
+  }catch(e){
+    out.innerHTML='<article class="node"><h2>Knowledge Graph unavailable.</h2><p>Please refresh the page. If the problem continues, the graph data could not be loaded.</p></article>';return;
   }
-
-  function safeHref(route){
-    const value=String(route||'').trim();
-    if(!value) return '';
-    if(value.startsWith('http://') || value.startsWith('https://')) return value;
-    if(value.startsWith('/Thesegunsamuel/')) return value;
-    if(value.startsWith('/')) return '/Thesegunsamuel'+value;
-    return '/Thesegunsamuel/'+value.replace(/^\/+/,'');
-  }
-
+  const byId=new Map(nodes.map(n=>[n.id,n]));
+  const edgeTargets=id=>edges.filter(e=>String(e.source_id)===id||String(e.target_id)===id).map(e=>{
+    const other=String(e.source_id)===id?String(e.target_id):String(e.source_id);
+    return {type:e.type,node:byId.get(other)};
+  }).filter(x=>x.node);
+  const types=[...new Set(nodes.map(n=>n.type).filter(Boolean))].sort();
+  types.forEach(x=>{const o=document.createElement('option');o.value=x;o.textContent=String(x).replace(/_/g,' ').toUpperCase();typeFilter.appendChild(o)});
+  if(stats)stats.textContent=nodes.length+' KNOWLEDGE NODES · '+edges.length+' REGISTERED RELATIONSHIPS';
   function render(){
-    const s=q.value.toLowerCase().trim();
-    const filtered=nodes.filter(function(n){
-      const hay=[n.title,n.type,n.text].concat(Array.isArray(n.tags)?n.tags:[]).join(' ').toLowerCase();
-      return hay.includes(s);
+    const s=q.value.toLowerCase().trim(), typ=typeFilter.value;
+    const filtered=nodes.filter(n=>{
+      const hay=[n.title,n.type,n.text].concat(n.tags||[]).join(' ').toLowerCase();
+      return (!s||hay.includes(s))&&(!typ||n.type===typ);
     });
-
-    out.innerHTML=filtered.length ? filtered.map(function(n){
-      const href=safeHref(n.url);
-      const action=href
-        ? '<a class="node-open" href="'+escapeHtml(href)+'">OPEN →</a>'
-        : '<button class="node-open node-rel" type="button" data-node-id="'+escapeHtml(n.id)+'">VIEW CONNECTIONS →</button>';
-
-      return '<article class="node" data-node-id="'+escapeHtml(n.id)+'">'+
-        '<p>'+escapeHtml(String(n.type||'').toUpperCase())+'</p>'+
-        '<h2>'+escapeHtml(n.title||'Untitled node')+'</h2>'+
-        action+
-      '</article>';
-    }).join('') :
-      '<article class="node"><h2>No matching knowledge found.</h2><p>Try another search term.</p></article>';
-
-    out.querySelectorAll('.node-rel').forEach(function(btn){
-      btn.addEventListener('click',function(){
-        const node=filtered.find(x=>String(x.id)===String(btn.dataset.nodeId));
-        if(!node) return;
-        const existing=btn.parentElement.querySelector('.node-connections');
-        if(existing){ existing.remove(); return; }
-
-        const wrap=document.createElement('div');
-        wrap.className='node-connections';
-        const conns=Array.isArray(node.connections)?node.connections:[];
-        wrap.innerHTML=conns.length
-          ? '<p><strong>Connected to</strong></p><ul>'+
-              conns.map(function(c){
-                return '<li>'+escapeHtml(c.title||'')+' <small>— '+escapeHtml(c.relationship||'')+'</small></li>';
-              }).join('')+
-            '</ul>'
-          : '<p>No confirmed outward relationships are currently recorded for this node.</p>';
-        btn.parentElement.appendChild(wrap);
-      });
-    });
+    out.innerHTML=filtered.length?filtered.map(n=>{
+      const conns=edgeTargets(n.id);
+      const action=href(n.url)?'<a class="node-open" href="'+esc(href(n.url))+'">OPEN →</a>':'<button class="node-open node-rel" type="button">VIEW CONNECTIONS →</button>';
+      return '<article class="node" data-node-id="'+esc(n.id)+'"><p>'+esc(String(n.type||'').toUpperCase())+'</p><h2>'+esc(n.title||'Untitled node')+'</h2>'+action+
+        (conns.length?'<div class="relationship-panel"><div class="rel-title">'+conns.length+' CONNECTION'+(conns.length===1?'':'S')+'</div><ul>'+conns.slice(0,6).map(c=>{
+          const u=href(c.node.url);
+          return '<li><strong>'+esc(c.type.replace(/_/g,' '))+'</strong> — '+(u?'<a href="'+esc(u)+'">'+esc(c.node.title)+'</a>':esc(c.node.title))+'</li>';
+        }).join('')+'</ul>'+(conns.length>6?'<small>Showing 6 of '+conns.length+' connections.</small>':'')+'</div>':'')+
+        '</article>';
+    }).join(''):'<article class="node"><h2>No matching knowledge found.</h2><p>Try another search term or type.</p></article>';
+    out.querySelectorAll('.node-rel').forEach(btn=>btn.addEventListener('click',()=>{}));
   }
-
-  q.addEventListener('input',render);
-  render();
+  q.addEventListener('input',render);typeFilter.addEventListener('change',render);render();
 })();
 </script><script src="../assets/js/privacy.js" defer></script>
 
