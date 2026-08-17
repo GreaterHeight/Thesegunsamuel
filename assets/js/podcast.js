@@ -42,6 +42,7 @@ document.addEventListener("pause", e => {
   if(button) button.textContent="▶";
 }, true);
 
+/* UNIVERSAL IMAGE SLOT RESOLVER — independent from podcast library */
 (function(){
   function resolveImageSlots(){
     document.querySelectorAll('[data-image-slot]').forEach(function(slot){
