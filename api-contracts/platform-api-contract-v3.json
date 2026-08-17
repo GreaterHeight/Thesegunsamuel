@@ -1,0 +1,40 @@
+{
+  "version": "3.0",
+  "endpoints": {
+    "auth": [
+      "POST /auth/login",
+      "POST /auth/logout",
+      "GET /auth/me"
+    ],
+    "enrollment": [
+      "POST /enrollments",
+      "GET /enrollments/me"
+    ],
+    "payments": [
+      "POST /payments/initialize",
+      "POST /payments/webhook"
+    ],
+    "learning": [
+      "GET /courses/:courseId",
+      "GET /courses/:courseId/modules",
+      "POST /progress"
+    ],
+    "certificates": [
+      "GET /certificates/:id",
+      "GET /certificates/:id/verify"
+    ],
+    "search": [
+      "GET /search?q=",
+      "GET /graph/:nodeId"
+    ]
+  },
+  "security_requirements": [
+    "Server-side authentication and authorization",
+    "Webhook signature verification",
+    "Server-side payment confirmation before enrollment",
+    "Private lesson access control",
+    "Rate limiting and audit logging",
+    "Secure session/token management",
+    "Database-backed progress and enrollment state"
+  ]
+}
