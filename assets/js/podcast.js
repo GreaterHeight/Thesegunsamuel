@@ -48,9 +48,8 @@ document.addEventListener("pause", e => {
       var filename = slot.getAttribute('data-image-slot');
       var base = slot.getAttribute('data-image-base') || '/Thesegunsamuel/assets/images/';
       var realSrc = base.replace(/\/?$/,'/') + filename;
-      var fallback = '/Thesegunsamuel/assets/images/placeholders/placeholder.jpg';
+      var fallback = slot.getAttribute('data-image-fallback') || '/Thesegunsamuel/assets/images/placeholders/placeholder.jpg';
       var img = slot.querySelector('[data-image-placeholder-image]');
-
       if(!img){
         img=document.createElement('img');
         img.setAttribute('data-image-placeholder-image','');
@@ -59,27 +58,25 @@ document.addEventListener("pause", e => {
 
       slot.classList.remove('image-slot--real','image-slot--fallback');
       slot.classList.add('image-slot--loading');
-
+      img.removeAttribute('src');
       img.alt = slot.getAttribute('data-image-alt') || '';
-      img.onerror = function(){
-        img.onerror = null;
+
+      img.onerror=function(){
+        img.onerror=null;
         slot.classList.remove('image-slot--loading','image-slot--real');
         slot.classList.add('image-slot--fallback');
-        img.src = fallback;
+        img.src=fallback;
       };
-      img.onload = function(){
+      img.onload=function(){
         slot.classList.remove('image-slot--loading','image-slot--fallback');
         slot.classList.add('image-slot--real');
       };
 
-      // CRITICAL: request the real image FIRST. No placeholder is assigned here.
-      img.src = realSrc;
+      // Real artwork is ALWAYS requested first. The placeholder is never
+      // displayed as an intermediate image.
+      img.src=realSrc;
     });
   }
-
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',resolveImageSlots);
-  }else{
-    resolveImageSlots();
-  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',resolveImageSlots);
+  else resolveImageSlots();
 })();

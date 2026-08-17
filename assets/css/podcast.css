@@ -397,3 +397,10 @@
 [data-image-slot].image-slot--fallback::after{
   display:none!important;
 }
+
+/* Universal podcast artwork fallback safety net. The real image is still requested first. */
+[data-image-slot].image-slot--loading{background:linear-gradient(160deg,var(--teal-lite,#dcefea) 0%,var(--teal-pale,#eaf5f1) 45%,var(--cream-3,#f3eee4) 100%)!important;}
+[data-image-slot].image-slot--loading::after{content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/24% auto no-repeat;opacity:.92;pointer-events:none;}
+[data-image-slot].image-slot--fallback{background:linear-gradient(160deg,var(--teal-lite,#dcefea) 0%,var(--teal-pale,#eaf5f1) 45%,var(--cream-3,#f3eee4) 100%)!important;}
+[data-image-slot].image-slot--fallback::after{display:block!important;content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/24% auto no-repeat;opacity:.92;pointer-events:none;}
+[data-image-slot].image-slot--fallback [data-image-placeholder-image]{opacity:0!important;}
