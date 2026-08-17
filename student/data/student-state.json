@@ -18,5 +18,11 @@
     }
   ],
   "saved": [],
-  "notifications": []
+  "notifications": [],
+  "certificates": [],
+  "profile": {
+    "name": "Student",
+    "role": "Learner",
+    "timezone": "Africa/Lagos"
+  }
 }

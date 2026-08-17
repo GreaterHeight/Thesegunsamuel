@@ -131,25 +131,123 @@
 }
 </style>
 
+
+<style id="student-system-v1">
+.student-wrap{max-width:1280px;margin:0 auto;padding:56px 28px 80px}
+.student-hero{background:linear-gradient(135deg,#003020 0%,#0d3d28 65%,#173f32 100%);color:#fff;border-radius:22px;padding:48px;display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.student-hero h1{margin:8px 0 12px;color:#fff;font-size:clamp(32px,4vw,54px);line-height:1.05}
+.student-hero p:not(.eyebrow){max-width:680px;color:#e9f0ec;line-height:1.7}
+.eyebrow{font-family:var(--sans,"Tenor Sans",sans-serif);font-size:10px!important;letter-spacing:.16em;text-transform:uppercase;color:#8c0d0c;margin:0 0 10px!important}
+.student-hero .eyebrow{color:#d7e7df}
+.student-hero-actions{display:flex;gap:10px;flex-wrap:wrap}
+.student-btn,.student-link-button{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:7px;background:#8c0d0c;color:#fff!important;text-decoration:none!important;font:600 10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.11em}
+.student-btn.secondary{background:#fdfaf4;color:#003020!important}
+.student-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0}
+.student-stat{background:#fff;border:1px solid #e4ddd2;border-radius:16px;padding:22px}
+.student-stat span{display:block;font:10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;color:#6d746f}
+.student-stat strong{display:block;font:700 32px var(--sans,"Tenor Sans",sans-serif);color:#003020;margin:10px 0 3px}
+.student-stat small{color:#737a76;font-size:11px}
+.student-dashboard-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(280px,1fr);gap:20px}
+.student-main-column,.student-side-column{display:grid;gap:20px;align-content:start}
+.student-panel{background:#fff;border:1px solid #e4ddd2;border-radius:18px;padding:26px}
+.student-panel.compact{padding:24px}
+.student-section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:20px}
+.student-section-head h2,.student-panel h2{color:#003020;margin:0}
+.student-section-head>a,.student-text-link{font:10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em;color:#8c0d0c;text-decoration:none}
+.student-course-list{display:grid;gap:12px}
+.student-course{border:1px solid #e7e1d8;border-radius:13px;padding:18px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center}
+.student-course h3{margin:4px 0 5px;color:#003020}
+.student-course p{margin:0;color:#6d746f;font-size:12px;line-height:1.6}
+.student-course-meta{font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;color:#7a807c;text-transform:uppercase}
+.student-progress{height:8px;background:#ece7df;border-radius:20px;overflow:hidden;margin:12px 0 7px}
+.student-progress span{display:block;height:100%;background:#8c0d0c}
+.student-progress-label{font:10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.06em;color:#6d746f}
+.student-continue{background:#f5f2eb;border-radius:14px;padding:22px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+.student-continue h3{font-size:24px;color:#003020;margin:5px 0 7px}
+.student-continue p{margin:0;color:#68706b;line-height:1.6}
+.student-continue .student-btn{margin-top:14px}
+.student-mode{display:inline-block;margin-top:12px;padding:6px 9px;border-radius:20px;background:#f2ede5;color:#6b706c;font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em}
+.student-note{margin-top:20px;background:#f5f2eb}
+.student-note p:not(.eyebrow){max-width:850px;color:#636b66;line-height:1.75}
+@media(max-width:900px){.student-stats{grid-template-columns:repeat(2,1fr)}.student-dashboard-grid{grid-template-columns:1fr}.student-hero{align-items:flex-start;flex-direction:column}}
+@media(max-width:600px){.student-wrap{padding:35px 18px 60px}.student-hero{padding:30px 22px}.student-stats{grid-template-columns:1fr 1fr;gap:10px}.student-stat{padding:17px}.student-stat strong{font-size:25px}.student-course,.student-continue{grid-template-columns:1fr}.student-section-head{align-items:flex-start;flex-direction:column}}
+</style>
+
 </head>
 <body>
 <nav data-site-nav></nav>
+
 <main class="student-wrap">
-<section class="student-hero">
-<p>STUDENT AREA</p>
-<h1>Welcome back, Student.</h1>
-<p>Your learning journey, courses and progress are in one place.</p>
-</section>
-<section class="student-grid">
-<article class="student-card"><h3>ACTIVE COURSES</h3><p><strong id="course-count">0</strong></p></article>
-<article class="student-card"><h3>OVERALL PROGRESS</h3><p><strong id="overall-progress">0%</strong></p></article>
-<article class="student-card"><h3>LESSONS COMPLETED</h3><p><strong id="lessons-completed">0 / 0</strong></p></article>
-</section>
-<section style="margin-top:30px">
-<h2>MY COURSES</h2>
-<div id="courses"></div>
-</section>
+  <section class="student-hero">
+    <div>
+      <p class="eyebrow">STUDENT AREA · LEARNING OS</p>
+      <h1>Welcome back, Student.</h1>
+      <p>Your learning journey, progress, saved work and next actions in one place.</p>
+    </div>
+    <div class="student-hero-actions">
+      <a class="student-btn" href="/Thesegunsamuel/courses/">EXPLORE COURSES</a>
+      <a class="student-btn secondary" href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a>
+    </div>
+  </section>
+
+  <section class="student-stats" aria-label="Learning overview">
+    <article class="student-stat"><span>ACTIVE COURSES</span><strong id="course-count">0</strong><small>Currently in progress</small></article>
+    <article class="student-stat"><span>OVERALL PROGRESS</span><strong id="overall-progress">0%</strong><small>Across active enrolments</small></article>
+    <article class="student-stat"><span>LESSONS COMPLETED</span><strong id="lessons-completed">0 / 0</strong><small>Completed learning units</small></article>
+    <article class="student-stat"><span>CERTIFICATES</span><strong id="certificate-count">0</strong><small>Ready or earned</small></article>
+  </section>
+
+  <section class="student-dashboard-grid">
+    <div class="student-main-column">
+      <article class="student-panel">
+        <div class="student-section-head">
+          <div><p class="eyebrow">CONTINUE LEARNING</p><h2>Pick up where you left off.</h2></div>
+          <a href="/Thesegunsamuel/learning/">OPEN LEARNING</a>
+        </div>
+        <div id="continue-course"></div>
+      </article>
+
+      <article class="student-panel">
+        <div class="student-section-head">
+          <div><p class="eyebrow">MY COURSES</p><h2>Your learning portfolio.</h2></div>
+          <a href="/Thesegunsamuel/courses/">BROWSE ALL</a>
+        </div>
+        <div id="courses" class="student-course-list"></div>
+      </article>
+    </div>
+
+    <aside class="student-side-column">
+      <article class="student-panel compact">
+        <p class="eyebrow">NEXT MOVE</p>
+        <h2 id="next-move-title">Choose your next move.</h2>
+        <p id="next-move-copy">Explore a learning path or continue an active course.</p>
+        <a class="student-link-button" id="next-move-link" href="/Thesegunsamuel/learning-paths/">VIEW LEARNING PATHS →</a>
+      </article>
+
+      <article class="student-panel compact">
+        <p class="eyebrow">SAVED</p>
+        <h2 id="saved-count">0 saved items</h2>
+        <p>Books, frameworks and learning resources you choose to revisit will appear here when connected to your account.</p>
+        <a class="student-text-link" href="/Thesegunsamuel/library/">OPEN LIBRARY →</a>
+      </article>
+
+      <article class="student-panel compact">
+        <p class="eyebrow">LEARNING PATHS</p>
+        <h2>Learn toward a capability.</h2>
+        <p>Move beyond individual courses with structured routes through strategic, analytical and leadership intelligence.</p>
+        <a class="student-text-link" href="/Thesegunsamuel/learning-paths/">EXPLORE PATHS →</a>
+      </article>
+    </aside>
+  </section>
+
+  <section class="student-panel student-note">
+    <p class="eyebrow">STUDENT SYSTEM</p>
+    <h2>Your progress is designed to become capability.</h2>
+    <p>Courses provide knowledge. Lessons develop understanding. Applications turn understanding into practice. The student area will eventually connect authenticated enrolment, protected course content, progress persistence and certificates through the production learning API.</p>
+    <span class="student-mode">CURRENT BUILD · FRONTEND / DEMO STATE</span>
+  </section>
 </main>
+
 
 <footer class="site-footer">
   <div class="footer-grid">
@@ -168,35 +266,53 @@
 <script src="/Thesegunsamuel/js/site-shell.js"></script>
 <script>
 (async function(){
-  try {
-    const r = await fetch('/Thesegunsamuel/student/data/student-state.json', {cache:'no-store'});
-    const d = await r.json();
-    const courses = d.enrollments || [];
-    document.getElementById('course-count').textContent = courses.length;
-    if (courses.length) {
-      const avg = Math.round(courses.reduce((s,c)=>s+c.progress,0)/courses.length);
-      document.getElementById('overall-progress').textContent = avg + '%';
-      document.getElementById('lessons-completed').textContent =
-        courses.reduce((s,c)=>s+c.completedLessons,0) + ' / ' +
-        courses.reduce((s,c)=>s+c.totalLessons,0);
+  const root = '/Thesegunsamuel/';
+  const fallback = {user:{name:'Student'},enrollments:[],saved:[],notifications:[]};
+  try{
+    const r=await fetch(root+'student/data/student-state.json',{cache:'no-store'});
+    const d=await r.json();
+    const courses=d.enrollments||[];
+    const totalCompleted=courses.reduce((s,c)=>s+(Number(c.completedLessons)||0),0);
+    const totalLessons=courses.reduce((s,c)=>s+(Number(c.totalLessons)||0),0);
+    const avg=courses.length?Math.round(courses.reduce((s,c)=>s+(Number(c.progress)||0),0)/courses.length):0;
+
+    document.getElementById('course-count').textContent=courses.length;
+    document.getElementById('overall-progress').textContent=avg+'%';
+    document.getElementById('lessons-completed').textContent=totalCompleted+' / '+totalLessons;
+    document.getElementById('certificate-count').textContent=(d.certificates||[]).length;
+    document.getElementById('saved-count').textContent=(d.saved||[]).length+' saved item'+((d.saved||[]).length===1?'':'s');
+
+    const active=courses.find(c=>c.status==='active')||courses[0];
+    if(active){
+      document.getElementById('continue-course').innerHTML=
+        '<div class="student-continue">'+
+          '<div><p class="eyebrow">CONTINUE · '+(active.progress||0)+'% COMPLETE</p>'+
+          '<h3>'+escapeHtml(active.title)+'</h3>'+
+          '<p>'+(active.lastLesson?'Next from: '+escapeHtml(active.lastLesson):'Your next lesson is ready.')+'</p>'+
+          '<a class="student-btn" href="'+root+'learning/?course='+encodeURIComponent(active.courseId)+'">CONTINUE LEARNING →</a></div>'+
+          '<div class="student-progress" style="min-width:160px"><span style="width:'+Math.min(100,Number(active.progress)||0)+'%"></span></div>'+
+        '</div>';
+      document.getElementById('next-move-title').textContent='Continue '+active.title;
+      document.getElementById('next-move-copy').textContent='Return to your current lesson and keep building momentum.';
+      document.getElementById('next-move-link').href=root+'learning/?course='+encodeURIComponent(active.courseId);
+      document.getElementById('next-move-link').textContent='CONTINUE LEARNING →';
+    }else{
+      document.getElementById('continue-course').innerHTML='<div class="student-continue"><div><p class="eyebrow">YOUR NEXT STEP</p><h3>Choose a course to begin.</h3><p>Explore the catalogue and build your first learning plan.</p><a class="student-btn" href="'+root+'courses/">BROWSE COURSES →</a></div></div>';
     }
-    document.getElementById('courses').innerHTML = courses.length ? courses.map(c => `
-      <article class="student-card" style="margin-top:18px">
-        <p>ENROLLED COURSE</p>
-        <h2>${c.title}</h2>
-        <p>${c.lastLesson ? 'Continue from: '+c.lastLesson : 'Ready to begin.'}</p>
-        <div class="progress"><span style="width:${Number(c.progress)||0}%"></span></div>
-        <p><strong>${Number(c.progress)||0}% complete</strong> · ${c.completedLessons}/${c.totalLessons} lessons</p>
-        <div class="course-actions">
-          <a class="student-btn" href="/Thesegunsamuel/learning/">CONTINUE LEARNING</a>
-          <a class="student-btn secondary" href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a>
-        </div>
-      </article>`).join('') :
-      '<article class="student-card"><h2>No enrolled courses yet.</h2><p>Explore the learning catalogue to begin.</p><a class="student-btn" href="/Thesegunsamuel/courses/">BROWSE COURSES</a></article>';
-  } catch (e) {
-    document.getElementById('courses').innerHTML =
-      '<article class="student-card"><h2>Student area unavailable</h2><p>Please try again later.</p></article>';
+
+    document.getElementById('courses').innerHTML=courses.length?courses.map(c=>
+      '<article class="student-course">'+
+        '<div><span class="student-course-meta">'+escapeHtml(c.status||'active')+'</span><h3>'+escapeHtml(c.title)+'</h3>'+
+        '<p>'+(c.lastLesson?'Last lesson: '+escapeHtml(c.lastLesson):'Ready to begin.')+'</p>'+
+        '<div class="student-progress"><span style="width:'+Math.min(100,Number(c.progress)||0)+'%"></span></div>'+
+        '<span class="student-progress-label">'+(Number(c.progress)||0)+'% · '+(Number(c.completedLessons)||0)+' / '+(Number(c.totalLessons)||0)+' lessons</span></div>'+
+        '<a class="student-btn" href="'+root+'learning/?course='+encodeURIComponent(c.courseId)+'">OPEN</a>'+
+      '</article>'
+    ).join(''):'<article class="student-course"><div><span class="student-course-meta">NO ENROLMENTS</span><h3>Your learning portfolio is empty.</h3><p>Explore the catalogue to choose your next capability.</p></div><a class="student-btn" href="'+root+'courses/">BROWSE</a></article>';
+  }catch(e){
+    document.getElementById('continue-course').innerHTML='<div class="student-continue"><div><p class="eyebrow">DEMO STATE</p><h3>Student data is unavailable.</h3><p>The frontend is ready; production enrolment data will come from the secure learning API.</p></div></div>';
   }
+  function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
 })();
 </script>
 <script src="../assets/js/privacy.js" defer></script>
