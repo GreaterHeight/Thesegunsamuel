@@ -50,6 +50,7 @@ document.addEventListener("pause", e => {
       var realSrc = base.replace(/\/?$/,'/') + filename;
       var fallback = slot.getAttribute('data-image-fallback') || '/Thesegunsamuel/assets/images/placeholders/placeholder.jpg';
       var img = slot.querySelector('[data-image-placeholder-image]');
+
       if(!img){
         img=document.createElement('img');
         img.setAttribute('data-image-placeholder-image','');
@@ -58,25 +59,51 @@ document.addEventListener("pause", e => {
 
       slot.classList.remove('image-slot--real','image-slot--fallback');
       slot.classList.add('image-slot--loading');
-      img.removeAttribute('src');
-      img.alt = slot.getAttribute('data-image-alt') || '';
 
-      img.onerror=function(){
-        img.onerror=null;
-        slot.classList.remove('image-slot--loading','image-slot--real');
-        slot.classList.add('image-slot--fallback');
-        img.src=fallback;
-      };
-      img.onload=function(){
+      // Never expose the failed asset's alt text while a fallback is active.
+      img.alt = '';
+      img.setAttribute('aria-hidden','true');
+
+      img.onload = function(){
         slot.classList.remove('image-slot--loading','image-slot--fallback');
         slot.classList.add('image-slot--real');
+        img.alt = slot.getAttribute('data-image-alt') || '';
+        img.removeAttribute('aria-hidden');
       };
 
-      // Real artwork is ALWAYS requested first. The placeholder is never
-      // displayed as an intermediate image.
-      img.src=realSrc;
+      img.onerror = function(){
+        // Prevent an error loop if the universal fallback itself fails.
+        if(img.dataset.fallbackAttempted === 'true'){
+          slot.classList.remove('image-slot--loading','image-slot--real');
+          slot.classList.add('image-slot--fallback');
+          return;
+        }
+
+        img.dataset.fallbackAttempted = 'true';
+        img.onerror = function(){
+          // If even the universal asset cannot be loaded, keep the
+          // designed CSS placeholder visible rather than a broken image.
+          img.removeAttribute('src');
+          slot.classList.remove('image-slot--loading','image-slot--real');
+          slot.classList.add('image-slot--fallback');
+        };
+
+        slot.classList.remove('image-slot--loading','image-slot--real');
+        slot.classList.add('image-slot--fallback');
+        img.alt = '';
+        img.setAttribute('aria-hidden','true');
+        img.src = fallback;
+      };
+
+      // CRITICAL: request the real artwork first.
+      img.removeAttribute('src');
+      img.src = realSrc;
     });
   }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',resolveImageSlots);
-  else resolveImageSlots();
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',resolveImageSlots);
+  }else{
+    resolveImageSlots();
+  }
 })();

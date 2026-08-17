@@ -404,3 +404,58 @@
 [data-image-slot].image-slot--fallback{background:linear-gradient(160deg,var(--teal-lite,#dcefea) 0%,var(--teal-pale,#eaf5f1) 45%,var(--cream-3,#f3eee4) 100%)!important;}
 [data-image-slot].image-slot--fallback::after{display:block!important;content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/24% auto no-repeat;opacity:.92;pointer-events:none;}
 [data-image-slot].image-slot--fallback [data-image-placeholder-image]{opacity:0!important;}
+
+
+/* UNIVERSAL IMAGE FALLBACK — FINAL
+   Real artwork is requested first. Placeholder is shown only after failure.
+   A broken <img>, alt text, or browser error state must never be visible.
+*/
+[data-image-slot]{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(160deg, var(--teal-lite, #d9eee9) 0%,
+                    var(--teal-pale, #e8f4f1) 45%,
+                    var(--cream-3, #f3eee4) 100%);
+}
+[data-image-slot] [data-image-placeholder-image]{
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  object-fit:cover!important;
+  border-radius:inherit!important;
+  box-shadow:none!important;
+  opacity:1;
+}
+[data-image-slot].image-slot--loading [data-image-placeholder-image]{
+  visibility:hidden!important;
+  opacity:0!important;
+}
+[data-image-slot].image-slot--real{
+  background:none!important;
+}
+[data-image-slot].image-slot--real [data-image-placeholder-image]{
+  visibility:visible!important;
+  opacity:1!important;
+}
+[data-image-slot].image-slot--fallback{
+  background:
+    linear-gradient(160deg, var(--teal-lite, #d9eee9) 0%,
+                    var(--teal-pale, #e8f4f1) 45%,
+                    var(--cream-3, #f3eee4) 100%)!important;
+}
+[data-image-slot].image-slot--fallback [data-image-placeholder-image]{
+  visibility:visible!important;
+  opacity:1!important;
+  object-fit:cover!important;
+}
+[data-image-slot].image-slot--fallback [data-image-placeholder-image][src=""]{
+  display:none!important;
+}
