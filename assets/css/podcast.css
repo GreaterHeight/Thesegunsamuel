@@ -183,3 +183,5 @@
   .podcast-shell .podcast-link-list,
   .podcast-shell .podcast-related-grid{grid-template-columns:1fr}
 }
+
+.podcast-shell .podcast-related--build{margin-top:20px;padding-top:4px}.podcast-shell .podcast-related--build h3{font-family:var(--display,"Cormorant Garamond",serif);font-size:1.5rem;font-weight:500;margin:10px 0 12px}
