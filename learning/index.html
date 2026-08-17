@@ -173,6 +173,12 @@
 @media(max-width:600px){.learn-wrap{padding:35px 18px 60px}.learn-hero{padding:28px 22px}.lesson-panel{padding:24px}.lesson-panel h2{font-size:27px}.learn-support{grid-template-columns:1fr}}
 </style>
 
+<script src="../assets/js/enrollment.js" defer></script>
+<style id="enrollment-bridge-v1">
+.enrollment-status{margin-top:14px;padding:12px 16px;border-radius:10px;background:#f5f2eb;color:#5f6963;font:10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.06em}
+.enrollment-status.active{border-left:3px solid #8c0d0c}
+.enrollment-status.demo{border-left:3px solid #c9a23f}
+</style>
 </head>
 <body>
 <nav data-site-nav></nav>
@@ -186,6 +192,8 @@
     </div>
     <div class="learn-hero-meta"><span id="course-progress-label">0% COMPLETE</span><div class="learn-progress"><span id="hero-progress"></span></div></div>
   </section>
+
+  <div id="enrollment-status" class="enrollment-status" aria-live="polite"></div>
 
   <div class="learn-layout">
     <aside class="learn-panel course-outline">
@@ -304,6 +312,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const root='/Thesegunsamuel/';
   const params=new URLSearchParams(location.search);
   const requested=params.get('course')||'pattern-intelligence';
+  const enrollment=(window.SegunSamuelEnrollment&&window.SegunSamuelEnrollment.getEnrollment)?window.SegunSamuelEnrollment.getEnrollment(requested):null;
+  const statusEl=document.getElementById('enrollment-status');
+  if(enrollment){
+    statusEl.className='enrollment-status active';
+    statusEl.textContent='ENROLMENT ACTIVE · '+(enrollment.title||requested)+' · FRONTEND DEMO ENTITLEMENT';
+  }else{
+    statusEl.className='enrollment-status demo';
+    statusEl.innerHTML='COURSE PREVIEW · This frontend build does not enforce secure access. Production entitlement checks must be performed server-side. <a href="/Thesegunsamuel/courses/'+encodeURIComponent(requested)+'/">VIEW COURSE →</a>';
+  }
   const storageKey='ss-learning-state-v1:'+requested;
   let data=null, state={completed:[]}, current=0;
 

@@ -173,7 +173,7 @@
 @media(max-width:600px){.student-wrap{padding:35px 18px 60px}.student-hero{padding:30px 22px}.student-stats{grid-template-columns:1fr 1fr;gap:10px}.student-stat{padding:17px}.student-stat strong{font-size:25px}.student-course,.student-continue{grid-template-columns:1fr}.student-section-head{align-items:flex-start;flex-direction:column}}
 </style>
 
-</head>
+<script src="../assets/js/enrollment.js" defer></script></head>
 <body>
 <nav data-site-nav></nav>
 
@@ -271,7 +271,10 @@
   try{
     const r=await fetch(root+'student/data/student-state.json',{cache:'no-store'});
     const d=await r.json();
-    const courses=d.enrollments||[];
+    const serverCourses=d.enrollments||[];
+    const demoCourses=(window.SegunSamuelEnrollment&&window.SegunSamuelEnrollment.get)?window.SegunSamuelEnrollment.get():[];
+    const byId={}; serverCourses.forEach(x=>byId[x.courseId]=x); demoCourses.forEach(x=>byId[x.courseId]={...byId[x.courseId],...x});
+    const courses=Object.values(byId);
     const totalCompleted=courses.reduce((s,c)=>s+(Number(c.completedLessons)||0),0);
     const totalLessons=courses.reduce((s,c)=>s+(Number(c.totalLessons)||0),0);
     const avg=courses.length?Math.round(courses.reduce((s,c)=>s+(Number(c.progress)||0),0)/courses.length):0;
