@@ -358,3 +358,42 @@
   border-radius:0!important;
   z-index:1!important;
 }
+
+
+/* FINAL IMAGE LOADING STANDARD
+   Real asset is requested first.
+   Universal placeholder is used only after the real request fails.
+*/
+[data-image-slot]{
+  position:relative;
+  overflow:hidden;
+}
+[data-image-slot] [data-image-placeholder-image]{
+  display:block!important;
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  min-width:0!important;
+  min-height:0!important;
+  margin:0!important;
+  border:0!important;
+  box-shadow:none!important;
+  object-fit:cover!important;
+  padding:0!important;
+  border-radius:inherit!important;
+}
+[data-image-slot].image-slot--loading [data-image-placeholder-image]{
+  opacity:0!important;
+}
+[data-image-slot].image-slot--real [data-image-placeholder-image],
+[data-image-slot].image-slot--fallback [data-image-placeholder-image]{
+  opacity:1!important;
+}
+[data-image-slot].image-slot--fallback{
+  background:none!important;
+}
+[data-image-slot].image-slot--fallback::before,
+[data-image-slot].image-slot--fallback::after{
+  display:none!important;
+}

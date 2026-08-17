@@ -45,11 +45,11 @@ document.addEventListener("pause", e => {
 (function(){
   function resolveImageSlots(){
     document.querySelectorAll('[data-image-slot]').forEach(function(slot){
-      var filename=slot.getAttribute('data-image-slot');
-      var base=slot.getAttribute('data-image-base') || '/Thesegunsamuel/assets/images/';
-      var realSrc=base.replace(/\/?$/,'/')+filename;
-      var img=slot.querySelector('[data-image-placeholder-image]');
-      var fallback=slot.getAttribute('data-image-fallback') || '/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png';
+      var filename = slot.getAttribute('data-image-slot');
+      var base = slot.getAttribute('data-image-base') || '/Thesegunsamuel/assets/images/';
+      var realSrc = base.replace(/\/?$/,'/') + filename;
+      var fallback = '/Thesegunsamuel/assets/images/placeholders/placeholder.jpg';
+      var img = slot.querySelector('[data-image-placeholder-image]');
 
       if(!img){
         img=document.createElement('img');
@@ -57,22 +57,23 @@ document.addEventListener("pause", e => {
         slot.appendChild(img);
       }
 
-      /* Start in fallback state. */
-      slot.classList.remove('image-slot--real');
-      img.src=fallback;
-      img.alt=slot.getAttribute('data-image-alt') || '';
+      slot.classList.remove('image-slot--real','image-slot--fallback');
+      slot.classList.add('image-slot--loading');
 
-      /* Probe the exact production asset. */
-      var probe=new Image();
-      probe.onload=function(){
+      img.alt = slot.getAttribute('data-image-alt') || '';
+      img.onerror = function(){
+        img.onerror = null;
+        slot.classList.remove('image-slot--loading','image-slot--real');
+        slot.classList.add('image-slot--fallback');
+        img.src = fallback;
+      };
+      img.onload = function(){
+        slot.classList.remove('image-slot--loading','image-slot--fallback');
         slot.classList.add('image-slot--real');
-        img.src=realSrc;
       };
-      probe.onerror=function(){
-        slot.classList.remove('image-slot--real');
-        img.src=fallback;
-      };
-      probe.src=realSrc + (realSrc.indexOf('?')>-1?'&':'?') + 'v=' + Date.now();
+
+      // CRITICAL: request the real image FIRST. No placeholder is assigned here.
+      img.src = realSrc;
     });
   }
 

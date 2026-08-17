@@ -53,3 +53,7 @@
     background-size: min(48%, 140px) auto;
   }
 }
+
+
+/* Universal fallback contract:
+   placeholder.jpg is a fallback asset, never a first-load asset. */
