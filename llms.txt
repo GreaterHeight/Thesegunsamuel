@@ -1,0 +1,28 @@
+# Segun Samuel
+
+> Segun Samuel is a strategic, intellectual and learning ecosystem connecting frameworks, courses, books, insights, podcast, application and knowledge discovery.
+
+## Primary navigation
+- HOME: https://greaterheight.github.io/Thesegunsamuel/
+- LEARN: https://greaterheight.github.io/Thesegunsamuel/courses/
+- THINK: https://greaterheight.github.io/Thesegunsamuel/frameworks/
+- APPLY: https://greaterheight.github.io/Thesegunsamuel/application/
+- LISTEN: https://greaterheight.github.io/Thesegunsamuel/podcast/
+- EXPLORE: https://greaterheight.github.io/Thesegunsamuel/explore/
+
+## Core frameworks
+- TEA™ — Time, Energy, Attention: resource management.
+- FIAGS™ — Fear, Impatience, Anxiety, Greed, Sentiment: emotional and psychological barriers.
+- 5PTES™ — People, Processes, Places, Principality, Pains, Times, Events, Seasons: multi-dimensional diagnosis.
+- Pattern Intelligence: detecting signals, recognising patterns, interpreting relationships and converting observations into strategic insight.
+
+## Platform
+- Courses: https://greaterheight.github.io/Thesegunsamuel/courses/
+- Learning Paths: https://greaterheight.github.io/Thesegunsamuel/learning-paths/
+- Frameworks: https://greaterheight.github.io/Thesegunsamuel/frameworks/
+- Insights: https://greaterheight.github.io/Thesegunsamuel/articles/
+- Podcast: https://greaterheight.github.io/Thesegunsamuel/podcast/
+- Explore: https://greaterheight.github.io/Thesegunsamuel/explore/
+
+## Notes
+The public website is a static GitHub Pages frontend. Authentication, payment verification, private course access, persistent progress and certificates require a secure backend.

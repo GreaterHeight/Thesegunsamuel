@@ -1,0 +1,55 @@
+/* GLOBAL IMAGE PLACEHOLDER SYSTEM
+   Temporary state = gradient + Segun Samuel badge.
+   Real image state = normal image, no placeholder treatment. */
+
+.arch-frame,
+.image-placeholder,
+[data-placeholder="image"] {
+  --teal-lite: #dceee9;
+  --teal-pale: #eef7f4;
+  --cream-3: #f4eee3;
+}
+
+.arch-frame[data-placeholder="image"],
+.image-placeholder[data-placeholder="image"],
+[data-placeholder="image"] {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(160deg, var(--teal-lite) 0%, var(--teal-pale) 45%, var(--cream-3) 100%);
+}
+
+.arch-frame[data-placeholder="image"]::after,
+.image-placeholder[data-placeholder="image"]::after,
+[data-placeholder="image"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center / min(42%, 180px) auto no-repeat;
+  opacity: .88;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.arch-frame[data-placeholder="image"] > *,
+.image-placeholder[data-placeholder="image"] > * {
+  position: relative;
+  z-index: 1;
+}
+
+.arch-frame[data-placeholder="image"] img,
+.image-placeholder[data-placeholder="image"] img {
+  opacity: 0;
+}
+
+.arch-frame:not([data-placeholder="image"])::after,
+.image-placeholder:not([data-placeholder="image"])::after {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .arch-frame[data-placeholder="image"]::after,
+  .image-placeholder[data-placeholder="image"]::after,
+  [data-placeholder="image"]::after {
+    background-size: min(48%, 140px) auto;
+  }
+}
