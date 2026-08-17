@@ -191,3 +191,62 @@
 .podcast-shell .podcast-cta-band h2,
 .podcast-shell .podcast-cta-band p,
 .podcast-shell .podcast-cta-band .podcast-card-kicker{color:#fff!important}
+
+/* Podcast library visual + action contrast fixes */
+.podcast-shell .podcast-visual{
+  min-height:0;
+  background:linear-gradient(160deg,#cfe7df 0%,#eaf5f1 45%,#f2eadb 100%);
+  box-shadow:inset 0 0 0 1px rgba(0,48,32,.10);
+}
+.podcast-shell .podcast-visual img{
+  display:block!important;
+  width:42%!important;
+  height:42%!important;
+  min-width:110px;
+  min-height:110px;
+  object-fit:contain;
+  padding:18px;
+  border-radius:50%;
+  background:rgba(255,255,255,.76);
+  box-shadow:0 10px 28px rgba(0,48,32,.10);
+  opacity:1!important;
+}
+.podcast-shell .podcast-card-actions .podcast-btn-primary{
+  color:#fff!important;
+  background:var(--pod-wine)!important;
+}
+.podcast-shell .podcast-card-actions .podcast-btn-secondary{
+  color:var(--pod-green)!important;
+  background:#fffdf9!important;
+}
+.podcast-shell .podcast-card-actions .podcast-meta{
+  color:var(--pod-green)!important;
+  opacity:1!important;
+}
+
+/* Building Systems: stack Related Articles and Related Episodes vertically. */
+.podcast-shell .podcast-layer--build .podcast-two-col{
+  display:block!important;
+}
+.podcast-shell .podcast-layer--build .podcast-two-col > div{
+  width:100%!important;
+}
+.podcast-shell .podcast-layer--build .podcast-two-col > div + div{
+  margin-top:22px;
+}
+.podcast-shell .podcast-layer--build .podcast-related-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+}
+.podcast-shell .podcast-layer--build .podcast-player-note{
+  color:#fff!important;
+  opacity:1!important;
+}
+@media(max-width:650px){
+  .podcast-shell .podcast-visual img{
+    width:48%!important;
+    height:48%!important;
+  }
+  .podcast-shell .podcast-layer--build .podcast-related-grid{
+    grid-template-columns:1fr;
+  }
+}
