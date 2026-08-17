@@ -1,0 +1,15 @@
+{
+  "detail_pages_updated": 1,
+  "banner_removed": true,
+  "breadcrumb_removed": true,
+  "cta_crimson_override": true,
+  "boxed_layers": true,
+  "boxed_inner_columns": true,
+  "related_episodes_card_grid": true,
+  "related_episode_count": 2,
+  "related_targets_exist": [
+    "the-strategic-architect",
+    "the-system-behind-the-problem"
+  ],
+  "legacy_panel_detail_pages": 19
+}
