@@ -1,0 +1,9 @@
+-- 002 publication seed data
+insert into public.publications (code,name,domain,route_prefix) values ('blog_declassified','Blog · Declassified','THINK','/blog/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('forbidden','Forbidden','THINK','/forbidden/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('editorial','Editorial','THINK','/editorial/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('newsletter','Newsletter','THINK','/newsletter/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('books','Books','THINK','/books/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('podcast','Podcast','LISTEN','/podcast/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('courses','Courses','LEARN','/courses/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
+insert into public.publications (code,name,domain,route_prefix) values ('frameworks','Frameworks','THINK','/frameworks/') on conflict (code) do update set name=excluded.name, domain=excluded.domain, route_prefix=excluded.route_prefix;
