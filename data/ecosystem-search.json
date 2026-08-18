@@ -1,5 +1,5 @@
 {
-  "version": "v4.4",
+  "version": "v4.5",
   "source": "canonical graph + published ecosystem pages + registered relationship layer",
   "entities": [
     {
@@ -2629,6 +2629,21 @@
         "progress"
       ],
       "source": "canonical-learning-registry"
+    },
+    {
+      "id": "COMM-001",
+      "name": "Commerce & Enrollment System",
+      "type": "commerce_system",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/cart/",
+      "text": "Commerce layer connecting course selection, cart, order creation, payment confirmation boundary and learning entitlement.",
+      "tags": [
+        "commerce",
+        "enrollment",
+        "checkout",
+        "orders"
+      ],
+      "source": "canonical-commerce-registry"
     }
   ],
   "relationships": [
@@ -3215,7 +3230,7 @@
     }
   ],
   "relationship_source": "knowledge/data/knowledge-relationships.json",
-  "relationship_count": 170,
+  "relationship_count": 173,
   "canonicalization_version": "1.0",
   "canonical_entity_count": 184
 }

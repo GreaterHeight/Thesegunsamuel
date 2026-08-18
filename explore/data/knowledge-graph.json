@@ -4513,6 +4513,31 @@
         "progress"
       ],
       "featured": false
+    },
+    {
+      "id": "COMM-001",
+      "slug": "commerce-enrollment",
+      "name": "Commerce & Enrollment System",
+      "type": "commerce_system",
+      "status": "canonical",
+      "short_definition": "Commerce layer connecting course selection, cart, order creation, payment confirmation boundary and learning entitlement.",
+      "parent_id": "PLAT-001",
+      "route": "/Thesegunsamuel/cart/",
+      "source_ids": [
+        "PAGE-CART-cart",
+        "PAGE-CHECKOUT-checkout"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [],
+      "tags": [
+        "commerce",
+        "enrollment",
+        "checkout",
+        "orders"
+      ],
+      "featured": false
     }
   ],
   "relationships": [

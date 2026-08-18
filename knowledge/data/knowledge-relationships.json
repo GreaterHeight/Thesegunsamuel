@@ -1196,6 +1196,27 @@
       "type": "connects_to",
       "provenance": "learning ecosystem architecture",
       "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-001",
+      "target_id": "COMM-001",
+      "type": "contains",
+      "provenance": "commerce architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "COMM-001",
+      "target_id": "LEARN-001",
+      "type": "activates",
+      "provenance": "enrollment-to-learning entitlement boundary",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "COMM-001",
+      "target_id": "PLAT-001",
+      "type": "supports",
+      "provenance": "commerce architecture",
+      "confidence": "explicit-architecture"
     }
   ],
   "derived_relationships": [
@@ -1499,6 +1520,6 @@
     "Additional USES_FRAMEWORK edges come from existing case-study page metadata.",
     "No semantic relationship has been promoted to confirmed merely because two assets share keywords."
   ],
-  "relationship_count": 170,
+  "relationship_count": 173,
   "canonicalized_asset_count": 122
 }

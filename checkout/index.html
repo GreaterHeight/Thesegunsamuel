@@ -172,51 +172,28 @@
 </style>
 
 <script src="../assets/js/enrollment.js" defer></script></head>
-<body>
+<body><a class="ss-skip-link" href="#main-content">Skip to content</a>
 <nav data-site-nav></nav>
-<main class="checkout-wrap">
-<div class="checkout-grid">
+<main id="main-content" class="checkout-wrap"><div class="checkout-grid">
 <section class="checkout-card"><p>CHECKOUT</p><h1>Complete your enrollment</h1>
-<p class="notice">This static checkout is the frontend contract for the future secure payment service. No payment is processed by this GitHub Pages build.</p>
+<p class="notice">Select a payment route. This GitHub Pages build creates an order intent only; payment confirmation must come from the production payment service before access is activated.</p>
 <h2>PAYMENT METHOD</h2>
-<div class="method"><label><input type="radio" name="method" checked> Paystack</label></div>
-<div class="method"><label><input type="radio" name="method"> Stripe</label></div>
-<div class="method"><label><input type="radio" name="method"> Bank Transfer</label></div>
-<div class="method"><label><input type="radio" name="method"> WhatsApp / Assisted Enrollment</label></div>
-<button class="checkout-btn" type="button" id="continue">CONTINUE TO SECURE PAYMENT</button>
-<p id="status" aria-live="polite"></p>
-</section>
+<div class="method"><label><input type="radio" name="method" value="Paystack" checked> Paystack</label></div>
+<div class="method"><label><input type="radio" name="method" value="Stripe"> Stripe</label></div>
+<div class="method"><label><input type="radio" name="method" value="Bank Transfer"> Bank Transfer</label></div>
+<div class="method"><label><input type="radio" name="method" value="WhatsApp / Assisted Enrollment"> WhatsApp / Assisted Enrollment</label></div>
+<button class="checkout-btn" type="button" id="continue">CREATE ORDER</button><p id="status" aria-live="polite"></p></section>
 <aside class="checkout-card"><h2>ORDER SUMMARY</h2><div id="summary">Loading…</div></aside>
 </div>
+<script src="../assets/js/commerce.js" defer></script>
 <script>
-(function(){
-  const root='/Thesegunsamuel/';
-  const cartKey='segun_cart';
-  function getCart(){try{return JSON.parse(localStorage.getItem(cartKey)||'[]')}catch(e){return[]}}
-  function money(n){return new Intl.NumberFormat('en-NG',{style:'currency',currency:'NGN',maximumFractionDigits:0}).format(Number(n)||0)}
-  const cart=getCart(), summary=document.getElementById('summary'), status=document.getElementById('status');
-  const total=cart.reduce((s,x)=>s+(Number(x.price)||0)*(Number(x.qty)||0),0);
-  summary.innerHTML=cart.length?cart.map(x=>'<div style="padding:10px 0;border-bottom:1px solid #e7e1d8"><strong>'+escapeHtml(x.title)+'</strong><br><small>'+money(x.price)+' × '+(x.qty||1)+'</small></div>').join('')+'<p><strong>Total: '+money(total)+'</strong></p>':'<p>Your cart is empty.</p>';
-  document.getElementById('continue').addEventListener('click',function(){
-    if(!cart.length){status.textContent='Your cart is empty. Return to Courses to select a course.';return;}
-    const method=document.querySelector('input[name="method"]:checked');
-    // Demo adapter: in production this becomes the secure payment confirmation callback.
-    cart.forEach(x=>{
-      if(window.SegunSamuelEnrollment) window.SegunSamuelEnrollment.enroll({
-        courseId:x.id,title:x.title,price:x.price,state:'active',
-        progress:0,completedLessons:0,totalLessons:12
-      });
-    });
-    localStorage.setItem('segun_last_checkout',JSON.stringify({
-      orderId:'DEMO-'+Date.now(),method:method?method.parentElement.textContent.trim():'',total,createdAt:new Date().toISOString()
-    }));
-    localStorage.removeItem(cartKey);
-    status.innerHTML='<strong>Demo enrollment created.</strong> No payment was processed. Continue to your Student Area to begin learning.';
-    this.textContent='OPEN STUDENT AREA';
-    this.onclick=function(){location.href=root+'student/'};
-  });
-  function escapeHtml(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
-})();
+document.addEventListener("DOMContentLoaded",function(){
+ const c=window.SegunSamuelCart, summary=document.getElementById("summary"), status=document.getElementById("status"), btn=document.getElementById("continue");
+ const items=c.get(), total=c.total(items), money=c.money;
+ summary.innerHTML=items.length?items.map(x=>'<div style="padding:10px 0;border-bottom:1px solid #e7e1d8"><strong>'+esc(x.title)+'</strong><br><small>'+money(x.price)+' × '+x.qty+'</small><br><small>Subtotal: '+money(x.price*x.qty)+'</small></div>').join('')+'<p><strong>Total: '+money(total)+'</strong></p>':'<p>Your cart is empty.</p>';
+ btn.addEventListener("click",function(){if(!items.length){status.textContent="Your cart is empty. Return to Courses to select a course.";return}const method=document.querySelector('input[name="method"]:checked').value;const order=c.createOrder(method);if(!order)return;sessionStorage.setItem("segun_checkout_order",order.orderId);c.clear();location.href="../enrollment/confirmation/?order="+encodeURIComponent(order.orderId)});
+ function esc(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+});
 </script></main>
 <footer class="site-footer">
   <div class="footer-grid">
