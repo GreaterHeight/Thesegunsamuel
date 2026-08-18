@@ -708,3 +708,93 @@
  .site-footer .footer-bottom{width:calc(100% - 32px);font-size:10px}
  .site-footer .v33-footer-right{display:flex;flex-wrap:wrap;gap:10px}
 }
+
+
+/* ============================================================
+   SEGUN SAMUEL BLOG DETAIL — REFERENCE-ALIGNED TEMPLATE V4
+   ============================================================ */
+.blog-detail-page{background:#fbf8f1;color:#24443a}
+.blog-detail-hero{position:relative;min-height:560px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#003b2b}
+.blog-detail-hero .hero-media{position:absolute;inset:0;background:linear-gradient(145deg,#0b4b3b 0%,#082f25 48%,#10231d 100%)}
+.blog-detail-hero .hero-media[data-placeholder="image"]::before{content:"";position:absolute;inset:0;background:linear-gradient(160deg,#0a5946 0%,#073f31 46%,#10231c 100%);opacity:.95}
+.blog-detail-hero .hero-media[data-placeholder="image"]::after{content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/120px auto no-repeat;opacity:.20}
+.blog-detail-hero .hero-media img{width:100%;height:100%;object-fit:cover;display:block}
+.blog-detail-hero .hero-media img{filter:brightness(.58) saturate(.85)}
+.blog-detail-hero .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,35,26,.18),rgba(0,45,33,.70))}
+.blog-detail-hero .hero-content{position:relative;z-index:2;width:min(1120px,90vw);text-align:center;color:#fff;padding:100px 0 72px}
+.blog-detail-hero .hero-kicker{font:10px/1 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.24em;text-transform:uppercase;color:#d9b66a;margin-bottom:22px}
+.blog-detail-hero h1{font:500 clamp(50px,7vw,92px)/.9 "Cormorant Garamond",Georgia,serif;letter-spacing:-.025em;color:#fff;margin:0 auto 20px;max-width:1050px;text-wrap:balance}
+.blog-detail-hero .hero-meta{font:10px/1.6 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.blog-detail-hero .hero-meta span:not(:last-child)::after{content:"  ·  ";color:#d9b66a;margin:0 6px}
+.blog-detail-wrap{width:min(1080px,90vw);margin:0 auto}
+.blog-audio{background:#f3eee4;border:1px solid rgba(0,48,32,.08);display:flex;align-items:center;gap:16px;padding:12px 18px;margin:16px auto 34px;max-width:720px}
+.blog-audio-play{width:30px;height:30px;border-radius:50%;border:0;background:#a10d0d;color:#fff;display:grid;place-items:center;font-size:12px}
+.blog-audio-label{font:9px/1.2 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.18em;text-transform:uppercase;color:#246051;flex:1}
+.blog-audio-time{font:9px var(--sans,"Tenor Sans",sans-serif);color:#8b8b7f}
+.blog-main{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:48px;align-items:start}
+.blog-copy{font:16px/1.78 "Crimson Pro",Georgia,serif;color:#2d4a40}
+.blog-copy p{margin:0 0 18px}
+.blog-copy p:first-child::first-letter{float:left;font:52px/.8 "Cormorant Garamond",Georgia,serif;color:#b20f10;padding:.08em .08em 0 0}
+.blog-copy h2{font:500 32px/1.05 "Cormorant Garamond",Georgia,serif;color:#064c3a;margin:42px 0 14px}
+.blog-copy h3{font:500 26px/1.08 "Cormorant Garamond",Georgia,serif;color:#064c3a;margin:34px 0 12px}
+.blog-copy blockquote{border-left:2px solid #b20f10;margin:28px 0;padding:6px 20px;color:#4d655c}
+.blog-side{background:#f4f0e7;border:1px solid rgba(0,48,32,.06);padding:18px 16px}
+.blog-side + .blog-side{margin-top:16px}
+.blog-side h3{font:500 17px/1.1 "Cormorant Garamond",Georgia,serif;color:#1e5141;margin:0 0 13px;padding-bottom:10px;border-bottom:1px solid #d8b7ad}
+.blog-side ul{list-style:none;margin:0;padding:0}
+.blog-side li{padding:9px 0;border-bottom:1px solid rgba(0,48,32,.08)}
+.blog-side a{font:12px/1.35 "Crimson Pro",Georgia,serif;color:#527066;text-decoration:none}
+.blog-side a:hover{color:#a10d0d}
+.blog-tag-area{margin:34px 0 0;padding-top:20px;border-top:1px solid rgba(0,48,32,.10)}
+.blog-label{font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.18em;text-transform:uppercase;color:#a10d0d;margin-bottom:9px}
+.blog-tags{display:flex;flex-wrap:wrap;gap:7px}
+.blog-tag{border:1px solid #a10d0d;color:#35685a;background:#fbf8f1;padding:6px 10px;font:8px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.11em;text-transform:uppercase;text-decoration:none}
+.blog-share{margin-top:18px}
+.blog-share-row{display:flex;gap:8px}
+.blog-share-row a{width:27px;height:27px;border-radius:50%;background:#eef0e9;color:#275a4c;display:grid;place-items:center;text-decoration:none;font:10px var(--sans,"Tenor Sans",sans-serif)}
+.blog-related-section{background:#f5f1e8;margin-top:74px;padding:76px 0 84px}
+.blog-related-inner{width:min(1080px,90vw);margin:auto}
+.blog-section-kicker{font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.24em;text-transform:uppercase;color:#777c73}
+.blog-related-title{font:500 42px/1 "Cormorant Garamond",Georgia,serif;color:#07503d;margin:13px 0 42px}
+.blog-related-title em{font-style:italic;font-weight:400}
+.blog-rule{width:38px;border-top:2px solid #a10d0d;margin-bottom:32px}
+.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px 18px}
+.blog-related-card{min-width:0}
+.blog-related-media{aspect-ratio:16/9;position:relative;overflow:hidden;background:linear-gradient(145deg,#dceee9,#eef7f4 50%,#f4eee3)}
+.blog-related-media[data-placeholder="image"]::after{content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/68px auto no-repeat;opacity:.72}
+.blog-related-media img{width:100%;height:100%;object-fit:cover;display:block}
+.blog-related-meta{font:8px/1.5 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#747b73;margin:9px 0}
+.blog-related-card h3{font:500 24px/1.02 "Cormorant Garamond",Georgia,serif;color:#0b4e3c;margin:0 0 8px}
+.blog-related-card p{font:13px/1.5 "Crimson Pro",Georgia,serif;color:#5d6b64;margin:0 0 12px}
+.blog-read-more{font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.16em;text-transform:uppercase;color:#11624f;text-decoration:none}
+.blog-archive{display:flex;justify-content:center;margin-top:44px}
+.blog-archive a{border:1px solid #aabdb4;color:#205b4b;padding:13px 22px;text-decoration:none;font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em}
+.blog-newsletter{background:#003f2f;color:#fff;text-align:center;padding:72px 20px 76px}
+.blog-newsletter .blog-section-kicker{color:#a9c8bd}
+.blog-newsletter h2{font:500 38px/1.05 "Cormorant Garamond",Georgia,serif;color:#fff;margin:13px 0 22px}
+.blog-newsletter h2 em{color:#28a98a;font-style:italic}
+.blog-newsletter .blog-rule{margin:0 auto 24px}
+.blog-newsletter-actions{display:flex;justify-content:center;gap:10px}
+.blog-newsletter-actions a{padding:12px 19px;text-decoration:none;font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em}
+.blog-newsletter-actions .primary{background:#b30d0d;color:#fff}
+.blog-newsletter-actions .secondary{border:1px solid rgba(255,255,255,.18);color:#fff}
+@media(max-width:900px){
+ .blog-detail-hero{min-height:500px}
+ .blog-main{grid-template-columns:1fr}
+ .blog-side{display:none}
+ .blog-related-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+ .blog-detail-hero{min-height:480px}
+ .blog-detail-hero .hero-content{padding:90px 0 55px}
+ .blog-detail-hero h1{font-size:52px;line-height:.92}
+ .blog-detail-hero .hero-meta{font-size:8px}
+ .blog-audio{margin-top:14px}
+ .blog-copy{font-size:17px;line-height:1.72}
+ .blog-related-grid{grid-template-columns:1fr}
+ .blog-related-section{padding:58px 0 64px}
+ .blog-related-title{font-size:38px}
+ .blog-newsletter h2{font-size:34px}
+ .blog-newsletter-actions{flex-direction:column;align-items:center}
+ .blog-newsletter-actions a{width:220px;text-align:center}
+}
