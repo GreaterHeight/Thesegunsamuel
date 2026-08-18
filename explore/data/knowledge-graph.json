@@ -4538,6 +4538,36 @@
         "orders"
       ],
       "featured": false
+    },
+    {
+      "id": "BACK-001",
+      "slug": "backend-data-architecture",
+      "name": "Backend & Data Architecture",
+      "type": "platform_system",
+      "status": "canonical",
+      "short_definition": "Authoritative backend boundary for identity, commerce, payment verification, enrollment, learning progress, engagement and knowledge data.",
+      "parent_id": "PLAT-001",
+      "route": "/Thesegunsamuel/",
+      "source_ids": [
+        "BACKEND_DATA_ARCHITECTURE_V1"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [
+        "COMM-001",
+        "LEARN-001"
+      ],
+      "content_ids": [],
+      "tags": [
+        "backend",
+        "database",
+        "authentication",
+        "payments",
+        "enrollment",
+        "learning",
+        "knowledge"
+      ],
+      "featured": false
     }
   ],
   "relationships": [

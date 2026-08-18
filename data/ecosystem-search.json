@@ -1,5 +1,5 @@
 {
-  "version": "v4.5",
+  "version": "v4.6",
   "source": "canonical graph + published ecosystem pages + registered relationship layer",
   "entities": [
     {
@@ -2644,6 +2644,24 @@
         "orders"
       ],
       "source": "canonical-commerce-registry"
+    },
+    {
+      "id": "BACK-001",
+      "name": "Backend & Data Architecture",
+      "type": "platform_system",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/",
+      "text": "Authoritative backend boundary for identity, commerce, payment verification, enrollment, learning progress, engagement and knowledge data.",
+      "tags": [
+        "backend",
+        "database",
+        "authentication",
+        "payments",
+        "enrollment",
+        "learning",
+        "knowledge"
+      ],
+      "source": "canonical-platform-registry"
     }
   ],
   "relationships": [
@@ -3230,7 +3248,7 @@
     }
   ],
   "relationship_source": "knowledge/data/knowledge-relationships.json",
-  "relationship_count": 173,
+  "relationship_count": 176,
   "canonicalization_version": "1.0",
   "canonical_entity_count": 184
 }

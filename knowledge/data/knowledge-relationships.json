@@ -1217,6 +1217,27 @@
       "type": "supports",
       "provenance": "commerce architecture",
       "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "PLAT-001",
+      "target_id": "BACK-001",
+      "type": "supported_by",
+      "provenance": "platform production architecture",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "BACK-001",
+      "target_id": "COMM-001",
+      "type": "authorizes",
+      "provenance": "commerce backend boundary",
+      "confidence": "explicit-architecture"
+    },
+    {
+      "source_id": "BACK-001",
+      "target_id": "LEARN-001",
+      "type": "authorizes",
+      "provenance": "learning entitlement backend boundary",
+      "confidence": "explicit-architecture"
     }
   ],
   "derived_relationships": [
@@ -1520,6 +1541,6 @@
     "Additional USES_FRAMEWORK edges come from existing case-study page metadata.",
     "No semantic relationship has been promoted to confirmed merely because two assets share keywords."
   ],
-  "relationship_count": 173,
+  "relationship_count": 176,
   "canonicalized_asset_count": 122
 }
