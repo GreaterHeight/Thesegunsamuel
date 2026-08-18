@@ -798,3 +798,79 @@
  .blog-newsletter-actions{flex-direction:column;align-items:center}
  .blog-newsletter-actions a{width:220px;text-align:center}
 }
+
+
+/* FORBIDDEN editorial detail template — reference-aligned */
+.forbidden-detail{background:#f4f2ea;color:#18352b}
+.forbidden-detail .fd-hero{position:relative;min-height:590px;background:#003020;display:flex;align-items:flex-end;overflow:hidden}
+.forbidden-detail .fd-hero-media{position:absolute;inset:0;background:
+ radial-gradient(circle at 72% 32%,rgba(95,145,120,.28),transparent 28%),
+ linear-gradient(180deg,rgba(0,48,32,.38),rgba(0,48,32,.94) 82%),
+ url("/Thesegunsamuel/assets/images/placeholders/placeholder.jpg") center/cover no-repeat}
+.forbidden-detail .fd-hero-media:after{content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/110px auto no-repeat;opacity:.72}
+.forbidden-detail .fd-hero-inner{position:relative;z-index:2;width:min(1180px,92vw);margin:0 auto;padding:110px 0 76px;color:#fdfaf4}
+.forbidden-detail .fd-kicker{font:10px/1 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.2em;text-transform:uppercase;color:#d9b66a}
+.forbidden-detail .fd-hero h1{font:500 clamp(48px,7vw,96px)/.9 "Cormorant Garamond",Georgia,serif;max-width:920px;margin:18px 0 24px;color:#fdfaf4}
+.forbidden-detail .fd-deck{font:20px/1.55 "Crimson Pro",Georgia,serif;max-width:720px;color:#dfe9e3}
+.forbidden-detail .fd-meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px;font:9px/1.2 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;text-transform:uppercase;color:#d9ded9}
+.forbidden-detail .fd-meta span{border-right:1px solid rgba(255,255,255,.22);padding-right:12px}
+.forbidden-detail .fd-meta span:last-child{border:0}
+.forbidden-detail .fd-wrap{width:min(1180px,92vw);margin:0 auto;padding:54px 0 92px}
+.forbidden-detail .fd-audio{display:flex;align-items:center;gap:16px;border:1px solid rgba(0,48,32,.14);background:#fbfaf5;padding:16px 18px;margin-bottom:48px;max-width:820px}
+.forbidden-detail .fd-play{width:38px;height:38px;border-radius:50%;border:0;background:#8c0d0c;color:#fff;font-size:13px}
+.forbidden-detail .fd-audio-label{font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.16em;text-transform:uppercase;color:#65736e}
+.forbidden-detail .fd-audio-time{margin-left:auto;font:10px var(--sans,"Tenor Sans",sans-serif);color:#65736e}
+.forbidden-detail .fd-layout{display:grid;grid-template-columns:minmax(0,760px) 260px;gap:70px;align-items:start}
+.forbidden-detail .fd-body{font:20px/1.82 "Crimson Pro",Georgia,serif;color:#294039}
+.forbidden-detail .fd-body>p:first-child:first-letter{float:left;font:500 72px/.78 "Cormorant Garamond",Georgia,serif;color:#8c0d0c;padding:9px 7px 0 0}
+.forbidden-detail .fd-body p{margin:0 0 1.45em}
+.forbidden-detail .fd-body h2{font:500 40px/1.02 "Cormorant Garamond",Georgia,serif;color:#003020;margin:2.2em 0 .65em}
+.forbidden-detail .fd-body h3{font:500 29px/1.1 "Cormorant Garamond",Georgia,serif;color:#003020;margin:1.8em 0 .6em}
+.forbidden-detail .fd-body strong{color:#003020}
+.forbidden-detail .fd-rail{position:sticky;top:28px}
+.forbidden-detail .fd-rail-card{background:#ecece2;border:1px solid rgba(0,48,32,.1);padding:22px;margin-bottom:18px}
+.forbidden-detail .fd-rail-title{font:10px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.16em;text-transform:uppercase;color:#8c0d0c;margin-bottom:14px}
+.forbidden-detail .fd-rail a{display:block;color:#294039;text-decoration:none;font:15px/1.4 "Crimson Pro",Georgia,serif;padding:9px 0;border-top:1px solid rgba(0,48,32,.09)}
+.forbidden-detail .fd-rail a:first-of-type{border-top:0}
+.forbidden-detail .fd-tags{margin-top:45px;padding-top:20px;border-top:1px solid rgba(0,48,32,.14);display:flex;gap:8px;flex-wrap:wrap}
+.forbidden-detail .fd-tag{font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em;text-transform:uppercase;padding:7px 9px;border:1px solid #8c0d0c;color:#8c0d0c}
+.forbidden-detail .fd-share{margin-top:25px;font:9px var(--sans,"Tenor Sans",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8c0d0c}
+.forbidden-detail .fd-share-row{display:flex;gap:9px;margin-top:12px}
+.forbidden-detail .fd-share-row span{width:29px;height:29px;border:1px solid rgba(0,48,32,.16);border-radius:50%;display:grid;place-items:center;font-size:9px;color:#003020}
+.forbidden-detail .fd-more{background:#e9e8df;padding:78px 0 82px}
+.forbidden-detail .fd-more-inner{width:min(1180px,92vw);margin:0 auto}
+.forbidden-detail .fd-more-kicker{font:10px var(--sans,"Tenor Sans",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#8c0d0c}
+.forbidden-detail .fd-more h2{font:500 54px/1 "Cormorant Garamond",Georgia,serif;color:#003020;margin:12px 0 34px}
+.forbidden-detail .fd-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.forbidden-detail .fd-card{background:#f8f7f1;border:1px solid rgba(0,48,32,.1)}
+.forbidden-detail .fd-card-media{aspect-ratio:16/9;background:#dfe7e1;position:relative}
+.forbidden-detail .fd-card-media:after{content:"";position:absolute;inset:0;background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/54px auto no-repeat;opacity:.62}
+.forbidden-detail .fd-card-body{padding:18px 19px 22px}
+.forbidden-detail .fd-card-meta{font:9px var(--sans,"Tenor Sans",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#8c0d0c}
+.forbidden-detail .fd-card h3{font:500 29px/1.02 "Cormorant Garamond",Georgia,serif;color:#003020;margin:9px 0}
+.forbidden-detail .fd-card p{font:15px/1.5 "Crimson Pro",Georgia,serif;color:#52625c;margin:0}
+.forbidden-detail .fd-card a{display:inline-block;margin-top:14px;color:#8c0d0c;text-decoration:none;font:9px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.12em;text-transform:uppercase}
+.forbidden-detail .fd-archive{text-align:center;padding-top:32px}
+.forbidden-detail .fd-archive a{display:inline-block;border:1px solid rgba(0,48,32,.2);padding:12px 20px;color:#003020;text-decoration:none;font:9px var(--sans,"Tenor Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.forbidden-detail .fd-cta{background:#003020;color:#fdfaf4;text-align:center;padding:76px 20px}
+.forbidden-detail .fd-cta h2{font:500 clamp(38px,5vw,58px)/1 "Cormorant Garamond",Georgia,serif;color:#fdfaf4;margin:12px auto 18px;max-width:800px}
+.forbidden-detail .fd-cta p{font:18px/1.55 "Crimson Pro",Georgia,serif;color:#dce7e1;max-width:680px;margin:0 auto}
+.forbidden-detail .fd-cta a{display:inline-block;margin-top:24px;background:#8c0d0c;color:#fff;text-decoration:none;padding:12px 18px;font:9px var(--sans,"Tenor Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase}
+@media(max-width:850px){
+ .forbidden-detail .fd-layout{grid-template-columns:1fr;gap:40px}
+ .forbidden-detail .fd-rail{position:static;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+ .forbidden-detail .fd-rail-card{margin:0}
+ .forbidden-detail .fd-cards{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ .forbidden-detail .fd-hero{min-height:560px}
+ .forbidden-detail .fd-hero-inner{padding:90px 0 54px}
+ .forbidden-detail .fd-hero h1{font-size:53px}
+ .forbidden-detail .fd-deck{font-size:18px}
+ .forbidden-detail .fd-wrap{padding-top:32px}
+ .forbidden-detail .fd-audio{margin-bottom:32px}
+ .forbidden-detail .fd-body{font-size:18px;line-height:1.75}
+ .forbidden-detail .fd-rail{grid-template-columns:1fr}
+ .forbidden-detail .fd-cards{grid-template-columns:1fr}
+ .forbidden-detail .fd-more h2{font-size:45px}
+}
