@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "status": "ready_for_canonical_content_import",
+  "rule": "Do not import illustrative reference posts as production content.",
+  "publications": {
+    "blog_declassified": {
+      "route": "/blog/",
+      "content_required": [
+        "slug",
+        "title",
+        "date",
+        "topics",
+        "teaser",
+        "body",
+        "read_time",
+        "hero_media"
+      ],
+      "source_status": "real production post list not supplied in current source set"
+    },
+    "forbidden": {
+      "route": "/forbidden/",
+      "content_required": [
+        "slug",
+        "title",
+        "date",
+        "topics",
+        "teaser",
+        "body",
+        "read_time",
+        "hero_media",
+        "in_essay_media"
+      ],
+      "source_status": "real production post list not supplied in current source set"
+    },
+    "editorial": {
+      "route": "/editorial/",
+      "source_status": "architecture defined; content migration pending"
+    },
+    "newsletter": {
+      "route": "/newsletter/",
+      "source_status": "architecture defined; issue archive pending"
+    },
+    "books": {
+      "route": "/books/",
+      "source_status": "existing ecosystem; backend canonicalisation pending"
+    },
+    "podcast": {
+      "route": "/podcast/",
+      "source_status": "existing ecosystem; Resume Podcast work remains parked"
+    }
+  },
+  "migration_sequence": [
+    "1. Import real Blog post manifest and body content.",
+    "2. Import real Forbidden post manifest and body content.",
+    "3. Import canonical media references.",
+    "4. Create tags and content-tag relations.",
+    "5. Create only source-supported content relationships.",
+    "6. Validate one canonical record per intellectual object.",
+    "7. Connect Global Search and Knowledge Graph.",
+    "8. Run route/media/link integrity audit.",
+    "9. Only then switch frontend reads to API."
+  ]
+}
