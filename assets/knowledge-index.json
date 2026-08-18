@@ -801,5 +801,389 @@
       "Podcast",
       "Events"
     ]
+  },
+  {
+    "title": "Blog · Declassified",
+    "type": "Publication",
+    "url": "blog/",
+    "text": "Public intellectual publication and archive: dispatches from the planning room.",
+    "tags": [
+      "publication",
+      "THINK",
+      "blog"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph"
+    ]
+  },
+  {
+    "title": "Forbidden",
+    "type": "Publication",
+    "url": "forbidden/",
+    "text": "Distinct analytical publication with a separate reading threshold and darker editorial register.",
+    "tags": [
+      "publication",
+      "THINK",
+      "forbidden"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph"
+    ]
+  },
+  {
+    "title": "The Battle of Identity Comes First",
+    "type": "Blog · Declassified",
+    "url": "blog/battle-of-identity/",
+    "text": "Of the seventeen battles mapped in The War Within, identity is deliberately first. Not because it is the easiest, but because every other battle inherits its outcome. A leader who does not know who he is will lose fights he was equipped to win — not for lack of skill, but because a divided man cannot commit his full weight to anything.\n\nIdentity confusion has a signature in the marketplace. It looks like strategy that changes with every conference attended. It looks like pricing that apolog",
+    "tags": [
+      "The War Within",
+      "Leadership"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Build for the Successor You Have Not Met",
+    "type": "Blog · Declassified",
+    "url": "blog/build-for-the-successor/",
+    "text": "Every structure you are building will one day be operated by someone you have not met. That is not pessimism; it is arithmetic. Founders retire, ministers hand over, directors move on, and every organisation that survives its founder does so because — deliberately or accidentally — it was built for hands other than his.\n\nThe stewardship test of any system is therefore simple to state and uncomfortable to apply: could a competent stranger run this? Not admire it — run it. If the pricing logi",
+    "tags": [
+      "Leadership",
+      "Business"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Calling Is Not the Career",
+    "type": "Blog · Declassified",
+    "url": "blog/calling-is-not-the-career/",
+    "text": "A career is an arrangement: skills rented to an employer or a market in exchange for compensation and progression. A calling is an assignment: a work laid on your life that does not expire when you change jobs, cities, or industries. Confusing the two is one of the quieter battles within — and one of the most expensive.\n\nThe confusion runs in both directions. Some baptise their career as their calling, so every promotion feels like providence and every redundancy like abandonment. Their sen",
+    "tags": [
+      "The War Within",
+      "Spirituality"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Your Data Is a Prophetic Instrument",
+    "type": "Blog · Declassified",
+    "url": "blog/data-prophetic-instrument/",
+    "text": "There is a peculiar superstition among people of faith that data is cold — that the spreadsheet belongs to the accountant and the prophetic belongs to the altar, and never the two shall meet. This is a false division, and it is costing kingdom-minded builders their edge.\n\nData is testimony with a timestamp. Every row in your ledger is a recorded fact about what actually happened — not what you hoped, not what you announced, but what occurred. And Scripture is relentless about the value of a",
+    "tags": [
+      "Technology",
+      "Strategy"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Discipline Is a Form of Worship",
+    "type": "Blog · Declassified",
+    "url": "blog/discipline-is-worship/",
+    "text": "Every assignment has a glamorous beginning, a glamorous end, and an enormous unphotographed middle. The middle is where the war within is actually decided — five a.m. appointments with work no one sees, standards maintained on days no one checks, the ninety-day plan executed in week seven when the excitement of week one is a rumour.\n\nWe tend to file discipline under performance: a productivity virtue, a founder's edge, an athlete's regimen. But consistency is more theological than that. Wha",
+    "tags": [
+      "Discipline & Systems",
+      "The War Within"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Dominion Is a Balance Sheet Word",
+    "type": "Blog · Declassified",
+    "url": "blog/dominion-balance-sheet/",
+    "text": "Dominion has become a conference word — something declared over audiences with lights and reverb, seldom something reconciled at month-end. But the mandate to have dominion was given over real territory: ground, seed, herds, harvests. Tangible things that could be counted, stewarded, multiplied, and lost. Dominion, in its original grammar, is an economics word.\n\nThat means the balance sheet is not beneath your calling. It is one of the honest instruments of it. Vision that never touches a c",
+    "tags": [
+      "Business",
+      "Spirituality"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Executing the Decree — the 90-Day Standard",
+    "type": "Blog · Declassified",
+    "url": "blog/executing-the-decree/",
+    "text": "Every Prepared Mind engagement ends the same way: a written Decree and a ninety-day plan. Not a vision board. Not a feeling of clarity. A document — dated, specific, signed — and a fixed season in which it will be executed or exposed. The rigidity is the point.\n\nA plan without a deadline is a sentiment, and sentiments do not build towers. Ninety days is long enough to accomplish something structural and short enough to forbid drift. It is a quarter — the natural heartbeat of business — and,",
+    "tags": [
+      "Strategy",
+      "Discipline & Systems"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "IBONK — Five Levels of the Same Assignment",
+    "type": "Blog · Declassified",
+    "url": "blog/ibonk-five-levels/",
+    "text": "Ambitious people talk about scale as if it were a leap — one viral moment, one funding round, one appointment, and suddenly the nation is listening. IBONK is the correction to that fantasy. Influence is not a leap. It is a ladder with five rungs: Individual, Business, Organisation, Nation, Kingdom. And every rung is won the same way — order within before order without.\n\nThe Individual level is the first territory, and the least glamorous. It is your calendar, your appetites, your word kept",
+    "tags": [
+      "Frameworks",
+      "Leadership"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Planning Room Is a Battlefield",
+    "type": "Blog · Declassified",
+    "url": "blog/planning-room-battlefield/",
+    "text": "Most leaders imagine the battlefield is out there — the market, the pitch, the launch, the quarter. It is not. By the time your plan meets the public, the decisive engagements are already over. They were fought in a quiet room, on paper, against an enemy who never raises his voice: your own unexamined assumptions.\n\nThe planning room is where ambition meets arithmetic. It is the one venue where you can lose safely — where a flawed model costs you an afternoon instead of a year, where an hone",
+    "tags": [
+      "Strategy",
+      "Discipline & Systems"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Praying Like a Strategist",
+    "type": "Blog · Declassified",
+    "url": "blog/praying-like-a-strategist/",
+    "text": "Somewhere along the line, praying and planning were assigned to different personality types — the mystic and the manager — and told to distrust each other. The mystic suspects the planner of unbelief; the planner suspects the mystic of escapism. Both suspicions are lazy, and both are answered by the same correction: bring the plan into the prayer room.\n\nPrayer without intelligence drifts into vagueness — bless the business, open doors, do something. Heaven is petitioned like a distant gover",
+    "tags": [
+      "Spirituality",
+      "Discipline & Systems"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Scripture Is Architecture, Not Decoration",
+    "type": "Blog · Declassified",
+    "url": "blog/scripture-is-architecture/",
+    "text": "There is a way of using Scripture that amounts to interior décor — a verse on the wall of a business built entirely on borrowed secular logic, a benediction sprayed over a strategy that was never submitted to the text it quotes. The verse decorates. It does not hold weight. And decoration is the opposite of what Scripture claims for itself.\n\nArchitecture bears load. Remove a decorative element and the room looks plainer; remove a structural one and the building comes down. The claim behind",
+    "tags": [
+      "Spirituality",
+      "Frameworks"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "SWOT Without Self-Deception",
+    "type": "Blog · Declassified",
+    "url": "blog/swot-without-self-deception/",
+    "text": "The SWOT analysis is the most completed and least honest document in business. Strengths inflated to flatter the founder. Weaknesses phrased as strengths in disguise — we care too much, we move too fast. Opportunities copied from a trends article. Threats listed vaguely enough to never require a response. The template survives; the truth does not.\n\nThe failure is not in the framework. It is in the absence of a discipline the framework quietly assumes: self-honesty under examination. Assess",
+    "tags": [
+      "Strategy",
+      "Business"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Architecture of a Manipulator",
+    "type": "Forbidden",
+    "url": "forbidden/architecture-of-a-manipulator/",
+    "text": "Most people imagine manipulation as a moment — a lie told, a guilt trip landed, a boundary crossed. It is not a moment. It is a structure, built in stages, over time, the way a building is built: foundation first, load-bearing walls second, the finished façade last.\n\nBy the time you notice the façade, the structure has already been standing for months. This dispatch is the blueprint read backwards — not so you can build one, but so you can recognise the scaffolding the moment it goes up aro",
+    "tags": [
+      "Manipulation Architecture",
+      "Psychological Warfare"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Difference Between Discernment and Suspicion",
+    "type": "Forbidden",
+    "url": "forbidden/discernment-and-suspicion/",
+    "text": "Five dispatches back, this section opened at the threshold with a single verse doing double duty: \"be wise as serpents, and harmless as doves\" — Matthew 10:16. It is worth returning to, because knowledge of manipulation, held wrongly, produces a specific and underdiscussed casualty: the reader who becomes so fluent in the architecture of bad faith that they start seeing it everywhere, in everyone, including the people who never deserved the suspicion. Discernment that curdles into permanent",
+    "tags": [
+      "Discernment",
+      "Dark Human Nature"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Gaslighting Has a Grammar",
+    "type": "Forbidden",
+    "url": "forbidden/gaslighting-has-a-grammar/",
+    "text": "Gaslighting feels like confusion from the inside, but it is not chaotic. It is a small, closed set of linguistic moves, deployed in a predictable order, and — like any grammar — learnable. The confusion is the intended output, not an accident of the process.\n\nThis dispatch names the sentences so you can recognise the pattern the next time it is aimed at you, not so you can aim it at anyone.\n\nThe first move is reality substitution: \"that never happened,\" delivered with total, unhesitating co",
+    "tags": [
+      "Psychological Warfare",
+      "Discernment"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Illusion of Loyalty and the Reality of Betrayal",
+    "type": "Forbidden",
+    "url": "forbidden/illusion-of-loyalty-reality-of-betrayal/",
+    "text": "You were never betrayed by your enemy. Enemies do not have access to what you guarded. What was called betrayal was always, precisely, a revelation — a sudden, violent clarification of what was true long before the moment it became undeniable.\n\nConsider what the word betrayal actually requires. For someone to betray you, they must first have had access to what you guarded. They must have been close enough, trusted enough, permitted far enough past your ordinary vigilance to reach the thing",
+    "tags": [
+      "Loyalty & Betrayal",
+      "Dark Human Nature"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Negotiating Debt",
+    "type": "Forbidden",
+    "url": "forbidden/negotiating-debt/",
+    "text": "The creditor's most powerful instrument is not the interest rate. It is not the penalty clause. It is not the collection agency.\n\nIt is the psychological architecture they have spent decades building inside you — the architecture of shame, helplessness, and the deep conviction that they hold all the power.\n\nThey do not. But they need you to believe they do.\n\nWhat follows is not a financial advice column. It is something the financial advice industry is structurally prevented from giving you",
+    "tags": [
+      "Power & Control",
+      "Financial Psychology"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Regret is Feedback and Revelation",
+    "type": "Forbidden",
+    "url": "forbidden/regret-is-feedback-and-revelation/",
+    "text": "They told you the feeling was the problem. They handed you tools — journals, affirmations, five-step frameworks with friendly fonts — to make the feeling go away faster. What they never told you is that the feeling was a courier. And you have been shooting the messenger.\n\nBefore we go any further, let me be precise about what this essay is not. It is not a validation of self-pity. It is not a defence of rumination. It is not a permission slip to stay in the past. Those are real pathologies",
+    "tags": [
+      "Cognitive Sovereignty",
+      "Discernment"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Sympathy Is a Weapon",
+    "type": "Forbidden",
+    "url": "forbidden/sympathy-is-a-weapon/",
+    "text": "Compassion is one of the more reliable exploits in the entire manipulation toolkit, precisely because good people are trained to trust it unconditionally. A manipulator who can position themselves as wounded, misunderstood, or persecuted gains something more durable than sympathy — they gain immunity. Once you have cast someone as a victim in your own mind, you will forgive behaviour from them that you would never tolerate from someone you had not already pitied.\n\nThe wounded-healer perform",
+    "tags": [
+      "Psychological Warfare",
+      "Dark Human Nature"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Conquered Mind",
+    "type": "Forbidden",
+    "url": "forbidden/the-conquered-mind/",
+    "text": "§ I\n\nOpening Reframe\n\nWhen was the last time you had a thought that was entirely your own? Not a reaction to content someone placed in your path. Not an instinct shaped by a narrative someone else constructed. Not a conclusion arrived at through a framework that was designed before you ever arrived to use it. A thought that originated, formed, and resolved inside the sovereign territory of your own mind.\n\nMost people cannot answer that question. And the silence that follows it is not confus",
+    "tags": [
+      "Cognitive Sovereignty",
+      "Psychological Warfare"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "Why Smart People Join Cults",
+    "type": "Forbidden",
+    "url": "forbidden/why-smart-people-join-cults/",
+    "text": "The comfortable myth is that cults recruit the gullible, the poorly educated, the credulous. The documented pattern says the opposite: high-control groups disproportionately recruit intelligent, capable, idealistic people — because intelligent, capable, idealistic people make better believers, better fundraisers, and better recruiters once converted. Recruitment is not a con aimed at the weak-minded.\n\nIt is a precision instrument aimed at a specific, universal human vulnerability, and the v",
+    "tags": [
+      "Manipulation Architecture",
+      "Dark Human Nature"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
+  },
+  {
+    "title": "The Wolf in the Pulpit",
+    "type": "Forbidden",
+    "url": "forbidden/wolf-in-the-pulpit/",
+    "text": "\"Beware of false prophets, which come to you in sheep's clothing, but inwardly are ravening wolves\" — Matthew 7:15. The warning is not vague, and it is not rare. Scripture assumes religious counterfeit will be common enough that every generation needs the diagnostic reissued.\n\nPaul goes further, naming the mechanism directly: \"such are false apostles, deceitful workers, transforming themselves into the apostles of Christ. And no marvel; for Satan himself is transformed into an angel of ligh",
+    "tags": [
+      "Religious Counterfeits",
+      "Power & Control"
+    ],
+    "connected_layers": [
+      "Think",
+      "Global Search",
+      "Knowledge Graph",
+      "Newsletter"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 {
-  "schema_version": "3.0",
-  "purpose": "Unified explicit relationship registry for global ecosystem discovery.",
+  "schema_version": "3.1",
+  "purpose": "Unified explicit relationship registry for global ecosystem discovery, including canonical Blog and Forbidden content.",
   "source_layers": [
     "explore/data/knowledge-graph.json",
     "knowledge/data/framework-registry.json",
@@ -1219,25 +1219,158 @@
       "confidence": "explicit-architecture"
     },
     {
-      "source_id": "PLAT-001",
-      "target_id": "BACK-001",
-      "type": "supported_by",
-      "provenance": "platform production architecture",
-      "confidence": "explicit-architecture"
+      "source_id": "PUB-001",
+      "target_id": "BLOG-001",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
     },
     {
-      "source_id": "BACK-001",
-      "target_id": "COMM-001",
-      "type": "authorizes",
-      "provenance": "commerce backend boundary",
-      "confidence": "explicit-architecture"
+      "source_id": "PUB-001",
+      "target_id": "BLOG-002",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
     },
     {
-      "source_id": "BACK-001",
-      "target_id": "LEARN-001",
-      "type": "authorizes",
-      "provenance": "learning entitlement backend boundary",
-      "confidence": "explicit-architecture"
+      "source_id": "PUB-001",
+      "target_id": "BLOG-003",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-004",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-005",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-006",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-007",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-008",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-009",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-010",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-011",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-012",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-001",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-002",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-003",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-004",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-005",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-006",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-007",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-008",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-009",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-010",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
     }
   ],
   "derived_relationships": [
@@ -1541,6 +1674,6 @@
     "Additional USES_FRAMEWORK edges come from existing case-study page metadata.",
     "No semantic relationship has been promoted to confirmed merely because two assets share keywords."
   ],
-  "relationship_count": 176,
+  "relationship_count": 195,
   "canonicalized_asset_count": 122
 }

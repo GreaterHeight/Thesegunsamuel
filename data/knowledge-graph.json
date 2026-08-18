@@ -1321,6 +1321,622 @@
         "confirmed output type"
       ],
       "featured": false
+    },
+    {
+      "id": "PUB-001",
+      "slug": "blog-declassified",
+      "name": "Blog · Declassified",
+      "type": "publication",
+      "status": "canonical",
+      "short_definition": "Public intellectual publication and archive: dispatches from the planning room.",
+      "parent_id": "SS-001",
+      "route": "/Thesegunsamuel/blog/",
+      "source_ids": [],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "BLOG-001",
+        "BLOG-002",
+        "BLOG-003",
+        "BLOG-004",
+        "BLOG-005",
+        "BLOG-006",
+        "BLOG-007",
+        "BLOG-008",
+        "BLOG-009",
+        "BLOG-010",
+        "BLOG-011",
+        "BLOG-012"
+      ],
+      "tags": [
+        "publication",
+        "THINK",
+        "blog"
+      ],
+      "featured": false
+    },
+    {
+      "id": "PUB-002",
+      "slug": "forbidden",
+      "name": "Forbidden",
+      "type": "publication",
+      "status": "canonical",
+      "short_definition": "Distinct analytical publication with a separate reading threshold and darker editorial register.",
+      "parent_id": "SS-001",
+      "route": "/Thesegunsamuel/forbidden/",
+      "source_ids": [],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "FORB-001",
+        "FORB-002",
+        "FORB-003",
+        "FORB-004",
+        "FORB-005",
+        "FORB-006",
+        "FORB-007",
+        "FORB-008",
+        "FORB-009",
+        "FORB-010"
+      ],
+      "tags": [
+        "publication",
+        "THINK",
+        "forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-001",
+      "slug": "blog_declassified-battle-of-identity",
+      "name": "The Battle of Identity Comes First",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Of the seventeen battles mapped in The War Within, identity is deliberately first. Not because it is the easiest, but because every other battle inherits its outcome. A leader who does not know who he is will lose fights he was equipped to win — not for lack of skill, but because a divided man cannot commit his full we",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/battle-of-identity/",
+      "source_ids": [
+        "blog_declassified:battle-of-identity"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:battle-of-identity"
+      ],
+      "tags": [
+        "The War Within",
+        "Leadership",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-002",
+      "slug": "blog_declassified-build-for-the-successor",
+      "name": "Build for the Successor You Have Not Met",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Every structure you are building will one day be operated by someone you have not met. That is not pessimism; it is arithmetic. Founders retire, ministers hand over, directors move on, and every organisation that survives its founder does so because — deliberately or accidentally — it was built for hands other than his",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/build-for-the-successor/",
+      "source_ids": [
+        "blog_declassified:build-for-the-successor"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:build-for-the-successor"
+      ],
+      "tags": [
+        "Leadership",
+        "Business",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-003",
+      "slug": "blog_declassified-calling-is-not-the-career",
+      "name": "The Calling Is Not the Career",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "A career is an arrangement: skills rented to an employer or a market in exchange for compensation and progression. A calling is an assignment: a work laid on your life that does not expire when you change jobs, cities, or industries. Confusing the two is one of the quieter battles within — and one of the most expensive",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/calling-is-not-the-career/",
+      "source_ids": [
+        "blog_declassified:calling-is-not-the-career"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:calling-is-not-the-career"
+      ],
+      "tags": [
+        "The War Within",
+        "Spirituality",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-004",
+      "slug": "blog_declassified-data-prophetic-instrument",
+      "name": "Your Data Is a Prophetic Instrument",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "There is a peculiar superstition among people of faith that data is cold — that the spreadsheet belongs to the accountant and the prophetic belongs to the altar, and never the two shall meet. This is a false division, and it is costing kingdom-minded builders their edge.\n\nData is testimony with a timestamp. Every row i",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/data-prophetic-instrument/",
+      "source_ids": [
+        "blog_declassified:data-prophetic-instrument"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:data-prophetic-instrument"
+      ],
+      "tags": [
+        "Technology",
+        "Strategy",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-005",
+      "slug": "blog_declassified-discipline-is-worship",
+      "name": "Discipline Is a Form of Worship",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Every assignment has a glamorous beginning, a glamorous end, and an enormous unphotographed middle. The middle is where the war within is actually decided — five a.m. appointments with work no one sees, standards maintained on days no one checks, the ninety-day plan executed in week seven when the excitement of week on",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/discipline-is-worship/",
+      "source_ids": [
+        "blog_declassified:discipline-is-worship"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:discipline-is-worship"
+      ],
+      "tags": [
+        "Discipline & Systems",
+        "The War Within",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-006",
+      "slug": "blog_declassified-dominion-balance-sheet",
+      "name": "Dominion Is a Balance Sheet Word",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Dominion has become a conference word — something declared over audiences with lights and reverb, seldom something reconciled at month-end. But the mandate to have dominion was given over real territory: ground, seed, herds, harvests. Tangible things that could be counted, stewarded, multiplied, and lost. Dominion, in ",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/dominion-balance-sheet/",
+      "source_ids": [
+        "blog_declassified:dominion-balance-sheet"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:dominion-balance-sheet"
+      ],
+      "tags": [
+        "Business",
+        "Spirituality",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-007",
+      "slug": "blog_declassified-executing-the-decree",
+      "name": "Executing the Decree — the 90-Day Standard",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Every Prepared Mind engagement ends the same way: a written Decree and a ninety-day plan. Not a vision board. Not a feeling of clarity. A document — dated, specific, signed — and a fixed season in which it will be executed or exposed. The rigidity is the point.\n\nA plan without a deadline is a sentiment, and sentiments ",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/executing-the-decree/",
+      "source_ids": [
+        "blog_declassified:executing-the-decree"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:executing-the-decree"
+      ],
+      "tags": [
+        "Strategy",
+        "Discipline & Systems",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-008",
+      "slug": "blog_declassified-ibonk-five-levels",
+      "name": "IBONK — Five Levels of the Same Assignment",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Ambitious people talk about scale as if it were a leap — one viral moment, one funding round, one appointment, and suddenly the nation is listening. IBONK is the correction to that fantasy. Influence is not a leap. It is a ladder with five rungs: Individual, Business, Organisation, Nation, Kingdom. And every rung is wo",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/ibonk-five-levels/",
+      "source_ids": [
+        "blog_declassified:ibonk-five-levels"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:ibonk-five-levels"
+      ],
+      "tags": [
+        "Frameworks",
+        "Leadership",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-009",
+      "slug": "blog_declassified-planning-room-battlefield",
+      "name": "The Planning Room Is a Battlefield",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Most leaders imagine the battlefield is out there — the market, the pitch, the launch, the quarter. It is not. By the time your plan meets the public, the decisive engagements are already over. They were fought in a quiet room, on paper, against an enemy who never raises his voice: your own unexamined assumptions.\n\nThe",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/planning-room-battlefield/",
+      "source_ids": [
+        "blog_declassified:planning-room-battlefield"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:planning-room-battlefield"
+      ],
+      "tags": [
+        "Strategy",
+        "Discipline & Systems",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-010",
+      "slug": "blog_declassified-praying-like-a-strategist",
+      "name": "Praying Like a Strategist",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "Somewhere along the line, praying and planning were assigned to different personality types — the mystic and the manager — and told to distrust each other. The mystic suspects the planner of unbelief; the planner suspects the mystic of escapism. Both suspicions are lazy, and both are answered by the same correction: br",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/praying-like-a-strategist/",
+      "source_ids": [
+        "blog_declassified:praying-like-a-strategist"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:praying-like-a-strategist"
+      ],
+      "tags": [
+        "Spirituality",
+        "Discipline & Systems",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-011",
+      "slug": "blog_declassified-scripture-is-architecture",
+      "name": "Scripture Is Architecture, Not Decoration",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "There is a way of using Scripture that amounts to interior décor — a verse on the wall of a business built entirely on borrowed secular logic, a benediction sprayed over a strategy that was never submitted to the text it quotes. The verse decorates. It does not hold weight. And decoration is the opposite of what Script",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/scripture-is-architecture/",
+      "source_ids": [
+        "blog_declassified:scripture-is-architecture"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:scripture-is-architecture"
+      ],
+      "tags": [
+        "Spirituality",
+        "Frameworks",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "BLOG-012",
+      "slug": "blog_declassified-swot-without-self-deception",
+      "name": "SWOT Without Self-Deception",
+      "type": "blog_post",
+      "status": "canonical",
+      "short_definition": "The SWOT analysis is the most completed and least honest document in business. Strengths inflated to flatter the founder. Weaknesses phrased as strengths in disguise — we care too much, we move too fast. Opportunities copied from a trends article. Threats listed vaguely enough to never require a response. The template ",
+      "parent_id": "PUB-001",
+      "route": "/Thesegunsamuel/blog/swot-without-self-deception/",
+      "source_ids": [
+        "blog_declassified:swot-without-self-deception"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "blog_declassified:swot-without-self-deception"
+      ],
+      "tags": [
+        "Strategy",
+        "Business",
+        "Blog · Declassified"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-001",
+      "slug": "forbidden-architecture-of-a-manipulator",
+      "name": "The Architecture of a Manipulator",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "Most people imagine manipulation as a moment — a lie told, a guilt trip landed, a boundary crossed. It is not a moment. It is a structure, built in stages, over time, the way a building is built: foundation first, load-bearing walls second, the finished façade last.\n\nBy the time you notice the façade, the structure has",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/architecture-of-a-manipulator/",
+      "source_ids": [
+        "forbidden:architecture-of-a-manipulator"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:architecture-of-a-manipulator"
+      ],
+      "tags": [
+        "Manipulation Architecture",
+        "Psychological Warfare",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-002",
+      "slug": "forbidden-discernment-and-suspicion",
+      "name": "The Difference Between Discernment and Suspicion",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "Five dispatches back, this section opened at the threshold with a single verse doing double duty: \"be wise as serpents, and harmless as doves\" — Matthew 10:16. It is worth returning to, because knowledge of manipulation, held wrongly, produces a specific and underdiscussed casualty: the reader who becomes so fluent in ",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/discernment-and-suspicion/",
+      "source_ids": [
+        "forbidden:discernment-and-suspicion"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:discernment-and-suspicion"
+      ],
+      "tags": [
+        "Discernment",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-003",
+      "slug": "forbidden-gaslighting-has-a-grammar",
+      "name": "Gaslighting Has a Grammar",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "Gaslighting feels like confusion from the inside, but it is not chaotic. It is a small, closed set of linguistic moves, deployed in a predictable order, and — like any grammar — learnable. The confusion is the intended output, not an accident of the process.\n\nThis dispatch names the sentences so you can recognise the p",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/gaslighting-has-a-grammar/",
+      "source_ids": [
+        "forbidden:gaslighting-has-a-grammar"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:gaslighting-has-a-grammar"
+      ],
+      "tags": [
+        "Psychological Warfare",
+        "Discernment",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-004",
+      "slug": "forbidden-illusion-of-loyalty-reality-of-betrayal",
+      "name": "The Illusion of Loyalty and the Reality of Betrayal",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "You were never betrayed by your enemy. Enemies do not have access to what you guarded. What was called betrayal was always, precisely, a revelation — a sudden, violent clarification of what was true long before the moment it became undeniable.\n\nConsider what the word betrayal actually requires. For someone to betray yo",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/illusion-of-loyalty-reality-of-betrayal/",
+      "source_ids": [
+        "forbidden:illusion-of-loyalty-reality-of-betrayal"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:illusion-of-loyalty-reality-of-betrayal"
+      ],
+      "tags": [
+        "Loyalty & Betrayal",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-005",
+      "slug": "forbidden-negotiating-debt",
+      "name": "Negotiating Debt",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "The creditor's most powerful instrument is not the interest rate. It is not the penalty clause. It is not the collection agency.\n\nIt is the psychological architecture they have spent decades building inside you — the architecture of shame, helplessness, and the deep conviction that they hold all the power.\n\nThey do not",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/negotiating-debt/",
+      "source_ids": [
+        "forbidden:negotiating-debt"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:negotiating-debt"
+      ],
+      "tags": [
+        "Power & Control",
+        "Financial Psychology",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-006",
+      "slug": "forbidden-regret-is-feedback-and-revelation",
+      "name": "Regret is Feedback and Revelation",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "They told you the feeling was the problem. They handed you tools — journals, affirmations, five-step frameworks with friendly fonts — to make the feeling go away faster. What they never told you is that the feeling was a courier. And you have been shooting the messenger.\n\nBefore we go any further, let me be precise abo",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/regret-is-feedback-and-revelation/",
+      "source_ids": [
+        "forbidden:regret-is-feedback-and-revelation"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:regret-is-feedback-and-revelation"
+      ],
+      "tags": [
+        "Cognitive Sovereignty",
+        "Discernment",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-007",
+      "slug": "forbidden-sympathy-is-a-weapon",
+      "name": "Sympathy Is a Weapon",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "Compassion is one of the more reliable exploits in the entire manipulation toolkit, precisely because good people are trained to trust it unconditionally. A manipulator who can position themselves as wounded, misunderstood, or persecuted gains something more durable than sympathy — they gain immunity. Once you have cas",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/sympathy-is-a-weapon/",
+      "source_ids": [
+        "forbidden:sympathy-is-a-weapon"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:sympathy-is-a-weapon"
+      ],
+      "tags": [
+        "Psychological Warfare",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-008",
+      "slug": "forbidden-the-conquered-mind",
+      "name": "The Conquered Mind",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "§ I\n\nOpening Reframe\n\nWhen was the last time you had a thought that was entirely your own? Not a reaction to content someone placed in your path. Not an instinct shaped by a narrative someone else constructed. Not a conclusion arrived at through a framework that was designed before you ever arrived to use it. A thought",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/the-conquered-mind/",
+      "source_ids": [
+        "forbidden:the-conquered-mind"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:the-conquered-mind"
+      ],
+      "tags": [
+        "Cognitive Sovereignty",
+        "Psychological Warfare",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-009",
+      "slug": "forbidden-why-smart-people-join-cults",
+      "name": "Why Smart People Join Cults",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "The comfortable myth is that cults recruit the gullible, the poorly educated, the credulous. The documented pattern says the opposite: high-control groups disproportionately recruit intelligent, capable, idealistic people — because intelligent, capable, idealistic people make better believers, better fundraisers, and b",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/why-smart-people-join-cults/",
+      "source_ids": [
+        "forbidden:why-smart-people-join-cults"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:why-smart-people-join-cults"
+      ],
+      "tags": [
+        "Manipulation Architecture",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "FORB-010",
+      "slug": "forbidden-wolf-in-the-pulpit",
+      "name": "The Wolf in the Pulpit",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "short_definition": "\"Beware of false prophets, which come to you in sheep's clothing, but inwardly are ravening wolves\" — Matthew 7:15. The warning is not vague, and it is not rare. Scripture assumes religious counterfeit will be common enough that every generation needs the diagnostic reissued.\n\nPaul goes further, naming the mechanism di",
+      "parent_id": "PUB-002",
+      "route": "/Thesegunsamuel/forbidden/wolf-in-the-pulpit/",
+      "source_ids": [
+        "forbidden:wolf-in-the-pulpit"
+      ],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [],
+      "content_ids": [
+        "forbidden:wolf-in-the-pulpit"
+      ],
+      "tags": [
+        "Religious Counterfeits",
+        "Power & Control",
+        "Forbidden"
+      ],
+      "featured": false
     }
   ],
   "relationships": [
@@ -2013,6 +2629,116 @@
       "source": "PLAT-014",
       "target": "SS-001",
       "type": "part_of"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-001",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-002",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-003",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-004",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-005",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-006",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-007",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-008",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-009",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-010",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-011",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-001",
+      "target": "BLOG-012",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-001",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-002",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-003",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-004",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-005",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-006",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-007",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-008",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-009",
+      "type": "contains"
+    },
+    {
+      "source": "PUB-002",
+      "target": "FORB-010",
+      "type": "contains"
     }
   ],
   "ecosystem_index": {
@@ -2497,5 +3223,5 @@
       }
     ]
   },
-  "integration_version": "v3.10"
+  "integration_version": "1.6-publishing-content"
 }

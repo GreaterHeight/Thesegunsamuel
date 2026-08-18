@@ -1,5 +1,5 @@
 {
-  "version": "v4.6",
+  "version": "v4.5",
   "source": "canonical graph + published ecosystem pages + registered relationship layer",
   "entities": [
     {
@@ -2646,22 +2646,340 @@
       "source": "canonical-commerce-registry"
     },
     {
-      "id": "BACK-001",
-      "name": "Backend & Data Architecture",
-      "type": "platform_system",
+      "id": "PUB-001",
+      "name": "Blog · Declassified",
+      "type": "publication",
       "status": "canonical",
-      "route": "/Thesegunsamuel/",
-      "text": "Authoritative backend boundary for identity, commerce, payment verification, enrollment, learning progress, engagement and knowledge data.",
+      "route": "/Thesegunsamuel/blog/",
+      "text": "Public intellectual publication and archive: dispatches from the planning room.",
       "tags": [
-        "backend",
-        "database",
-        "authentication",
-        "payments",
-        "enrollment",
-        "learning",
-        "knowledge"
+        "publication",
+        "THINK",
+        "blog"
       ],
-      "source": "canonical-platform-registry"
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "PUB-002",
+      "name": "Forbidden",
+      "type": "publication",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/",
+      "text": "Distinct analytical publication with a separate reading threshold and darker editorial register.",
+      "tags": [
+        "publication",
+        "THINK",
+        "forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-001",
+      "name": "The Battle of Identity Comes First",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/battle-of-identity/",
+      "text": "Of the seventeen battles mapped in The War Within, identity is deliberately first. Not because it is the easiest, but because every other battle inherits its outcome. A leader who does not know who he is will lose fights he was equipped to win — not for lack of skill, but because a divided man cannot commit his full we",
+      "tags": [
+        "The War Within",
+        "Leadership",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-002",
+      "name": "Build for the Successor You Have Not Met",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/build-for-the-successor/",
+      "text": "Every structure you are building will one day be operated by someone you have not met. That is not pessimism; it is arithmetic. Founders retire, ministers hand over, directors move on, and every organisation that survives its founder does so because — deliberately or accidentally — it was built for hands other than his",
+      "tags": [
+        "Leadership",
+        "Business",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-003",
+      "name": "The Calling Is Not the Career",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/calling-is-not-the-career/",
+      "text": "A career is an arrangement: skills rented to an employer or a market in exchange for compensation and progression. A calling is an assignment: a work laid on your life that does not expire when you change jobs, cities, or industries. Confusing the two is one of the quieter battles within — and one of the most expensive",
+      "tags": [
+        "The War Within",
+        "Spirituality",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-004",
+      "name": "Your Data Is a Prophetic Instrument",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/data-prophetic-instrument/",
+      "text": "There is a peculiar superstition among people of faith that data is cold — that the spreadsheet belongs to the accountant and the prophetic belongs to the altar, and never the two shall meet. This is a false division, and it is costing kingdom-minded builders their edge.\n\nData is testimony with a timestamp. Every row i",
+      "tags": [
+        "Technology",
+        "Strategy",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-005",
+      "name": "Discipline Is a Form of Worship",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/discipline-is-worship/",
+      "text": "Every assignment has a glamorous beginning, a glamorous end, and an enormous unphotographed middle. The middle is where the war within is actually decided — five a.m. appointments with work no one sees, standards maintained on days no one checks, the ninety-day plan executed in week seven when the excitement of week on",
+      "tags": [
+        "Discipline & Systems",
+        "The War Within",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-006",
+      "name": "Dominion Is a Balance Sheet Word",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/dominion-balance-sheet/",
+      "text": "Dominion has become a conference word — something declared over audiences with lights and reverb, seldom something reconciled at month-end. But the mandate to have dominion was given over real territory: ground, seed, herds, harvests. Tangible things that could be counted, stewarded, multiplied, and lost. Dominion, in ",
+      "tags": [
+        "Business",
+        "Spirituality",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-007",
+      "name": "Executing the Decree — the 90-Day Standard",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/executing-the-decree/",
+      "text": "Every Prepared Mind engagement ends the same way: a written Decree and a ninety-day plan. Not a vision board. Not a feeling of clarity. A document — dated, specific, signed — and a fixed season in which it will be executed or exposed. The rigidity is the point.\n\nA plan without a deadline is a sentiment, and sentiments ",
+      "tags": [
+        "Strategy",
+        "Discipline & Systems",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-008",
+      "name": "IBONK — Five Levels of the Same Assignment",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/ibonk-five-levels/",
+      "text": "Ambitious people talk about scale as if it were a leap — one viral moment, one funding round, one appointment, and suddenly the nation is listening. IBONK is the correction to that fantasy. Influence is not a leap. It is a ladder with five rungs: Individual, Business, Organisation, Nation, Kingdom. And every rung is wo",
+      "tags": [
+        "Frameworks",
+        "Leadership",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-009",
+      "name": "The Planning Room Is a Battlefield",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/planning-room-battlefield/",
+      "text": "Most leaders imagine the battlefield is out there — the market, the pitch, the launch, the quarter. It is not. By the time your plan meets the public, the decisive engagements are already over. They were fought in a quiet room, on paper, against an enemy who never raises his voice: your own unexamined assumptions.\n\nThe",
+      "tags": [
+        "Strategy",
+        "Discipline & Systems",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-010",
+      "name": "Praying Like a Strategist",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/praying-like-a-strategist/",
+      "text": "Somewhere along the line, praying and planning were assigned to different personality types — the mystic and the manager — and told to distrust each other. The mystic suspects the planner of unbelief; the planner suspects the mystic of escapism. Both suspicions are lazy, and both are answered by the same correction: br",
+      "tags": [
+        "Spirituality",
+        "Discipline & Systems",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-011",
+      "name": "Scripture Is Architecture, Not Decoration",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/scripture-is-architecture/",
+      "text": "There is a way of using Scripture that amounts to interior décor — a verse on the wall of a business built entirely on borrowed secular logic, a benediction sprayed over a strategy that was never submitted to the text it quotes. The verse decorates. It does not hold weight. And decoration is the opposite of what Script",
+      "tags": [
+        "Spirituality",
+        "Frameworks",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "BLOG-012",
+      "name": "SWOT Without Self-Deception",
+      "type": "blog_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/blog/swot-without-self-deception/",
+      "text": "The SWOT analysis is the most completed and least honest document in business. Strengths inflated to flatter the founder. Weaknesses phrased as strengths in disguise — we care too much, we move too fast. Opportunities copied from a trends article. Threats listed vaguely enough to never require a response. The template ",
+      "tags": [
+        "Strategy",
+        "Business",
+        "Blog · Declassified"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-001",
+      "name": "The Architecture of a Manipulator",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/architecture-of-a-manipulator/",
+      "text": "Most people imagine manipulation as a moment — a lie told, a guilt trip landed, a boundary crossed. It is not a moment. It is a structure, built in stages, over time, the way a building is built: foundation first, load-bearing walls second, the finished façade last.\n\nBy the time you notice the façade, the structure has",
+      "tags": [
+        "Manipulation Architecture",
+        "Psychological Warfare",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-002",
+      "name": "The Difference Between Discernment and Suspicion",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/discernment-and-suspicion/",
+      "text": "Five dispatches back, this section opened at the threshold with a single verse doing double duty: \"be wise as serpents, and harmless as doves\" — Matthew 10:16. It is worth returning to, because knowledge of manipulation, held wrongly, produces a specific and underdiscussed casualty: the reader who becomes so fluent in ",
+      "tags": [
+        "Discernment",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-003",
+      "name": "Gaslighting Has a Grammar",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/gaslighting-has-a-grammar/",
+      "text": "Gaslighting feels like confusion from the inside, but it is not chaotic. It is a small, closed set of linguistic moves, deployed in a predictable order, and — like any grammar — learnable. The confusion is the intended output, not an accident of the process.\n\nThis dispatch names the sentences so you can recognise the p",
+      "tags": [
+        "Psychological Warfare",
+        "Discernment",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-004",
+      "name": "The Illusion of Loyalty and the Reality of Betrayal",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/illusion-of-loyalty-reality-of-betrayal/",
+      "text": "You were never betrayed by your enemy. Enemies do not have access to what you guarded. What was called betrayal was always, precisely, a revelation — a sudden, violent clarification of what was true long before the moment it became undeniable.\n\nConsider what the word betrayal actually requires. For someone to betray yo",
+      "tags": [
+        "Loyalty & Betrayal",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-005",
+      "name": "Negotiating Debt",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/negotiating-debt/",
+      "text": "The creditor's most powerful instrument is not the interest rate. It is not the penalty clause. It is not the collection agency.\n\nIt is the psychological architecture they have spent decades building inside you — the architecture of shame, helplessness, and the deep conviction that they hold all the power.\n\nThey do not",
+      "tags": [
+        "Power & Control",
+        "Financial Psychology",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-006",
+      "name": "Regret is Feedback and Revelation",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/regret-is-feedback-and-revelation/",
+      "text": "They told you the feeling was the problem. They handed you tools — journals, affirmations, five-step frameworks with friendly fonts — to make the feeling go away faster. What they never told you is that the feeling was a courier. And you have been shooting the messenger.\n\nBefore we go any further, let me be precise abo",
+      "tags": [
+        "Cognitive Sovereignty",
+        "Discernment",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-007",
+      "name": "Sympathy Is a Weapon",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/sympathy-is-a-weapon/",
+      "text": "Compassion is one of the more reliable exploits in the entire manipulation toolkit, precisely because good people are trained to trust it unconditionally. A manipulator who can position themselves as wounded, misunderstood, or persecuted gains something more durable than sympathy — they gain immunity. Once you have cas",
+      "tags": [
+        "Psychological Warfare",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-008",
+      "name": "The Conquered Mind",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/the-conquered-mind/",
+      "text": "§ I\n\nOpening Reframe\n\nWhen was the last time you had a thought that was entirely your own? Not a reaction to content someone placed in your path. Not an instinct shaped by a narrative someone else constructed. Not a conclusion arrived at through a framework that was designed before you ever arrived to use it. A thought",
+      "tags": [
+        "Cognitive Sovereignty",
+        "Psychological Warfare",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-009",
+      "name": "Why Smart People Join Cults",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/why-smart-people-join-cults/",
+      "text": "The comfortable myth is that cults recruit the gullible, the poorly educated, the credulous. The documented pattern says the opposite: high-control groups disproportionately recruit intelligent, capable, idealistic people — because intelligent, capable, idealistic people make better believers, better fundraisers, and b",
+      "tags": [
+        "Manipulation Architecture",
+        "Dark Human Nature",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
+    },
+    {
+      "id": "FORB-010",
+      "name": "The Wolf in the Pulpit",
+      "type": "forbidden_post",
+      "status": "canonical",
+      "route": "/Thesegunsamuel/forbidden/wolf-in-the-pulpit/",
+      "text": "\"Beware of false prophets, which come to you in sheep's clothing, but inwardly are ravening wolves\" — Matthew 7:15. The warning is not vague, and it is not rare. Scripture assumes religious counterfeit will be common enough that every generation needs the diagnostic reissued.\n\nPaul goes further, naming the mechanism di",
+      "tags": [
+        "Religious Counterfeits",
+        "Power & Control",
+        "Forbidden"
+      ],
+      "source": "canonical-publishing-content"
     }
   ],
   "relationships": [
@@ -3245,10 +3563,164 @@
       "type": "USES_FRAMEWORK",
       "provenance": "case-study-registry.json (existing case-study page metadata)",
       "confidence": "explicit-page-metadata"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-001",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-002",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-003",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-004",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-005",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-006",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-007",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-008",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-009",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-010",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-011",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-001",
+      "target_id": "BLOG-012",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-001",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-002",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-003",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-004",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-005",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-006",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-007",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-008",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-009",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
+    },
+    {
+      "source_id": "PUB-002",
+      "target_id": "FORB-010",
+      "type": "contains",
+      "provenance": "canonical publishing content migration",
+      "confidence": "explicit"
     }
   ],
   "relationship_source": "knowledge/data/knowledge-relationships.json",
-  "relationship_count": 176,
-  "canonicalization_version": "1.0",
-  "canonical_entity_count": 184
+  "relationship_count": 105,
+  "canonicalization_version": "v4.6-publishing-content",
+  "canonical_entity_count": 244
 }

@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dispatches from the planning room. · Segun Samuel</title><meta name="description" content="Dispatches from the planning room. — Segun Samuel"><link rel="canonical" href="https://greaterheight.github.io/Thesegunsamuel/blog/">
+<style>
+:root{--green:#103f35;--teal:#1b6b63;--teal-lite:#dcefeb;--cream:#f7f1e6;--ink:#17322d;--muted:#6e7b76;--wine:#6b2838;--gold:#c9a44a;--line:#d9dfda;--white:#fff;--shadow:0 18px 50px rgba(16,63,53,.10)}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(247,241,230,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.header-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{font-weight:800;letter-spacing:.14em;text-decoration:none}.primary{display:flex;align-items:center;gap:18px;font-size:12px;font-weight:700;letter-spacing:.08em}.primary>a,.nav-group>button{background:none;border:0;text-decoration:none;font:inherit;color:var(--ink);padding:14px 2px;cursor:pointer}.nav-group{position:relative}.nav-group>button span{margin-left:5px}.nav-drop{display:none;position:absolute;right:0;top:48px;min-width:210px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:8px}.nav-group:hover .nav-drop,.nav-group:focus-within .nav-drop{display:grid}.nav-drop a{padding:11px 12px;text-decoration:none;font-size:11px;letter-spacing:.05em}.nav-drop a:hover{background:var(--teal-lite)}
+.hero{padding:84px 0 64px;background:linear-gradient(160deg,var(--teal-lite),#edf5f0 52%,var(--cream));border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}h1{font-family:Georgia,serif;font-weight:500;font-size:clamp(42px,6vw,76px);line-height:.98;margin:12px 0 18px;max-width:850px}h2{font-family:Georgia,serif;font-size:32px;font-weight:500}.lead{max-width:760px;font-family:Georgia,serif;font-size:21px;line-height:1.55;color:#40504b}.meta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;color:var(--muted);font-size:12px}.pill{border:1px solid var(--line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.6)}
+.toolbar{padding:30px 0;position:sticky;top:77px;z-index:10;background:rgba(247,241,230,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}.search{width:100%;padding:15px 16px;border:1px solid #bfcac4;background:#fff;border-radius:8px;font-size:15px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}.filter{border:1px solid #bfcac4;background:#fff;border-radius:999px;padding:9px 13px;cursor:pointer;font-size:12px}.filter.active{background:var(--green);color:#fff;border-color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:42px 0}.card{background:#fff;border:1px solid var(--line);padding:26px;border-radius:14px;box-shadow:0 8px 24px rgba(16,63,53,.05);display:flex;flex-direction:column;min-height:280px}.card h2{font-size:25px;margin:10px 0}.card p{line-height:1.65;color:#52615c}.card .topics{margin-top:auto;display:flex;gap:6px;flex-wrap:wrap}.topic{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);background:var(--teal-lite);padding:6px 8px;border-radius:999px}.read{font-size:11px;color:var(--muted);margin-top:12px}.open{margin-top:18px;text-decoration:none;font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--wine)}
+.pagination{display:flex;justify-content:center;gap:8px;padding:10px 0 70px}.page-btn{border:1px solid var(--line);background:#fff;border-radius:7px;padding:9px 12px;cursor:pointer}.page-btn.active{background:var(--green);color:#fff}.empty{text-align:center;padding:70px 0;color:var(--muted)}
+.article{padding:70px 0 100px}.article-layout{display:grid;grid-template-columns:minmax(0,780px) 250px;gap:70px}.article-body{font-family:Georgia,serif;font-size:19px;line-height:1.85}.article-body p{margin:0 0 1.45em}.article-body h2{margin-top:1.8em}.article-aside{border-left:1px solid var(--line);padding-left:24px}.back{font-size:11px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none}.aside-title{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:12px}.gate{min-height:60vh;display:grid;place-items:center;background:linear-gradient(160deg,#102c29,#1c5148 60%,#17201e);color:#fff}.gate-card{width:min(680px,calc(100% - 40px));padding:48px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);border-radius:18px}.gate-card h1{font-size:48px}.gate-card p{line-height:1.7;color:#dbe6e2}.gate-actions{display:flex;gap:12px}.btn{border:1px solid rgba(255,255,255,.4);padding:12px 18px;border-radius:999px;background:transparent;color:#fff;cursor:pointer}.btn.primary{background:#fff;color:var(--green)}
+footer{border-top:1px solid var(--line);padding:35px 0;color:var(--muted);font-size:12px}
+@media(max-width:850px){.primary{display:none}.grid{grid-template-columns:1fr}.article-layout{grid-template-columns:1fr}.article-aside{border-left:0;border-top:1px solid var(--line);padding:24px 0}.hero{padding:55px 0 45px}}
+</style></head><body>
+<header class="site-header"><div class="container header-inner"><a class="brand" href="/Thesegunsamuel/index.html">SEGUN SAMUEL</a><nav class="primary" aria-label="Primary navigation"><a href="/Thesegunsamuel/index.html">HOME</a>
+<div class="nav-group"><button type="button" aria-haspopup="true">LEARN <span>⌄</span></button><div class="nav-drop">
+<a href="/Thesegunsamuel/learn/">LEARN OVERVIEW</a><a href="/Thesegunsamuel/courses/">COURSES</a><a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a><a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a></div></div>
+<div class="nav-group"><button type="button" aria-haspopup="true">THINK <span>⌄</span></button><div class="nav-drop">
+<a href="/Thesegunsamuel/think/">THINK OVERVIEW</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/articles/">INSIGHTS</a><a href="/Thesegunsamuel/editorial/">EDITORIAL</a><a href="/Thesegunsamuel/forbidden/">FORBIDDEN</a><a href="/Thesegunsamuel/newsletter/">NEWSLETTER</a></div></div>
+<div class="nav-group"><button type="button" aria-haspopup="true">APPLY <span>⌄</span></button><div class="nav-drop">
+<a href="/Thesegunsamuel/apply/">APPLY OVERVIEW</a><a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a><a href="/Thesegunsamuel/application/">APPLICATIONS</a><a href="/Thesegunsamuel/consulting/">CONSULTING</a><a href="/Thesegunsamuel/speaking/">SPEAKING</a><a href="/Thesegunsamuel/events/">EVENTS</a></div></div>
+<a href="/Thesegunsamuel/podcast/">LISTEN</a><a href="/Thesegunsamuel/explore/">EXPLORE</a><a href="/Thesegunsamuel/search/">SEARCH</a></nav></div></header>
+<main id="main-content"><section class="hero"><div class="container"><p class="eyebrow">BLOG · DECLASSIFIED</p><h1>Dispatches from the planning room.</h1><p class="lead">Dispatches from the planning room.</p></div></section>
+<section class="toolbar"><div class="container"><input id="search" class="search" type="search" placeholder="Search dispatches…" aria-label="Search dispatches"><div id="filters" class="filters"><button class="filter active" data-filter="__all">ALL</button><button class="filter" data-filter="Business">Business</button><button class="filter" data-filter="Discipline &amp; Systems">Discipline &amp; Systems</button><button class="filter" data-filter="Frameworks">Frameworks</button><button class="filter" data-filter="Leadership">Leadership</button><button class="filter" data-filter="Spirituality">Spirituality</button><button class="filter" data-filter="Strategy">Strategy</button><button class="filter" data-filter="Technology">Technology</button><button class="filter" data-filter="The War Within">The War Within</button></div><p id="count" class="read">12 dispatches</p></div></section>
+<section class="container"><div id="grid" class="grid"><article class="card" data-title="the battle of identity comes first" data-topics="the war within|leadership">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>The Battle of Identity Comes First</h2><p>Of the seventeen battles mapped in The War Within, identity is deliberately first. Not because it is the easiest, but because every other battle inherits its outcome. A leader who does not know who he is will lose fights he was equipped…</p>
+<div class="topics"><span class="topic">The War Within</span><span class="topic">Leadership</span></div>
+<div class="read">2026-06-21 · 6 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/battle-of-identity/">Read dispatch →</a></article><article class="card" data-title="build for the successor you have not met" data-topics="leadership|business">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Build for the Successor You Have Not Met</h2><p>Every structure you are building will one day be operated by someone you have not met. That is not pessimism; it is arithmetic. Founders retire, ministers hand over, directors move on, and every organisation that survives its founder…</p>
+<div class="topics"><span class="topic">Leadership</span><span class="topic">Business</span></div>
+<div class="read">2026-02-15 · 6 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/build-for-the-successor/">Read dispatch →</a></article><article class="card" data-title="the calling is not the career" data-topics="the war within|spirituality">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>The Calling Is Not the Career</h2><p>A career is an arrangement: skills rented to an employer or a market in exchange for compensation and progression. A calling is an assignment: a work laid on your life that does not expire when you change jobs, cities, or industries.…</p>
+<div class="topics"><span class="topic">The War Within</span><span class="topic">Spirituality</span></div>
+<div class="read">2026-03-15 · 6 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/calling-is-not-the-career/">Read dispatch →</a></article><article class="card" data-title="your data is a prophetic instrument" data-topics="technology|strategy">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Your Data Is a Prophetic Instrument</h2><p>There is a peculiar superstition among people of faith that data is cold — that the spreadsheet belongs to the accountant and the prophetic belongs to the altar, and never the two shall meet. This is a false division, and it is costing…</p>
+<div class="topics"><span class="topic">Technology</span><span class="topic">Strategy</span></div>
+<div class="read">2026-06-07 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/data-prophetic-instrument/">Read dispatch →</a></article><article class="card" data-title="discipline is a form of worship" data-topics="discipline &amp; systems|the war within">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Discipline Is a Form of Worship</h2><p>Every assignment has a glamorous beginning, a glamorous end, and an enormous unphotographed middle. The middle is where the war within is actually decided — five a.m. appointments with work no one sees, standards maintained on days no…</p>
+<div class="topics"><span class="topic">Discipline &amp; Systems</span><span class="topic">The War Within</span></div>
+<div class="read">2026-02-01 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/discipline-is-worship/">Read dispatch →</a></article><article class="card" data-title="dominion is a balance sheet word" data-topics="business|spirituality">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Dominion Is a Balance Sheet Word</h2><p>Dominion has become a conference word — something declared over audiences with lights and reverb, seldom something reconciled at month-end. But the mandate to have dominion was given over real territory: ground, seed, herds, harvests.…</p>
+<div class="topics"><span class="topic">Business</span><span class="topic">Spirituality</span></div>
+<div class="read">2026-04-12 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/dominion-balance-sheet/">Read dispatch →</a></article><article class="card" data-title="executing the decree — the 90-day standard" data-topics="strategy|discipline &amp; systems">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Executing the Decree — the 90-Day Standard</h2><p>Every Prepared Mind engagement ends the same way: a written Decree and a ninety-day plan. Not a vision board. Not a feeling of clarity. A document — dated, specific, signed — and a fixed season in which it will be executed or exposed.…</p>
+<div class="topics"><span class="topic">Strategy</span><span class="topic">Discipline &amp; Systems</span></div>
+<div class="read">2026-05-10 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/executing-the-decree/">Read dispatch →</a></article><article class="card" data-title="ibonk — five levels of the same assignment" data-topics="frameworks|leadership">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>IBONK — Five Levels of the Same Assignment</h2><p>Ambitious people talk about scale as if it were a leap — one viral moment, one funding round, one appointment, and suddenly the nation is listening. IBONK is the correction to that fantasy. Influence is not a leap. It is a ladder with…</p>
+<div class="topics"><span class="topic">Frameworks</span><span class="topic">Leadership</span></div>
+<div class="read">2026-05-24 · 7 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/ibonk-five-levels/">Read dispatch →</a></article><article class="card" data-title="the planning room is a battlefield" data-topics="strategy|discipline &amp; systems">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>The Planning Room Is a Battlefield</h2><p>Most leaders imagine the battlefield is out there — the market, the pitch, the launch, the quarter. It is not. By the time your plan meets the public, the decisive engagements are already over. They were fought in a quiet room, on…</p>
+<div class="topics"><span class="topic">Strategy</span><span class="topic">Discipline &amp; Systems</span></div>
+<div class="read">2026-07-05 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/planning-room-battlefield/">Read dispatch →</a></article><article class="card" data-title="praying like a strategist" data-topics="spirituality|discipline &amp; systems">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Praying Like a Strategist</h2><p>Somewhere along the line, praying and planning were assigned to different personality types — the mystic and the manager — and told to distrust each other. The mystic suspects the planner of unbelief; the planner suspects the mystic of…</p>
+<div class="topics"><span class="topic">Spirituality</span><span class="topic">Discipline &amp; Systems</span></div>
+<div class="read">2026-03-01 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/praying-like-a-strategist/">Read dispatch →</a></article><article class="card" data-title="scripture is architecture, not decoration" data-topics="spirituality|frameworks">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>Scripture Is Architecture, Not Decoration</h2><p>There is a way of using Scripture that amounts to interior décor — a verse on the wall of a business built entirely on borrowed secular logic, a benediction sprayed over a strategy that was never submitted to the text it quotes. The…</p>
+<div class="topics"><span class="topic">Spirituality</span><span class="topic">Frameworks</span></div>
+<div class="read">2026-04-26 · 6 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/scripture-is-architecture/">Read dispatch →</a></article><article class="card" data-title="swot without self-deception" data-topics="strategy|business">
+<p class="eyebrow">BLOG · DECLASSIFIED</p>
+<h2>SWOT Without Self-Deception</h2><p>The SWOT analysis is the most completed and least honest document in business. Strengths inflated to flatter the founder. Weaknesses phrased as strengths in disguise — we care too much, we move too fast. Opportunities copied from a…</p>
+<div class="topics"><span class="topic">Strategy</span><span class="topic">Business</span></div>
+<div class="read">2026-03-29 · 5 min read</div>
+<a class="open" href="/Thesegunsamuel/blog/swot-without-self-deception/">Read dispatch →</a></article></div><div id="empty" class="empty" hidden>No dispatches match your search.</div><div id="pagination" class="pagination"></div></section></main><footer><div class="container">SEGUN SAMUEL · THINK · LEARN · APPLY · LISTEN</div></footer>
+<script>
+const cards=[...document.querySelectorAll('#grid .card')], pageSize=6; let page=1, active='__all', query='';
+const filters=[...document.querySelectorAll('.filter')], grid=document.querySelector('#grid'), empty=document.querySelector('#empty'), count=document.querySelector('#count'), pag=document.querySelector('#pagination');
+function filtered(){return cards.filter(c=>((active==='__all'||c.dataset.topics.includes(active.toLowerCase())) && c.dataset.title.includes(query.toLowerCase())))}
+function render(){let list=filtered(); let pages=Math.max(1,Math.ceil(list.length/pageSize)); page=Math.min(page,pages); cards.forEach(c=>c.style.display='none'); list.slice((page-1)*pageSize,page*pageSize).forEach(c=>c.style.display='flex'); empty.hidden=list.length!==0; count.textContent=list.length+' dispatch'+(list.length===1?'':'es'); pag.innerHTML=''; for(let i=1;i<=pages;i++){let b=document.createElement('button');b.className='page-btn'+(i===page?' active':'');b.textContent=i;b.onclick=()=>{page=i;render()};pag.appendChild(b)}}
+document.querySelector('#search').oninput=e=>{query=e.target.value.trim();page=1;render()};
+filters.forEach(b=>b.onclick=()=>{active=b.dataset.filter;page=1;filters.forEach(x=>x.classList.toggle('active',x===b));render()});render();
+</script></body></html>
