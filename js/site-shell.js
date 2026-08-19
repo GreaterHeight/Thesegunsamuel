@@ -10,52 +10,42 @@
     if (!mount || mount.dataset.siteShellReady === "true") return;
 
     mount.dataset.siteShellReady = "true";
-    mount.outerHTML = `
-<header class="site-header ss-global-header" data-global-nav="">
-  <div class="container ss-nav-container">
-    <a aria-label="SegunSamuel Home" class="brand ss-brand" href="/Thesegunsamuel/index.html">
-      <img class="ss-brand-mark" src="/Thesegunsamuel/assets/images/segunsamuel-logo.png" alt="" aria-hidden="true">
-      <span class="ss-brand-wordmark">SEGUN <span>SAMUEL</span></span>
-    </a>
-    <button aria-expanded="false" aria-label="Open navigation" class="ss-nav-toggle" type="button">
-      <span></span><span></span><span></span>
-    </button>
-    <nav aria-label="Primary navigation" class="ss-primary-nav">
-      <a href="/Thesegunsamuel/index.html">HOME</a>
-      <div class="ss-nav-group">
-        <button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">LEARN <span aria-hidden="true">⌄</span></button>
-        <div class="ss-nav-dropdown">
-          <a href="/Thesegunsamuel/courses/">COURSES</a>
-          <a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a>
-          <a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a>
-        </div>
-      </div>
-      <div class="ss-nav-group">
-        <button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">THINK <span aria-hidden="true">⌄</span></button>
-        <div class="ss-nav-dropdown">
-          <a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a>
-          <a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a>
-          <a href="/Thesegunsamuel/books/">BOOKS</a>
-          <a href="/Thesegunsamuel/articles/">INSIGHTS</a>
-        </div>
-      </div>
-      <div class="ss-nav-group">
-        <button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">APPLY <span aria-hidden="true">⌄</span></button>
-        <div class="ss-nav-dropdown">
-          <a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a>
-          <a href="/Thesegunsamuel/application/">APPLICATIONS</a>
-          <a href="/Thesegunsamuel/events/">EVENTS</a>
-        </div>
-      </div>
-      <a href="/Thesegunsamuel/podcast/">LISTEN</a>
-      <a href="/Thesegunsamuel/explore/">EXPLORE</a>
-    </nav>
-    <div class="ss-nav-actions">
-      <a class="ss-search-link" href="/Thesegunsamuel/search/" aria-label="Search the Segun Samuel knowledge ecosystem">SEARCH</a>
-      <a href="/Thesegunsamuel/student/">STUDENT AREA</a>
-      <a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count>0</span></a>
-    </div>
-  </div>
+    mount.outerHTML = `<header class="site-header ss-global-header" data-global-nav="">
+<div class="container ss-nav-container">
+<a aria-label="SegunSamuel Home" class="brand ss-brand" href="/Thesegunsamuel/index.html"><img class="ss-brand-mark" src="/Thesegunsamuel/assets/images/segunsamuel-logo.png" alt="" aria-hidden="true"><span class="ss-brand-wordmark">SEGUN <span>SAMUEL</span></span></a>
+<button aria-expanded="false" aria-label="Open navigation" class="ss-nav-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary navigation" class="ss-primary-nav">
+<a href="/Thesegunsamuel/index.html">HOME</a>
+<div class="ss-nav-group">
+<button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">LEARN <span aria-hidden="true">⌄</span></button>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/learn/">LEARN OVERVIEW</a>
+<a href="/Thesegunsamuel/courses/">COURSES</a>
+<a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a>
+<a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a>
+</div>
+</div>
+<div class="ss-nav-group">
+<button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">THINK <span aria-hidden="true">⌄</span></button>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/think/">THINK OVERVIEW</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/articles/">INSIGHTS</a><a href="/Thesegunsamuel/blog/">BLOG · DECLASSIFIED</a><a href="/Thesegunsamuel/editorial/">EDITORIAL</a><a href="/Thesegunsamuel/forbidden/">FORBIDDEN</a><a href="/Thesegunsamuel/newsletter/">NEWSLETTER</a></div>
+</div>
+<div class="ss-nav-group">
+<button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">APPLY <span aria-hidden="true">⌄</span></button>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/apply/">APPLY OVERVIEW</a>
+<a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a>
+<a href="/Thesegunsamuel/application/">APPLICATIONS</a>
+<a href="/Thesegunsamuel/events/">EVENTS</a>
+</div>
+</div>
+<a href="/Thesegunsamuel/podcast/">LISTEN</a>
+<a href="/Thesegunsamuel/explore/">EXPLORE</a> <a href="/Thesegunsamuel/search/">SEARCH</a>
+</nav>
+<div class="ss-nav-actions">
+<a href="/Thesegunsamuel/student/">STUDENT AREA</a>
+<a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count="">0</span></a>
+</div>
+</div>
 </header>`;
 
     var header = document.querySelector("[data-global-nav]");
