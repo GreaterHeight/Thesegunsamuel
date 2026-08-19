@@ -136,3 +136,16 @@ body.ss-forbidden-page{
  .fd-v8 .f8-related-inner{width:calc(100% - 32px)!important}
  .fd-v8 .f8-related h2{font-size:43px!important}
 }
+
+
+/* V9 — Popular Tags sidebar + article-specific tags */
+.fd-v8 .f8-popular-tags{border:1px solid rgba(217,182,106,.18);padding:25px 25px 24px;background:rgba(0,0,0,.10)}
+.fd-v8 .f8-popular-tags-title{font:500 21px/1.1 "Cormorant Garamond",Georgia,serif;color:#d9b66a;margin:0 0 15px}
+.fd-v8 .f8-popular-tags-rule{height:1px;background:#8d1010;margin-bottom:14px}
+.fd-v8 .f8-popular-tag{display:flex;align-items:center;justify-content:space-between;gap:8px;width:max-content;max-width:100%;box-sizing:border-box;margin:7px 0;padding:7px 10px;border:1px solid #8d1010;color:#d9b66a;text-decoration:none;font:8px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.11em;text-transform:uppercase}
+.fd-v8 .f8-popular-tag .f8-count{font-size:7px;color:#8d1010}
+.fd-v8 .f8-article-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:34px;padding-top:18px;border-top:1px solid rgba(217,182,106,.15)}
+.fd-v8 .f8-article-tag{padding:6px 8px;border:1px solid #8d1010;color:#d9b66a;font:7px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.10em;text-transform:uppercase}
+@media(max-width:850px){
+ .fd-v8 .f8-popular-tags{margin-top:0}
+}
