@@ -57,3 +57,21 @@
 
 /* Universal fallback contract:
    placeholder.jpg is a fallback asset, never a first-load asset. */
+
+/* V11 canonical publication placeholder override */
+[data-placeholder="image"].publication-placeholder,
+.publication-placeholder[data-placeholder="image"]{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(135deg,#eaf5f1,#dceee9 48%,#f4eee3)!important;
+}
+[data-placeholder="image"].publication-placeholder::after,
+.publication-placeholder[data-placeholder="image"]::after{
+  content:"";
+  position:absolute;
+  width:92px;height:92px;
+  left:50%;top:50%;
+  transform:translate(-50%,-50%);
+  background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/contain no-repeat!important;
+  opacity:.95;
+}
