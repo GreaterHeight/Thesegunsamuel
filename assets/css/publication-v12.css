@@ -1,0 +1,23 @@
+
+.ss-feature-placeholder{position:absolute;inset:0;overflow:hidden;background:linear-gradient(145deg,rgba(0,48,32,.92),rgba(7,74,55,.82) 50%,rgba(244,238,227,.28)),#0d3d28}
+.ss-feature-placeholder:before{content:"";position:absolute;inset:16px;border:1px solid rgba(217,182,106,.26)}
+.ss-feature-placeholder:after{content:"";position:absolute;width:118px;height:118px;left:50%;top:50%;transform:translate(-50%,-50%);background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/contain no-repeat;opacity:.88}
+.ss-feature-placeholder .ss-placeholder-label{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;white-space:nowrap;font:8px/1 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.2em;text-transform:uppercase;color:#d9b66a}
+.blog-audio-v12,.f8-audio-v12{min-height:58px;box-sizing:border-box;border:1px solid rgba(0,48,32,.12);background:#f4f0e7;display:flex;align-items:center;gap:14px;padding:9px 13px;margin-bottom:32px}
+.f8-audio-v12{border-color:rgba(217,182,106,.22);background:rgba(0,0,0,.14);color:#dbe8df}
+.audio-player-v12{width:100%;display:flex;align-items:center;gap:13px}
+.audio-play-v12{width:30px;height:30px;min-width:30px;border-radius:50%;border:1px solid #8c0d0c;background:#8c0d0c;color:#fff;display:grid;place-items:center;cursor:pointer;padding:0}
+.audio-play-v12:disabled{opacity:.5;cursor:default}
+.audio-body-v12{flex:1;min-width:0}.audio-label-v12{margin:0 0 7px;font:8px/1 var(--sans,"Tenor Sans",sans-serif);letter-spacing:.18em;text-transform:uppercase;color:#8c0d0c}
+.f8-audio-v12 .audio-label-v12{color:#d9b66a}.audio-bar-v12{height:3px;background:rgba(0,48,32,.12);position:relative;overflow:hidden}.f8-audio-v12 .audio-bar-v12{background:rgba(217,182,106,.18)}
+.audio-bar-fill-v12{position:absolute;inset:0 auto 0 0;width:0;background:#8c0d0c}.f8-audio-v12 .audio-bar-fill-v12{background:#d9b66a}
+.audio-time-v12{min-width:68px;text-align:right;font:8px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.04em;color:#68746f}.f8-audio-v12 .audio-time-v12{color:#8fa89d}
+.audio-unavailable-v12{margin:7px 0 0;font:12px/1.4 "Crimson Pro",Georgia,serif;color:#68746f}.f8-audio-v12+.audio-unavailable-v12{color:#9eb2a8}.audio-unavailable-v12[hidden]{display:none!important}
+.blog-tag-area,.f8-article-tags-area{margin-top:28px;padding-top:18px;border-top:1px solid rgba(0,48,32,.12)}.blog-label{font:8px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.18em;text-transform:uppercase;color:#8c0d0c;margin-bottom:10px}.blog-tags{display:flex;flex-wrap:wrap;gap:6px}
+.blog-tag{display:inline-block;padding:6px 9px;border:1px solid rgba(140,13,12,.55);color:#8c0d0c;text-decoration:none;font:8px var(--sans,"Tenor Sans",sans-serif);letter-spacing:.1em;text-transform:uppercase}
+.f8-article-tags-area{border-top-color:rgba(217,182,106,.15)}.f8-article-tags-area .blog-label{color:#d9b66a}.f8-article-tags-area .blog-tag{border-color:#8d1010;color:#d9b66a}
+.blog-share-row [data-share],.f8-share-row [data-share]{cursor:pointer;border:0;background:none;text-decoration:none!important}.blog-share-row [data-share]:focus-visible,.f8-share-row [data-share]:focus-visible{outline:2px solid #d9b66a;outline-offset:3px}
+@media(max-width:620px){.ss-feature-placeholder:after{width:86px;height:86px}.ss-feature-placeholder:before{inset:9px}.blog-audio-v12,.f8-audio-v12{padding:9px}.audio-time-v12{min-width:54px;font-size:7px}.audio-label-v12{letter-spacing:.12em}}
+
+.ss-feature-placeholder [data-publication-image]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:3}.ss-feature-placeholder.has-real-image:before,.ss-feature-placeholder.has-real-image:after,.ss-feature-placeholder.has-real-image .ss-placeholder-label{display:none}
+.ss-publication-placeholder.has-real-image{background:#0d3d28}.ss-publication-placeholder [data-publication-image]{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:3}.ss-publication-placeholder.has-real-image:before,.ss-publication-placeholder.has-real-image:after,.ss-publication-placeholder.has-real-image .ss-placeholder-label{display:none}
