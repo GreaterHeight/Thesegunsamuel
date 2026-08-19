@@ -149,3 +149,12 @@ body.ss-forbidden-page{
 @media(max-width:850px){
  .fd-v8 .f8-popular-tags{margin-top:0}
 }
+
+
+/* V10 — Popular Posts sidebar, positioned above Popular Tags */
+.fd-v8 .f8-popular-posts{border:1px solid rgba(217,182,106,.18);padding:25px 25px 24px;background:rgba(0,0,0,.10);margin-bottom:15px}
+.fd-v8 .f8-popular-posts-title{font:500 21px/1.1 "Cormorant Garamond",Georgia,serif;color:#d9b66a;margin:0 0 15px}
+.fd-v8 .f8-popular-posts-rule{height:1px;background:#8d1010;margin-bottom:14px}
+.fd-v8 .f8-popular-post{display:block;padding:14px 0;border-top:1px solid rgba(217,182,106,.12);color:#d9b66a;text-decoration:none;font:18px/1.28 "Cormorant Garamond",Georgia,serif}
+.fd-v8 .f8-popular-post:first-of-type{border-top:0}
+.fd-v8 .f8-popular-post:hover{color:#f4f0e5}
