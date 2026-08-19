@@ -51,3 +51,18 @@
 .ss-feature-placeholder.has-real-image::before,
 .ss-feature-placeholder.has-real-image::after,
 .ss-feature-placeholder.has-real-image .ss-placeholder-label{display:none!important}
+
+/* V18 — real featured image must remain behind editorial hero typography */
+.blog-detail-hero .hero-media,
+.f8-hero .f8-hero-media{position:absolute!important;inset:0!important;z-index:0!important;overflow:hidden!important}
+.blog-detail-hero .hero-media [data-publication-image],
+.f8-hero .f8-hero-media [data-publication-image]{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;display:block!important;z-index:0!important}
+.blog-detail-hero .hero-overlay{z-index:1!important}
+.blog-detail-hero .hero-content{position:relative!important;z-index:3!important}
+.f8-hero .f8-hero-media::before{
+ content:""!important;position:absolute!important;inset:0!important;z-index:1!important;
+ background:linear-gradient(180deg,rgba(0,31,21,.20),rgba(0,45,30,.82) 92%)!important;
+ pointer-events:none!important;
+}
+.f8-hero .f8-hero-inner{position:relative!important;z-index:3!important}
+.f8-hero .f8-hero-media.has-real-image::before{display:block!important}
