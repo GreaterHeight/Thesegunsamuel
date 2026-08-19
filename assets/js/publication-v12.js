@@ -27,29 +27,27 @@ function share(n,t,u){
 
 function imageSlots(){
  document.querySelectorAll("[data-image-slot]").forEach(function(slot){
-  var file=slot.getAttribute("data-image-slot");
-  var base=slot.getAttribute("data-image-base")||"/Thesegunsamuel/assets/images/";
-  var src=base.replace(/\/?$/,"/")+file;
-  var img=slot.querySelector("[data-publication-image]");
-  if(!img){
-   img=document.createElement("img");
-   img.setAttribute("data-publication-image","");
-   img.alt=slot.getAttribute("data-image-alt")||"";
-   img.decoding="async";
-   img.loading="lazy";
-   slot.appendChild(img);
-  }
-  img.onload=function(){
+  var img=slot.querySelector(".ss-real-publication-image");
+  if(!img)return;
+  img.addEventListener("load",function(){
    slot.classList.add("has-real-image");
    slot.setAttribute("data-image-loaded","true");
-  };
-  img.onerror=function(){
+  });
+  img.addEventListener("error",function(){
    slot.classList.remove("has-real-image");
    slot.setAttribute("data-image-loaded","false");
-   img.removeAttribute("src");
-  };
-  img.src=src;
- });
+   // Keep the element hidden rather than exposing a browser broken-image icon.
+  });
+  // Cached images may have completed before the listener was attached.
+  if(img.complete){
+   if(img.naturalWidth>0){
+    slot.classList.add("has-real-image");
+    slot.setAttribute("data-image-loaded","true");
+   }else{
+    slot.setAttribute("data-image-loaded","false");
+   }
+  }
+ } );
 }
 function publicationViews(){
  var path=location.pathname.replace(/\/+$/,"")||"/";
