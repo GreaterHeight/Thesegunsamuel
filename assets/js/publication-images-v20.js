@@ -28,27 +28,3 @@
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init();
 })();
-
-(function(){
- function initRelatedPublicationImages(){
-   document.querySelectorAll("[data-image-slot]").forEach(function(slot){
-     var file=slot.getAttribute("data-image-slot");
-     var base=slot.getAttribute("data-image-base")||"/Thesegunsamuel/assets/images/";
-     if(!file)return;
-     var src=base.replace(/\/?$/,"/")+file;
-     var img=slot.querySelector("[data-publication-image]");
-     if(!img){
-       img=document.createElement("img");
-       img.setAttribute("data-publication-image","");
-       img.alt="";
-       img.setAttribute("aria-hidden","true");
-       slot.appendChild(img);
-     }
-     img.onload=function(){slot.classList.add("has-real-image");img.removeAttribute("aria-hidden")};
-     img.onerror=function(){slot.classList.remove("has-real-image");img.removeAttribute("src")};
-     img.src=src;
-   });
- }
- if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",initRelatedPublicationImages);
- else initRelatedPublicationImages();
-})();
