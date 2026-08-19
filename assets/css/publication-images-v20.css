@@ -1,0 +1,108 @@
+
+/* SegunSamuel Publication Image System V20
+   Deterministic states:
+   .placeholder = no confirmed image
+   .has-real-image = browser confirmed the requested image loaded
+*/
+.ss-publication-placeholder,
+.ss-feature-placeholder{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate!important;
+}
+
+/* Never expose a browser broken-image glyph. The image is invisible until
+   the browser fires a successful load event. */
+.ss-real-publication-image{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  display:block!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  z-index:0!important;
+  border:0!important;
+  outline:0!important;
+  transition:opacity .18s ease!important;
+}
+
+.ss-publication-placeholder.has-real-image .ss-real-publication-image,
+.ss-feature-placeholder.has-real-image .ss-real-publication-image{
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+/* Placeholder badge/label is a temporary state only. */
+.ss-publication-placeholder.has-real-image::before,
+.ss-publication-placeholder.has-real-image::after,
+.ss-publication-placeholder.has-real-image .ss-placeholder-label,
+.ss-feature-placeholder.has-real-image::before,
+.ss-feature-placeholder.has-real-image::after,
+.ss-feature-placeholder.has-real-image .ss-placeholder-label{
+  display:none!important;
+  content:none!important;
+}
+
+/* Detail hero: image behind editorial content, never above it. */
+.blog-detail-hero{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+.blog-detail-hero .hero-media{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+}
+.blog-detail-hero .hero-media .ss-real-publication-image{
+  z-index:0!important;
+}
+.blog-detail-hero .hero-overlay{
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  pointer-events:none!important;
+}
+.blog-detail-hero .hero-content{
+  position:relative!important;
+  z-index:5!important;
+}
+
+.f8-hero{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+.f8-hero .f8-hero-media{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+}
+.f8-hero .f8-hero-media .ss-real-publication-image{
+  z-index:0!important;
+}
+.f8-hero .f8-hero-inner{
+  position:relative!important;
+  z-index:5!important;
+}
+.f8-hero .f8-hero-media::before{
+  z-index:1!important;
+  pointer-events:none!important;
+}
+
+/* Card media must retain the established 16:9 frame. */
+.ss-card-media .ss-publication-placeholder{
+  width:100%!important;
+  aspect-ratio:16/9!important;
+}
+
+/* If an image fails, the probe remains invisible and the placeholder stays. */
+.ss-real-publication-image[aria-hidden="true"]{visibility:hidden!important;opacity:0!important}
+
+@media(max-width:620px){
+  .ss-real-publication-image{object-position:center center!important}
+}
