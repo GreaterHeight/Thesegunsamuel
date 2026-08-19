@@ -106,3 +106,97 @@
 @media(max-width:620px){
   .ss-real-publication-image{object-position:center center!important}
 }
+
+
+/* ============================================================
+   V21 — CINEMATIC DARK OVERLAY
+   Detail-page hero only.
+   The supplied image remains the photographic background.
+   The overlay sits above the image and below all editorial text.
+   ============================================================ */
+
+.blog-detail-hero,
+.f8-detail-hero,
+.blog-hero,
+.f8-hero,
+[data-publication-detail-hero]{
+    position:relative;
+    isolation:isolate;
+}
+
+/* Image layer */
+.blog-detail-hero img,
+.f8-detail-hero img,
+.blog-hero img,
+.f8-hero img,
+[data-publication-detail-hero] > img{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Subtle cinematic grade / readability layer */
+.blog-detail-hero::after,
+.f8-detail-hero::after,
+.blog-hero::after,
+.f8-hero::after,
+[data-publication-detail-hero]::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 30, 20, 0.18) 0%,
+            rgba(0, 30, 20, 0.24) 38%,
+            rgba(0, 25, 17, 0.42) 72%,
+            rgba(0, 18, 12, 0.58) 100%
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 25, 17, 0.18) 0%,
+            rgba(0, 25, 17, 0.04) 50%,
+            rgba(0, 25, 17, 0.20) 100%
+        );
+}
+
+/* Keep all editorial content above the overlay */
+.blog-detail-hero > :not(img),
+.f8-detail-hero > :not(img),
+.blog-hero > :not(img),
+.f8-hero > :not(img),
+[data-publication-detail-hero] > :not(img){
+    position:relative;
+    z-index:2;
+}
+
+/* Slight text-shadow only as a finishing aid — not a substitute
+   for the overlay. */
+.blog-detail-hero h1,
+.f8-detail-hero h1,
+.blog-hero h1,
+.f8-hero h1,
+[data-publication-detail-hero] h1{
+    text-shadow:0 2px 18px rgba(0,0,0,.32);
+}
+
+@media (max-width: 700px){
+    .blog-detail-hero::after,
+    .f8-detail-hero::after,
+    .blog-hero::after,
+    .f8-hero::after,
+    [data-publication-detail-hero]::after{
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 30, 20, 0.20) 0%,
+                rgba(0, 28, 19, 0.30) 45%,
+                rgba(0, 18, 12, 0.60) 100%
+            );
+    }
+}
