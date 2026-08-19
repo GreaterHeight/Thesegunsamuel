@@ -36,6 +36,29 @@ function imageSlots(){
 }
 }
 
+
+function publicationViews(){
+ var path=location.pathname.replace(/\/+$/,"")||"/";
+ var isDetail=/\/(blog|forbidden)\/[^/]+$/.test(path);
+ function key(){return "ss_publication_views:"+path}
+ function get(){try{return Math.max(0,parseInt(localStorage.getItem(key())||"0",10)||0)}catch(e){return 0}}
+ function set(n){try{localStorage.setItem(key(),String(n))}catch(e){}}
+ if(isDetail){
+   var lastKey=key()+":counted";
+   var counted=false;
+   try{counted=sessionStorage.getItem(lastKey)==="1"}catch(e){}
+   if(!counted){
+     var n=get()+1; set(n);
+     try{sessionStorage.setItem(lastKey,"1")}catch(e){}
+   }
+   document.querySelectorAll("[data-view-count]").forEach(function(el){el.textContent=String(get())});
+ }
+ document.querySelectorAll("[data-view-key]").forEach(function(el){
+   var k=el.getAttribute("data-view-key");
+   try{el.querySelector("[data-view-count]").textContent=String(Math.max(0,parseInt(localStorage.getItem("ss_publication_views:/Thesegunsamuel/"+k)||"0",10)||0))}catch(e){}
+ });
+}
+
 function init(){imageSlots();document.querySelectorAll("[data-audio-player]").forEach(audio);document.addEventListener("click",function(e){var b=e.target.closest("[data-share]");if(!b)return;e.preventDefault();share(b.dataset.share,b.dataset.shareTitle||document.title,location.href)})}
-if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init);else init()
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){init();publicationViews()});else{init();publicationViews()}
 })();
