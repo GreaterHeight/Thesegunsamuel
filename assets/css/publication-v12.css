@@ -31,3 +31,23 @@
 .f8-view-count svg{width:12px;height:12px;display:block;flex:none}
 .f8-share-row [data-share]{display:inline-grid!important;place-items:center;cursor:pointer;text-decoration:none!important}
 .f8-share-row [data-share]:focus-visible{outline:2px solid #d9b66a;outline-offset:3px}
+
+/* V17 — compact metadata eye, aligned to read-time typography */
+.ss-view-count{display:inline-flex;align-items:center;gap:4px;vertical-align:middle;font:inherit;line-height:1}
+.ss-view-eye{position:relative;display:inline-block;width:11px;height:7px;border:1.35px solid currentColor;border-radius:75% 25% 75% 25% / 65% 65% 35% 35%;transform:rotate(0deg);box-sizing:border-box;flex:none}
+.ss-view-eye::after{content:"";position:absolute;width:3px;height:3px;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:currentColor}
+.f8-view-count{display:inline-flex;align-items:center;gap:4px;vertical-align:middle;font:inherit;line-height:1}
+.f8-view-count .ss-view-eye{width:11px;height:7px}
+
+.ss-view-count svg,.f8-view-count svg{display:none!important;width:0!important;height:0!important}
+
+.ss-publication-placeholder [data-publication-image],
+.ss-feature-placeholder [data-publication-image]{
+ position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;z-index:3;
+}
+.ss-publication-placeholder.has-real-image::before,
+.ss-publication-placeholder.has-real-image::after,
+.ss-publication-placeholder.has-real-image .ss-placeholder-label,
+.ss-feature-placeholder.has-real-image::before,
+.ss-feature-placeholder.has-real-image::after,
+.ss-feature-placeholder.has-real-image .ss-placeholder-label{display:none!important}
