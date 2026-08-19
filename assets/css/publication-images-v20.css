@@ -200,3 +200,48 @@
             );
     }
 }
+
+/* V22 — KEEP READING IMAGE CONTRACT */
+[data-image-slot]{
+    position:relative;
+    overflow:hidden;
+}
+[data-image-slot] > [data-publication-image]{
+    position:absolute;
+    inset:0;
+    z-index:3;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+[data-image-slot].has-real-image::before,
+[data-image-slot].has-real-image::after,
+[data-image-slot].has-real-image .ss-placeholder-label{
+    display:none!important;
+}
+
+/* V22 — RELATED CARD MEDIA */
+.blog-related-media.ss-publication-placeholder,
+.f8-card-media.ss-publication-placeholder{
+    position:relative;
+    overflow:hidden;
+}
+.blog-related-media.ss-publication-placeholder > [data-publication-image],
+.f8-card-media.ss-publication-placeholder > [data-publication-image]{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:3;
+    display:block;
+}
+.blog-related-media.ss-publication-placeholder.has-real-image::before,
+.blog-related-media.ss-publication-placeholder.has-real-image::after,
+.blog-related-media.ss-publication-placeholder.has-real-image .ss-placeholder-label,
+.f8-card-media.ss-publication-placeholder.has-real-image::before,
+.f8-card-media.ss-publication-placeholder.has-real-image::after,
+.f8-card-media.ss-publication-placeholder.has-real-image .ss-placeholder-label{
+    display:none!important;
+}
