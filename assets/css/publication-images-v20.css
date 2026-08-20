@@ -253,3 +253,4 @@
 .blog-related-media.ss-publication-placeholder.has-real-image::after,
 .f8-card-media.ss-publication-placeholder.has-real-image::before,
 .f8-card-media.ss-publication-placeholder.has-real-image::after{display:none!important;}
+\n/* V24 — failed-image containment: never expose browser broken-image glyph */\n.ss-real-publication-image,[data-publication-image]{display:none!important;}\n.ss-publication-placeholder.has-real-image > .ss-real-publication-image,\n.ss-publication-placeholder.has-real-image > [data-publication-image],\n.ss-feature-placeholder.has-real-image > .ss-real-publication-image,\n.ss-feature-placeholder.has-real-image > [data-publication-image],\n.blog-related-media.has-real-image > .ss-real-publication-image,\n.f8-card-media.has-real-image > .ss-real-publication-image{display:block!important;}\n.ss-real-publication-image[aria-hidden=\"true\"],[data-publication-image][aria-hidden=\"true\"]{display:none!important;}\n

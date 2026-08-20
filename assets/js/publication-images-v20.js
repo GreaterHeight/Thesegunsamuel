@@ -7,6 +7,7 @@
     slot.classList.add("has-real-image");
     slot.setAttribute("data-image-loaded","true");
     img.removeAttribute("aria-hidden");
+    img.style.display="block";
   }
   function rejectImage(img){
     var slot=img.closest(".ss-publication-placeholder,.ss-feature-placeholder");
@@ -14,7 +15,7 @@
     slot.classList.remove("has-real-image");
     slot.setAttribute("data-image-loaded","false");
     img.setAttribute("aria-hidden","true");
-    img.removeAttribute("src");
+    img.style.display="none"; img.removeAttribute("src");
   }
   function init(){
     document.querySelectorAll(".ss-real-publication-image").forEach(function(img){
