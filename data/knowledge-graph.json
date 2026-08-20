@@ -1270,7 +1270,7 @@
       "status": "canonical",
       "short_definition": "Applied advisory and architecture service.",
       "parent_id": "SS-001",
-      "route": "",
+      "route": "/Thesegunsamuel/consulting/",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1290,7 +1290,7 @@
       "status": "canonical",
       "short_definition": "Applied communication and thought leadership.",
       "parent_id": "SS-001",
-      "route": "",
+      "route": "/Thesegunsamuel/speaking/",
       "source_ids": [],
       "stage_ids": [],
       "battle_ids": [],
@@ -1935,6 +1935,31 @@
         "Religious Counterfeits",
         "Power & Control",
         "Forbidden"
+      ],
+      "featured": false
+    },
+    {
+      "id": "PLAT-014",
+      "slug": "strategic-mentoring",
+      "name": "Strategic Mentoring",
+      "type": "service",
+      "status": "canonical",
+      "short_definition": "Strategic development of judgment, leadership capacity and decision quality.",
+      "parent_id": "SS-001",
+      "route": "/Thesegunsamuel/mentoring/",
+      "source_ids": [],
+      "stage_ids": [],
+      "battle_ids": [],
+      "related_ids": [
+        "PLAT-012",
+        "PLAT-013",
+        "WW-IP-02",
+        "SS-010"
+      ],
+      "content_ids": [],
+      "tags": [
+        "professional output",
+        "leadership development"
       ],
       "featured": false
     }
@@ -2739,6 +2764,21 @@
       "source": "PUB-002",
       "target": "FORB-010",
       "type": "contains"
+    },
+    {
+      "source": "SS-001",
+      "target": "PLAT-014",
+      "type": "expressed_through"
+    },
+    {
+      "source": "PLAT-013",
+      "target": "PLAT-014",
+      "type": "can_lead_to"
+    },
+    {
+      "source": "PLAT-014",
+      "target": "PLAT-012",
+      "type": "can_lead_to"
     }
   ],
   "ecosystem_index": {
@@ -3223,5 +3263,5 @@
       }
     ]
   },
-  "integration_version": "1.6-publishing-content"
+  "integration_version": "v3.13"
 }

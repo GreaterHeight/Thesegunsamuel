@@ -198,3 +198,9 @@ Canonical base: https://greaterheight.github.io/Thesegunsamuel/
 - https://greaterheight.github.io/Thesegunsamuel/podcast/the-war-within/
 - https://greaterheight.github.io/Thesegunsamuel/podcast/thinking-beyond-the-obvious/
 - https://greaterheight.github.io/Thesegunsamuel/podcast/when-strategy-meets-reality/
+
+## Apply — Engagements
+- Speaking: /Thesegunsamuel/speaking/ — keynotes, conversations, workshops and executive sessions.
+- Strategic Mentoring: /Thesegunsamuel/mentoring/ — leadership development, judgment and strategic capacity.
+- Consulting: /Thesegunsamuel/consulting/ — strategic architecture, systems, intelligence, AI/data, leadership and institution building.
+- Masterclasses: /Thesegunsamuel/masterclasses/ — intensive capability-building experiences.

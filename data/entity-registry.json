@@ -419,14 +419,14 @@
       "name": "Consulting",
       "slug": "consulting",
       "type": "service",
-      "route": ""
+      "route": "/Thesegunsamuel/consulting/"
     },
     {
       "id": "PLAT-013",
       "name": "Speaking",
       "slug": "speaking",
       "type": "service",
-      "route": ""
+      "route": "/Thesegunsamuel/speaking/"
     },
     {
       "id": "PLAT-014",
@@ -434,6 +434,13 @@
       "slug": "software-tools",
       "type": "tool",
       "route": ""
+    },
+    {
+      "id": "PLAT-014",
+      "name": "Strategic Mentoring",
+      "slug": "strategic-mentoring",
+      "type": "service",
+      "route": "/Thesegunsamuel/mentoring/"
     }
   ]
 }

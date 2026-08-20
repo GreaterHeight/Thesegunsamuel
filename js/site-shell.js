@@ -33,6 +33,10 @@
 <div class="ss-nav-group">
 <button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">APPLY <span aria-hidden="true">⌄</span></button>
 <div class="ss-nav-dropdown"><a href="/Thesegunsamuel/apply/">APPLY OVERVIEW</a>
+<a href="/Thesegunsamuel/speaking/">SPEAKING</a>
+<a href="/Thesegunsamuel/mentoring/">MENTORING</a>
+<a href="/Thesegunsamuel/consulting/">CONSULTING</a>
+<a href="/Thesegunsamuel/masterclasses/">WORKSHOPS &amp; MASTERCLASSES</a>
 <a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a>
 <a href="/Thesegunsamuel/application/">APPLICATIONS</a>
 <a href="/Thesegunsamuel/events/">EVENTS</a>

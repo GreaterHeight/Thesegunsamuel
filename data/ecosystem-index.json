@@ -1,5 +1,5 @@
 {
-  "version": "v3.10",
+  "version": "v3.13",
   "entity_types": {
     "worldview": [
       {
@@ -470,14 +470,21 @@
         "id": "PLAT-012",
         "name": "Consulting",
         "slug": "consulting",
-        "route": "",
+        "route": "/Thesegunsamuel/consulting/",
         "status": "canonical"
       },
       {
         "id": "PLAT-013",
         "name": "Speaking",
         "slug": "speaking",
-        "route": "",
+        "route": "/Thesegunsamuel/speaking/",
+        "status": "canonical"
+      },
+      {
+        "id": "PLAT-014",
+        "name": "Strategic Mentoring",
+        "slug": "strategic-mentoring",
+        "route": "/Thesegunsamuel/mentoring/",
         "status": "canonical"
       }
     ]

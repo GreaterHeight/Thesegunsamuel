@@ -26,3 +26,9 @@
 
 ## Notes
 The public website is a static GitHub Pages frontend. Authentication, payment verification, private course access, persistent progress and certificates require a secure backend.
+
+## Apply — Engagements
+- Speaking: /Thesegunsamuel/speaking/ — keynotes, conversations, workshops and executive sessions.
+- Strategic Mentoring: /Thesegunsamuel/mentoring/ — leadership development, judgment and strategic capacity.
+- Consulting: /Thesegunsamuel/consulting/ — strategic architecture, systems, intelligence, AI/data, leadership and institution building.
+- Masterclasses: /Thesegunsamuel/masterclasses/ — intensive capability-building experiences.
