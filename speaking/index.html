@@ -47,7 +47,47 @@
 
 @media(max-width:800px){.sp-page{font-size:18px}.sp-wrap{width:min(100% - 36px,680px)}.sp-hero{min-height:720px;padding:130px 0 65px}.sp-hero-grid,.sp-statement-grid,.sp-story-grid,.sp-talk-head,.sp-rooms-grid,.sp-fit-grid,.sp-bridge-grid,.sp-engage-grid{grid-template-columns:1fr;gap:35px}.sp-hero h1{font-size:68px}.sp-hero-note{display:none}.sp-section{padding:75px 0}.sp-talk-grid{grid-template-columns:1fr}.sp-audiences,.sp-engagements{grid-template-columns:1fr}.sp-audience:nth-child(even),.sp-engagement:nth-child(even){padding-left:0;border-left:0}.sp-editorial{min-height:600px}.sp-standard div{grid-template-columns:1fr;gap:5px}.sp-cta{padding:95px 0}}
 </style>
-\n<style id="speaking-contrast-system">\n/* V40: deterministic editorial contrast system. Dark/photo surfaces always protect text. */\n.sp-hero{background-image:linear-gradient(90deg,rgba(2,20,17,.985) 0%,rgba(2,20,17,.90) 55%,rgba(2,20,17,.62) 100%),url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1900&q=90') !important;}\n.sp-hero h1,.sp-hero-copy,.sp-hero-note strong,.sp-hero-note span{color:#fffaf2 !important;text-shadow:0 2px 14px rgba(0,0,0,.42);}\n.sp-hero .sp-eyebrow{color:#d8bd72 !important;text-shadow:0 1px 8px rgba(0,0,0,.5);}\n.sp-statement{background:#0f3a31 !important;color:#fffaf2 !important;}\n.sp-statement .sp-eyebrow{color:#d8bd72 !important;}\n.sp-statement h2{color:#fffaf2 !important;text-shadow:0 1px 8px rgba(0,0,0,.18);}\n.sp-statement p{color:#f1f3ed !important;}\n.sp-dark{background:#05271f !important;color:#fffaf2 !important;}\n.sp-dark .sp-eyebrow{color:#d8bd72 !important;}\n.sp-dark h2{color:#fffaf2 !important;text-shadow:0 1px 8px rgba(0,0,0,.3);}\n.sp-dark .sp-rooms p{color:#f0f3ed !important;}\n.sp-dark .sp-standard span{color:#fffaf2 !important;}\n.sp-editorial{background-image:linear-gradient(90deg,rgba(2,19,16,.995) 0%,rgba(2,19,16,.92) 58%,rgba(2,19,16,.66) 100%),url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1900&q=90') !important;}\n.sp-editorial .sp-eyebrow{color:#d8bd72 !important;}\n.sp-editorial h2{color:#fffaf2 !important;text-shadow:0 2px 14px rgba(0,0,0,.48);}\n.sp-editorial p{color:#f1f3ed !important;text-shadow:0 1px 8px rgba(0,0,0,.38);}\n.sp-editorial .sp-btn.primary{background:#8c0d0c !important;border-color:#8c0d0c !important;color:#fff !important;}\n/* Dark CTA strip: editorial labels stay gold; primary action stays crimson. */\n.sp-engage{background:#103d33 !important;color:#fffaf2 !important;}\n.sp-engage .sp-eyebrow{color:#d8bd72 !important;}\n.sp-engage .sp-engagement h3,.sp-engage .sp-engagement p{color:inherit !important;}\n/* Any future dark/image section using these utility classes inherits the same protection. */\n.sp-dark .sp-eyebrow,.sp-editorial .sp-eyebrow,.sp-statement .sp-eyebrow{font-weight:600;}\n@media(max-width:800px){\n .sp-hero{background-image:linear-gradient(90deg,rgba(2,20,17,.985),rgba(2,20,17,.88)),url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=88') !important;}\n .sp-editorial{background-image:linear-gradient(90deg,rgba(2,19,16,.995),rgba(2,19,16,.90)),url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1400&q=88') !important;}\n}\n</style>\n</head>
+
+<style id="speaking-contrast-system">
+/* V40: deterministic editorial contrast system. Dark/photo surfaces always protect text. */
+.sp-hero{background-image:linear-gradient(90deg,rgba(2,20,17,.985) 0%,rgba(2,20,17,.90) 55%,rgba(2,20,17,.62) 100%),url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1900&q=90') !important;}
+.sp-hero h1,.sp-hero-copy,.sp-hero-note strong,.sp-hero-note span{color:#fffaf2 !important;text-shadow:0 2px 14px rgba(0,0,0,.42);}
+.sp-hero .sp-eyebrow{color:#d8bd72 !important;text-shadow:0 1px 8px rgba(0,0,0,.5);}
+.sp-statement{background:#0f3a31 !important;color:#fffaf2 !important;}
+.sp-statement .sp-eyebrow{color:#d8bd72 !important;}
+.sp-statement h2{color:#fffaf2 !important;text-shadow:0 1px 8px rgba(0,0,0,.18);}
+.sp-statement p{color:#f1f3ed !important;}
+.sp-dark{background:#05271f !important;color:#fffaf2 !important;}
+.sp-dark .sp-eyebrow{color:#d8bd72 !important;}
+.sp-dark h2{color:#fffaf2 !important;text-shadow:0 1px 8px rgba(0,0,0,.3);}
+.sp-dark .sp-rooms p{color:#f0f3ed !important;}
+.sp-dark .sp-standard span{color:#fffaf2 !important;}
+.sp-editorial{background-image:linear-gradient(90deg,rgba(2,19,16,.995) 0%,rgba(2,19,16,.92) 58%,rgba(2,19,16,.66) 100%),url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1900&q=90') !important;}
+.sp-editorial .sp-eyebrow{color:#d8bd72 !important;}
+.sp-editorial h2{color:#fffaf2 !important;text-shadow:0 2px 14px rgba(0,0,0,.48);}
+.sp-editorial p{color:#f1f3ed !important;text-shadow:0 1px 8px rgba(0,0,0,.38);}
+.sp-editorial .sp-btn.primary{background:#8c0d0c !important;border-color:#8c0d0c !important;color:#fff !important;}
+/* Dark CTA strip: editorial labels stay gold; primary action stays crimson. */
+.sp-engage{background:#103d33 !important;color:#fffaf2 !important;}
+.sp-engage .sp-eyebrow{color:#d8bd72 !important;}
+.sp-engage .sp-engagement h3,.sp-engage .sp-engagement p{color:inherit !important;}
+/* Deterministic contrast tokens for all current dark/photo surfaces. */
+.sp-hero h1, .sp-hero .sp-hero-copy, .sp-hero .sp-hero-note strong, .sp-hero .sp-hero-note span { color:#fffaf2 !important; }
+.sp-hero .sp-eyebrow { color:#d8bd72 !important; }
+.sp-statement .sp-eyebrow, .sp-statement h2, .sp-statement p { color:#fffaf2 !important; }
+.sp-statement .sp-eyebrow { color:#d8bd72 !important; }
+.sp-dark .sp-eyebrow, .sp-dark h2, .sp-dark p, .sp-dark .sp-standard span { color:#fffaf2 !important; }
+.sp-dark .sp-eyebrow { color:#d8bd72 !important; }
+.sp-editorial .sp-eyebrow, .sp-editorial h2, .sp-editorial p { color:#fffaf2 !important; }
+.sp-editorial .sp-eyebrow { color:#d8bd72 !important; }
+/* Any future dark/image section using these utility classes inherits the same protection. */
+.sp-dark .sp-eyebrow,.sp-editorial .sp-eyebrow,.sp-statement .sp-eyebrow{font-weight:600;}
+@media(max-width:800px){
+ .sp-hero{background-image:linear-gradient(90deg,rgba(2,20,17,.985),rgba(2,20,17,.88)),url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1400&q=88') !important;}
+ .sp-editorial{background-image:linear-gradient(90deg,rgba(2,19,16,.995),rgba(2,19,16,.90)),url('https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=1400&q=88') !important;}
+}
+</style>
+</head>
 <body><a class="ss-skip-link" href="#main-content">Skip to content</a><nav data-site-nav></nav>
 <main id="main-content" class="sp-page">
 <header class="sp-hero"><div class="sp-wrap sp-hero-grid"><div><div class="sp-eyebrow" style="color:#d6b873">Speaking · The Deployment of Ideas</div><h1>Speaking that moves audiences to act, not just think.</h1><p class="sp-hero-copy">For conferences, leadership summits, church and corporate gatherings, and institutions navigating consequential change. The aim is not applause. It is movement.</p><div class="sp-ctas"><a class="sp-btn primary" href="#conversation">Submit a speaking application →</a><a class="sp-btn" href="#talks">Explore the talks ↓</a></div></div><div class="sp-hero-note"><strong>Ideas should leave the room changed.</strong><span>Strategy. Leadership. Identity. Systems. The human forces beneath them.</span></div></div></header>
