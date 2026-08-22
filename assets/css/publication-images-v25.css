@@ -1,0 +1,51 @@
+
+/* V25 — deterministic publication image painting.
+   A real image is painted only after an off-DOM Image() probe succeeds.
+   No visible <img> is used, so a failed request cannot create a broken glyph. */
+
+.ss-publication-placeholder,
+.ss-feature-placeholder,
+.blog-related-media,
+.f8-card-media,
+.hero-media,
+.f8-hero-media{
+  position:relative!important;
+  overflow:hidden!important;
+}
+
+.ss-publication-placeholder.has-real-image,
+.ss-feature-placeholder.has-real-image,
+.blog-related-media.has-real-image,
+.f8-card-media.has-real-image,
+.hero-media.has-real-image,
+.f8-hero-media.has-real-image{
+  background-image:var(--publication-image)!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+}
+
+/* Remove placeholder decoration only after successful image verification. */
+.ss-publication-placeholder.has-real-image::before,
+.ss-publication-placeholder.has-real-image::after,
+.ss-publication-placeholder.has-real-image .ss-placeholder-label,
+.ss-feature-placeholder.has-real-image::before,
+.ss-feature-placeholder.has-real-image::after,
+.ss-feature-placeholder.has-real-image .ss-placeholder-label,
+.blog-related-media.has-real-image::before,
+.blog-related-media.has-real-image::after,
+.blog-related-media.has-real-image .ss-placeholder-label,
+.f8-card-media.has-real-image::before,
+.f8-card-media.has-real-image::after,
+.f8-card-media.has-real-image .ss-placeholder-label{
+  display:none!important;
+  content:none!important;
+}
+
+/* V25 must win over all earlier image rules. */
+.ss-publication-placeholder > img,
+.ss-feature-placeholder > img,
+.blog-related-media > img,
+.f8-card-media > img{
+  display:none!important;
+}

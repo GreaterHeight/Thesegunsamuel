@@ -1,0 +1,8 @@
+{
+  "detail_pages_with_image_slots": 1,
+  "detail_pages_loading_resolver": true,
+  "library_loading_resolver": true,
+  "building_image_file_in_package": false,
+  "podcast_hero_file_in_package": false,
+  "resolver_present": true
+}

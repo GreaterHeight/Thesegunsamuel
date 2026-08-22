@@ -1,0 +1,256 @@
+
+/* SegunSamuel Publication Image System V20
+   Deterministic states:
+   .placeholder = no confirmed image
+   .has-real-image = browser confirmed the requested image loaded
+*/
+.ss-publication-placeholder,
+.ss-feature-placeholder{
+  position:relative!important;
+  overflow:hidden!important;
+  isolation:isolate!important;
+}
+
+/* Never expose a browser broken-image glyph. The image is invisible until
+   the browser fires a successful load event. */
+.ss-real-publication-image{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  display:block!important;
+  visibility:hidden!important;
+  opacity:0!important;
+  z-index:0!important;
+  border:0!important;
+  outline:0!important;
+  transition:opacity .18s ease!important;
+}
+
+.ss-publication-placeholder.has-real-image .ss-real-publication-image,
+.ss-feature-placeholder.has-real-image .ss-real-publication-image{
+  visibility:visible!important;
+  opacity:1!important;
+}
+
+/* Placeholder badge/label is a temporary state only. */
+.ss-publication-placeholder.has-real-image::before,
+.ss-publication-placeholder.has-real-image::after,
+.ss-publication-placeholder.has-real-image .ss-placeholder-label,
+.ss-feature-placeholder.has-real-image::before,
+.ss-feature-placeholder.has-real-image::after,
+.ss-feature-placeholder.has-real-image .ss-placeholder-label{
+  display:none!important;
+  content:none!important;
+}
+
+/* Detail hero: image behind editorial content, never above it. */
+.blog-detail-hero{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+.blog-detail-hero .hero-media{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+}
+.blog-detail-hero .hero-media .ss-real-publication-image{
+  z-index:0!important;
+}
+.blog-detail-hero .hero-overlay{
+  position:absolute!important;
+  inset:0!important;
+  z-index:1!important;
+  pointer-events:none!important;
+}
+.blog-detail-hero .hero-content{
+  position:relative!important;
+  z-index:5!important;
+}
+
+.f8-hero{
+  position:relative!important;
+  isolation:isolate!important;
+  overflow:hidden!important;
+}
+.f8-hero .f8-hero-media{
+  position:absolute!important;
+  inset:0!important;
+  z-index:0!important;
+}
+.f8-hero .f8-hero-media .ss-real-publication-image{
+  z-index:0!important;
+}
+.f8-hero .f8-hero-inner{
+  position:relative!important;
+  z-index:5!important;
+}
+.f8-hero .f8-hero-media::before{
+  z-index:1!important;
+  pointer-events:none!important;
+}
+
+/* Card media must retain the established 16:9 frame. */
+.ss-card-media .ss-publication-placeholder{
+  width:100%!important;
+  aspect-ratio:16/9!important;
+}
+
+/* If an image fails, the probe remains invisible and the placeholder stays. */
+.ss-real-publication-image[aria-hidden="true"]{visibility:hidden!important;opacity:0!important}
+
+@media(max-width:620px){
+  .ss-real-publication-image{object-position:center center!important}
+}
+
+
+/* ============================================================
+   V21 — CINEMATIC DARK OVERLAY
+   Detail-page hero only.
+   The supplied image remains the photographic background.
+   The overlay sits above the image and below all editorial text.
+   ============================================================ */
+
+.blog-detail-hero,
+.f8-detail-hero,
+.blog-hero,
+.f8-hero,
+[data-publication-detail-hero]{
+    position:relative;
+    isolation:isolate;
+}
+
+/* Image layer */
+.blog-detail-hero img,
+.f8-detail-hero img,
+.blog-hero img,
+.f8-hero img,
+[data-publication-detail-hero] > img{
+    position:absolute;
+    inset:0;
+    z-index:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Subtle cinematic grade / readability layer */
+.blog-detail-hero::after,
+.f8-detail-hero::after,
+.blog-hero::after,
+.f8-hero::after,
+[data-publication-detail-hero]::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    pointer-events:none;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 30, 20, 0.18) 0%,
+            rgba(0, 30, 20, 0.24) 38%,
+            rgba(0, 25, 17, 0.42) 72%,
+            rgba(0, 18, 12, 0.58) 100%
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 25, 17, 0.18) 0%,
+            rgba(0, 25, 17, 0.04) 50%,
+            rgba(0, 25, 17, 0.20) 100%
+        );
+}
+
+/* Keep all editorial content above the overlay */
+.blog-detail-hero > :not(img),
+.f8-detail-hero > :not(img),
+.blog-hero > :not(img),
+.f8-hero > :not(img),
+[data-publication-detail-hero] > :not(img){
+    position:relative;
+    z-index:2;
+}
+
+/* Slight text-shadow only as a finishing aid — not a substitute
+   for the overlay. */
+.blog-detail-hero h1,
+.f8-detail-hero h1,
+.blog-hero h1,
+.f8-hero h1,
+[data-publication-detail-hero] h1{
+    text-shadow:0 2px 18px rgba(0,0,0,.32);
+}
+
+@media (max-width: 700px){
+    .blog-detail-hero::after,
+    .f8-detail-hero::after,
+    .blog-hero::after,
+    .f8-hero::after,
+    [data-publication-detail-hero]::after{
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0, 30, 20, 0.20) 0%,
+                rgba(0, 28, 19, 0.30) 45%,
+                rgba(0, 18, 12, 0.60) 100%
+            );
+    }
+}
+
+/* V22 — KEEP READING IMAGE CONTRACT */
+[data-image-slot]{
+    position:relative;
+    overflow:hidden;
+}
+[data-image-slot] > [data-publication-image]{
+    position:absolute;
+    inset:0;
+    z-index:3;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+[data-image-slot].has-real-image::before,
+[data-image-slot].has-real-image::after,
+[data-image-slot].has-real-image .ss-placeholder-label{
+    display:none!important;
+}
+
+/* V22 — RELATED CARD MEDIA */
+.blog-related-media.ss-publication-placeholder,
+.f8-card-media.ss-publication-placeholder{
+    position:relative;
+    overflow:hidden;
+}
+.blog-related-media.ss-publication-placeholder > [data-publication-image],
+.f8-card-media.ss-publication-placeholder > [data-publication-image]{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:3;
+    display:block;
+}
+.blog-related-media.ss-publication-placeholder.has-real-image::before,
+.blog-related-media.ss-publication-placeholder.has-real-image::after,
+.blog-related-media.ss-publication-placeholder.has-real-image .ss-placeholder-label,
+.f8-card-media.ss-publication-placeholder.has-real-image::before,
+.f8-card-media.ss-publication-placeholder.has-real-image::after,
+.f8-card-media.ss-publication-placeholder.has-real-image .ss-placeholder-label{
+    display:none!important;
+}
+
+/* V23 — related cards use the same native image contract as archive cards */
+.blog-related-media.ss-publication-placeholder > .ss-real-publication-image,
+.f8-card-media.ss-publication-placeholder > .ss-real-publication-image{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;object-fit:cover!important;z-index:3!important;display:block!important;}
+.blog-related-media.ss-publication-placeholder.has-real-image::before,
+.blog-related-media.ss-publication-placeholder.has-real-image::after,
+.f8-card-media.ss-publication-placeholder.has-real-image::before,
+.f8-card-media.ss-publication-placeholder.has-real-image::after{display:none!important;}
+\n/* V24 — failed-image containment: never expose browser broken-image glyph */\n.ss-real-publication-image,[data-publication-image]{display:none!important;}\n.ss-publication-placeholder.has-real-image > .ss-real-publication-image,\n.ss-publication-placeholder.has-real-image > [data-publication-image],\n.ss-feature-placeholder.has-real-image > .ss-real-publication-image,\n.ss-feature-placeholder.has-real-image > [data-publication-image],\n.blog-related-media.has-real-image > .ss-real-publication-image,\n.f8-card-media.has-real-image > .ss-real-publication-image{display:block!important;}\n.ss-real-publication-image[aria-hidden=\"true\"],[data-publication-image][aria-hidden=\"true\"]{display:none!important;}\n
