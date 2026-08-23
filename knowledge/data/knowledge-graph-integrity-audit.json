@@ -89,9 +89,9 @@
       "id": "SS-008",
       "name": "TECHSPIBUS",
       "type": "framework",
-      "route": "",
-      "route_exists": false,
-      "file": ""
+      "route": "/Thesegunsamuel/techspibus/",
+      "route_exists": true,
+      "file": "techspibus/index.html"
     },
     {
       "id": "SS-009",
