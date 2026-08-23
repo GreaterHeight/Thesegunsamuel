@@ -1,0 +1,23 @@
+{
+  "episode_count": 19,
+  "themes": [
+    "Inner Architecture",
+    "Intelligence & Execution",
+    "Pattern & Seeing",
+    "Power & Human Behaviour",
+    "Strategy & Foresight",
+    "Strategy & Mental Models",
+    "Systems & Institutions",
+    "Technology & Intelligence"
+  ],
+  "library_search": true,
+  "theme_filtering": true,
+  "pagination": true,
+  "detail_pages": 19,
+  "audio_urls_present": 0,
+  "audio_integration_ready": true,
+  "transcripts_present": 0,
+  "transcript_slots_ready": true,
+  "global_shell_ok": true,
+  "issues": []
+}

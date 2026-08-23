@@ -1,0 +1,11 @@
+{
+  "build": "v3.3.7.1",
+  "purpose": "Global course-detail refinement",
+  "course_detail_pages": 16,
+  "changes": [
+    "Explicit Related Knowledge visual layer preserved before Knowledge Graph",
+    "Robust testimonial video/image/placeholder fallback",
+    "No footer changes",
+    "No Courses page changes"
+  ]
+}

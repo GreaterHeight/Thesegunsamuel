@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Learn — Segun Samuel</title>
+<meta name="description" content="A connected learning ecosystem of courses, learning paths and masterclasses designed to build practical intelligence and capability.">
+<link rel="canonical" href="https://greaterheight.github.io/Thesegunsamuel/learn/">
+<link rel="stylesheet" href="/Thesegunsamuel/assets/css/styles.css">
+<link rel="stylesheet" href="/Thesegunsamuel/assets/css/accessibility-v31.css">
+<link rel="stylesheet" href="/Thesegunsamuel/assets/css/footer-v29.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png">
+<link rel="apple-touch-icon" href="/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png">
+<style>
+:root{--forest:#103d33;--deep:#052d25;--cream:#f4efe5;--paper:#fbf8f1;--crimson:#8c0d0c;--gold:#c5a35c;--ink:#17241f;--muted:#66736d;--serif:'Cormorant Garamond',Georgia,serif;--body:'Crimson Pro',Georgia,serif;--sans:'Tenor Sans',Arial,sans-serif}
+.learn-page{background:var(--paper);color:var(--ink);font-family:var(--body)}
+.learn-page *{box-sizing:border-box}.learn-wrap{width:min(1180px,calc(100% - 64px));margin:auto}.eyebrow{font:10px/1.4 var(--sans);letter-spacing:.23em;text-transform:uppercase;color:var(--crimson)}
+.learn-hero{min-height:660px;color:#f8f3ea;display:flex;align-items:end;padding:150px 0 90px;background:linear-gradient(90deg,rgba(5,40,32,.96),rgba(5,40,32,.78) 48%,rgba(5,40,32,.18)),url('/Thesegunsamuel/assets/images/hero-learn.jpg') center/cover}
+.learn-hero h1{font:600 clamp(66px,8vw,112px)/.84 var(--serif);letter-spacing:-.035em;margin:18px 0 25px;color:#fffaf2;max-width:900px}.learn-hero p{font-size:23px;max-width:680px;color:#e5e8e2}.learn-hero .eyebrow{color:var(--gold)}
+.hero-grid{display:grid;grid-template-columns:8fr 4fr;gap:70px;align-items:end}.hero-note{border-left:1px solid rgba(255,255,255,.5);padding-left:27px;max-width:340px}.hero-note strong{display:block;font:500 31px/1.04 var(--serif);color:#fffaf2;margin-bottom:10px}.hero-note span{color:#dfe5df}
+.btn{display:inline-block;padding:14px 19px;border:1px solid rgba(255,255,255,.58);font:10px var(--sans);letter-spacing:.17em;text-transform:uppercase}.btn.primary{background:var(--crimson);border-color:var(--crimson);color:#fff}.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.proposition{padding:105px 0;background:var(--forest);color:#f8f3ea}.two{display:grid;grid-template-columns:3fr 9fr;gap:60px}.proposition h2,.catalog h2,.journey h2,.cta h2{font:500 clamp(52px,6.4vw,84px)/.92 var(--serif);letter-spacing:-.025em;margin:0;color:#fffaf2}.proposition p{font-size:23px;max-width:760px;color:#dce4df}
+.choices{padding:108px 0}.choices-head{display:grid;grid-template-columns:3fr 9fr;gap:60px}.choices-head h2{font:500 clamp(50px,6vw,78px)/.94 var(--serif);margin:10px 0}.choices-head p{font-size:21px;color:var(--muted);max-width:700px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:55px}.card{background:#fff;border:1px solid var(--line);padding:30px;min-height:290px;display:flex;flex-direction:column;transition:.25s}.card:hover{transform:translateY(-4px);border-color:rgba(16,61,51,.32)}.card .tag{font:9px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--crimson)}.card h3{font:500 38px/1 var(--serif);margin:24px 0 12px}.card p{font-size:18px;color:var(--muted);margin:0 0 22px}.card a{margin-top:auto;font:10px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--forest)}
+.journey{padding:110px 0;background:var(--deep);color:#f8f3ea}.journey-intro{font-size:22px;color:#dce3de;max-width:760px}.stages{border-top:1px solid rgba(255,255,255,.18);margin-top:50px}.stage{display:grid;grid-template-columns:90px 1fr 2fr;gap:25px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.18)}.stage b{font:10px var(--sans);letter-spacing:.15em;color:var(--gold)}.stage h3{font:500 33px var(--serif);margin:0;color:#fffaf2}.stage p{margin:0;color:#d6dfda}
+.catalog{padding:110px 0;background:var(--cream)}.catalog h2{color:var(--ink)}.catalog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:50px}.catalog-card{background:var(--paper);border:1px solid rgba(16,61,51,.13);padding:26px}.catalog-card h3{font:500 34px var(--serif);margin:15px 0 7px}.catalog-card p{color:var(--muted);font-size:17px}.catalog-card a{color:var(--crimson);font:10px var(--sans);letter-spacing:.14em;text-transform:uppercase}
+.cta{text-align:center;padding:135px 0}.cta h2{color:var(--ink);max-width:900px;margin:14px auto 22px}.cta p{font-size:22px;color:var(--muted);max-width:690px;margin:auto}.cta .ctas{justify-content:center}.cta .btn{border-color:var(--forest)}.cta .btn.primary{border-color:var(--crimson)}
+@media(max-width:800px){.learn-wrap{width:min(100% - 36px,680px)}.hero-grid,.two,.choices-head{grid-template-columns:1fr;gap:35px}.learn-hero{min-height:690px;padding:130px 0 65px}.learn-hero h1{font-size:68px}.hero-note{display:none}.cards,.catalog-grid{grid-template-columns:1fr}.stage{grid-template-columns:55px 1fr;gap:14px}.stage p{grid-column:2}.choices,.journey,.catalog{padding:78px 0}.cta{padding:95px 0}}
+</style></head><body><a class="ss-skip-link" href="#main-content">Skip to content</a><header class="site-header ss-global-header" data-global-nav="">
+<div class="container ss-nav-container">
+<a aria-label="SegunSamuel Home" class="brand ss-brand" href="/Thesegunsamuel/index.html"><img class="ss-brand-mark" src="/Thesegunsamuel/assets/images/segunsamuel-logo.png" alt="" aria-hidden="true"><span class="ss-brand-wordmark">SEGUN <span>SAMUEL</span></span></a>
+<button aria-expanded="false" aria-label="Open navigation" class="ss-nav-toggle" type="button">
+<span></span><span></span><span></span>
+</button>
+<nav aria-label="Primary navigation" class="ss-primary-nav">
+<a href="/Thesegunsamuel/index.html">HOME</a>
+<div class="ss-nav-group">
+<button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">LEARN <span aria-hidden="true">⌄</span></button>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/learn/">LEARN OVERVIEW</a>
+<a href="/Thesegunsamuel/courses/">COURSES</a>
+<a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a>
+<a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a>
+</div>
+</div>
+<div class="ss-nav-group">
+<button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">THINK <span aria-hidden="true">⌄</span></button>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/think/">THINK OVERVIEW</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/articles/">INSIGHTS</a><a href="/Thesegunsamuel/blog/">BLOG · DECLASSIFIED</a><a href="/Thesegunsamuel/editorial/">EDITORIAL</a><a href="/Thesegunsamuel/forbidden/">FORBIDDEN</a><a href="/Thesegunsamuel/newsletter/">NEWSLETTER</a></div>
+</div>
+<div class="ss-nav-group">
+<button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">APPLY <span aria-hidden="true">⌄</span></button>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/apply/">APPLY OVERVIEW</a>
+<a href="/Thesegunsamuel/speaking/">SPEAKING</a>
+<a href="/Thesegunsamuel/mentoring/">MENTORING</a>
+<a href="/Thesegunsamuel/consulting/">CONSULTING</a>
+<a href="/Thesegunsamuel/masterclasses/">WORKSHOPS &amp; MASTERCLASSES</a>
+<a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a>
+<a href="/Thesegunsamuel/application/">APPLICATIONS</a>
+<a href="/Thesegunsamuel/events/">EVENTS</a>
+</div>
+</div>
+<a href="/Thesegunsamuel/podcast/">LISTEN</a>
+<a href="/Thesegunsamuel/explore/">EXPLORE</a> <a href="/Thesegunsamuel/search/">SEARCH</a>
+</nav>
+<div class="ss-nav-actions">
+<a href="/Thesegunsamuel/student/">STUDENT AREA</a>
+<a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count="">0</span></a>
+</div>
+</div>
+</header>
+<div class="learn-page">
+<header class="learn-hero"><div class="learn-wrap hero-grid"><div>
+<div class="eyebrow">LEARN · BUILD CAPABILITY</div>
+<h1>Build the intelligence to do what the future requires.</h1>
+<p>Learning should not be a collection of disconnected courses. It should be a deliberate journey from where you are to what you can become.</p>
+<div class="ctas"><a class="btn primary" href="/Thesegunsamuel/learning-paths/">Find your learning path →</a><a class="btn" href="#experiences">Explore the learning ecosystem ↓</a></div>
+</div><div class="hero-note"><strong>Knowledge is the beginning. Capability is the outcome.</strong><span>Courses. Learning Paths. Masterclasses. One connected architecture for learning.</span></div></div></header>
+<section class="proposition"><div class="learn-wrap two"><div><div class="eyebrow" style="color:var(--gold)">The Proposition</div></div><div><h2>Do not just consume knowledge. Build the capacity to use it.</h2><p>The Segun Samuel learning ecosystem connects structured courses, sequenced learning paths and focused masterclasses so that knowledge can become practical intelligence, capability and deliberate action.</p></div></div></section>
+<section id="experiences" class="choices"><div class="learn-wrap"><div class="choices-head"><div><div class="eyebrow">01 — Three Learning Expressions</div><h2>Choose the depth that matches the outcome.</h2></div><p>Each expression has a different job. A course develops structured competence. A learning path creates a longer journey. A masterclass concentrates attention around one capability or question.</p></div>
+<div class="cards">
+<article class="card"><div class="tag">Structured Development</div><h3>Courses</h3><p>Deep, structured learning products designed to build knowledge and practical competence over time.</p><a href="/Thesegunsamuel/courses/">Explore Courses →</a></article>
+<article class="card"><div class="tag">Sequenced Journey</div><h3>Learning Paths</h3><p>Curated journeys with relationships, prerequisites and milestones that take you from a starting point toward a defined capability.</p><a href="/Thesegunsamuel/learning-paths/">Explore Learning Paths →</a></article>
+<article class="card"><div class="tag">Focused Intensive</div><h3>Masterclasses</h3><p>Concentrated intellectual experiences designed to deepen a specific capability, framework or strategic question.</p><a href="/Thesegunsamuel/masterclasses/">Explore Masterclasses →</a></article>
+</div></div></section>
+<section class="journey"><div class="learn-wrap"><div class="eyebrow" style="color:var(--gold)">02 — The Learning Architecture</div><h2>From orientation to capability.</h2><p class="journey-intro">The ecosystem is designed to let learners enter at different points without losing the larger architecture.</p><div class="stages">
+<div class="stage"><b>01</b><h3>Orient</h3><p>Understand the territory, the question and the capability you are trying to build.</p></div>
+<div class="stage"><b>02</b><h3>Learn</h3><p>Develop structured knowledge through courses, frameworks and focused instruction.</p></div>
+<div class="stage"><b>03</b><h3>Integrate</h3><p>Connect ideas across learning paths, masterclasses, books, podcast conversations and the Knowledge Graph.</p></div>
+<div class="stage"><b>04</b><h3>Apply</h3><p>Move from knowledge into practice, decision-making, work and deliberate capability.</p></div>
+</div></div></section>
+<section class="catalog"><div class="learn-wrap"><div class="eyebrow">03 — Where to Begin</div><h2>Start with the capability you need next.</h2><div class="catalog-grid">
+<article class="catalog-card"><div class="eyebrow">Data & Analytics</div><h3>Advanced Data Analytics & Power BI</h3><p>Build practical analytical capability through a structured learning experience.</p><a href="/Thesegunsamuel/courses/advanced-data-analytics-power-bi.html">View Course →</a></article>
+<article class="catalog-card"><div class="eyebrow">Strategic Architecture</div><h3>The Prepared Mind</h3><p>A learning path for leaders developing strategic readiness and foresight.</p><a href="/Thesegunsamuel/learning-paths/the-prepared-mind/">View Path →</a></article>
+<article class="catalog-card"><div class="eyebrow">Intelligence</div><h3>Pattern Intelligence</h3><p>Explore the framework and related knowledge that sit at the heart of pattern recognition.</p><a href="/Thesegunsamuel/frameworks/pattern-intelligence/">Explore Framework →</a></article>
+</div></div></section>
+<section class="cta"><div class="learn-wrap"><div class="eyebrow">The Next Step</div><h2>Do not ask only what you want to learn. Ask what you want to become capable of doing.</h2><p>Choose a course, learning path or masterclass that moves you toward the capability in front of you.</p><div class="ctas"><a class="btn primary" href="/Thesegunsamuel/learning-paths/">Find Your Learning Path →</a><a class="btn" href="/Thesegunsamuel/courses/">Explore Courses</a></div></div></section>
+</div><footer class="site-footer site-footer-v29">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-wordmark v33-footer-signature"><img src="/Thesegunsamuel/assets/images/segunsamuel-signature-gold.png" alt="Segun Samuel — Marketplace Architect · Strategic Foresight Mentor"></div>
+      <p>SEE REALITY CLEARLY. INTERPRET WHAT YOU SEE. THINK STRATEGICALLY. DESIGN INTELLIGENTLY. EXECUTE DELIBERATELY. BUILD SYSTEMS. LEAD PEOPLE AND ORGANIZATIONS. CREATE INSTITUTIONS THAT ENDURE.</p>
+    </div>
+    <nav aria-label="Footer Explore"><h3>EXPLORE</h3><a href="/Thesegunsamuel/courses/">COURSES</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/podcast/">PODCAST</a></nav>
+    <nav aria-label="Footer Work"><h3>THE WORK</h3><a href="/Thesegunsamuel/work/">THREE EXPRESSIONS</a><a href="/Thesegunsamuel/apply/">APPLY</a><a href="/Thesegunsamuel/speaking/">SPEAKING</a><a href="/Thesegunsamuel/mentoring/">MENTORING</a><a href="/Thesegunsamuel/consulting/">CONSULTING</a><a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a></nav><nav aria-label="Footer Knowledge"><h3>KNOWLEDGE</h3><a href="/Thesegunsamuel/articles/">INSIGHTS</a><a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a><a href="/Thesegunsamuel/events/">EVENTS</a><a href="/Thesegunsamuel/explore/">KNOWLEDGE GRAPH</a></nav>
+    <nav aria-label="Footer Participate"><h3>PARTICIPATE</h3><a href="/Thesegunsamuel/learning-paths/">LEARNING PATHS</a><a href="/Thesegunsamuel/masterclasses/">MASTERCLASSES</a><a href="/Thesegunsamuel/student/">STUDENT AREA</a><a href="/Thesegunsamuel/community/">COMMUNITY</a></nav>
+    <nav aria-label="Footer Legal"><h3>LEGAL &amp; PRIVACY</h3><a href="/Thesegunsamuel/privacy/">PRIVACY POLICY</a><a href="/Thesegunsamuel/terms/">TERMS &amp; CONDITIONS</a><a href="/Thesegunsamuel/disclaimer/">DISCLAIMER</a><a href="/Thesegunsamuel/cookie-preferences/">COOKIE PREFERENCES</a><a href="/Thesegunsamuel/data-processing/">DATA PROCESSING</a><a href="/Thesegunsamuel/data-requests/">DATA REQUESTS</a></nav>
+  </div>
+  <div class="footer-bottom v33-footer-bottom"><span>© 2026 SEGUN SAMUEL. ALL RIGHTS RESERVED.</span><span class="v33-footer-center">DEVELOPED BY <a href="https://greaterheight.tech" rel="noopener">GREATERHEIGHT TECHNOLOGIES</a></span><span class="v33-footer-right"><a href="/Thesegunsamuel/about/">ABOUT</a><a href="/Thesegunsamuel/explore/">EXPLORE THE KNOWLEDGE GRAPH</a></span></div>
+</footer><script src="/Thesegunsamuel/assets/js/global-nav.js"></script></body></html>

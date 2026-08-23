@@ -1,0 +1,47 @@
+{
+  "build": "v3.9",
+  "title": "Knowledge Graph Data Integration",
+  "source_of_truth": "SegunSamuel Master Knowledge & IP Registry v1.3",
+  "schema": "SegunSamuel Knowledge Graph Schema v1.4",
+  "entities": 62,
+  "relationships": 59,
+  "ui_data": "explore/data/knowledge-graph.json",
+  "canonical_data": "data/knowledge-graph.json",
+  "preserved": [
+    "navigation",
+    "footer",
+    "courses experience",
+    "course-detail design",
+    "existing HTML/CSS/JS architecture"
+  ],
+  "open_decisions": [
+    {
+      "item": "PLAN Framework",
+      "status": "UNRESOLVED"
+    },
+    {
+      "item": "PIS",
+      "status": "UNRESOLVED"
+    },
+    {
+      "item": "TECHSPIBUS",
+      "status": "OPEN"
+    },
+    {
+      "item": "IBONK",
+      "status": "OPEN"
+    },
+    {
+      "item": "Five-Stage Intelligence Architecture",
+      "status": "ALIAS LIKELY"
+    },
+    {
+      "item": "Battle 6 / Communication & Negotiation",
+      "status": "OPEN"
+    },
+    {
+      "item": "Battle 15 / Pride & Humility",
+      "status": "OPEN"
+    }
+  ]
+}
