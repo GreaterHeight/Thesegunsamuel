@@ -55,3 +55,31 @@
 @media(max-width:850px){
   .tsb-mark{grid-template-columns:1fr;}
 }
+
+/* V62 production fix — prevent TECHSPIBUS hero dimension overlap */
+.tsb-hero-inner{
+  grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+  gap:56px;
+}
+.tsb-hero-inner > *{
+  min-width:0;
+}
+.tsb-mark{
+  min-width:0;
+  width:100%;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+}
+.tsb-mark-item h3{
+  min-width:0;
+  font-size:clamp(24px,2.55vw,29px);
+  line-height:.98;
+  letter-spacing:-.02em;
+  overflow-wrap:break-word;
+}
+.tsb-mark-item p{
+  overflow-wrap:break-word;
+}
+@media(max-width:850px){
+  .tsb-hero-inner{grid-template-columns:1fr;gap:45px}
+  .tsb-mark{grid-template-columns:1fr}
+}
