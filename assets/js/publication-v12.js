@@ -19,10 +19,14 @@ function share(n,t,u){
  if(n==="facebook")target="https://www.facebook.com/sharer/sharer.php?u="+q;
  if(n==="linkedin")target="https://www.linkedin.com/sharing/share-offsite/?url="+q;
  if(n==="x")target="https://twitter.com/intent/tweet?text="+x+"&url="+q;
+ if(n==="threads")target="https://www.threads.net/intent/post?text="+x+"%20"+q;
  if(n==="whatsapp")target="https://wa.me/?text="+x+"%20"+q;
  if(target){window.open(target,"_blank","noopener,noreferrer,width=720,height=620");return}
- if(n==="instagram"||n==="native"){if(navigator.share)navigator.share({title:t,url:u}).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(u);return}
- if(n==="copy"&&navigator.clipboard)navigator.clipboard.writeText(u)
+ if(n==="instagram"||n==="native"){
+   if(navigator.share){navigator.share({title:t,url:u}).catch(function(){});return}
+   if(navigator.clipboard){navigator.clipboard.writeText(u).then(function(){alert("Link copied. Paste it into Instagram to share this dispatch.")}).catch(function(){});return}
+ }
+ if(n==="copy"&&navigator.clipboard){navigator.clipboard.writeText(u).then(function(){alert("Link copied to your clipboard.")}).catch(function(){})}
 }
 
 function imageSlots(){
