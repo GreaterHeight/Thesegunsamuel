@@ -382,3 +382,123 @@
     gap:8px 12px !important;
   }
 }
+
+/* V33 precision pass — mobile brand, signature and newsletter CTA */
+.site-footer.ss-footer-v2 .ss-footer-v2-brandmark{
+  flex-wrap:nowrap !important;
+  white-space:nowrap !important;
+}
+.site-footer.ss-footer-v2 .ss-footer-v2-brandmark span{
+  display:block !important;
+  white-space:nowrap !important;
+  flex:0 0 auto !important;
+}
+.site-footer.ss-footer-v2 .ss-footer-v2-form button{
+  appearance:none !important;
+  -webkit-appearance:none !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  position:relative !important;
+  z-index:2 !important;
+  overflow:visible !important;
+}
+@media(max-width:560px){
+  .site-footer.ss-footer-v2 .ss-footer-v2-brandmark{
+    gap:9px !important;
+    font-size:22px !important;
+    line-height:1 !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-brandmark img{
+    width:42px !important;
+    height:60px !important;
+    max-width:42px !important;
+    max-height:60px !important;
+    flex:0 0 42px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-signature{
+    margin-top:34px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-signature img{
+    width:min(220px,68vw) !important;
+    max-width:68vw !important;
+    max-height:110px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-form input,
+  .site-footer.ss-footer-v2 .ss-footer-v2-form button{
+    height:54px !important;
+    min-height:54px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-form button{
+    display:block !important;
+    width:100% !important;
+    margin-top:8px !important;
+    background:#b40000 !important;
+    color:#fff !important;
+    border:0 !important;
+    font-size:17px !important;
+    line-height:54px !important;
+    text-align:center !important;
+  }
+}
+
+/* V34 precision pass — final footer scale corrections */
+.site-footer.ss-footer-v2 .ss-footer-v2-brandmark{
+  flex-wrap:nowrap !important;
+  white-space:nowrap !important;
+}
+.site-footer.ss-footer-v2 .ss-footer-v2-brandmark span{
+  white-space:nowrap !important;
+  flex:0 0 auto !important;
+}
+.site-footer.ss-footer-v2 .ss-footer-v2-brandmark img{
+  width:52px !important;
+  height:75px !important;
+  max-width:52px !important;
+  max-height:75px !important;
+  flex:0 0 52px !important;
+}
+.site-footer.ss-footer-v2 .ss-footer-v2-signature img{
+  width:300px !important;
+  max-width:34vw !important;
+  max-height:135px !important;
+}
+.site-footer.ss-footer-v2 .ss-footer-v2-form button{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  width:100% !important;
+  height:58px !important;
+  min-height:58px !important;
+  background:#b40000 !important;
+  color:#fff !important;
+  border:0 !important;
+  border-radius:0 !important;
+  text-align:center !important;
+}
+@media(max-width:560px){
+  .site-footer.ss-footer-v2 .ss-footer-v2-brandmark{
+    gap:8px !important;
+    font-size:22px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-brandmark img{
+    width:40px !important;
+    height:58px !important;
+    max-width:40px !important;
+    max-height:58px !important;
+    flex:0 0 40px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-signature img{
+    width:min(220px,68vw) !important;
+    max-width:68vw !important;
+    max-height:105px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-form input,
+  .site-footer.ss-footer-v2 .ss-footer-v2-form button{
+    height:54px !important;
+    min-height:54px !important;
+  }
+  .site-footer.ss-footer-v2 .ss-footer-v2-form button{
+    line-height:54px !important;
+    font-size:17px !important;
+  }
+}
