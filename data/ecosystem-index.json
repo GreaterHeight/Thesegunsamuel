@@ -1,0 +1,493 @@
+{
+  "version": "v3.13",
+  "entity_types": {
+    "worldview": [
+      {
+        "id": "SS-001",
+        "name": "Marketplace Architect",
+        "slug": "marketplace-architect",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "master_framework": [
+      {
+        "id": "SS-002",
+        "name": "Strategic Foresight–Architecture Framework",
+        "slug": "strategic-foresightarchitecture-framework",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "concept": [
+      {
+        "id": "SS-003",
+        "name": "Strategic Foresight",
+        "slug": "strategic-foresight",
+        "route": "/Thesegunsamuel/frameworks/strategic-foresight/",
+        "status": "canonical"
+      },
+      {
+        "id": "SS-004",
+        "name": "Pattern Intelligence",
+        "slug": "pattern-intelligence",
+        "route": "/Thesegunsamuel/frameworks/pattern-intelligence/",
+        "status": "canonical"
+      },
+      {
+        "id": "SS-005",
+        "name": "Strategic Architecture",
+        "slug": "strategic-architecture",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "SS-006",
+        "name": "Execution Intelligence",
+        "slug": "execution-intelligence",
+        "route": "/Thesegunsamuel/frameworks/execution-intelligence/",
+        "status": "canonical"
+      },
+      {
+        "id": "SS-007",
+        "name": "Institutional Intelligence",
+        "slug": "institutional-intelligence",
+        "route": "/Thesegunsamuel/frameworks/institutional-intelligence/",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-IP-05",
+        "name": "Purpose–Calling–Destiny–Vision–Goals",
+        "slug": "purposecallingdestinyvisiongoals",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "framework": [
+      {
+        "id": "SS-008",
+        "name": "TECHSPIBUS",
+        "slug": "techspibus",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-01",
+        "name": "TEA™",
+        "slug": "teatm",
+        "route": "/Thesegunsamuel/frameworks/tea/",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-IP-03",
+        "name": "5PTES™",
+        "slug": "5ptestm",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-IP-12",
+        "name": "Financial Stewardship Architecture",
+        "slug": "financial-stewardship-architecture",
+        "route": "",
+        "status": "provisional"
+      }
+    ],
+    "system": [
+      {
+        "id": "SS-009",
+        "name": "IBONK",
+        "slug": "ibonk",
+        "route": "/Thesegunsamuel/frameworks/ibonk/",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-02",
+        "name": "FIAGS™",
+        "slug": "fiagstm",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "method": [
+      {
+        "id": "SS-010",
+        "name": "The Prepared Mind Method™",
+        "slug": "the-prepared-mind-methodtm",
+        "route": "/Thesegunsamuel/models/the-prepared-mind-method/",
+        "status": "provisional"
+      },
+      {
+        "id": "SS-011",
+        "name": "PLAN Framework",
+        "slug": "plan-framework",
+        "route": "/Thesegunsamuel/models/plan-strategic-framework/",
+        "status": "provisional"
+      }
+    ],
+    "model": [
+      {
+        "id": "SS-012",
+        "name": "Five-Stage Intelligence Architecture",
+        "slug": "five-stage-intelligence-architecture",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-06",
+        "name": "Relational Architecture",
+        "slug": "relational-architecture",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-07",
+        "name": "Physical Stewardship Architecture",
+        "slug": "physical-stewardship-architecture",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-09",
+        "name": "Social Mastery Architecture",
+        "slug": "social-mastery-architecture",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-11",
+        "name": "Learning / Intellectual Architecture",
+        "slug": "learning-intellectual-architecture",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-13",
+        "name": "Execution Gap",
+        "slug": "execution-gap",
+        "route": "",
+        "status": "provisional"
+      }
+    ],
+    "book": [
+      {
+        "id": "WW-001",
+        "name": "The War Within — 17 Battles",
+        "slug": "the-war-within-17-battles",
+        "route": "/Thesegunsamuel/books/the-war-within/",
+        "status": "canonical"
+      }
+    ],
+    "stage": [
+      {
+        "id": "WW-002",
+        "name": "Stage I — Awakening",
+        "slug": "stage-i-awakening",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-003",
+        "name": "Stage II — Purging",
+        "slug": "stage-ii-purging",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-004",
+        "name": "Stage III — Structuring",
+        "slug": "stage-iii-structuring",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-005",
+        "name": "Stage IV — Reprogramming",
+        "slug": "stage-iv-reprogramming",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-006",
+        "name": "Stage V — Ascension",
+        "slug": "stage-v-ascension",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "battle": [
+      {
+        "id": "WW-101",
+        "name": "Battle 1 — The Blind Warrior",
+        "slug": "battle-1-the-blind-warrior",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-102",
+        "name": "Battle 2 — The Mask of Confusion",
+        "slug": "battle-2-the-mask-of-confusion",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-103",
+        "name": "Battle 3 — The Draining Spiral",
+        "slug": "battle-3-the-draining-spiral",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-104",
+        "name": "Battle 4 — The Poisoned Heart",
+        "slug": "battle-4-the-poisoned-heart",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-105",
+        "name": "Battle 5 — The Closed Heaven",
+        "slug": "battle-5-the-closed-heaven",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-106",
+        "name": "Battle 6 — The Tongue and the Trade",
+        "slug": "battle-6-the-tongue-and-the-trade",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-107",
+        "name": "Battle 7 — Broken Bridges",
+        "slug": "battle-7-broken-bridges",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-108",
+        "name": "Battle 8 — The Invisible Prison",
+        "slug": "battle-8-the-invisible-prison",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-109",
+        "name": "Battle 9 — When the Spirit Starves",
+        "slug": "battle-9-when-the-spirit-starves",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-110",
+        "name": "Battle 10 — The Neglected Temple",
+        "slug": "battle-10-the-neglected-temple",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-111",
+        "name": "Battle 11 — The Inner Saboteur",
+        "slug": "battle-11-the-inner-saboteur",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-112",
+        "name": "Battle 12 — The Isolation Trap",
+        "slug": "battle-12-the-isolation-trap",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-113",
+        "name": "Battle 13 — The Comfort Trap",
+        "slug": "battle-13-the-comfort-trap",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-114",
+        "name": "Battle 14 — The Starved Mind",
+        "slug": "battle-14-the-starved-mind",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-115",
+        "name": "Battle 15 — The Fallen Crown",
+        "slug": "battle-15-the-fallen-crown",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-116",
+        "name": "Battle 16 — The Leaking Purse",
+        "slug": "battle-16-the-leaking-purse",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "WW-117",
+        "name": "Battle 17 — The Execution Gap",
+        "slug": "battle-17-the-execution-gap",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "tool": [
+      {
+        "id": "WW-IP-04",
+        "name": "Personal Identity Statement",
+        "slug": "personal-identity-statement",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "PLAT-010",
+        "name": "AI Prompts / AI Systems",
+        "slug": "ai-prompts-ai-systems",
+        "route": "",
+        "status": "canonical"
+      },
+      {
+        "id": "PLAT-014",
+        "name": "Software / Tools",
+        "slug": "software-tools",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "diagnostic": [
+      {
+        "id": "WW-IP-08",
+        "name": "Limiting-Belief Diagnostic",
+        "slug": "limiting-belief-diagnostic",
+        "route": "",
+        "status": "provisional"
+      },
+      {
+        "id": "WW-IP-10",
+        "name": "Comfort Addiction Diagnostic",
+        "slug": "comfort-addiction-diagnostic",
+        "route": "",
+        "status": "provisional"
+      }
+    ],
+    "course": [
+      {
+        "id": "PLAT-001",
+        "name": "Courses",
+        "slug": "courses",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "masterclass": [
+      {
+        "id": "PLAT-002",
+        "name": "Masterclasses",
+        "slug": "masterclasses",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "learning_path": [
+      {
+        "id": "PLAT-003",
+        "name": "Learning Paths",
+        "slug": "learning-paths",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "case_study": [
+      {
+        "id": "PLAT-004",
+        "name": "Case Studies",
+        "slug": "case-studies",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "application": [
+      {
+        "id": "PLAT-005",
+        "name": "Applications / Projects",
+        "slug": "applications-projects",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "podcast": [
+      {
+        "id": "PLAT-006",
+        "name": "Podcast",
+        "slug": "podcast",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "insight": [
+      {
+        "id": "PLAT-007",
+        "name": "Insights / Articles",
+        "slug": "insights-articles",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "event": [
+      {
+        "id": "PLAT-008",
+        "name": "Events",
+        "slug": "events",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "community": [
+      {
+        "id": "PLAT-009",
+        "name": "Community",
+        "slug": "community",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "graph": [
+      {
+        "id": "PLAT-011",
+        "name": "Explore / Knowledge Graph",
+        "slug": "explore-knowledge-graph",
+        "route": "",
+        "status": "canonical"
+      }
+    ],
+    "service": [
+      {
+        "id": "PLAT-012",
+        "name": "Consulting",
+        "slug": "consulting",
+        "route": "/Thesegunsamuel/consulting/",
+        "status": "canonical"
+      },
+      {
+        "id": "PLAT-013",
+        "name": "Speaking",
+        "slug": "speaking",
+        "route": "/Thesegunsamuel/speaking/",
+        "status": "canonical"
+      },
+      {
+        "id": "PLAT-014",
+        "name": "Strategic Mentoring",
+        "slug": "strategic-mentoring",
+        "route": "/Thesegunsamuel/mentoring/",
+        "status": "canonical"
+      }
+    ]
+  },
+  "relationship_count": 138
+}

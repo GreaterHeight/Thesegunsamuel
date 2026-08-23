@@ -1,0 +1,28 @@
+{
+  "schema_version": "student-experience-v2",
+  "user": {
+    "id": "demo-student",
+    "name": "Student",
+    "email": "student@example.com",
+    "status": "active"
+  },
+  "enrollments": [
+    {
+      "courseId": "pattern-intelligence",
+      "title": "Pattern Intelligence",
+      "status": "active",
+      "progress": 35,
+      "completedLessons": 4,
+      "totalLessons": 12,
+      "lastLesson": "Separating Observation from Interpretation"
+    }
+  ],
+  "saved": [],
+  "notifications": [],
+  "certificates": [],
+  "profile": {
+    "name": "Student",
+    "role": "Learner",
+    "timezone": "Africa/Lagos"
+  }
+}
