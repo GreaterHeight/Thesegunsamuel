@@ -65,3 +65,47 @@
  .bio-card,.angle-grid article,.brief-grid>div{padding:24px}
  .asset-grid img{height:240px}
 }
+
+/* V77 precision fixes: explicit contrast + approved image-placeholder system */
+.press-page .press-hero h1,
+.press-page .press-hero h1 em,
+.press-page .press-section-dark .press-section-head h2,
+.press-page .press-section-dark .press-section-head h2 em {
+  color:#f7f1e6 !important;
+}
+.press-page .press-section-dark .press-section-head .press-kicker {
+  color:#c9a84c !important;
+}
+.press-page .press-image-placeholder{
+  position:relative;
+  min-height:280px;
+  width:100%;
+  overflow:hidden;
+  border:1px solid rgba(18,63,52,.12);
+  background:linear-gradient(160deg,#dceee9 0%,#eef7f4 45%,#f4eee3 100%) !important;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-start;
+}
+.press-page .press-image-placeholder::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/96px auto no-repeat;
+  opacity:.82;
+  pointer-events:none;
+}
+.press-page .press-placeholder-label{
+  position:relative;
+  z-index:1;
+  margin:0 0 16px 16px;
+  padding:7px 9px;
+  background:rgba(253,250,244,.78);
+  color:#315b4e;
+  font:600 9px/1.2 "Tenor Sans",Arial,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+@media(max-width:620px){
+  .press-page .press-image-placeholder{min-height:240px}
+}

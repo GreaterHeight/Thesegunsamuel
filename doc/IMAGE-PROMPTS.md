@@ -1058,3 +1058,40 @@ Create a premium editorial-cinematic photograph representing institution buildin
 **Prompt:** Create a premium editorial-cinematic photograph representing a deliberate learning journey from one level of capability to another. Show a winding, carefully constructed pathway through a sophisticated natural or architectural landscape, leading toward a distant horizon and warm light. The path should communicate progression, sequence, choice and transformation without becoming a generic travel photograph. Preserve generous negative space on the left for HTML typography and keep the visual destination toward the right. Use deep forest green, deep teal, warm cream and restrained gold with selective crimson only where appropriate. Ultra-realistic cinematic editorial photography, sophisticated African/global intellectual aesthetic, 16:9 landscape, 8K detail, no visible text, logos or watermark.
 **Exact filename:** `learning-paths-hero.jpg`  
 **Destination:** `/assets/images/learning-paths-hero.jpg`
+
+
+---
+
+# PRESS KIT — APPROVED IMAGE PLACEHOLDERS
+
+The Press Kit deliberately uses the approved **gradient + Segun badge placeholder system** until the exact generated image exists. The placeholder is not a substitute image and must not be replaced by an improvised stock photograph. When the named file is supplied in `/assets/images/`, the page should display it in the same frame without changing the layout.
+
+### `press-segun-samuel-editorial-portrait.jpg` — Press Kit Editorial Portrait
+**Route:** `/press/` · **Section:** Photography & Assets · **Placeholder:** Editorial portrait
+
+**Image-generation prompt:**  
+Create a premium editorial portrait of Segun Samuel for a serious international press kit. Present a composed African intellectual and marketplace leader in a sophisticated contemporary environment that subtly suggests strategy, technology, architecture and institutional thinking without becoming corporate stock photography. The expression should communicate calm intelligence, depth, responsibility and strategic foresight. Use an elegant, restrained composition with generous negative space and natural posture; sophisticated modern African/global editorial aesthetic; deep forest green, warm cream, muted teal and restrained gold accents; cinematic natural light; medium-format realism; 8K detail; believable skin texture and materials; no text, no logos, no watermark, no invented awards, no decorative typography. Preserve identity using an approved reference photograph if one is supplied.
+
+**Production contract:** `press-segun-samuel-editorial-portrait.jpg` in `/assets/images/`.
+
+**Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
+
+### `press-ibonK-five-levels.jpg` — IBONK™ Five Levels of Influence
+**Route:** `/press/` · **Section:** Photography & Assets · **Placeholder:** IBONK™ editorial concept
+
+**Image-generation prompt:**  
+Create a premium editorial-cinematic conceptual photograph representing IBONK™ — Individual, Business, Organisation, Nation, Kingdom — as five ascending levels of influence and responsibility. Visualise a continuous architectural or civic landscape rising through five distinct but connected levels, suggesting increasing scale, stewardship, systems, institutions and consequence. The image should feel intellectually serious rather than diagrammatic: layered architecture, pathways, civic scale and human-scale traces can imply the progression without placing any words, numbers or labels inside the image. Sophisticated modern African/global editorial aesthetic, deep forest green, dark teal, warm cream, restrained gold and subtle crimson accents, cinematic depth, natural light, 8K detail, premium magazine photography, no text, no logos, no watermark.
+
+**Production contract:** `press-ibonK-five-levels.jpg` in `/assets/images/`.
+
+**Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
+
+### `press-war-within-editorial.jpg` — The War Within Editorial Image
+**Route:** `/press/` · **Section:** Photography & Assets · **Placeholder:** Book/editorial concept
+
+**Image-generation prompt:**  
+Create a premium editorial-cinematic conceptual photograph representing The War Within: the internal psychological battles beneath leadership, identity, purpose, fear, comparison, discipline, relationships and consequential decision-making. Visualise one composed human figure facing a sophisticated architectural environment in which subtle reflections, pathways, thresholds and contrasting light suggest an inner conflict being examined rather than dramatised. The mood should be intelligent, restrained and psychologically deep, never violent or sensational. Sophisticated modern African/global editorial aesthetic, deep forest green, dark teal, warm cream, muted gold and restrained crimson accents, cinematic natural light, 8K detail, medium-format realism, premium magazine art direction, no text, no book cover, no logos, no watermark.
+
+**Production contract:** `press-war-within-editorial.jpg` in `/assets/images/`.
+
+**Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
