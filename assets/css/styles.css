@@ -1541,3 +1541,21 @@
   .hero-sequence { font-size: 7px; letter-spacing: .12em; margin-top: 18px; }
   .hero-architect { right: 13px; font-size: 8px; }
 }
+
+/* Home newsletter section — v79 */
+.ss-home-newsletter{background:#003b2d;color:#f7f1e6;padding:88px 24px 82px}
+.ss-home-newsletter-inner{width:min(100%,980px);margin:0 auto;text-align:center}
+.ss-home-newsletter-kicker{display:inline-flex;align-items:center;gap:12px;font:600 11px/1.2 "Tenor Sans",Arial,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:#c9d7d0}
+.ss-home-newsletter-kicker::before{content:"";width:24px;height:1px;background:#c9a84c}
+.ss-home-newsletter h2{margin:20px 0 14px;color:#f7f1e6!important;font:500 clamp(42px,5vw,66px)/.98 "Cormorant Garamond",Georgia,serif}
+.ss-home-newsletter h2 em{font-style:italic;color:#f7f1e6!important}
+.ss-home-newsletter-lead{max-width:760px;margin:0 auto 28px;color:#e9eee8;font:500 20px/1.45 "Crimson Pro",Georgia,serif}
+.ss-home-newsletter-form{display:grid;grid-template-columns:1fr 1fr 1.45fr auto;gap:10px;max-width:760px;margin:0 auto}
+.ss-home-newsletter-form input{min-width:0;height:46px;padding:0 16px;border:1px solid rgba(18,63,52,.18);border-radius:6px;background:#fff;color:#123f34;font:400 16px/1 "Crimson Pro",Georgia,serif;box-sizing:border-box}
+.ss-home-newsletter-form input::placeholder{color:#7c817e;opacity:1}
+.ss-home-newsletter-form button{height:46px;padding:0 26px;border:1px solid #a90d12;border-radius:0;background:#a90d12!important;color:#fff!important;cursor:pointer;font:600 12px/1 "Tenor Sans",Arial,sans-serif;letter-spacing:.08em;white-space:nowrap;transition:transform .2s ease,background .2s ease}
+.ss-home-newsletter-form button:hover{background:#8f0b10!important;transform:translateY(-1px)}
+.ss-home-newsletter-form button:focus-visible{outline:2px solid #c9a84c;outline-offset:3px}
+.ss-home-newsletter-note{margin:17px 0 0;color:#9fb3aa;font:600 12px/1.4 "Crimson Pro",Georgia,serif}
+@media(max-width:760px){.ss-home-newsletter{padding:70px 20px 64px}.ss-home-newsletter-lead{font-size:18px}.ss-home-newsletter-form{grid-template-columns:1fr 1fr}.ss-home-newsletter-form input:nth-of-type(3),.ss-home-newsletter-form button{grid-column:1/-1}}
+@media(max-width:480px){.ss-home-newsletter-form{grid-template-columns:1fr}.ss-home-newsletter-form input:nth-of-type(3),.ss-home-newsletter-form button{grid-column:auto}}
