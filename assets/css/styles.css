@@ -1439,3 +1439,105 @@
   .site-footer.ss-footer-v2 .ss-footer-v2-signature img{width:min(300px,82vw) !important;max-width:82vw !important}
   .site-footer.ss-footer-v2 .ss-footer-v2-bottom{width:calc(100% - 36px) !important}
 }
+
+
+/* =========================================================
+   HOME HERO ART — REALITY → INTELLIGENCE ARCHITECTURE
+   ========================================================= */
+.home-hero-art, .hero-art {
+  min-height: 0;
+  aspect-ratio: 1 / 1;
+  background: #003020;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.hero-frame {
+  position: absolute;
+  inset: 24px;
+  border: 1px solid rgba(151,239,201,.28);
+  overflow: hidden;
+}
+.hero-frame::before, .hero-frame::after {
+  content: "";
+  position: absolute;
+  background: rgba(151,239,201,.18);
+  pointer-events: none;
+}
+.hero-frame::before { left: 0; right: 0; top: 50%; height: 1px; }
+.hero-frame::after { top: 0; bottom: 0; left: 50%; width: 1px; }
+.hero-corner {
+  position: absolute;
+  z-index: 3;
+  color: #EAF5F1;
+  font: 9px/1 var(--sans);
+  font-weight: 600;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+}
+.hero-see { top: 18px; left: 18px; }
+.hero-interpret { top: 18px; right: 18px; }
+.hero-build { bottom: 18px; left: 18px; }
+.hero-govern { bottom: 18px; right: 18px; }
+.hero-architect {
+  position: absolute;
+  right: 17px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: center;
+  color: #97EFC9;
+  font: 9px/1 var(--sans);
+  font-weight: 600;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+.hero-core {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+  color: #FDFAF4;
+}
+.hero-reality, .hero-intelligence {
+  font: 600 clamp(54px, 5.4vw, 82px)/.82 var(--display);
+  letter-spacing: -.035em;
+}
+.hero-arrow {
+  font: 400 clamp(48px, 4.7vw, 72px)/.6 var(--display);
+  margin: 6px 0 8px;
+}
+.hero-sequence {
+  margin-top: 22px;
+  color: #97EFC9;
+  font: 9px/1 var(--sans);
+  font-weight: 600;
+  letter-spacing: .22em;
+  white-space: nowrap;
+}
+
+/* Requested gold questions in the five-card architecture. */
+.five-card .question {
+  color: var(--gold, #C9A84C) !important;
+}
+
+@media (max-width: 1000px) {
+  .hero-frame { inset: 22px; }
+  .hero-reality, .hero-intelligence { font-size: clamp(50px, 8vw, 72px); }
+  .hero-sequence { letter-spacing: .16em; }
+}
+
+@media (max-width: 600px) {
+  .hero-art { width: min(100%, 500px); margin: 0 auto; }
+  .hero-frame { inset: 18px; }
+  .hero-corner { font-size: 8px; letter-spacing: .2em; }
+  .hero-reality, .hero-intelligence { font-size: clamp(46px, 13vw, 62px); }
+  .hero-arrow { font-size: 52px; margin: 5px 0 7px; }
+  .hero-sequence { font-size: 7px; letter-spacing: .12em; margin-top: 18px; }
+  .hero-architect { right: 13px; font-size: 8px; }
+}
