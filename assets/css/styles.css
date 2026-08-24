@@ -1559,3 +1559,75 @@
 .ss-home-newsletter-note{margin:17px 0 0;color:#9fb3aa;font:600 12px/1.4 "Crimson Pro",Georgia,serif}
 @media(max-width:760px){.ss-home-newsletter{padding:70px 20px 64px}.ss-home-newsletter-lead{font-size:18px}.ss-home-newsletter-form{grid-template-columns:1fr 1fr}.ss-home-newsletter-form input:nth-of-type(3),.ss-home-newsletter-form button{grid-column:1/-1}}
 @media(max-width:480px){.ss-home-newsletter-form{grid-template-columns:1fr}.ss-home-newsletter-form input:nth-of-type(3),.ss-home-newsletter-form button{grid-column:auto}}
+
+/* Home newsletter — V80 hardened responsive treatment */
+
+
+.home-page{margin:0!important;background:#fbf8f1;}
+.home-page .ss-home-newsletter{
+  display:block!important;width:100%!important;box-sizing:border-box!important;
+  margin:0!important;padding:92px 24px 78px!important;
+  background:#003b2d!important;color:#f7f1e6!important;
+  text-align:center!important;font-family:"Crimson Pro",Georgia,serif!important;
+}
+.home-page .ss-home-newsletter *{box-sizing:border-box}
+.home-page .ss-home-newsletter-inner{width:min(100%,980px)!important;margin:0 auto!important;text-align:center!important}
+.home-page .ss-home-newsletter-kicker{
+  display:flex!important;align-items:center!important;justify-content:center!important;gap:12px!important;
+  margin:0!important;color:#c9d7d0!important;
+  font:600 11px/1.2 "Tenor Sans",Arial,sans-serif!important;
+  letter-spacing:.24em!important;text-transform:uppercase!important;
+}
+.home-page .ss-home-newsletter-kicker:before{content:""!important;display:block!important;width:24px!important;height:1px!important;background:#c9a84c!important}
+.home-page .ss-home-newsletter h2{
+  display:block!important;margin:22px 0 16px!important;color:#f7f1e6!important;
+  font:500 clamp(42px,5vw,66px)/.96 "Cormorant Garamond",Georgia,serif!important;
+  letter-spacing:0!important;text-transform:none!important;
+}
+.home-page .ss-home-newsletter h2 em{color:#f7f1e6!important;font-style:italic!important}
+.home-page .ss-home-newsletter-lead{
+  display:block!important;max-width:780px!important;margin:0 auto 30px!important;
+  color:#e9eee8!important;font:500 20px/1.45 "Crimson Pro",Georgia,serif!important;
+}
+.home-page .ss-home-newsletter-form{
+  display:grid!important;grid-template-columns:1fr 1fr 1.45fr auto!important;
+  gap:10px!important;width:min(100%,760px)!important;margin:0 auto!important;padding:0!important;
+  background:transparent!important;border:0!important;
+}
+.home-page .ss-home-newsletter-form label{display:none!important}
+.home-page .ss-home-newsletter-form input{
+  display:block!important;min-width:0!important;width:100%!important;height:46px!important;
+  margin:0!important;padding:0 16px!important;border:1px solid #d9ddd9!important;
+  border-radius:6px!important;background:#fff!important;color:#173e34!important;
+  font:400 16px/1 "Crimson Pro",Georgia,serif!important;outline:none!important;
+}
+.home-page .ss-home-newsletter-form input::placeholder{color:#7b817e!important;opacity:1!important}
+.home-page .ss-home-newsletter-form button{
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  width:auto!important;min-width:150px!important;height:46px!important;margin:0!important;padding:0 26px!important;
+  border:1px solid #a90d12!important;border-radius:0!important;background:#a90d12!important;
+  color:#fff!important;cursor:pointer!important;
+  font:600 12px/1 "Tenor Sans",Arial,sans-serif!important;letter-spacing:.08em!important;
+  text-transform:none!important;white-space:nowrap!important;opacity:1!important;visibility:visible!important;
+}
+.home-page .ss-home-newsletter-form button:hover{background:#8f0b10!important}
+.home-page .ss-home-newsletter-form button:focus-visible{outline:2px solid #c9a84c!important;outline-offset:3px!important}
+.home-page .ss-home-newsletter-note{
+  display:block!important;margin:17px 0 0!important;color:#9fb3aa!important;
+  font:600 12px/1.4 "Crimson Pro",Georgia,serif!important;
+}
+@media(max-width:760px){
+ .home-page .ss-home-newsletter{padding:72px 20px 64px!important}
+ .home-page .ss-home-newsletter-lead{font-size:18px!important}
+ .home-page .ss-home-newsletter-form{grid-template-columns:1fr 1fr!important}
+ .home-page .ss-home-newsletter-form input:nth-of-type(3),
+ .home-page .ss-home-newsletter-form button{grid-column:1/-1!important}
+}
+@media(max-width:480px){
+ .home-page .ss-home-newsletter-form{grid-template-columns:1fr!important}
+ .home-page .ss-home-newsletter-form input:nth-of-type(3),
+ .home-page .ss-home-newsletter-form button{grid-column:auto!important}
+ .home-page .ss-home-newsletter-form button{width:100%!important}
+ .home-page .ss-home-newsletter h2{font-size:44px!important}
+}
+
