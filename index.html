@@ -127,6 +127,135 @@
 
 <link rel="icon" type="image/png" sizes="512x512" href="/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png"><link rel="apple-touch-icon" href="/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png">
 <link rel="stylesheet" href="/Thesegunsamuel/assets/css/footer-v29.css"><link rel="stylesheet" href="/Thesegunsamuel/assets/css/footer-v30.css?v=30">
+
+<style id="home-hero-fivecard-v73">
+/* V73 — deterministic Home hero + five-card contrast correction */
+.hero-art {
+  min-height: 510px !important;
+  aspect-ratio: 1 / 1 !important;
+  width: 100% !important;
+  background: #003020 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.hero-art .hero-frame {
+  position: absolute !important;
+  inset: 24px !important;
+  border: 1px solid rgba(151,239,201,.38) !important;
+  overflow: hidden !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.hero-art .hero-frame::before,
+.hero-art .hero-frame::after {
+  content: "" !important;
+  position: absolute !important;
+  background: rgba(151,239,201,.22) !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+}
+.hero-art .hero-frame::before { left: 0 !important; right: 0 !important; top: 50% !important; height: 1px !important; }
+.hero-art .hero-frame::after { top: 0 !important; bottom: 0 !important; left: 50% !important; width: 1px !important; }
+.hero-art .hero-corner {
+  position: absolute !important;
+  z-index: 5 !important;
+  display: block !important;
+  color: #FDFAF4 !important;
+  font: 600 9px/1 "Tenor Sans", sans-serif !important;
+  letter-spacing: .24em !important;
+  text-transform: uppercase !important;
+  visibility: visible !important;
+}
+.hero-art .hero-see { top: 18px !important; left: 18px !important; }
+.hero-art .hero-interpret { top: 18px !important; right: 18px !important; }
+.hero-art .hero-build { bottom: 18px !important; left: 18px !important; }
+.hero-art .hero-govern { bottom: 18px !important; right: 18px !important; }
+.hero-art .hero-architect {
+  position: absolute !important;
+  right: 17px !important;
+  top: 50% !important;
+  transform: translateY(-50%) rotate(90deg) !important;
+  color: #97EFC9 !important;
+  font: 600 9px/1 "Tenor Sans", sans-serif !important;
+  letter-spacing: .24em !important;
+  text-transform: uppercase !important;
+  z-index: 5 !important;
+  display: block !important;
+  visibility: visible !important;
+}
+.hero-art .hero-cross {
+  position: absolute !important;
+  z-index: 2 !important;
+  display: block !important;
+  background: rgba(151,239,201,.22) !important;
+  pointer-events: none !important;
+}
+.hero-art .hero-cross-h { left: 0 !important; right: 0 !important; top: 50% !important; height: 1px !important; }
+.hero-art .hero-cross-v { top: 0 !important; bottom: 0 !important; left: 50% !important; width: 1px !important; }
+.hero-art .hero-core {
+  position: absolute !important;
+  inset: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  z-index: 4 !important;
+  color: #FDFAF4 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.hero-art .hero-reality,
+.hero-art .hero-intelligence {
+  color: #FDFAF4 !important;
+  font: 600 clamp(54px,5.4vw,82px)/.82 "Cormorant Garamond", Georgia, serif !important;
+  letter-spacing: -.035em !important;
+  display: block !important;
+}
+.hero-art .hero-arrow {
+  color: #FDFAF4 !important;
+  font: 400 clamp(48px,4.7vw,72px)/.6 "Cormorant Garamond", Georgia, serif !important;
+  margin: 6px 0 8px !important;
+  display: block !important;
+}
+.hero-art .hero-sequence {
+  margin-top: 22px !important;
+  color: #97EFC9 !important;
+  font: 600 9px/1 "Tenor Sans", sans-serif !important;
+  letter-spacing: .22em !important;
+  white-space: nowrap !important;
+  display: block !important;
+}
+.five-card .question,
+.five-card p.question,
+.dark .five-card .question {
+  color: #C9A84C !important;
+  -webkit-text-fill-color: #C9A84C !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+@media (max-width: 1000px) {
+  .hero-art { min-height: 0 !important; }
+  .hero-art .hero-frame { inset: 22px !important; }
+  .hero-art .hero-reality,
+  .hero-art .hero-intelligence { font-size: clamp(50px,8vw,72px) !important; }
+  .hero-art .hero-sequence { letter-spacing: .16em !important; }
+}
+@media (max-width: 600px) {
+  .hero-art { width: min(100%,500px) !important; min-height: 350px !important; margin: 0 auto !important; }
+  .hero-art .hero-frame { inset: 18px !important; }
+  .hero-art .hero-corner { font-size: 8px !important; letter-spacing: .2em !important; }
+  .hero-art .hero-reality,
+  .hero-art .hero-intelligence { font-size: clamp(46px,13vw,62px) !important; }
+  .hero-art .hero-arrow { font-size: 52px !important; margin: 5px 0 7px !important; }
+  .hero-art .hero-sequence { font-size: 7px !important; letter-spacing: .12em !important; margin-top: 18px !important; }
+  .hero-art .hero-architect { right: 13px !important; font-size: 8px !important; }
+}
+</style>
 </head><body><a class="ss-skip-link" href="#main-content">Skip to content</a>
 <header class="site-header ss-global-header" data-global-nav="">
 <div class="container ss-nav-container">
@@ -168,7 +297,7 @@
 <a class="ss-cart-link" href="/Thesegunsamuel/cart/">CART <span data-cart-count="">0</span></a>
 </div>
 </div>
-</header><main id="main-content"><section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Strategic Foresight · Pattern Intelligence · Architecture</div><h1>See reality clearly.<br/><span class="hero-name">Build what comes next.</span></h1><div class="hero-rule"></div><p class="lead">SegunSamuel is a body of knowledge, education and strategic work for people who want to understand reality more deeply and build intelligently within it.</p><p>Technology, AI, data, leadership, philosophy, business, psychology, strategy and foresight are not disconnected subjects. They are different expressions of a larger capability.</p><div class="actions"><a class="btn btn-primary" href="about/">Enter the House</a><a class="btn" href="courses/">Explore Learning</a></div></div><div class="hero-art" aria-label="Reality Intelligence five-capacity architecture"><div class="hero-frame"><span class="hero-corner hero-see">SEE</span><span class="hero-corner hero-interpret">INTERPRET</span><span class="hero-corner hero-build">BUILD</span><span class="hero-corner hero-govern">GOVERN</span><span class="hero-architect">ARCHITECT</span><div class="hero-cross hero-cross-h"></div><div class="hero-cross hero-cross-v"></div><div class="hero-core"><div class="hero-reality">Reality</div><div class="hero-arrow">→</div><div class="hero-intelligence">Intelligence</div><div class="hero-sequence">SEE · INTERPRET · ARCHITECT · BUILD · GOVERN</div></div></div></div></div></section><section class="section dark"><div class="container"><div class="section-head"><div><div class="eyebrow">The Core Architecture</div><h2>Five capacities.<br/>One way of thinking.</h2></div><p>The future belongs to people who can see what is coming, understand what it means, design what is required, make it real, and establish systems capable of enduring.</p></div><div class="five"><div class="five-card"><span class="num">01 · SEE</span><h3>Strategic Foresight</h3><p>Detect the future forming inside the present.</p><p class="question">What is becoming true?</p></div><div class="five-card"><span class="num">02 · INTERPRET</span><h3>Pattern Intelligence</h3><p>Connect signals, context and behaviour to understand what lies beneath.</p><p class="question">What does it mean?</p></div><div class="five-card"><span class="num">03 · ARCHITECT</span><h3>Strategic Architecture</h3><p>Design the structures the future requires.</p><p class="question">What must exist?</p></div><div class="five-card"><span class="num">04 · BUILD</span><h3>Execution Intelligence</h3><p>Turn architecture into decisions, systems and results.</p><p class="question">How do we make it real?</p></div><div class="five-card"><span class="num">05 · GOVERN</span><h3>Institutional Intelligence</h3><p>Create systems capable of enduring and adapting.</p><p class="question">How does it endure?</p></div></div></div></section><section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">The Knowledge Ecosystem</div><h2>One body of knowledge.<br/>Many ways to enter.</h2></div><p>Discover the work through an idea, podcast, book, framework, course, case study, event or community—and move naturally deeper.</p></div><div class="ecosystem-grid"><a class="eco-card" href="articles/"><div class="eyebrow">IDEAS</div><h3>Articles &amp; Essays</h3><p>Questions, observations, principles and long-form thinking.</p></a><a class="eco-card" href="podcast/"><div class="eyebrow">LISTEN</div><h3>Podcast &amp; Conversations</h3><p>Ideas explored through dialogue and deeper conversations.</p></a><a class="eco-card" href="books/"><div class="eyebrow">READ</div><h3>Books &amp; Research</h3><p>Long-form intellectual work and research.</p></a><a class="eco-card" href="frameworks/"><div class="eyebrow">THINK</div><h3>Frameworks</h3><p>Proprietary architectures, principles and mental models.</p></a><a class="eco-card" href="courses/"><div class="eyebrow">LEARN</div><h3>Courses</h3><p>Structured education that turns knowledge into capability.</p></a><a class="eco-card" href="learning-paths/"><div class="eyebrow">GO DEEPER</div><h3>Learning Paths</h3><p>Curated journeys across domains.</p></a><a class="eco-card" href="case-studies/"><div class="eyebrow">APPLY</div><h3>Case Studies</h3><p>Ideas tested against real situations.</p></a><a class="eco-card" href="events/"><div class="eyebrow">EXPERIENCE</div><h3>Events</h3><p>Live learning and intellectual gatherings.</p></a></div></div></section><section class="lens"><div class="lens-copy"><div class="container"><div class="eyebrow">The Invisible Architecture</div><h2>Reality has a visible architecture—and an invisible one.</h2><p class="lead">People see structures. SegunSamuel investigates the forces operating beneath them.</p><p>Human behaviour, psychology, power, influence, manipulation, identity, fear, desire, status, conformity and the shadow dimensions of human nature become lenses for examining leadership, systems, institutions and strategy.</p></div></div><div class="lens-side"><div class="eyebrow">Look Beneath the Obvious</div><h2>What is really shaping the system?</h2><ul class="lens-list"><li>What visible behaviour is being produced by invisible forces?</li><li>What power relationships are hidden inside the formal system?</li><li>Why do intelligent people surrender judgment?</li><li>How do fear, desire and identity shape decisions?</li><li>What keeps a pattern reproducing itself?</li></ul></div></section><section class="quote"><div class="container"><blockquote>“The future is not discovered. It is designed.”</blockquote><cite>The Marketplace Architect proposition</cite></div></section><section class="cta"><div class="container cta-grid"><div><div class="eyebrow">The Future-Building Leader</div><h2>Not merely a CEO.<br/>Not merely a strategist.</h2><p>A mature leader learns to move through all five modes: Seer, Interpreter, Architect, Builder and Governor.</p></div><a class="btn btn-primary" href="frameworks/">Explore the Frameworks</a></div></section></main>
+</header><main id="main-content"><section class="hero"><div class="container hero-grid"><div><div class="eyebrow">Strategic Foresight · Pattern Intelligence · Architecture</div><h1>See reality clearly.<br/><span class="hero-name">Build what comes next.</span></h1><div class="hero-rule"></div><p class="lead">SegunSamuel is a body of knowledge, education and strategic work for people who want to understand reality more deeply and build intelligently within it.</p><p>Technology, AI, data, leadership, philosophy, business, psychology, strategy and foresight are not disconnected subjects. They are different expressions of a larger capability.</p><div class="actions"><a class="btn btn-primary" href="about/">Enter the House</a><a class="btn" href="courses/">Explore Learning</a></div></div><div class="hero-art" aria-label="Reality Intelligence five-capacity architecture"><div class="hero-frame"><span class="hero-corner hero-see">SEE</span><span class="hero-corner hero-interpret">INTERPRET</span><span class="hero-corner hero-build">BUILD</span><span class="hero-corner hero-govern">GOVERN</span><span class="hero-architect">ARCHITECT</span><div class="hero-cross hero-cross-h"></div><div class="hero-cross hero-cross-v"></div><div class="hero-core"><div class="hero-reality">Reality</div><div class="hero-arrow">→</div><div class="hero-intelligence">Intelligence</div><div class="hero-sequence">SEE · INTERPRET · ARCHITECT · BUILD · GOVERN</div></div></div></div></div></section><section class="section dark"><div class="container"><div class="section-head"><div><div class="eyebrow">The Core Architecture</div><h2>Five capacities.<br/>One way of thinking.</h2></div><p>The future belongs to people who can see what is coming, understand what it means, design what is required, make it real, and establish systems capable of enduring.</p></div><div class="five"><div class="five-card"><span class="num">01 · SEE</span><h3>Strategic Foresight</h3><p>Detect the future forming inside the present.</p><p class="question" style="color:#C9A84C !important;">What is becoming true?</p></div><div class="five-card"><span class="num">02 · INTERPRET</span><h3>Pattern Intelligence</h3><p>Connect signals, context and behaviour to understand what lies beneath.</p><p class="question" style="color:#C9A84C !important;">What does it mean?</p></div><div class="five-card"><span class="num">03 · ARCHITECT</span><h3>Strategic Architecture</h3><p>Design the structures the future requires.</p><p class="question" style="color:#C9A84C !important;">What must exist?</p></div><div class="five-card"><span class="num">04 · BUILD</span><h3>Execution Intelligence</h3><p>Turn architecture into decisions, systems and results.</p><p class="question" style="color:#C9A84C !important;">How do we make it real?</p></div><div class="five-card"><span class="num">05 · GOVERN</span><h3>Institutional Intelligence</h3><p>Create systems capable of enduring and adapting.</p><p class="question" style="color:#C9A84C !important;">How does it endure?</p></div></div></div></section><section class="section"><div class="container"><div class="section-head"><div><div class="eyebrow">The Knowledge Ecosystem</div><h2>One body of knowledge.<br/>Many ways to enter.</h2></div><p>Discover the work through an idea, podcast, book, framework, course, case study, event or community—and move naturally deeper.</p></div><div class="ecosystem-grid"><a class="eco-card" href="articles/"><div class="eyebrow">IDEAS</div><h3>Articles &amp; Essays</h3><p>Questions, observations, principles and long-form thinking.</p></a><a class="eco-card" href="podcast/"><div class="eyebrow">LISTEN</div><h3>Podcast &amp; Conversations</h3><p>Ideas explored through dialogue and deeper conversations.</p></a><a class="eco-card" href="books/"><div class="eyebrow">READ</div><h3>Books &amp; Research</h3><p>Long-form intellectual work and research.</p></a><a class="eco-card" href="frameworks/"><div class="eyebrow">THINK</div><h3>Frameworks</h3><p>Proprietary architectures, principles and mental models.</p></a><a class="eco-card" href="courses/"><div class="eyebrow">LEARN</div><h3>Courses</h3><p>Structured education that turns knowledge into capability.</p></a><a class="eco-card" href="learning-paths/"><div class="eyebrow">GO DEEPER</div><h3>Learning Paths</h3><p>Curated journeys across domains.</p></a><a class="eco-card" href="case-studies/"><div class="eyebrow">APPLY</div><h3>Case Studies</h3><p>Ideas tested against real situations.</p></a><a class="eco-card" href="events/"><div class="eyebrow">EXPERIENCE</div><h3>Events</h3><p>Live learning and intellectual gatherings.</p></a></div></div></section><section class="lens"><div class="lens-copy"><div class="container"><div class="eyebrow">The Invisible Architecture</div><h2>Reality has a visible architecture—and an invisible one.</h2><p class="lead">People see structures. SegunSamuel investigates the forces operating beneath them.</p><p>Human behaviour, psychology, power, influence, manipulation, identity, fear, desire, status, conformity and the shadow dimensions of human nature become lenses for examining leadership, systems, institutions and strategy.</p></div></div><div class="lens-side"><div class="eyebrow">Look Beneath the Obvious</div><h2>What is really shaping the system?</h2><ul class="lens-list"><li>What visible behaviour is being produced by invisible forces?</li><li>What power relationships are hidden inside the formal system?</li><li>Why do intelligent people surrender judgment?</li><li>How do fear, desire and identity shape decisions?</li><li>What keeps a pattern reproducing itself?</li></ul></div></section><section class="quote"><div class="container"><blockquote>“The future is not discovered. It is designed.”</blockquote><cite>The Marketplace Architect proposition</cite></div></section><section class="cta"><div class="container cta-grid"><div><div class="eyebrow">The Future-Building Leader</div><h2>Not merely a CEO.<br/>Not merely a strategist.</h2><p>A mature leader learns to move through all five modes: Seer, Interpreter, Architect, Builder and Governor.</p></div><a class="btn btn-primary" href="frameworks/">Explore the Frameworks</a></div></section></main>
 
 <section  class="v313-final-gateway" aria-labelledby="v313-final-gateway-title">
   <div class="v313-final-gateway-inner">
