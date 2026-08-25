@@ -1,8 +1,0 @@
-{
-  "build": "v3.3.2",
-  "baseline": "v3.3 full master",
-  "focus": ["footer restoration", "courses search", "course filters", "ecosystem positioning", "image prompt documentation"],
-  "image_prompts_path": "docs/IMAGE-PROMPTS.md",
-  "image_prompts_are_runtime": false,
-  "footer_signature": "assets/images/segunsamuel-signature-gold.png"
-}
