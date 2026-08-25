@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="../assets/css/privacy.css">
 <link rel="stylesheet" href="../assets/css/accessibility-v31.css">
 <link rel="stylesheet" href="../assets/css/courses-v331-fix.css">
+<link rel="stylesheet" href="../assets/css/image-slots.css">
 
 <style id="v332-footer-restoration">
 .site-footer{background:#003020!important;color:#fdfaf4!important;padding:54px 4vw 26px!important;margin:0!important;font-family:inherit}
@@ -207,6 +208,71 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
 </style>
 
     <link rel="stylesheet" href="/Thesegunsamuel/assets/css/whatsapp-float.css">
+
+<style id="v96-course-image-and-stacking-fix">
+/* V96 — course cards use the same canonical image-slot loader as Events. */
+.course-card-v331 .arch-frame[data-image-slot]{
+  position:relative!important;
+  overflow:hidden!important;
+  background:linear-gradient(145deg,#dceee9,#eef7f4 55%,#f4eee3)!important;
+}
+.course-card-v331 .arch-frame[data-image-slot]::after{
+  content:""!important;
+  position:absolute!important;
+  inset:0!important;
+  background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/120px auto no-repeat!important;
+  opacity:.88!important;
+  pointer-events:none!important;
+  z-index:0!important;
+}
+.course-card-v331 .arch-frame[data-image-slot] > [data-image-renderer]{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  display:block!important;
+  margin:0!important;
+  opacity:0!important;
+  visibility:hidden!important;
+  z-index:2!important;
+  transition:opacity .18s ease!important;
+}
+.course-card-v331 .arch-frame[data-image-slot].has-real-image > [data-image-renderer]{
+  opacity:1!important;
+  visibility:visible!important;
+}
+.course-card-v331 .arch-frame[data-image-slot].has-real-image::after{
+  opacity:0!important;
+}
+.course-card-v331 .arch-frame[data-image-slot] > [data-image-overlay]{
+  position:absolute!important;
+  z-index:3!important;
+}
+.course-card-v331 .arch-frame[data-image-slot].has-real-image > [data-image-overlay]{
+  opacity:0!important;
+  visibility:hidden!important;
+}
+
+/* Filter/tool strip must remain above the scrolling card grid. */
+.course-tools-v331{
+  position:sticky!important;
+  top:78px!important;
+  z-index:50!important;
+  isolation:isolate!important;
+  background:rgba(251,248,241,.98)!important;
+  box-shadow:0 10px 24px rgba(0,48,32,.08)!important;
+}
+.course-grid-v331,
+.course-card-v331{
+  position:relative;
+  z-index:0;
+}
+@media(max-width:900px){
+  .course-tools-v331{position:sticky!important;top:0!important;z-index:50!important}
+}
+</style>
 </head>
 <body class="courses-page"><a class="ss-skip-link" href="#main-content">Skip to content</a>
 <header class="site-header ss-global-header" data-global-nav="">
@@ -291,12 +357,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
     <div class="course-grid-v331" id="course-grid">
       
 <article class="course-card-v331" data-categories="Data & Analytics" data-search="advanced data analytics & power bi data & analytics build practical, job-ready capability in data analysis, sql, data storytelling and power bi. professional certificate beginner">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Professional Certificate</span>
-    <img src="/Thesegunsamuel/assets/images/courses/advanced-data-analytics-power-bi.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Advanced Data Analytics & Power BI</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/advanced-data-analytics-power-bi.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Professional Certificate</span><img src="/Thesegunsamuel/assets/images/courses/advanced-data-analytics-power-bi.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Advanced Data Analytics & Power BI</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Data & Analytics</div>
     <h3>Advanced Data Analytics & Power BI</h3>
@@ -315,12 +377,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & Analytics|Programming" data-search="sql & database development data & analytics a practical pathway from relational foundations through advanced querying, t-sql patterns and a database capstone. course beginner → intermediate">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/sql-database-development.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">SQL & Database Development</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/sql-database-development.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Course</span><img src="/Thesegunsamuel/assets/images/courses/sql-database-development.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>SQL & Database Development</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Data & Analytics</div>
     <h3>SQL & Database Development</h3>
@@ -339,12 +397,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="generalist data & ai skills academy data & ai an integrated foundation across data literacy, analytics, sql, visualization, ai fluency and workplace application. professional certificate beginner">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Professional Certificate</span>
-    <img src="/Thesegunsamuel/assets/images/courses/generalist-data-ai-skills-academy.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Generalist Data & AI Skills Academy</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/generalist-data-ai-skills-academy.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Professional Certificate</span><img src="/Thesegunsamuel/assets/images/courses/generalist-data-ai-skills-academy.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Generalist Data & AI Skills Academy</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Data & AI</div>
     <h3>Generalist Data & AI Skills Academy</h3>
@@ -363,12 +417,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Artificial Intelligence|Data & AI" data-search="ai mastery: from zero to ai practitioner artificial intelligence learn ai foundations, generative ai, prompting, ai workflows, agents, responsible ai and applied projects. professional certificate beginner">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Professional Certificate</span>
-    <img src="/Thesegunsamuel/assets/images/courses/ai-mastery-from-zero-to-ai-practitioner.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">AI Mastery: From Zero to AI Practitioner</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/ai-mastery-from-zero-to-ai-practitioner.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Professional Certificate</span><img src="/Thesegunsamuel/assets/images/courses/ai-mastery-from-zero-to-ai-practitioner.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>AI Mastery: From Zero to AI Practitioner</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Artificial Intelligence</div>
     <h3>AI Mastery: From Zero to AI Practitioner</h3>
@@ -387,12 +437,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Artificial Intelligence|Data & AI" data-search="ai for business & professional productivity artificial intelligence apply modern ai to research, writing, analysis, planning, presentations, automation concepts and decision support. short course beginner">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Short Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/ai-for-business-professional-productivity.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">AI for Business & Professional Productivity</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/ai-for-business-professional-productivity.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Short Course</span><img src="/Thesegunsamuel/assets/images/courses/ai-for-business-professional-productivity.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>AI for Business & Professional Productivity</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Artificial Intelligence</div>
     <h3>AI for Business & Professional Productivity</h3>
@@ -411,12 +457,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Programming|Data & Analytics" data-search="python for data analytics programming an applied introduction to python, pandas, data cleaning, exploratory analysis, visualization and analytics projects. course beginner">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/python-for-data-analytics.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Python for Data Analytics</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/python-for-data-analytics.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Course</span><img src="/Thesegunsamuel/assets/images/courses/python-for-data-analytics.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Python for Data Analytics</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Programming</div>
     <h3>Python for Data Analytics</h3>
@@ -435,12 +477,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="pattern intelligence intelligence & thinking develop the ability to detect signals, recognise patterns, interpret relationships and convert observations into strategic insight. course intermediate">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/pattern-intelligence.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Pattern Intelligence</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/pattern-intelligence.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Course</span><img src="/Thesegunsamuel/assets/images/courses/pattern-intelligence.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Pattern Intelligence</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Intelligence & Thinking</div>
     <h3>Pattern Intelligence</h3>
@@ -459,12 +497,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="strategic foresight strategy & foresight build the capability to scan change, identify drivers, explore plausible futures and prepare strategic responses. course intermediate">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/strategic-foresight.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Strategic Foresight</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/strategic-foresight.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Course</span><img src="/Thesegunsamuel/assets/images/courses/strategic-foresight.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Strategic Foresight</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Strategy & Foresight</div>
     <h3>Strategic Foresight</h3>
@@ -483,12 +517,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Artificial Intelligence" data-search="leadership intelligence leadership & human systems develop judgment, self-awareness, contextual intelligence and people-reading capability required for deliberate leadership. course intermediate">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/leadership-intelligence.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Leadership Intelligence</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/leadership-intelligence.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Course</span><img src="/Thesegunsamuel/assets/images/courses/leadership-intelligence.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Leadership Intelligence</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Leadership & Human Systems</div>
     <h3>Leadership Intelligence</h3>
@@ -507,12 +537,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="systems & strategic architecture systems & strategic architecture learn to diagnose complex systems and design structures, relationships and operating logic that produce intended outcomes. professional certificate advanced">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Professional Certificate</span>
-    <img src="/Thesegunsamuel/assets/images/courses/systems-strategic-architecture.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Systems & Strategic Architecture</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/systems-strategic-architecture.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Professional Certificate</span><img src="/Thesegunsamuel/assets/images/courses/systems-strategic-architecture.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Systems & Strategic Architecture</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Systems & Strategic Architecture</div>
     <h3>Systems & Strategic Architecture</h3>
@@ -531,12 +557,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="execution intelligence execution & delivery turn strategy into coordinated execution through outcomes, sequencing, ownership, feedback and deliberate correction. short course intermediate">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Short Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/execution-intelligence.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Execution Intelligence</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/execution-intelligence.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Short Course</span><img src="/Thesegunsamuel/assets/images/courses/execution-intelligence.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Execution Intelligence</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Execution & Delivery</div>
     <h3>Execution Intelligence</h3>
@@ -555,12 +577,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="institutional intelligence institutions & organisations understand how organisations learn, remember, govern, adapt and endure beyond individual personalities. course advanced">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/institutional-intelligence.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Institutional Intelligence</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/institutional-intelligence.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Course</span><img src="/Thesegunsamuel/assets/images/courses/institutional-intelligence.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Institutional Intelligence</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Institutions & Organisations</div>
     <h3>Institutional Intelligence</h3>
@@ -579,12 +597,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Artificial Intelligence|Data & AI" data-search="ai for strategic capability artificial intelligence use ai deliberately to expand research, analysis, content, decision support and organisational capability. short course intermediate">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Short Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/ai-for-strategic-capability.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">AI for Strategic Capability</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/ai-for-strategic-capability.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Short Course</span><img src="/Thesegunsamuel/assets/images/courses/ai-for-strategic-capability.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>AI for Strategic Capability</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Artificial Intelligence</div>
     <h3>AI for Strategic Capability</h3>
@@ -603,12 +617,8 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
   </div>
 </article>
 <article class="course-card-v331" data-categories="Data & AI" data-search="thinking clearly in a complex world intelligence & thinking build disciplined thinking habits for ambiguity, complexity, decisions and strategic judgment. short course beginner">
-  <div class="arch-frame" data-placeholder="image" data-real-image="false">
-    <span class="course-type">Short Course</span>
-    <img src="/Thesegunsamuel/assets/images/courses/thinking-clearly.jpg" alt="" loading="lazy"
-        >
-    <div class="course-placeholder-title">Thinking Clearly in a Complex World</div>
-  </div>
+  <div class="arch-frame" data-image-slot="course-image" data-image-src="/Thesegunsamuel/assets/images/courses/thinking-clearly.jpg" data-image-alt="" data-image-base="/Thesegunsamuel/assets/images/"><span class="course-type" data-image-overlay>Short Course</span><img src="/Thesegunsamuel/assets/images/courses/thinking-clearly.jpg" alt="" loading="lazy"
+         data-image-renderer alt="" loading="eager"><div class="course-placeholder-title" data-image-overlay>Thinking Clearly in a Complex World</div></div>
   <div class="course-body-v331">
     <div class="course-provider">Intelligence & Thinking</div>
     <h3>Thinking Clearly in a Complex World</h3>
@@ -739,6 +749,7 @@ radial-gradient(circle at 78% 35%,rgba(197,163,92,.18),transparent 32%),#06382f;
 <script src="../assets/js/commerce.js" defer></script>
 <script src="../assets/js/course-share.js" defer></script>
 <script src="../assets/js/privacy.js" defer></script>
+<script src="../assets/js/image-slots.js"></script>
 <script src="../assets/js/courses-catalogue-v331.js" defer></script>
 <script data-v338-testimonial-fallback>
 document.addEventListener('DOMContentLoaded',function(){
@@ -762,26 +773,7 @@ document.addEventListener('DOMContentLoaded',function(){
 });
 </script>
 
-<script id="courses-placeholder-runtime">
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".arch-frame").forEach(function (frame) {
-    var img = frame.querySelector("img");
-    if (!img) return;
 
-    if (frame.getAttribute("data-real-image") === "true") {
-      frame.removeAttribute("data-placeholder");
-      frame.classList.remove("image-placeholder");
-      img.style.opacity = "";
-      img.style.visibility = "";
-    } else {
-      frame.setAttribute("data-placeholder", "image");
-      frame.setAttribute("data-real-image", "false");
-      img.style.opacity = "0";
-      img.style.visibility = "hidden";
-    }
-  });
-});
-</script>
 
 <a class="whatsapp-float" href="https://wa.me/2348091999991" rel="noopener noreferrer" target="_blank" aria-label="Chat on WhatsApp" data-track="whatsapp_float">
   <img src="/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png" alt="" width="30" height="30">

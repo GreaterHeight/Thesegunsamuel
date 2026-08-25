@@ -48,7 +48,7 @@
   visibility: visible !important;
 }
 
-[data-image-slot].has-real-image > :not([data-image-renderer]) {
+[data-image-slot].has-real-image > :not([data-image-renderer]):not([data-image-overlay]) {
   opacity: 0 !important;
   visibility: hidden !important;
 }
