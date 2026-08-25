@@ -478,13 +478,82 @@ Professionals examining a completed project artefact, dashboard, system architec
 
 # 11. EVENTS
 
-### `event-[slug].jpg` — Event image shared by listing card and detail hero (16:9 master)
-Premium professional gathering relevant to the event topic, natural interaction, realistic audience diversity, warm stage and ambient lighting, focal subject positioned to survive 4:3 card and wide hero crops. Horizontal 16:9 master.
+The Events system uses the established **gradient placeholder + Segun Samuel badge** until the exact production image exists. The placeholder is not the final creative direction; it is a controlled pre-production state. Each event image below therefore has its own generation contract.
 
-**Pages covered:**
+**Image contract:** Each exact filename is the same production asset referenced by the corresponding event experience. Use the master at **16:9**, with the focal subject safely inside the central 70% so the same image can survive the listing-card crop and the wide event-detail hero. No readable text, no fabricated logos, no watermark, no event UI, no invented book covers.
 
+### `event-events.jpg` — Events landing page hero / featured-events visual (16:9 master)
+Create a premium editorial-cinematic image representing **the rooms where ideas become real**: a sophisticated live intellectual gathering in Lagos, Nigeria, with a diverse audience of African and international professionals seated in a refined contemporary room while a thoughtful Nigerian male facilitator leads a serious discussion at the front. The scene should communicate workshops, masterclasses, roundtables, launches and strategic conversations without becoming a generic corporate conference photograph. Use architectural depth, warm practical lighting, deep forest-green and warm-cream environmental tones, subtle crimson accents and restrained gold highlights. Show genuine attention, notebooks, considered body language and an atmosphere of intellectual seriousness rather than staged applause. Keep the facilitator slightly off-centre and leave clean negative space suitable for hero typography. No readable presentation text or logos. Horizontal 16:9 master.
 
----
+**Route:** `/events/`
+**Used for:** Events landing hero / featured event visual.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-ai-strategy-workshop.jpg` — AI & Strategic Capability Workshop (16:9 master)
+Create a premium editorial-cinematic photograph of a focused **AI strategy workshop** in a sophisticated Lagos boardroom: a Nigerian facilitator guiding a small group of senior professionals around a table with laptops, notebooks and printed strategic material. The visual language should communicate deliberate AI capability building, systems thinking, experimentation becoming operating capability, and serious decision-making. Include subtle screens or interface shapes only as abstract visual texture; absolutely no readable UI, code or fake product logos. Natural interaction, intelligent expressions, warm directional light, dark forest-green architectural elements and restrained gold accents. The facilitator should not look like a stereotypical tech salesman. Keep the central working group visually coherent and preserve crop-safe negative space. Horizontal 16:9 master.
+
+**Route:** `/events/ai-strategy-workshop/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-architects-roundtable.jpg` — The Architects Roundtable (16:9 master)
+Create a premium editorial-cinematic image of a **small strategic roundtable**: six to eight thoughtful African professionals seated around a dark wood circular or oval table in an intimate architectural room, engaged in a serious discussion rather than posing for a camera. The atmosphere should suggest institutional design, systems architecture, strategic judgment and difficult questions. Use layered architectural lines, warm window or practical lighting, forest-green and warm-cream tones, subtle gold details and believable notebooks/documents without readable text. No podium, no large audience, no generic conference staging. The composition should feel private, intelligent and consequential, with natural gestures and eye contact. Horizontal 16:9 master.
+
+**Route:** `/events/architects-roundtable/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-case-study-lab.jpg` — Case Study Lab (16:9 master)
+Create a premium editorial-cinematic photograph of a **case-study analysis laboratory**: a diverse group of professionals gathered around a large table examining a complex real-world situation through printed maps, charts, notes and a laptop, with one facilitator guiding the diagnosis. The visual story is situation → diagnosis → interpretation → application. Avoid generic classroom imagery; make it feel like a strategic working session where people are testing assumptions and connecting evidence. Use warm controlled lighting, deep green and cream surroundings, restrained crimson and gold accents, natural human interaction and tactile paper materials. No readable text, logos or legible chart labels. Horizontal 16:9 master.
+
+**Route:** `/events/case-study-lab/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-frameworks-in-practice.jpg` — Frameworks in Practice (16:9 master)
+Create a premium editorial-cinematic photograph showing a **framework being applied to a real problem**: a facilitator and a small group of leaders working at a table with cards, diagrams represented only as abstract shapes, notebooks and a central problem statement represented visually but without readable text. The scene should communicate practical architecture, pattern recognition, disciplined interpretation and collaborative reasoning. Use a refined studio/workshop environment with forest-green wall planes, warm cream surfaces, soft directional light and restrained gold accents. The people should be actively reasoning, pointing, listening and revising rather than posing. No generic motivational workshop clichés, no readable text, no logos. Horizontal 16:9 master.
+
+**Route:** `/events/frameworks-in-practice/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-institution-builders-forum.jpg` — Institution Builders Forum (16:9 master)
+Create a premium editorial-cinematic image of an **institution-builders forum** in an elegant African/global leadership setting: senior leaders and institution builders seated in a semicircle or long-table forum discussing governance, continuity, institutional memory and endurance. The mood should be sober, constructive and future-oriented. Include subtle architectural cues suggesting permanence—columns, long lines, layered rooms or a civic/institutional interior—without becoming governmental propaganda. Diverse African leadership presence, authentic expressions and thoughtful listening. Deep forest green, warm cream, restrained gold and subtle crimson accents. No podium-heavy conference staging, no readable text, no logos. Horizontal 16:9 master.
+
+**Route:** `/events/institution-builders-forum/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-leadership-power-systems-workshop.jpg` — Leadership, Power & Systems Workshop (16:9 master)
+Create a premium editorial-cinematic photograph of a **leadership, power and systems workshop**: a Nigerian facilitator leading a group of experienced executives through a serious systems conversation in a contemporary boardroom. Visually communicate leadership behaviour, power dynamics, organisational structure and consequence through posture, spatial relationships and architectural geometry rather than literal symbols. Show participants in genuine dialogue around a table, with one person explaining a systems relationship while others consider the implications. Warm natural lighting, deep green architecture, cream surfaces, restrained gold details and subtle crimson accents. No readable presentation text or logos. Horizontal 16:9 master.
+
+**Route:** `/events/leadership-power-systems-workshop/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-prepared-mind-live.jpg` — Prepared Mind Live (16:9 master)
+Create a premium editorial-cinematic image for **Prepared Mind Live**: an intimate live intellectual session where a Nigerian speaker stands before a small, attentive audience, with the room arranged to feel like a strategic briefing rather than entertainment. The visual story is awareness before action, preparation before consequence and deliberate decision-making. Use a refined stage or studio environment with dark forest-green backdrop planes, warm practical lighting, subtle architectural framing and restrained gold accents. Audience members should appear deeply attentive, taking notes or reflecting, with natural expressions. Keep the speaker composed and intelligent, not theatrical. No readable slides, logos or text. Horizontal 16:9 master.
+
+**Route:** `/events/prepared-mind-live/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-strategic-intelligence-intensive.jpg` — Strategic Intelligence Intensive (16:9 master)
+Create a premium editorial-cinematic photograph representing an **intensive strategic intelligence masterclass**: a concentrated group of senior leaders in a premium learning environment, working through patterns, signals and strategic choices with a Nigerian facilitator. The scene should feel more immersive and demanding than a conventional seminar—focused faces, notebooks, deliberate gestures, layered working surfaces and a sense of sustained intellectual concentration. Suggest foresight and pattern recognition through abstract maps, connected materials and architectural geometry, but do not create readable diagrams or text. Deep forest green, warm cream, restrained gold, sophisticated natural lighting and realistic professional diversity. Horizontal 16:9 master.
+
+**Route:** `/events/strategic-intelligence-intensive/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-strategic-intelligence-live.jpg` — Strategic Intelligence Live (16:9 master)
+Create a premium editorial-cinematic photograph of a **live strategic intelligence conversation**: a Nigerian speaker or facilitator in a refined contemporary venue speaking to a thoughtful audience while another participant or moderator engages in dialogue. The visual should communicate pattern intelligence, foresight, interpretation and strategic judgment rather than generic public speaking. Use cinematic depth, warm stage lighting balanced by deep forest-green environmental tones, cream and restrained gold accents, realistic audience diversity and natural engagement. Include subtle architectural lines and negative space for editorial cropping. No readable presentation text, no fake logos, no watermark. Horizontal 16:9 master.
+
+**Route:** `/events/strategic-intelligence-live/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+**Event prompt coverage:** 10 exact production image contracts — one for the Events landing page and one for each of the nine current Event Detail pages.
+
 
 # 12. LIBRARY ARTICLES
 
