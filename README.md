@@ -106,3 +106,9 @@ The primary navigation represents the user's journey:
 **Learn → Think → Apply → Listen → Explore**
 
 Content types remain discoverable without forcing every content type into the top-level navigation.
+
+V98 — Architecture Simplification
+- Retired standalone Editorial page; route redirects to Blog.
+- Retired standalone Newsletter page; route redirects to Substack.
+- Removed EDITORIAL and NEWSLETTER from the THINK navigation across static pages.
+- Preserved existing newsletter links as a compatibility route to Substack.

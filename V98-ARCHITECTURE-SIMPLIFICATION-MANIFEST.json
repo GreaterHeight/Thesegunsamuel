@@ -1,0 +1,19 @@
+{
+  "version": "V98",
+  "title": "Architecture Simplification",
+  "base": "V97",
+  "changes": [
+    "Retired standalone Editorial concept; /editorial/ now redirects to /blog/.",
+    "Retired standalone Newsletter page; /newsletter/ now redirects to the configured Substack destination.",
+    "Removed EDITORIAL and NEWSLETTER from the THINK navigation across static pages and site shell.",
+    "Preserved existing contextual newsletter subscription components and legacy /newsletter/ links as a compatibility route.",
+    "Preserved Blog and Forbidden Archives as the primary publishing/deeper-intellectual destinations."
+  ],
+  "qa": {
+    "editorial_nav_links_remaining": 0,
+    "newsletter_nav_links_remaining": 0,
+    "editorial_route_preserved_as_redirect": true,
+    "newsletter_route_preserved_as_redirect": true,
+    "newsletter_subscription_component_preserved": true
+  }
+}
