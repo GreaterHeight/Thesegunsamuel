@@ -1,5 +1,24 @@
 # IMAGE GENERATION PROMPTS — segunsamuel.com
 
+## DIVERSITY OPTIONS — GLOBAL SUBJECT SYSTEM
+
+Each image-generation prompt that contains **`[SUBJECT]`** uses the following controlled diversity system. Do not rewrite the creative prompt when changing representation; replace only the `[SUBJECT]` token with the appropriate option.
+
+- **Option A — Mixed:** replace `[SUBJECT]` with **“a distinguished Nigerian man in his 40s”** for portraits of Segun; for group scenes use **“a diverse group of African, European, and Asian professionals”**.
+- **Option B — All Black:** portraits as Option A; group scenes use **“a group of distinguished Black African professionals”**.
+- **Option C — All White:** only applicable to group/atmosphere scenes where the subject is not Segun himself; use **“a group of White European professionals”**. **Portraits representing Segun should always depict a Nigerian man.**
+
+### Usage rule
+
+`[SUBJECT]` is a controlled substitution token, not a prompt instruction to leave unresolved. Before generation, choose the required diversity option and replace `[SUBJECT]` with the corresponding subject phrase.
+
+**Identity rule:** Any image representing Segun Samuel himself must use the Nigerian-man subject specification. Option C must never be used for a Segun portrait.
+
+**Prompt architecture:** Keep the master prompt intact and vary only `[SUBJECT]` when diversity variation is required. Do not create three duplicated prompts merely to represent the three options.
+
+---
+
+
 ### For Nano Banana Pro (or any high-end image model)
 
 This is the canonical image-generation register for the current SegunSamuel website build.
@@ -11,6 +30,18 @@ Every real generated asset belongs in `/assets/images/` or the exact subfolder s
 **Real-image rule:** declare the filename first. If the exact file exists, display it. If it does not exist, show the placeholder. Supplying the exact file later must automatically replace the placeholder without redesigning the page.
 
 **Source discipline:** This register is based on the current website build plus the supplied prompt-file convention. It does not silently turn supplied logos or real publisher covers into AI-generated assets.
+
+### Diversity token examples
+
+The following examples demonstrate the intended `[SUBJECT]` implementation:
+
+- **`segun-portrait-studio.png`** — `[SUBJECT] in an impeccably tailored deep forest-green suit...`
+- **`og-image.jpg`** — `Wide cinematic composition: [SUBJECT] in a forest-green suit...`
+
+For a Segun portrait, `[SUBJECT]` resolves to **“a distinguished Nigerian man in his 40s”**. For a group/atmosphere scene, it resolves according to Option A, B, or C above.
+
+---
+
 
 ## Global style block — append to every generated-image prompt
 
