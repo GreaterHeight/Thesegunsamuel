@@ -1,61 +1,65 @@
 # IMAGE-PROMPTS.md
-## Segun Samuel — Canonical Master Image-Prompt Register
+## Segun Samuel — Canonical Master Image Generation Register
 
-### Production workflow
+### Production workflow — READ THIS
 
-This is a **prompt library**, not a prompt to execute as one file.
+This is a **prompt library**. Do **not** execute the entire file at once.
 
-For any image:
-1. Find the individual prompt.
-2. Copy that prompt only.
-3. Paste it into Nano Banana Pro.
-4. Generate the image.
-5. Save the output using the exact production filename.
+For every image:
 
-### Master-source policy
+**Find the exact image entry → copy that individual finished prompt → paste it into Nano Banana Pro → generate → save using the exact filename.**
 
-This file is the complete merge of these two project sources:
+The individual prompt must be self-contained. The image model must not be expected to read this master file to discover missing demographic, composition or generation instructions.
 
-1. `SegunSamuel-IMAGE-PROMPTS-UPDATED.md` — current/canonical ecosystem register.
-2. `D-IMG-PROMPTS.md` — earlier detailed image-prompt library.
+### Source hierarchy
 
-The current register is presented first as the **production/canonical layer**. The complete earlier D-IMG source is retained at the end under **LEGACY SOURCE ARCHIVE — DO NOT USE WHEN A CANONICAL BLOCK EXISTS**, so no prompt or source material is silently lost.
+This master is built from the **latest `IMAGE-PROMPTS_UPDATED.md`** in the project File Library, with the complete prompt entries that exist only in the older `D-IMG-PROMPTS.md` retained below so no older prompt is lost. Where the same filename exists in both sources, the current canonical entry above takes precedence.
 
-Where the same filename occurs in both sources, **use the canonical block above**. The legacy copy is retained only for audit/history.
+### Permanent human-subject rule
 
-### Human-subject rule
+When people appear, the final individual prompt must explicitly specify the intended human composition. Do not use “African atmosphere”, “global professionals”, “international audience” or “diverse professionals” as a substitute for an actual demographic choice.
 
-Every production prompt containing people must specify the intended human composition inside the individual prompt.
+- **Segun:** a distinguished Nigerian man in his 50s, or the supplied reference photograph.
+- **Black African group:** a group of distinguished Black African professionals.
+- **Mixed group:** a deliberately mixed group of African, European, and Asian professionals.
+- **White European group:** a group of distinguished White European professionals, only when deliberately requested.
+- **No people:** explicitly state that no people are visible where that absence is part of the concept.
 
-- Mixed group: **a deliberately mixed group of African, European, and Asian professionals**
-- All Black group: **a group of distinguished Black African professionals**
-- All White group: **a group of distinguished White European professionals**, only when deliberately required
-- Segun: **a distinguished Nigerian man in his 50s**, or the supplied reference photograph
-- No people: explicitly state that no people are visible where relevant
+`[SUBJECT]` is a drafting token only. It must never remain unresolved in a prompt copied into Nano Banana Pro.
 
-`[SUBJECT]` is a drafting token only. It must not remain unresolved in a prompt copied into Nano Banana Pro.
+### Placeholder / real-image contract
 
-The model executes the demographic choice; it does not choose it.
+Every declared image placeholder must have either:
 
-### Segun identity correction
+1. a complete copy-ready generation prompt in this file; or
+2. an explicit **DO NOT GENERATE / SUPPLIED ASSET / REAL SOURCE** designation.
 
-Any prompt clearly representing Segun as a person must use **a Nigerian man in his 50s** or the supplied identity/reference photograph. References to Segun being in his 40s are obsolete.
-
-### Reference-photo rule
-
-Where a supplied reference photograph is specified:
-- the reference controls facial likeness/identity and natural skin tone;
-- the prompt controls wardrobe, pose, environment, lighting and composition.
-
-### Asset contract
-
-The exact filename is the production contract. Generated assets belong in the declared image folder/subfolder. The approved gradient + Segun Samuel badge remains the fallback until the exact real image exists. Supplying the exact real image later must replace the placeholder automatically. Rectangular artwork must fill its intended rectangular frame; supplied logos, identity/reference assets and real publisher book covers are not to be regenerated.
+The exact filename is the production contract. The approved gradient + `segunsamuel-logo-badge-01.png` is the fallback. When the exact real file is supplied, the website replaces the placeholder without changing the layout.
 
 ---
 
-# PART I — CURRENT CANONICAL ECOSYSTEM REGISTER
+# PART I — CURRENT CANONICAL REGISTER
 
 # IMAGE GENERATION PROMPTS — segunsamuel.com
+
+## DIVERSITY OPTIONS — GLOBAL SUBJECT SYSTEM
+
+Each image-generation prompt that contains **`[SUBJECT]`** uses the following controlled diversity system. Do not rewrite the creative prompt when changing representation; replace only the `[SUBJECT]` token with the appropriate option.
+
+- **Option A — Mixed:** replace `[SUBJECT]` with **“a distinguished Nigerian man in his 50s”** for portraits of Segun; for group scenes use **“a diverse group of African, European, and Asian professionals”**.
+- **Option B — All Black:** portraits as Option A; group scenes use **“a group of distinguished Black African professionals”**.
+- **Option C — All White:** only applicable to group/atmosphere scenes where the subject is not Segun himself; use **“a group of White European professionals”**. **Portraits representing Segun should always depict a Nigerian man.**
+
+### Usage rule
+
+`[SUBJECT]` is a controlled substitution token, not a prompt instruction to leave unresolved. Before generation, choose the required diversity option and replace `[SUBJECT]` with the corresponding subject phrase.
+
+**Identity rule:** Any image representing Segun Samuel himself must use the Nigerian-man subject specification. Option C must never be used for a Segun portrait.
+
+**Prompt architecture:** Keep the master prompt intact and vary only `[SUBJECT]` when diversity variation is required. Do not create three duplicated prompts merely to represent the three options.
+
+---
+
 
 ### For Nano Banana Pro (or any high-end image model)
 
@@ -68,6 +72,18 @@ Every real generated asset belongs in `/assets/images/` or the exact subfolder s
 **Real-image rule:** declare the filename first. If the exact file exists, display it. If it does not exist, show the placeholder. Supplying the exact file later must automatically replace the placeholder without redesigning the page.
 
 **Source discipline:** This register is based on the current website build plus the supplied prompt-file convention. It does not silently turn supplied logos or real publisher covers into AI-generated assets.
+
+### Diversity token examples
+
+The following examples demonstrate the intended `[SUBJECT]` implementation:
+
+- **`segun-portrait-studio.png`** — `[SUBJECT] in an impeccably tailored deep forest-green suit...`
+- **`og-image.jpg`** — `Wide cinematic composition: [SUBJECT] in a forest-green suit...`
+
+For a Segun portrait, `[SUBJECT]` resolves to **“a distinguished Nigerian man in his 50s”**. For a group/atmosphere scene, it resolves according to Option A, B, or C above.
+
+---
+
 
 ## Global style block — append to every generated-image prompt
 
@@ -535,13 +551,180 @@ Professionals examining a completed project artefact, dashboard, system architec
 
 # 11. EVENTS
 
-### `event-[slug].jpg` — Event image shared by listing card and detail hero (16:9 master)
-Premium professional gathering relevant to the event topic, natural interaction, realistic audience diversity, warm stage and ambient lighting, focal subject positioned to survive 4:3 card and wide hero crops. Horizontal 16:9 master.
+The Events system uses the established **gradient placeholder + Segun Samuel badge** until the exact production image exists. The placeholder is not the final creative direction; it is a controlled pre-production state. Each event image below therefore has its own generation contract.
 
-**Pages covered:**
+**Image contract:** Each exact filename is the same production asset referenced by the corresponding event experience. Use the master at **16:9**, with the focal subject safely inside the central 70% so the same image can survive the listing-card crop and the wide event-detail hero. No readable text, no fabricated logos, no watermark, no event UI, no invented book covers.
+
+### `event-events.jpg` — Events landing page hero / featured-events visual (16:9 master)
+Create a premium editorial-cinematic image representing **the rooms where ideas become real**: a sophisticated live intellectual gathering in Lagos, Nigeria, with a diverse audience of African and international professionals seated in a refined contemporary room while a thoughtful Nigerian male facilitator leads a serious discussion at the front. The scene should communicate workshops, masterclasses, roundtables, launches and strategic conversations without becoming a generic corporate conference photograph. Use architectural depth, warm practical lighting, deep forest-green and warm-cream environmental tones, subtle crimson accents and restrained gold highlights. Show genuine attention, notebooks, considered body language and an atmosphere of intellectual seriousness rather than staged applause. Keep the facilitator slightly off-centre and leave clean negative space suitable for hero typography. No readable presentation text or logos. Horizontal 16:9 master.
+
+**Route:** `/events/`
+**Used for:** Events landing hero / featured event visual.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-ai-strategy-workshop.jpg` — AI & Strategic Capability Workshop (16:9 master)
+Create a premium editorial-cinematic photograph of a focused **AI strategy workshop** in a sophisticated Lagos boardroom: a Nigerian facilitator guiding a small group of senior professionals around a table with laptops, notebooks and printed strategic material. The visual language should communicate deliberate AI capability building, systems thinking, experimentation becoming operating capability, and serious decision-making. Include subtle screens or interface shapes only as abstract visual texture; absolutely no readable UI, code or fake product logos. Natural interaction, intelligent expressions, warm directional light, dark forest-green architectural elements and restrained gold accents. The facilitator should not look like a stereotypical tech salesman. Keep the central working group visually coherent and preserve crop-safe negative space. Horizontal 16:9 master.
+
+**Route:** `/events/ai-strategy-workshop/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-architects-roundtable.jpg` — The Architects Roundtable (16:9 master)
+Create a premium editorial-cinematic image of a **small strategic roundtable**: six to eight thoughtful African professionals seated around a dark wood circular or oval table in an intimate architectural room, engaged in a serious discussion rather than posing for a camera. The atmosphere should suggest institutional design, systems architecture, strategic judgment and difficult questions. Use layered architectural lines, warm window or practical lighting, forest-green and warm-cream tones, subtle gold details and believable notebooks/documents without readable text. No podium, no large audience, no generic conference staging. The composition should feel private, intelligent and consequential, with natural gestures and eye contact. Horizontal 16:9 master.
+
+**Route:** `/events/architects-roundtable/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-case-study-lab.jpg` — Case Study Lab (16:9 master)
+Create a premium editorial-cinematic photograph of a **case-study analysis laboratory**: a group of distinguished Black African professionals gathered around a large table examining a complex real-world situation through printed maps, charts, notes and a Black African facilitator guiding the diagnosis. The visual story is situation → diagnosis → interpretation → application. All visible participants are Black African professionals. Avoid generic classroom imagery; make it feel like a strategic working session where people are testing assumptions and connecting evidence. Use warm controlled lighting, deep green and cream surroundings, restrained crimson and gold accents, natural human interaction and tactile paper materials. No readable text, logos or legible chart labels. Horizontal 16:9 master.
+
+**Route:** `/events/case-study-lab/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-frameworks-in-practice.jpg` — Frameworks in Practice (16:9 master)
+Create a premium editorial-cinematic photograph showing a **framework being applied to a real problem**: a facilitator and a small group of leaders working at a table with cards, diagrams represented only as abstract shapes, notebooks and a central problem statement represented visually but without readable text. The scene should communicate practical architecture, pattern recognition, disciplined interpretation and collaborative reasoning. Use a refined studio/workshop environment with forest-green wall planes, warm cream surfaces, soft directional light and restrained gold accents. The people should be actively reasoning, pointing, listening and revising rather than posing. No generic motivational workshop clichés, no readable text, no logos. Horizontal 16:9 master.
+
+**Route:** `/events/frameworks-in-practice/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-institution-builders-forum.jpg` — Institution Builders Forum (16:9 master)
+Create a premium editorial-cinematic image of an **institution-builders forum** in an elegant African/global leadership setting: senior leaders and institution builders seated in a semicircle or long-table forum discussing governance, continuity, institutional memory and endurance. The mood should be sober, constructive and future-oriented. Include subtle architectural cues suggesting permanence—columns, long lines, layered rooms or a civic/institutional interior—without becoming governmental propaganda. Diverse African leadership presence, authentic expressions and thoughtful listening. Deep forest green, warm cream, restrained gold and subtle crimson accents. No podium-heavy conference staging, no readable text, no logos. Horizontal 16:9 master.
+
+**Route:** `/events/institution-builders-forum/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-leadership-power-systems-workshop.jpg` — Leadership, Power & Systems Workshop (16:9 master)
+Create a premium editorial-cinematic photograph of a **leadership, power and systems workshop**: a Nigerian facilitator leading a group of experienced executives through a serious systems conversation in a contemporary boardroom. Visually communicate leadership behaviour, power dynamics, organisational structure and consequence through posture, spatial relationships and architectural geometry rather than literal symbols. Show participants in genuine dialogue around a table, with one person explaining a systems relationship while others consider the implications. Warm natural lighting, deep green architecture, cream surfaces, restrained gold details and subtle crimson accents. No readable presentation text or logos. Horizontal 16:9 master.
+
+**Route:** `/events/leadership-power-systems-workshop/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-prepared-mind-live.jpg` — Prepared Mind Live (16:9 master)
+Create a premium editorial-cinematic image for **Prepared Mind Live**: an intimate live intellectual session where a Nigerian speaker stands before a small, attentive audience, with the room arranged to feel like a strategic briefing rather than entertainment. The visual story is awareness before action, preparation before consequence and deliberate decision-making. Use a refined stage or studio environment with dark forest-green backdrop planes, warm practical lighting, subtle architectural framing and restrained gold accents. Audience members should appear deeply attentive, taking notes or reflecting, with natural expressions. Keep the speaker composed and intelligent, not theatrical. No readable slides, logos or text. Horizontal 16:9 master.
+
+**Route:** `/events/prepared-mind-live/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-strategic-intelligence-intensive.jpg` — Strategic Intelligence Intensive (16:9 master)
+Create a premium editorial-cinematic photograph representing an **intensive strategic intelligence masterclass**: a concentrated group of senior leaders in a premium learning environment, working through patterns, signals and strategic choices with a Nigerian facilitator. The scene should feel more immersive and demanding than a conventional seminar—focused faces, notebooks, deliberate gestures, layered working surfaces and a sense of sustained intellectual concentration. Suggest foresight and pattern recognition through abstract maps, connected materials and architectural geometry, but do not create readable diagrams or text. Deep forest green, warm cream, restrained gold, sophisticated natural lighting and realistic professional diversity. Horizontal 16:9 master.
+
+**Route:** `/events/strategic-intelligence-intensive/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+### `event-strategic-intelligence-live.jpg` — Strategic Intelligence Live (16:9 master)
+Create a premium editorial-cinematic photograph of a **live strategic intelligence conversation**: a Nigerian speaker or facilitator in a refined contemporary venue speaking to a thoughtful audience while another participant or moderator engages in dialogue. The visual should communicate pattern intelligence, foresight, interpretation and strategic judgment rather than generic public speaking. Use cinematic depth, warm stage lighting balanced by deep forest-green environmental tones, cream and restrained gold accents, realistic audience diversity and natural engagement. Include subtle architectural lines and negative space for editorial cropping. No readable presentation text, no fake logos, no watermark. Horizontal 16:9 master.
+
+**Route:** `/events/strategic-intelligence-live/`
+**Used for:** Listing card and event-detail hero.
+**Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
+
+**Event prompt coverage:** 10 exact production image contracts — one for the Events landing page and one for each of the nine current Event Detail pages.
 
 
----
+# PODCAST — COMPLETED EXACT IMAGE PROMPTS FOR ALL CURRENT DETAIL PLACEHOLDERS
+
+### `podcast-building-beyond-the-founder.jpg` — Podcast detail image (16:9)
+**Prompt:** Building Beyond the Founder — Create a premium editorial-cinematic image about the transition from founder-centric leadership to durable organisational architecture: a senior African professional examining a large architectural model while layered structural forms extend beyond a single central figure, suggesting succession, systems and institutional continuity. Sophisticated modern African/global intellectual aesthetic, deep forest green, deep teal, warm cream and restrained gold, cinematic natural light, 8K detail, no readable text, no logos, no watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-building-beyond-the-founder.jpg`.
+**Production contract:** `podcast-building-beyond-the-founder.jpg` in `/assets/images/`.
+
+### `podcast-building-institutions-that-endure.jpg` — Podcast detail image (16:9)
+**Prompt:** Building Institutions That Endure — Create a premium editorial-cinematic image about institutional endurance: a refined civic or organisational interior with long structural lines, layered rooms and subtle human-scale presence, suggesting governance, memory, continuity and stewardship beyond one generation. Sophisticated modern African/global intellectual aesthetic, deep forest green, deep teal, warm cream and restrained gold, cinematic natural light, 8K detail, no readable text, no logos, no watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-building-institutions-that-endure.jpg`.
+**Production contract:** `podcast-building-institutions-that-endure.jpg` in `/assets/images/`.
+
+### `podcast-intelligence-in-practice.jpg` — Podcast detail image (16:9)
+**Prompt:** Intelligence in Practice — Create a premium editorial-cinematic image of strategic intelligence being applied in real time: thoughtful Black African professionals examining evidence, notes and abstract pattern materials around a refined table, with one facilitator guiding interpretation. Natural interaction, serious concentration, deep green architecture, warm cream surfaces and restrained gold. No readable text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-intelligence-in-practice.jpg`.
+**Production contract:** `podcast-intelligence-in-practice.jpg` in `/assets/images/`.
+
+### `podcast-patterns-beneath-the-surface.jpg` — Podcast detail image (16:9)
+**Prompt:** Patterns Beneath the Surface — Create a premium editorial-cinematic image representing hidden patterns becoming visible: layered architectural structures, interconnected pathways, subtle human observation and a controlled beam of light revealing relationships beneath an apparently simple surface. Intelligent, restrained and metaphorical, deep forest green, warm cream, muted gold, selective crimson, 8K cinematic editorial quality, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-patterns-beneath-the-surface.jpg`.
+**Production contract:** `podcast-patterns-beneath-the-surface.jpg` in `/assets/images/`.
+
+### `podcast-power-human-behaviour.jpg` — Podcast detail image (16:9)
+**Prompt:** Power & Human Behaviour — Create a premium editorial-cinematic image of a serious conversation about power and human behaviour: distinguished Black African professionals in a sophisticated room, subtle spatial asymmetry and body language communicating influence, negotiation and perception without melodrama. Deep green, warm cream, restrained gold, natural cinematic lighting, 8K editorial realism, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-power-human-behaviour.jpg`.
+**Production contract:** `podcast-power-human-behaviour.jpg` in `/assets/images/`.
+
+### `podcast-power-people-the-shadow.jpg` — Podcast detail image (16:9)
+**Prompt:** Power, People & the Shadow — Create a premium editorial-cinematic image representing the visible and hidden dimensions of power in human systems: a composed group of Black African professionals in a refined boardroom, one side illuminated and another falling into controlled architectural shadow, suggesting the seen and unseen dynamics of leadership. No literal violence, no readable text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-power-people-the-shadow.jpg`.
+**Production contract:** `podcast-power-people-the-shadow.jpg` in `/assets/images/`.
+
+### `podcast-principles-that-survive-change.jpg` — Podcast detail image (16:9)
+**Prompt:** Principles That Survive Change — Create a premium editorial-cinematic image of enduring principles amid changing conditions: a stable architectural structure standing within a landscape where materials and light transition from old to new, suggesting continuity without rigidity. Deep green, warm cream, restrained gold and subtle crimson, cinematic atmospheric perspective, 8K, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-principles-that-survive-change.jpg`.
+**Production contract:** `podcast-principles-that-survive-change.jpg` in `/assets/images/`.
+
+### `podcast-strategic-foresight-conversations.jpg` — Podcast detail image (16:9)
+**Prompt:** Strategic Foresight Conversations — Create a premium editorial-cinematic image of two or three distinguished Black African professionals in an intimate strategic conversation, examining future scenarios through abstract maps, pathways and horizon imagery. Serious, thoughtful, natural interaction, sophisticated African/global intellectual aesthetic, deep green, warm cream and restrained gold, no readable text or logos. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-strategic-foresight-conversations.jpg`.
+**Production contract:** `podcast-strategic-foresight-conversations.jpg` in `/assets/images/`.
+
+### `podcast-strategy-in-an-uncertain-world.jpg` — Podcast detail image (16:9)
+**Prompt:** Strategy in an Uncertain World — Create a premium editorial-cinematic image of a strategic leader studying multiple possible pathways through a sophisticated architectural environment, with several routes visible and one carefully illuminated direction ahead. Communicate uncertainty without chaos. Deep forest green, warm cream, muted gold, restrained crimson, cinematic 8K editorial realism, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-strategy-in-an-uncertain-world.jpg`.
+**Production contract:** `podcast-strategy-in-an-uncertain-world.jpg` in `/assets/images/`.
+
+### `podcast-technology-as-leverage.jpg` — Podcast detail image (16:9)
+**Prompt:** Technology as Leverage — Create a premium editorial-cinematic image showing technology as a force multiplier for human capability: an elegant African professional working with abstract digital systems layered over physical organisational structures, connecting people, data and decisions. No readable interfaces or code. Deep green, teal, warm cream, restrained gold, cinematic natural light, 8K, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-technology-as-leverage.jpg`.
+**Production contract:** `podcast-technology-as-leverage.jpg` in `/assets/images/`.
+
+### `podcast-the-architecture-of-reality.jpg` — Podcast detail image (16:9)
+**Prompt:** The Architecture of Reality — Create a premium editorial-cinematic conceptual image of reality as a constructed system: layered architectural planes, windows, pathways and a composed observer examining how perception, evidence and structure interact. Sophisticated, restrained, philosophical and contemporary, deep green, warm cream and muted gold, no readable text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-architecture-of-reality.jpg`.
+**Production contract:** `podcast-the-architecture-of-reality.jpg` in `/assets/images/`.
+
+### `podcast-the-architecture-of-seeing.jpg` — Podcast detail image (16:9)
+**Prompt:** The Architecture of Seeing — Create a premium editorial-cinematic image representing disciplined perception: a thoughtful Black African professional standing before a complex architectural interior where lines, reflections and openings progressively clarify a central view. Calm strategic intelligence, deep forest green, warm cream and restrained gold, cinematic natural light, 8K, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-architecture-of-seeing.jpg`.
+**Production contract:** `podcast-the-architecture-of-seeing.jpg` in `/assets/images/`.
+
+### `podcast-the-hidden-game-of-power.jpg` — Podcast detail image (16:9)
+**Prompt:** The Hidden Game of Power — Create a premium editorial-cinematic image of an elegant strategic room where visible seating and subtle spatial asymmetry reveal an unseen hierarchy, with distinguished Black African professionals engaged in restrained conversation. Communicate hidden influence through composition rather than literal symbols. Deep green, warm cream, restrained crimson and gold, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-hidden-game-of-power.jpg`.
+**Production contract:** `podcast-the-hidden-game-of-power.jpg` in `/assets/images/`.
+
+### `podcast-the-strategic-architect.jpg` — Podcast detail image (16:9)
+**Prompt:** The Strategic Architect — Create a premium editorial-cinematic image of a distinguished Black African strategist examining a large architectural model or systems landscape, with connected structures extending toward a distant horizon. The visual story is design before execution, architecture before action. Deep forest green, warm cream, restrained gold, cinematic 8K realism, no readable text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-strategic-architect.jpg`.
+**Production contract:** `podcast-the-strategic-architect.jpg` in `/assets/images/`.
+
+### `podcast-the-strategic-foresight-conversation.jpg` — Podcast detail image (16:9)
+**Prompt:** The Strategic Foresight Conversation — Create a premium editorial-cinematic image of a focused conversation between distinguished African professionals about future possibilities, with subtle scenario pathways, horizon light and abstract strategic materials on a table. Natural gestures, intellectual seriousness, deep green and warm cream, restrained gold, no readable text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-strategic-foresight-conversation.jpg`.
+**Production contract:** `podcast-the-strategic-foresight-conversation.jpg` in `/assets/images/`.
+
+### `podcast-the-system-behind-the-problem.jpg` — Podcast detail image (16:9)
+**Prompt:** The System Behind the Problem — Create a premium editorial-cinematic image showing professionals looking beyond a visible problem to the larger system producing it: layered architecture, connected components and a small group of Black African professionals examining relationships around a table. No literal diagrams or readable labels. Deep green, warm cream, restrained gold, 8K cinematic editorial quality, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-system-behind-the-problem.jpg`.
+**Production contract:** `podcast-the-system-behind-the-problem.jpg` in `/assets/images/`.
+
+### `podcast-the-war-within.jpg` — Podcast detail image (16:9)
+**Prompt:** The War Within — Create a premium editorial-cinematic image about the internal architecture of leadership and identity: a composed Nigerian man in his 50s in a refined dark study, subtle reflection or layered architectural perspective suggesting the person seen by the world and the person confronting himself. Psychological depth without violence, horror or distress. Deep forest green, warm cream, restrained crimson and gold, natural cinematic light, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-the-war-within.jpg`.
+**Production contract:** `podcast-the-war-within.jpg` in `/assets/images/`.
+
+### `podcast-thinking-beyond-the-obvious.jpg` — Podcast detail image (16:9)
+**Prompt:** Thinking Beyond the Obvious — Create a premium editorial-cinematic image of a thoughtful Black African strategist looking beyond an obvious foreground path toward a secondary architectural route revealed by light and perspective. Communicate curiosity, second-order thinking and disciplined questioning. Deep green, warm cream, restrained gold, cinematic 8K editorial realism, no text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-thinking-beyond-the-obvious.jpg`.
+**Production contract:** `podcast-thinking-beyond-the-obvious.jpg` in `/assets/images/`.
+
+### `podcast-when-strategy-meets-reality.jpg` — Podcast detail image (16:9)
+**Prompt:** When Strategy Meets Reality — Create a premium editorial-cinematic image showing strategic plans meeting real operating conditions: a refined planning table with architectural models, notes and practical constraints, with Black African professionals testing assumptions against reality. Serious, tactile and grounded, deep green, warm cream, restrained gold and crimson, no readable text, logos or watermark. Horizontal 16:9.
+**Route:** `/podcast/` detail route corresponding to `podcast-when-strategy-meets-reality.jpg`.
+**Production contract:** `podcast-when-strategy-meets-reality.jpg` in `/assets/images/`.
+
 
 # 12. LIBRARY ARTICLES
 
@@ -1068,40 +1251,304 @@ Every current Blog and Forbidden publication placeholder has an exact production
 **Destination:** `/assets/images/wolf-in-the-pulpit.jpg`
 
 
+
+## Masterclasses — Landing Page Image Contracts
+
+These six images belong to the approved `/masterclasses/` landing-page catalogue. They are not generic course thumbnails. Each image must communicate the intellectual character of its specific masterclass while remaining visually coherent with the Segun Samuel editorial system.
+
+### `masterclass-strategic-foresight-intensive.jpg`
+Create a premium editorial-cinematic photograph representing strategic foresight as disciplined anticipation. Show a sophisticated strategist or small leadership group in a quiet modern architectural environment studying layered maps, timelines, signals, scenarios and interconnected trajectories. Suggest multiple possible futures rather than a single prediction. Human presence should feel intelligent and restrained, never like corporate stock photography. Forest green, deep teal, warm cream and restrained gold, with subtle crimson only as a small point of emphasis. 16:9 landscape, intentional negative space for HTML text overlay, darker text-safe area, cinematic depth, photorealistic 8K editorial quality, no visible text, logos or watermark.
+
+### `masterclass-thinking-in-systems.jpg`
+Create a premium editorial-cinematic photograph representing systems thinking. Show an intelligent professional in a sophisticated architectural workspace observing a complex network of interconnected structures, pathways and nodes, with subtle circular relationships and layered depth suggesting feedback loops and interdependence. Avoid literal computer-dashboard aesthetics. Communicate that individual actions exist inside larger systems. Forest green, deep teal, warm cream and restrained gold. 16:9 landscape, negative space for HTML copy, darker text-safe region, cinematic lighting, photorealistic editorial quality, sophisticated African/global intellectual aesthetic, no visible text, logos or watermark.
+
+### `masterclass-ai-as-strategic-capability.jpg`
+Create a premium editorial-cinematic photograph representing artificial intelligence as strategic capability. Show a diverse senior professional or leadership team in an elegant contemporary strategy room interacting with subtle AI-inspired visual structures—abstract intelligence networks, data patterns and decision pathways integrated naturally into the physical environment. Avoid humanoid robots, glowing brains, generic futuristic interfaces or science-fiction imagery. Strategic, human-centred and credible. Forest green, deep teal, warm cream, restrained gold and subtle crimson. 16:9 landscape, sophisticated negative space for HTML typography, controlled luminance behind text, cinematic editorial photography, realistic materials and people, 8K detail, no visible text, logos or watermark.
+
+### `masterclass-architecture-of-execution.jpg`
+Create a premium editorial-cinematic photograph representing the architecture of execution. Show a leader or small execution team in a sophisticated architectural setting where plans, pathways, stages and physical structures converge into a coherent direction. Metaphorically communicate sequencing, coordination, discipline and movement from strategy into action. Avoid generic office meetings, handshakes and checklist imagery. Forest green, deep teal, warm cream and restrained gold, with subtle crimson as a deliberate point of emphasis. 16:9 landscape, strong architectural lines, visual movement toward a clear destination, negative space for HTML text, darker text-safe region, cinematic depth, photorealistic premium editorial photography, no visible text, logos or watermark.
+
+### `masterclass-leadership-intelligence.jpg`
+Create a premium editorial-cinematic photograph representing Leadership Intelligence: Power, People & Systems. Show a composed senior leader in a sophisticated institutional environment, with several people and layers of architecture subtly arranged around the central figure to suggest relationships, influence, power and organisational systems. Communicate observation, judgment and relational intelligence rather than command or dominance. Avoid stereotypical boardroom imagery. Forest green, deep teal, warm cream and restrained gold, with a restrained crimson accent. 16:9 landscape, generous negative space for HTML copy, controlled background luminance, cinematic editorial photography, realistic people and architecture, sophisticated African/global leadership aesthetic, no visible text, logos or watermark.
+
+### `masterclass-building-institutions-that-endure.jpg`
+Create a premium editorial-cinematic photograph representing institution building and endurance. Show a powerful but understated architectural institution—contemporary civic, educational or organisational architecture—with a small number of people moving through or contributing to it. Communicate permanence, continuity, stewardship and generational responsibility rather than wealth or corporate prestige. Subtle layers of old and new materials may suggest continuity across time. Forest green, deep teal, warm cream and restrained gold, with crimson only as a tiny accent if appropriate. 16:9 landscape, strong architectural depth, intentional negative space for HTML overlay text, controlled luminance and darker text-safe area, cinematic atmospheric perspective, photorealistic 8K editorial quality, sophisticated African/global institutional aesthetic, no visible text, logos or watermark.
+
+### Masterclasses Landing Page Image Rules
+- The six images must feel like one editorial family, not six unrelated stock photographs.
+- Each image must communicate its specific intellectual subject without relying on text.
+- Do not use generic classroom, handshake, laptop, smiling-team or corporate-stock compositions.
+- Do not place generated typography, titles, logos, interface labels or watermarks inside the image.
+- Preserve deliberate negative space for HTML typography.
+- Control background luminance so overlay text remains readable without excessive gradients.
+- Prefer cinematic realism, restrained composition, sophisticated architecture and meaningful human presence.
+- Maintain forest green, deep teal, warm cream, restrained gold and selective crimson.
+- All six assets are 16:9 landscape and should remain usable across responsive crops.
+
+## Learning Ecosystem — Restored Landing Hero Image Contracts
+
+### `hero-learn.jpg` — Learn Ecosystem Hero
+**Publication:** Learn · **Usage:** `/learn/` hero.  
+**Prompt:** Create a premium editorial-cinematic photograph representing structured learning as the pursuit of wisdom through disciplined practice. Show an elegant contemporary library or learning environment with books, a refined study table, subtle architectural geometry and a quiet sense of intellectual concentration. Human presence may be subtle; the image should feel contemplative rather than like classroom stock photography. Preserve generous negative space on the left for HTML typography, with the visual weight toward the right. Use deep forest green, deep teal, warm cream and restrained gold, with selective crimson only as a small accent. Ultra-realistic editorial photography, cinematic natural light, sophisticated African/global intellectual aesthetic, 16:9 landscape, 8K detail, no visible text, logos or watermark.
+**Exact filename:** `hero-learn.jpg`  
+**Destination:** `/assets/images/hero-learn.jpg`
+
+### `learning-paths-hero.jpg` — Learning Paths Hero
+**Publication:** Learning Paths · **Usage:** `/learning-paths/` hero.  
+**Prompt:** Create a premium editorial-cinematic photograph representing a deliberate learning journey from one level of capability to another. Show a winding, carefully constructed pathway through a sophisticated natural or architectural landscape, leading toward a distant horizon and warm light. The path should communicate progression, sequence, choice and transformation without becoming a generic travel photograph. Preserve generous negative space on the left for HTML typography and keep the visual destination toward the right. Use deep forest green, deep teal, warm cream and restrained gold with selective crimson only where appropriate. Ultra-realistic cinematic editorial photography, sophisticated African/global intellectual aesthetic, 16:9 landscape, 8K detail, no visible text, logos or watermark.
+**Exact filename:** `learning-paths-hero.jpg`  
+**Destination:** `/assets/images/learning-paths-hero.jpg`
+
+
 ---
 
-# PART II — LEGACY D-IMG SOURCE ARCHIVE
-## Complete source retained for completeness and audit
+# PRESS KIT — APPROVED IMAGE PLACEHOLDERS
 
-> **Important:** This section is retained verbatim from `D-IMG-PROMPTS.md` so the merge does not lose any original prompt or instruction.
->
-> **Production rule:** If a filename exists in the canonical section above, use the canonical version above. Do not copy the legacy version merely because it appears here. The legacy section preserves the historical source exactly as supplied.
+The Press Kit deliberately uses the approved **gradient + Segun badge placeholder system** until the exact generated image exists. The placeholder is not a substitute image and must not be replaced by an improvised stock photograph. When the named file is supplied in `/assets/images/`, the page should display it in the same frame without changing the layout.
 
-# IMAGE GENERATION PROMPTS — segunsamuel.com
-### For Nano Banana Pro (or any high-end image model)
+### `press-segun-samuel-editorial-portrait.jpg` — Press Kit Editorial Portrait
+**Route:** `/press/` · **Section:** Photography & Assets · **Placeholder:** Editorial portrait
 
-Every image placeholder in the site references a specific filename. Generate each image below, export as JPG (quality 80–85), and drop it into `/images/` with the exact filename shown. Placeholders degrade gracefully (`onerror` removes broken images), so the site works before and after images are added.
+**Image-generation prompt:**  
+Create a premium editorial portrait of Segun Samuel for a serious international press kit. Present a composed African intellectual and marketplace leader in a sophisticated contemporary environment that subtly suggests strategy, technology, architecture and institutional thinking without becoming corporate stock photography. The expression should communicate calm intelligence, depth, responsibility and strategic foresight. Use an elegant, restrained composition with generous negative space and natural posture; sophisticated modern African/global editorial aesthetic; deep forest green, warm cream, muted teal and restrained gold accents; cinematic natural light; medium-format realism; 8K detail; believable skin texture and materials; no text, no logos, no watermark, no invented awards, no decorative typography. Preserve identity using an approved reference photograph if one is supplied.
 
-> **This document was audited against the live site on 22 July 2026** and reflects exactly what's on segunsamuel.com today — ten pages, a Blog with 12 articles (there is no separate Writing page), and 30 titles on the Books page's recommended shelf. Every filename below is one that actually appears in the site's code; nothing orphaned or superseded is listed.
+**Production contract:** `press-segun-samuel-editorial-portrait.jpg` in `/assets/images/`.
 
-**Global style block — append to every prompt:**
+**Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
 
-> Ultra-realistic cinematic editorial photograph, 8K detail, shallow depth of field, professional colour grading in a deep forest-green and warm-cream palette (#0D3D28, #003020, #FDFAF4) with a single restrained crimson accent (#8C0D0C) — a pocket square, a book spine, a chair detail. Rich contrast, no pure black; shadows lean dark green. Premium magazine quality, shot on medium-format camera, 85mm lens look. No text, no watermarks, no logos.
+### `press-ibonK-five-levels.jpg` — IBONK™ Five Levels of Influence
+**Route:** `/press/` · **Section:** Photography & Assets · **Placeholder:** IBONK™ editorial concept
 
-**Diversity options.** Each prompt is written with the subject line `[SUBJECT]`. Generate whichever option matches your need:
-- **Option A — Mixed:** replace `[SUBJECT]` with "a distinguished Nigerian man in his 40s" for portraits of Segun; for group scenes use "a diverse group of African, European, and Asian professionals".
-- **Option B — All Black:** portraits as Option A; group scenes use "a group of distinguished Black African professionals".
-- **Option C — All White:** only applicable to group/atmosphere scenes where the subject is not Segun himself; use "a group of White European professionals". (Portraits representing Segun should always depict a Nigerian man.)
+**Image-generation prompt:**  
+Create a premium editorial-cinematic conceptual photograph representing IBONK™ — Individual, Business, Organisation, Nation, Kingdom — as five ascending levels of influence and responsibility. Visualise a continuous architectural or civic landscape rising through five distinct but connected levels, suggesting increasing scale, stewardship, systems, institutions and consequence. The image should feel intellectually serious rather than diagrammatic: layered architecture, pathways, civic scale and human-scale traces can imply the progression without placing any words, numbers or labels inside the image. Sophisticated modern African/global editorial aesthetic, deep forest green, dark teal, warm cream, restrained gold and subtle crimson accents, cinematic depth, natural light, 8K detail, premium magazine photography, no text, no logos, no watermark.
+
+**Production contract:** `press-ibonK-five-levels.jpg` in `/assets/images/`.
+
+**Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
+
+### `press-war-within-editorial.jpg` — The War Within Editorial Image
+**Route:** `/press/` · **Section:** Photography & Assets · **Placeholder:** Book/editorial concept
+
+**Image-generation prompt:**  
+Create a premium editorial-cinematic conceptual photograph representing The War Within: the internal psychological battles beneath leadership, identity, purpose, fear, comparison, discipline, relationships and consequential decision-making. Visualise one composed human figure facing a sophisticated architectural environment in which subtle reflections, pathways, thresholds and contrasting light suggest an inner conflict being examined rather than dramatised. The mood should be intelligent, restrained and psychologically deep, never violent or sensational. Sophisticated modern African/global editorial aesthetic, deep forest green, dark teal, warm cream, muted gold and restrained crimson accents, cinematic natural light, 8K detail, medium-format realism, premium magazine art direction, no text, no book cover, no logos, no watermark.
+
+**Production contract:** `press-war-within-editorial.jpg` in `/assets/images/`.
+
+**Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
+
+
+# UNIVERSAL IMAGE SLOT REGISTRY — V87 AUDIT
+
+This registry is generated from the implemented `data-image-slot` attributes. Every slot maps to an exact production filename in this canonical prompt file. Runtime loading is handled by `/assets/js/image-slots.js`; absent assets retain the approved placeholder.
+
+| Route | Production image | Prompt present |
+|---|---|---|
+| `blog/index.html` | `battle-of-identity.jpg` | YES |
+| `blog/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/index.html` | `data-prophetic-instrument.jpg` | YES |
+| `blog/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/index.html` | `ibonk-five-levels.jpg` | YES |
+| `blog/index.html` | `planning-room-battlefield.jpg` | YES |
+| `blog/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/index.html` | `scripture-is-architecture.jpg` | YES |
+| `blog/index.html` | `swot-without-self-deception.jpg` | YES |
+| `forbidden/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/index.html` | `sympathy-is-a-weapon.jpg` | YES |
+| `forbidden/index.html` | `the-conquered-mind.jpg` | YES |
+| `forbidden/index.html` | `why-smart-people-join-cults.jpg` | YES |
+| `forbidden/index.html` | `wolf-in-the-pulpit.jpg` | YES |
+| `events/index.html` | `event-events.jpg` | YES |
+| `events/index.html` | `event-ai-strategy-workshop.jpg` | YES |
+| `events/index.html` | `event-architects-roundtable.jpg` | YES |
+| `events/index.html` | `event-case-study-lab.jpg` | YES |
+| `events/index.html` | `event-frameworks-in-practice.jpg` | YES |
+| `events/index.html` | `event-institution-builders-forum.jpg` | YES |
+| `events/index.html` | `event-leadership-power-systems-workshop.jpg` | YES |
+| `events/index.html` | `event-prepared-mind-live.jpg` | YES |
+| `events/index.html` | `event-strategic-intelligence-intensive.jpg` | YES |
+| `events/index.html` | `event-strategic-intelligence-live.jpg` | YES |
+| `podcast/index.html` | `podcast-hero.jpg` | YES |
+| `podcast/technology-as-leverage/index.html` | `podcast-technology-as-leverage.jpg` | YES |
+| `podcast/the-strategic-foresight-conversation/index.html` | `podcast-the-strategic-foresight-conversation.jpg` | YES |
+| `podcast/principles-that-survive-change/index.html` | `podcast-principles-that-survive-change.jpg` | YES |
+| `podcast/building-systems-that-outlive-you/index.html` | `building-systems-that-outlive-you.jpg` | YES |
+| `podcast/thinking-beyond-the-obvious/index.html` | `podcast-thinking-beyond-the-obvious.jpg` | YES |
+| `podcast/the-architecture-of-reality/index.html` | `podcast-the-architecture-of-reality.jpg` | YES |
+| `podcast/the-war-within/index.html` | `podcast-the-war-within.jpg` | YES |
+| `podcast/when-strategy-meets-reality/index.html` | `podcast-when-strategy-meets-reality.jpg` | YES |
+| `podcast/power-human-behaviour/index.html` | `podcast-power-human-behaviour.jpg` | YES |
+| `podcast/building-beyond-the-founder/index.html` | `podcast-building-beyond-the-founder.jpg` | YES |
+| `podcast/strategic-foresight-conversations/index.html` | `podcast-strategic-foresight-conversations.jpg` | YES |
+| `podcast/the-strategic-architect/index.html` | `podcast-the-strategic-architect.jpg` | YES |
+| `podcast/intelligence-in-practice/index.html` | `podcast-intelligence-in-practice.jpg` | YES |
+| `podcast/strategy-in-an-uncertain-world/index.html` | `podcast-strategy-in-an-uncertain-world.jpg` | YES |
+| `podcast/building-institutions-that-endure/index.html` | `podcast-building-institutions-that-endure.jpg` | YES |
+| `podcast/power-people-the-shadow/index.html` | `podcast-power-people-the-shadow.jpg` | YES |
+| `podcast/the-system-behind-the-problem/index.html` | `podcast-the-system-behind-the-problem.jpg` | YES |
+| `podcast/the-architecture-of-seeing/index.html` | `podcast-the-architecture-of-seeing.jpg` | YES |
+| `podcast/patterns-beneath-the-surface/index.html` | `podcast-patterns-beneath-the-surface.jpg` | YES |
+| `podcast/the-hidden-game-of-power/index.html` | `podcast-the-hidden-game-of-power.jpg` | YES |
+| `events/prepared-mind-live/index.html` | `event-prepared-mind-live.jpg` | YES |
+| `events/institution-builders-forum/index.html` | `event-institution-builders-forum.jpg` | YES |
+| `events/frameworks-in-practice/index.html` | `event-frameworks-in-practice.jpg` | YES |
+| `events/strategic-intelligence-intensive/index.html` | `event-strategic-intelligence-intensive.jpg` | YES |
+| `events/ai-strategy-workshop/index.html` | `event-ai-strategy-workshop.jpg` | YES |
+| `events/architects-roundtable/index.html` | `event-architects-roundtable.jpg` | YES |
+| `events/case-study-lab/index.html` | `event-case-study-lab.jpg` | YES |
+| `events/strategic-intelligence-live/index.html` | `event-strategic-intelligence-live.jpg` | YES |
+| `events/leadership-power-systems-workshop/index.html` | `event-leadership-power-systems-workshop.jpg` | YES |
+| `forbidden/gaslighting-has-a-grammar/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/gaslighting-has-a-grammar/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/gaslighting-has-a-grammar/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/gaslighting-has-a-grammar/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/gaslighting-has-a-grammar/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/gaslighting-has-a-grammar/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/illusion-of-loyalty-reality-of-betrayal/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/illusion-of-loyalty-reality-of-betrayal/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/illusion-of-loyalty-reality-of-betrayal/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/illusion-of-loyalty-reality-of-betrayal/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/illusion-of-loyalty-reality-of-betrayal/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/illusion-of-loyalty-reality-of-betrayal/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/why-smart-people-join-cults/index.html` | `why-smart-people-join-cults.jpg` | YES |
+| `forbidden/why-smart-people-join-cults/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/why-smart-people-join-cults/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/why-smart-people-join-cults/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/why-smart-people-join-cults/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/why-smart-people-join-cults/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/regret-is-feedback-and-revelation/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/regret-is-feedback-and-revelation/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/regret-is-feedback-and-revelation/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/regret-is-feedback-and-revelation/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/regret-is-feedback-and-revelation/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/regret-is-feedback-and-revelation/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/architecture-of-a-manipulator/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/architecture-of-a-manipulator/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/architecture-of-a-manipulator/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/architecture-of-a-manipulator/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/architecture-of-a-manipulator/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/architecture-of-a-manipulator/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/negotiating-debt/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/negotiating-debt/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/negotiating-debt/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/negotiating-debt/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/negotiating-debt/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/negotiating-debt/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/discernment-and-suspicion/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/discernment-and-suspicion/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/discernment-and-suspicion/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/discernment-and-suspicion/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/discernment-and-suspicion/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/discernment-and-suspicion/index.html` | `regret-is-feedback-and-revelation.jpg` | YES |
+| `forbidden/the-conquered-mind/index.html` | `the-conquered-mind.jpg` | YES |
+| `forbidden/the-conquered-mind/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/the-conquered-mind/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/the-conquered-mind/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/the-conquered-mind/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/the-conquered-mind/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/wolf-in-the-pulpit/index.html` | `wolf-in-the-pulpit.jpg` | YES |
+| `forbidden/wolf-in-the-pulpit/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/wolf-in-the-pulpit/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/wolf-in-the-pulpit/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/wolf-in-the-pulpit/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/wolf-in-the-pulpit/index.html` | `negotiating-debt.jpg` | YES |
+| `forbidden/sympathy-is-a-weapon/index.html` | `sympathy-is-a-weapon.jpg` | YES |
+| `forbidden/sympathy-is-a-weapon/index.html` | `architecture-of-a-manipulator.jpg` | YES |
+| `forbidden/sympathy-is-a-weapon/index.html` | `discernment-and-suspicion.jpg` | YES |
+| `forbidden/sympathy-is-a-weapon/index.html` | `gaslighting-has-a-grammar.jpg` | YES |
+| `forbidden/sympathy-is-a-weapon/index.html` | `illusion-of-loyalty-reality-of-betrayal.jpg` | YES |
+| `forbidden/sympathy-is-a-weapon/index.html` | `negotiating-debt.jpg` | YES |
+| `blog/praying-like-a-strategist/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/praying-like-a-strategist/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/praying-like-a-strategist/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/praying-like-a-strategist/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/praying-like-a-strategist/index.html` | `scripture-is-architecture.jpg` | YES |
+| `blog/praying-like-a-strategist/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/data-prophetic-instrument/index.html` | `data-prophetic-instrument.jpg` | YES |
+| `blog/data-prophetic-instrument/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/data-prophetic-instrument/index.html` | `swot-without-self-deception.jpg` | YES |
+| `blog/data-prophetic-instrument/index.html` | `planning-room-battlefield.jpg` | YES |
+| `blog/data-prophetic-instrument/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/data-prophetic-instrument/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/scripture-is-architecture/index.html` | `scripture-is-architecture.jpg` | YES |
+| `blog/scripture-is-architecture/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/scripture-is-architecture/index.html` | `ibonk-five-levels.jpg` | YES |
+| `blog/scripture-is-architecture/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/scripture-is-architecture/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/scripture-is-architecture/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/executing-the-decree/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/executing-the-decree/index.html` | `planning-room-battlefield.jpg` | YES |
+| `blog/executing-the-decree/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/executing-the-decree/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/executing-the-decree/index.html` | `swot-without-self-deception.jpg` | YES |
+| `blog/executing-the-decree/index.html` | `data-prophetic-instrument.jpg` | YES |
+| `blog/calling-is-not-the-career/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/calling-is-not-the-career/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/calling-is-not-the-career/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/calling-is-not-the-career/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/calling-is-not-the-career/index.html` | `scripture-is-architecture.jpg` | YES |
+| `blog/calling-is-not-the-career/index.html` | `battle-of-identity.jpg` | YES |
+| `blog/battle-of-identity/index.html` | `battle-of-identity.jpg` | YES |
+| `blog/battle-of-identity/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/battle-of-identity/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/battle-of-identity/index.html` | `ibonk-five-levels.jpg` | YES |
+| `blog/battle-of-identity/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/battle-of-identity/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/planning-room-battlefield/index.html` | `planning-room-battlefield.jpg` | YES |
+| `blog/planning-room-battlefield/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/planning-room-battlefield/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/planning-room-battlefield/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/planning-room-battlefield/index.html` | `swot-without-self-deception.jpg` | YES |
+| `blog/planning-room-battlefield/index.html` | `data-prophetic-instrument.jpg` | YES |
+| `blog/dominion-balance-sheet/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/dominion-balance-sheet/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/dominion-balance-sheet/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/dominion-balance-sheet/index.html` | `swot-without-self-deception.jpg` | YES |
+| `blog/dominion-balance-sheet/index.html` | `scripture-is-architecture.jpg` | YES |
+| `blog/dominion-balance-sheet/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/build-for-the-successor/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/build-for-the-successor/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/build-for-the-successor/index.html` | `ibonk-five-levels.jpg` | YES |
+| `blog/build-for-the-successor/index.html` | `swot-without-self-deception.jpg` | YES |
+| `blog/build-for-the-successor/index.html` | `battle-of-identity.jpg` | YES |
+| `blog/build-for-the-successor/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/discipline-is-worship/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/discipline-is-worship/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/discipline-is-worship/index.html` | `praying-like-a-strategist.jpg` | YES |
+| `blog/discipline-is-worship/index.html` | `battle-of-identity.jpg` | YES |
+| `blog/discipline-is-worship/index.html` | `calling-is-not-the-career.jpg` | YES |
+| `blog/discipline-is-worship/index.html` | `planning-room-battlefield.jpg` | YES |
+| `blog/swot-without-self-deception/index.html` | `swot-without-self-deception.jpg` | YES |
+| `blog/swot-without-self-deception/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/swot-without-self-deception/index.html` | `dominion-balance-sheet.jpg` | YES |
+| `blog/swot-without-self-deception/index.html` | `executing-the-decree.jpg` | YES |
+| `blog/swot-without-self-deception/index.html` | `planning-room-battlefield.jpg` | YES |
+| `blog/swot-without-self-deception/index.html` | `data-prophetic-instrument.jpg` | YES |
+| `blog/ibonk-five-levels/index.html` | `ibonk-five-levels.jpg` | YES |
+| `blog/ibonk-five-levels/index.html` | `build-for-the-successor.jpg` | YES |
+| `blog/ibonk-five-levels/index.html` | `scripture-is-architecture.jpg` | YES |
+| `blog/ibonk-five-levels/index.html` | `battle-of-identity.jpg` | YES |
+| `blog/ibonk-five-levels/index.html` | `discipline-is-worship.jpg` | YES |
+| `blog/ibonk-five-levels/index.html` | `dominion-balance-sheet.jpg` | YES |
 
 ---
 
-## 1. HOME PAGE
+# PART II — LEGACY PROMPTS RETAINED FROM D-IMG-PROMPTS.md
+
+These entries existed in the older D-IMG library but not in the current canonical register. They are retained here so the master truly contains the complete prompt library. Use these entries where the exact filename is required and no newer canonical entry exists.
 
 ### `segun-portrait-studio.png` — Hero portrait (arch frame, 4:5) — shared with the About page, see §2
-[SUBJECT] in an impeccably tailored deep forest-green suit with a crimson pocket square, standing in a modern executive planning room in Lagos at golden hour, floor-to-ceiling windows showing a soft-focus Lagos skyline, one hand resting on a mahogany table holding an open leather journal and a fountain pen, expression of calm strategic authority, warm rim light, deep green wall panels behind. Vertical 4:5 composition, subject occupying right two-thirds. **Export as PNG** (this file is also used with a transparent-background variant treatment elsewhere on the page).
+a distinguished Nigerian man in his 50s in an impeccably tailored deep forest-green suit with a crimson pocket square, standing in a modern executive planning room in Lagos at golden hour, floor-to-ceiling windows showing a soft-focus Lagos skyline, one hand resting on a mahogany table holding an open leather journal and a fountain pen, expression of calm strategic authority, warm rim light, deep green wall panels behind. Vertical 4:5 composition, subject occupying right two-thirds. **Export as PNG** (this file is also used with a transparent-background variant treatment elsewhere on the page).
 
 ### `og-image.jpg` — Social share card (1200×630)
-Wide cinematic composition: [SUBJECT] in a forest-green suit seated at the head of a long boardroom table in a dark green-panelled room, single warm lamp illuminating an open journal, city lights bokeh in the window behind, generous negative space on the left third of frame for overlay text. Horizontal 1200×630.
+Wide cinematic composition: a distinguished Nigerian man in his 50s in a forest-green suit seated at the head of a long boardroom table in a dark green-panelled room, single warm lamp illuminating an open journal, city lights bokeh in the window behind, generous negative space on the left third of frame for overlay text. Horizontal 1200×630.
 
 ### `war-within-book.jpg` — The War Within, dark flagship band (4:5)
 Luxurious product photograph of a thick hardcover book standing upright on a dark green marble surface, deep forest-green cloth cover with blind-embossed geometric pattern suggesting a shield (no readable text), a crimson ribbon bookmark, dramatic side lighting against a #003020 backdrop, faint reflection. Vertical 4:5.
@@ -1113,10 +1560,10 @@ Reuses `segun-portrait-studio.png` from the Home page (§1) — no separate Abou
 ## 3. WORK PAGE
 
 ### `lane-technology.jpg` — GreaterHeight Technologies (16:10)
-Modern African software office at dusk: [SUBJECT — group scene] collaborating around dual monitors showing elegant data dashboards (abstract, unreadable), glass-walled meeting room in the background, deep green accent wall, warm task lighting, an atmosphere of focused engineering excellence. Horizontal 16:10.
+Modern African software office at dusk: a group of distinguished Black African professionals collaborating around dual monitors showing elegant data dashboards (abstract, unreadable), glass-walled meeting room in the background, deep green accent wall, warm task lighting, an atmosphere of focused engineering excellence. Horizontal 16:10.
 
 ### `lane-academy.jpg` — GreaterHeight Academy (16:10)
-Bright training academy classroom in Lagos: an instructor at a large screen displaying an abstract system diagram, [SUBJECT — group scene] of engaged adult students with laptops, morning light through tall windows, cream walls with a forest-green feature wall, a sense of upward momentum. Horizontal 16:10.
+Bright training academy classroom in Lagos: an instructor at a large screen displaying an abstract system diagram, a group of distinguished Black African professionals of engaged adult students with laptops, morning light through tall windows, cream walls with a forest-green feature wall, a sense of upward momentum. Horizontal 16:10.
 
 ### `lane-publishing.jpg` — TECHSPIBUS™ Media & Publishing (16:10)
 A refined publishing studio: a large wooden desk with hardcover book proofs, a vintage typewriter beside a modern laptop, manuscript pages with handwritten margin notes, a crimson-spined hardcover as the single red accent, dark green wall with brass picture lights, moody warm light. Horizontal 16:10. No readable text.
@@ -1145,10 +1592,10 @@ Both men in three-quarter profile toward each other, the sense of a real, confid
 ## 5. MENTORINGOS PAGE
 
 ### `mentoring-hero-portrait.jpg` — Hero section, right side (arch frame, 4:5)
-A composite "content universe" portrait: [SUBJECT] in his signature deep forest-green suit, white shirt, tie draped loosely over one crossed arm rather than worn, confident direct gaze at camera, three-quarter angle, thick dark-framed glasses. Surrounding him at various depths and sizes, scattered against a subtly textured deep-green striped background, is a loose grid of small rectangular content cards — abstract book-cover and keynote-slide thumbnails in the brand's forest-green, cream, and gold palette, all with **no readable text or lettering of any kind** (blank colour-blocked rectangles with simple abstract iconography only — a compass mark, a geometric line, a muted photograph fragment). Thin white hand-drawn arrow/swoosh graphics connect a few of the cards toward the figure, as if his output orbits him. One card near the edge carries a crimson (#8C0D0C) border as a single accent, echoing the site's signature colour. Editorial composite-portrait style, confident and prolific rather than corporate. Vertical 4:5, subject centred-to-right so the composition reads well cropped into the site's arch-frame.
+A composite "content universe" portrait: a distinguished Nigerian man in his 50s in his signature deep forest-green suit, white shirt, tie draped loosely over one crossed arm rather than worn, confident direct gaze at camera, three-quarter angle, thick dark-framed glasses. Surrounding him at various depths and sizes, scattered against a subtly textured deep-green striped background, is a loose grid of small rectangular content cards — abstract book-cover and keynote-slide thumbnails in the brand's forest-green, cream, and gold palette, all with **no readable text or lettering of any kind** (blank colour-blocked rectangles with simple abstract iconography only — a compass mark, a geometric line, a muted photograph fragment). Thin white hand-drawn arrow/swoosh graphics connect a few of the cards toward the figure, as if his output orbits him. One card near the edge carries a crimson (#8C0D0C) border as a single accent, echoing the site's signature colour. Editorial composite-portrait style, confident and prolific rather than corporate. Vertical 4:5, subject centred-to-right so the composition reads well cropped into the site's arch-frame.
 
 ### `mentoring-session.jpg` — What Is MentoringOS section (4:5)
-[SUBJECT] seated across a small round table from another person (a distinguished professional in their 30s–40s, back partially to camera or softly out of focus so the mentee stays anonymous), mid-conversation, leaning forward with focused attention, a leather notebook open between them, warm lamplight, deep forest-green wall behind. No laptops, no phones visible — the sense of undivided, serious counsel. Vertical 4:5.
+a distinguished Nigerian man in his 50s seated across a small round table from another person (a distinguished professional in their 30s–40s, back partially to camera or softly out of focus so the mentee stays anonymous), mid-conversation, leaning forward with focused attention, a leather notebook open between them, warm lamplight, deep forest-green wall behind. No laptops, no phones visible — the sense of undivided, serious counsel. Vertical 4:5.
 
 ### FIAGS diagnostic cards — 5 images (3:2, top of each card)
 > No readable text in any of these — they're symbolic/object studies illustrating each "poison," not diagrams. Same global style block as the rest of this document.
@@ -1173,10 +1620,10 @@ Three symbolic artifacts representing the frameworks — see §11 below for the 
 ## 7. PRESS PAGE
 
 ### `press-headshot-01.jpg` — Primary headshot (4:5, 300dpi)
-Formal studio headshot of [SUBJECT] in a forest-green suit, cream shirt, no tie, against a seamless deep green (#0D3D28) backdrop, confident warm expression, classic Rembrandt lighting, tack-sharp eyes. Vertical 4:5.
+Formal studio headshot of a distinguished Nigerian man in his 50s in a forest-green suit, cream shirt, no tie, against a seamless deep green (#0D3D28) backdrop, confident warm expression, classic Rembrandt lighting, tack-sharp eyes. Vertical 4:5.
 
 ### `press-headshot-02.jpg` — Editorial portrait (4:5, 300dpi)
-[SUBJECT] seated on the edge of a desk in a planning room, sleeves considered but composed, journals and a brass compass beside him, Lagos skyline soft in the window, editorial magazine energy. Vertical 4:5.
+a distinguished Nigerian man in his 50s seated on the edge of a desk in a planning room, sleeves considered but composed, journals and a brass compass beside him, Lagos skyline soft in the window, editorial magazine energy. Vertical 4:5.
 
 ### `press-book-mockup.jpg` — Book mock-up (4:5)
 Same art direction as `war-within-book.jpg` but three-quarter angle with a second copy lying flat beneath, on a #003020 field with generous negative space. Vertical 4:5.
@@ -1212,23 +1659,8 @@ Uses the stylised map placeholder (pure CSS — no image required).
 
 Six cover placeholders (each 2:3 vertical, no readable text — titles are set live in HTML):
 
-### `book-war-within.jpg`
-Hardcover on deep green marble, forest-green cloth cover with blind-embossed shield geometry, crimson ribbon bookmark, dramatic side light. (Same art direction as `war-within-book.jpg`; straight-on for the 2:3 frame.)
-
-### `book-prepared-mind.jpg`
-Hardcover with cream linen cover, blind-embossed compass rose, thin crimson foil rule near the base, on a dark green ground, soft top light.
-
-### `book-war-within-workbook.jpg`
-Softcover workbook, matte forest-green cover with a debossed grid pattern and a crimson elastic closure band, pencil resting beside it, overhead light.
-
 ### `course-prepared-mind-intensive.jpg`
 Cinematic still of a candle-warm planning room: an open leather journal, a wax-sealed decree document, and a 90-day wall grid softly out of focus behind — crimson-graded to suit the course card's crimson field.
-
-### `course-90day-war-within.jpg`
-A war-room campaign map on a deep green felt surface: a 90-day grid chart with small brass pins marking progress (no readable numbers or text), a brass compass rose, a leather tactical journal open beside it, and a crimson grease-pencil resting diagonally across the grid. Directional overhead light, dramatic shadow, crimson-wine grading to match the course card's crimson field. 2:3.
-
-### `course-techspibus-masterclass.jpg`
-Abstract triptych compressed into one 2:3 frame — circuitry, illuminated-manuscript texture, and a skyline blending vertically, one crimson thread running through, deep crimson-wine grading.
 
 ### `testimonial-michael-oyadele.mp4` — the video itself, plus `testimonial-michael-oyadele-poster.jpg` — its poster frame (16:10), plus `testimonial-michael-oyadele-photo.jpg` — the small author photo on the card
 **This is now an image-to-video generation, not text-to-video** — Michael supplied his own photo, which should be used as the starting frame/reference image, not just described in words. **Prompt** (pair with his photo as the reference image in an image-to-video tool, e.g. Runway Gen-4): The person in the reference photo speaking warmly and thoughtfully to camera, mid-sentence, with a natural hand gesture and subtle head movement as if explaining something meaningful. Soft, even studio lighting matching the reference image. Gentle handheld camera micro-movement, shallow depth of field. No on-screen text, no logos, ambient room tone only, no dialogue needed. Duration: 5 seconds.
@@ -1247,7 +1679,7 @@ Abstract triptych compressed into one 2:3 frame — circuitry, illuminated-manus
 > Export **wider and higher-resolution than a card alone would need — minimum 2400px on the long edge, ideally closer to 3000px** — and keep the subject's focal point centred-to-upper-frame, since the taller crops (mobile hero, card) trim more from the top and bottom than the wide desktop crop does, and the bottom third will sit under the dark title scrim regardless of crop.
 
 1. **dispatch-01** ("The Planning Room Is a Battlefield") — an empty boardroom at night, one chair pulled out, strategy notes and a chess king on the table, single lamp, green-black shadows. Horizontal 16:9.
-2. **dispatch-02** ("The Battle of Identity Comes First") — a man's reflection in a dark window merging with the city beyond, journal in hand, contemplative, green-toned dusk. Use [SUBJECT]. Horizontal 16:9.
+2. **dispatch-02** ("The Battle of Identity Comes First") — a man's reflection in a dark window merging with the city beyond, journal in hand, contemplative, green-toned dusk. Use a distinguished Nigerian man in his 50s. Horizontal 16:9.
 3. **dispatch-03** ("Your Data Is a Prophetic Instrument") — close macro of elegant abstract data visualisations glowing emerald on a dark screen, reflected in reading glasses on the desk. Horizontal 16:9.
 4. **dispatch-04** ("IBONK™ — Five Levels") — five ascending stone steps in a minimalist green-lit architectural space, warm light at the top step. Horizontal 16:9.
 5. **dispatch-05** ("Executing the Decree") — a wax-sealed document (crimson seal, unreadable) beside a 90-day wall calendar grid in soft focus, fountain pen mid-signature. Horizontal 16:9.
@@ -1313,7 +1745,7 @@ A symbolic still-life of three domains becoming one architecture: on a deep fore
 A grand colonnade of exactly seven pillars seen in perspective, carved from deep green marble with gold capitals, each pillar subtly distinct in its carving texture (gears, flame, scroll, eye, map contours, laurel, twin keys — abstract motifs only, no lettering), supporting a single unbroken gold entablature. Cathedral-meets-boardroom atmosphere: shafts of warm light between the columns, polished floor reflections, a faint city skyline glowing beyond the far end. Ultra-wide 21:9, cinematic architectural photography, forest-green and gold grading with restrained crimson banner accents high on the far wall.
 
 ### `ibonk-ascent.jpg` — IBONK™ section (16:10, sits on a dark ground)
-Five monumental stone terraces ascending left-to-right into warm light, carved from dark green stone with gold-leafed edges — the first terrace intimate (a single desk and chair), the second a small workshop, the third an institutional hall, the fourth a city skyline, the fifth dissolving into radiant golden horizon and sky. One continuous gold path climbs through all five. A lone figure of [SUBJECT] in silhouette ascending between the first and second terrace. Epic matte-painting realism, deep green shadow tones (#003020) so the image sits naturally on the dark section, gold light, one crimson banner on the third terrace. Horizontal 16:10. (Diversity options A/B apply to the silhouetted figure.)
+Five monumental stone terraces ascending left-to-right into warm light, carved from dark green stone with gold-leafed edges — the first terrace intimate (a single desk and chair), the second a small workshop, the third an institutional hall, the fourth a city skyline, the fifth dissolving into radiant golden horizon and sky. One continuous gold path climbs through all five. A lone figure of a distinguished Nigerian man in his 50s in silhouette ascending between the first and second terrace. Epic matte-painting realism, deep green shadow tones (#003020) so the image sits naturally on the dark section, gold light, one crimson banner on the third terrace. Horizontal 16:10. (Diversity options A/B apply to the silhouetted figure.)
 
 ---
 
@@ -1326,3 +1758,23 @@ Already supplied: `segunsamuel-logo.png` (primary S-mark) and `segunsamuel-logo-
 - [ ] og-image.jpg is exactly 1200×630.
 - [ ] No embedded text, watermarks, or third-party logos in any image.
 - [ ] Crimson appears as a small accent only — never dominant (brand rule: ≤8%).
+
+
+
+---
+
+# FINAL PLACEHOLDER-PROMPT AUDIT
+
+This master is the copy-ready source of truth for image generation.
+
+- Current canonical entries retained: 134
+- Legacy-only entries retained: 19
+- Total unique prompt/asset headings in this master: 172
+- Exact V87 coverage filenames without a concrete prompt heading/family template: 0
+- Unresolved `[SUBJECT]` in production prompt blocks: 0
+
+**Missing exact coverage entries:** NONE
+
+**Unresolved production tokens:** NONE
+
+The Events section is now explicitly covered, including `event-case-study-lab.jpg`. The current source states that Events has 10 exact production image contracts—one landing-page image plus nine Event Detail images.
