@@ -1,0 +1,111 @@
+
+/* Press Kit v1 — editorial media room */
+.press-page{background:#fbf8f1;color:#123f34}
+.press-container{width:min(1180px,calc(100% - 64px));margin:0 auto}
+.press-hero{background:#073f32;color:#f7f1e6;padding:110px 0 96px}
+.press-hero-inner{width:min(1180px,calc(100% - 64px));margin:0 auto}
+.press-kicker,.card-label,.asset-grid figcaption,.fact-grid span{font:600 11px/1.4 "Tenor Sans",Arial,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:#c9a84c}
+.press-hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(52px,7vw,104px);line-height:.9;max-width:920px;margin:24px 0}
+.press-hero h1 em,.press-section-head h2 em,.press-cta h2 em{font-style:italic}
+.press-lede{font:400 21px/1.65 "Crimson Pro",Georgia,serif;max-width:760px;color:#e9eee8}
+.press-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.press-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;text-decoration:none;font:600 11px/1 "Tenor Sans",Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase}
+.press-btn-primary{background:#a90d12;color:#fff;border:1px solid #a90d12}
+.press-btn-secondary{color:#123f34;border:1px solid rgba(18,63,52,.45);background:transparent}
+.press-hero .press-btn-secondary{color:#f7f1e6;border-color:rgba(247,241,230,.55)}
+.press-section{padding:105px 0}
+.press-section-soft{background:#edf6f3}
+.press-section-dark{background:#003b2d;color:#f7f1e6}
+.press-section-head{max-width:820px;margin-bottom:48px}
+.press-section-head h2{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(40px,5vw,68px);font-weight:500;line-height:.95;margin:14px 0 18px}
+.press-section-head p{font:400 18px/1.6 "Crimson Pro",Georgia,serif;color:#586b63;max-width:760px}
+.press-section-dark .press-section-head p{color:#dbe7df}
+.bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.bio-card,.angle-grid article,.brief-grid>div{background:#fff;border:1px solid rgba(18,63,52,.12);padding:32px}
+.bio-card p,.angle-grid p,.brief-grid p{font:400 17px/1.62 "Crimson Pro",Georgia,serif;color:#53645e}
+.bio-card p+p{margin-top:14px}
+.card-label{font-size:10px;margin-bottom:20px;color:#9d1014}
+.fact-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(18,63,52,.18);border-left:1px solid rgba(18,63,52,.18)}
+.fact-grid>div{padding:25px;border-right:1px solid rgba(18,63,52,.18);border-bottom:1px solid rgba(18,63,52,.18)}
+.fact-grid strong{display:block;font:500 24px/1.15 "Cormorant Garamond",Georgia,serif;margin-top:8px}
+.angle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.angle-grid article span{font:600 10px "Tenor Sans",Arial,sans-serif;letter-spacing:.18em;color:#9d1014}
+.angle-grid h3{font:500 29px/1.05 "Cormorant Garamond",Georgia,serif;margin:18px 0 12px;color:#123f34}
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.quote-grid blockquote{margin:0;font:500 28px/1.18 "Cormorant Garamond",Georgia,serif}
+.quote-grid cite{display:block;margin-top:22px;font:600 10px/1.5 "Tenor Sans",Arial,sans-serif;letter-spacing:.13em;color:#c9a84c;font-style:normal;text-transform:uppercase}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.work-grid a{display:block;padding:25px;background:#f3eee4;border:1px solid rgba(18,63,52,.12);text-decoration:none;color:#123f34}
+.work-grid span{font:600 10px "Tenor Sans",Arial,sans-serif;letter-spacing:.16em;color:#9d1014}
+.work-grid strong{display:block;font:500 30px/1 "Cormorant Garamond",Georgia,serif;margin:14px 0 7px}
+.work-grid small{font:400 14px/1.4 "Crimson Pro",Georgia,serif;color:#66736d}
+.asset-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.asset-grid figure{margin:0}
+.asset-grid img{display:block;width:100%;height:280px;object-fit:cover;background:#edf6f3}
+.asset-grid figcaption{margin-top:12px;color:#7c9189;font-size:9px}
+.brief-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.brief-grid strong{font:500 29px/1.05 "Cormorant Garamond",Georgia,serif}
+.press-cta{background:#f2ecdf;padding:92px 0 105px;text-align:center}
+.press-cta .press-container{max-width:800px}
+.press-cta h2{font:500 clamp(42px,5vw,70px)/.95 "Cormorant Garamond",Georgia,serif;margin:14px 0}
+.press-cta p{font:400 18px/1.55 "Crimson Pro",Georgia,serif;color:#586b63;max-width:680px;margin:0 auto}
+.press-cta .press-actions{justify-content:center}
+@media(max-width:900px){
+ .press-container,.press-hero-inner{width:min(100% - 40px,760px)}
+ .bio-grid,.quote-grid,.angle-grid,.work-grid,.brief-grid{grid-template-columns:1fr 1fr}
+ .fact-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+ .press-container,.press-hero-inner{width:calc(100% - 32px)}
+ .press-hero{padding:78px 0 70px}
+ .press-hero h1{font-size:54px}
+ .press-lede{font-size:18px}
+ .press-section{padding:72px 0}
+ .bio-grid,.quote-grid,.angle-grid,.work-grid,.brief-grid,.asset-grid,.fact-grid{grid-template-columns:1fr}
+ .bio-card,.angle-grid article,.brief-grid>div{padding:24px}
+ .asset-grid img{height:240px}
+}
+
+/* V77 precision fixes: explicit contrast + approved image-placeholder system */
+.press-page .press-hero h1,
+.press-page .press-hero h1 em,
+.press-page .press-section-dark .press-section-head h2,
+.press-page .press-section-dark .press-section-head h2 em {
+  color:#f7f1e6 !important;
+}
+.press-page .press-section-dark .press-section-head .press-kicker {
+  color:#c9a84c !important;
+}
+.press-page .press-image-placeholder{
+  position:relative;
+  min-height:280px;
+  width:100%;
+  overflow:hidden;
+  border:1px solid rgba(18,63,52,.12);
+  background:linear-gradient(160deg,#dceee9 0%,#eef7f4 45%,#f4eee3 100%) !important;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-start;
+}
+.press-page .press-image-placeholder::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("/Thesegunsamuel/assets/images/segunsamuel-logo-badge-01.png") center/96px auto no-repeat;
+  opacity:.82;
+  pointer-events:none;
+}
+.press-page .press-placeholder-label{
+  position:relative;
+  z-index:1;
+  margin:0 0 16px 16px;
+  padding:7px 9px;
+  background:rgba(253,250,244,.78);
+  color:#315b4e;
+  font:600 9px/1.2 "Tenor Sans",Arial,sans-serif;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+@media(max-width:620px){
+  .press-page .press-image-placeholder{min-height:240px}
+}
