@@ -239,3 +239,17 @@
 .ev-intel-card span {
   text-transform: uppercase;
 }
+
+/* V95 — Event tab isolation + active indicator */
+.ev-tabs-inner{position:relative}
+.ev-tabs a{position:relative}
+.ev-tabs a.active{color:var(--ev-crimson);border-color:transparent}
+.ev-tabs a[aria-selected="true"]{color:var(--ev-crimson)}
+.ev-tabs .event-tab-indicator{position:absolute;left:0;bottom:0;height:2px;background:var(--ev-crimson);transition:transform .25s ease,width .25s ease;pointer-events:none}
+.ev-tab-content [role="tabpanel"][hidden]{display:none !important}
+.ev-tab-content{min-height:1px}
+@media (max-width:700px){
+  .ev-tabs-inner{gap:18px;overflow-x:auto;scrollbar-width:none}
+  .ev-tabs-inner::-webkit-scrollbar{display:none}
+  .ev-tabs a{padding:15px 0}
+}
