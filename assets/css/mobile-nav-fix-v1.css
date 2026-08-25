@@ -1,0 +1,17 @@
+
+/* Canonical mobile navigation fallback */
+@media (max-width: 900px) {
+  .ss-mobile-nav,
+  .mobile-nav,
+  .site-mobile-nav {
+    display: none;
+  }
+  .ss-mobile-nav.is-open,
+  .mobile-nav.is-open,
+  .site-mobile-nav.is-open {
+    display: block;
+  }
+  body.nav-open {
+    overflow: hidden;
+  }
+}

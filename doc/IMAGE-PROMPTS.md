@@ -2,43 +2,30 @@
 
 ## DIVERSITY OPTIONS — GLOBAL SUBJECT SYSTEM
 
-Each image-generation prompt that contains **`[SUBJECT]`** uses the following controlled diversity system. Do not rewrite the creative prompt when changing representation; replace only the `[SUBJECT]` token with the appropriate option.
+Each image-generation prompt that contains **`[SUBJECT]`** uses the following controlled diversity system. These are **explicit generation options, not automatic defaults**.
 
 - **Option A — Mixed:** replace `[SUBJECT]` with **“a distinguished Nigerian man in his 40s”** for portraits of Segun; for group scenes use **“a diverse group of African, European, and Asian professionals”**.
 - **Option B — All Black:** portraits as Option A; group scenes use **“a group of distinguished Black African professionals”**.
 - **Option C — All White:** only applicable to group/atmosphere scenes where the subject is not Segun himself; use **“a group of White European professionals”**. **Portraits representing Segun should always depict a Nigerian man.**
 
-### Usage rule
+### Critical default rule
 
-`[SUBJECT]` is a controlled substitution token, not a prompt instruction to leave unresolved. Before generation, choose the required diversity option and replace `[SUBJECT]` with the corresponding subject phrase.
+**Do not automatically apply Option A, Option B, or Option C.** The diversity option must be explicitly selected for the individual generation request.
+
+If no diversity option is specified, **preserve the subject composition already written in the master prompt**. Do not introduce additional ethnicities, races, or demographic groups merely because `[SUBJECT]` appears in the prompt.
+
+`[SUBJECT]` is a controlled substitution token. Before generation, replace it only when a specific diversity option has been selected.
 
 **Identity rule:** Any image representing Segun Samuel himself must use the Nigerian-man subject specification. Option C must never be used for a Segun portrait.
 
-**Prompt architecture:** Keep the master prompt intact and vary only `[SUBJECT]` when diversity variation is required. Do not create three duplicated prompts merely to represent the three options.
-
----
-
-
-### For Nano Banana Pro (or any high-end image model)
-
-This is the canonical image-generation register for the current SegunSamuel website build.
-
-This document deliberately follows the supplied `Sample-image-prompts.md` convention: **every generated image has an exact filename in a `###` heading, followed by what the image represents and where it is used.** The filename is the production contract.
-
-Every real generated asset belongs in `/assets/images/` or the exact subfolder stated below. The site remains functional before the real image is supplied by displaying the approved gradient + `segunsamuel-logo-badge-01.png` fallback.
-
-**Real-image rule:** declare the filename first. If the exact file exists, display it. If it does not exist, show the placeholder. Supplying the exact file later must automatically replace the placeholder without redesigning the page.
-
-**Source discipline:** This register is based on the current website build plus the supplied prompt-file convention. It does not silently turn supplied logos or real publisher covers into AI-generated assets.
+**Prompt architecture:** Keep the master creative prompt intact. Diversity variation is an optional controlled substitution, not an instruction to make every scene racially mixed. Do not create three duplicated prompts merely to represent the three options.
 
 ### Diversity token examples
-
-The following examples demonstrate the intended `[SUBJECT]` implementation:
 
 - **`segun-portrait-studio.png`** — `[SUBJECT] in an impeccably tailored deep forest-green suit...`
 - **`og-image.jpg`** — `Wide cinematic composition: [SUBJECT] in a forest-green suit...`
 
-For a Segun portrait, `[SUBJECT]` resolves to **“a distinguished Nigerian man in his 40s”**. For a group/atmosphere scene, it resolves according to Option A, B, or C above.
+For a Segun portrait, an explicitly selected portrait option resolves `[SUBJECT]` to **“a distinguished Nigerian man in his 40s”**. For a group/atmosphere scene, an explicitly selected Option A, B, or C supplies the corresponding group phrase.
 
 ---
 
@@ -1196,8 +1183,7 @@ Create a premium editorial-cinematic conceptual photograph representing The War 
 
 **Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
 
-
-# UNIVERSAL IMAGE SLOT REGISTRY — V87 AUDIT
+# UNIVERSAL IMAGE SLOT REGISTRY — V88 AUDIT
 
 This registry is generated from the implemented `data-image-slot` attributes. Every slot maps to an exact production filename in this canonical prompt file. Runtime loading is handled by `/assets/js/image-slots.js`; absent assets retain the approved placeholder.
 

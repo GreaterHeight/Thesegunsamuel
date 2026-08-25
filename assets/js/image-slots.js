@@ -2,17 +2,10 @@
   "use strict";
 
   /*
-   * Segun Samuel Universal Image Slot System
-   *
-   * Contract:
-   *   data-image-slot="exact-filename.ext"
-   *   data-image-base="/Thesegunsamuel/assets/images/"
-   *
-   * Existing generated image -> display it.
-   * Missing generated image -> preserve the approved placeholder.
-   *
-   * The loader deliberately does not create or replace placeholder artwork.
-   * Placeholder presentation belongs to the page/component CSS.
+   * Canonical image-slot loader.
+   * Preloads the exact production image before revealing the slot.
+   * If the image exists, the real image is revealed without showing the placeholder first.
+   * If it does not exist, the approved placeholder remains visible.
    */
 
   function resolveUrl(slot) {
@@ -28,29 +21,10 @@
     return base.replace(/\/?$/, "/") + file;
   }
 
-  function showRealImage(slot, img, url) {
-    slot.classList.add("has-real-image");
-    slot.classList.remove("image-load-failed");
-    slot.setAttribute("data-image-loaded", "true");
-    slot.setAttribute("data-image-status", "ready");
+  function initSlot(slot) {
+    var url = resolveUrl(slot);
+    if (!url) return;
 
-    img.src = url;
-    img.removeAttribute("aria-hidden");
-  }
-
-  function keepPlaceholder(slot, img) {
-    slot.classList.remove("has-real-image");
-    slot.classList.add("image-load-failed");
-    slot.setAttribute("data-image-loaded", "false");
-    slot.setAttribute("data-image-status", "placeholder");
-
-    if (img) {
-      img.removeAttribute("src");
-      img.setAttribute("aria-hidden", "true");
-    }
-  }
-
-  function ensureImageElement(slot) {
     var img = slot.querySelector("[data-image-renderer]");
     if (!img) {
       img = document.createElement("img");
@@ -60,29 +34,48 @@
       img.loading = slot.getAttribute("data-image-loading") || "lazy";
       slot.appendChild(img);
     }
-    return img;
-  }
 
-  function initSlot(slot) {
-    var url = resolveUrl(slot);
-    if (!url) return;
-
-    var img = ensureImageElement(slot);
-
+    /* Keep the placeholder as the initial state only while the asset is unknown. */
+    slot.classList.add("image-checking");
+    slot.classList.remove("has-real-image", "image-load-failed");
     slot.setAttribute("data-image-status", "checking");
     slot.setAttribute("data-image-loaded", "false");
 
     var probe = new Image();
+
     probe.onload = function () {
-      showRealImage(slot, img, url);
+      img.src = url;
+
+      /* Wait for the actual renderer element to decode before revealing it. */
+      var reveal = function () {
+        slot.classList.remove("image-checking", "image-load-failed");
+        slot.classList.add("has-real-image");
+        slot.setAttribute("data-image-loaded", "true");
+        slot.setAttribute("data-image-status", "ready");
+        img.removeAttribute("aria-hidden");
+      };
+
+      if (img.decode) {
+        img.decode().then(reveal).catch(reveal);
+      } else {
+        reveal();
+      }
+
       probe.onload = null;
       probe.onerror = null;
     };
+
     probe.onerror = function () {
-      keepPlaceholder(slot, img);
+      slot.classList.remove("image-checking", "has-real-image");
+      slot.classList.add("image-load-failed");
+      slot.setAttribute("data-image-loaded", "false");
+      slot.setAttribute("data-image-status", "placeholder");
+      img.removeAttribute("src");
+      img.setAttribute("aria-hidden", "true");
       probe.onload = null;
       probe.onerror = null;
     };
+
     probe.src = url;
   }
 

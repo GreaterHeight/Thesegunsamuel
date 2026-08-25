@@ -44,3 +44,12 @@
     transition: none;
   }
 }
+
+[data-image-slot].image-checking > [data-image-renderer] {
+  opacity: 0;
+  visibility: hidden;
+}
+[data-image-slot].image-checking > :not([data-image-renderer]) {
+  opacity: 0;
+  visibility: hidden;
+}
