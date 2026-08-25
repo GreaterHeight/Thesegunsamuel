@@ -1,39 +1,89 @@
 # IMAGE GENERATION PROMPTS — segunsamuel.com
 
-## DIVERSITY OPTIONS — GLOBAL SUBJECT SYSTEM
-**REFERENCE ONLY — DO NOT APPEND THIS SECTION TO A GENERATION PROMPT.**
+## IMAGE GENERATION SUBJECT & DIVERSITY SYSTEM — CANONICAL RULES
 
-This section defines an optional, controlled representation system. It is **not a default visual instruction**. Do not let the existence of this section cause a prompt to introduce a mixture of races, ethnicities, or demographics.
+This section governs how subjects and demographic representation are handled throughout this prompt library.
 
-- **Option A — Mixed:** for Segun portraits, replace `[SUBJECT]` with **“a distinguished Nigerian man in his 40s”**; for explicitly selected mixed group scenes, use **“a diverse group of African, European, and Asian professionals”**.
-- **Option B — All Black:** for Segun portraits, use the same Nigerian-man subject; for explicitly selected group scenes, use **“a group of distinguished Black African professionals”**.
-- **Option C — All White:** only for explicitly selected group/atmosphere scenes where the subject is not Segun; use **“a group of White European professionals”**. **Never use Option C for a Segun portrait.**
+### 1. Specificity is the default
 
-### Absolute default rule
+**Do not introduce racial, ethnic, national, or demographic diversity unless the individual prompt explicitly calls for it.**
 
-**No diversity option is selected unless the generation request explicitly selects one.**
+Do not interpret words such as *diverse*, *global*, *international*, *multicultural*, or *professionals* as permission to automatically generate a mixture of Black and White people.
 
-If no diversity option is specified:
-1. Preserve the people/subject composition already written in the individual master prompt.
-2. Do not introduce additional ethnicities, races, nationalities, or demographic groups.
-3. Do not interpret `[SUBJECT]` as a request for a mixed group.
-4. Do not infer Option A merely because it is listed first.
-5. For a Segun portrait, `[SUBJECT]` resolves to **“a distinguished Nigerian man in his 40s”** unless the prompt explicitly specifies another compliant Nigerian-man description.
+When a prompt does not specify demographic composition, preserve the composition naturally implied by the prompt. Do not add demographic variation merely to make a scene look diverse.
 
-`[SUBJECT]` is a controlled substitution token. It is not an invitation for the image model to invent a demographic composition.
+### 2. Segun Samuel's identity
 
-### Usage examples
+Whenever an image represents **Segun Samuel**, the subject is:
 
-- **`segun-portrait-studio.png`** — `[SUBJECT] in an impeccably tailored deep forest-green suit...`
-- **`og-image.jpg`** — `Wide cinematic composition: [SUBJECT] in a forest-green suit...`
+> **a distinguished Nigerian man in his 50s**
 
-For these examples, resolve `[SUBJECT]` to the specified subject **before** generation. The diversity options are only used when an explicit variation is requested.
+Where a reference photograph is supplied, use it for Segun's likeness, facial identity, skin tone, and other identity-critical characteristics as instructed by the individual prompt.
 
-### Generation safeguard
+**Never generate Segun as a White subject.**
 
-When copying an individual prompt for image generation, copy **the individual prompt itself and the applicable global style/rules only**. Do not paste this diversity reference block into the generation prompt unless you are deliberately selecting a diversity option.
+### 3. Controlled diversity options
+
+Diversity is an **explicit creative choice for an individual prompt**, not a global generation default.
+
+Where an individual prompt contains `[SUBJECT]`, use the following only when the generation request explicitly selects an option:
+
+- **Option A — Mixed**
+  - Segun portrait: **“a distinguished Nigerian man in his 50s”**
+  - Group scene: **“a diverse group of African, European, and Asian professionals”**
+
+- **Option B — All Black**
+  - Segun portrait: **“a distinguished Nigerian man in his 50s”**
+  - Group scene: **“a group of distinguished Black African professionals”**
+
+- **Option C — All White**
+  - Only for an appropriate group/atmosphere scene where the subject is not Segun.
+  - **“a group of White European professionals”**
+  - Never use Option C for a Segun portrait.
+
+### 4. Do not use `[SUBJECT]` as an automatic diversity trigger
+
+`[SUBJECT]` is a controlled substitution token. It does not mean “mixed people.”
+
+If an individual prompt contains `[SUBJECT]` and no diversity option is explicitly selected, resolve the subject from the prompt's own context or use the established Segun identity where the image is a Segun portrait.
+
+### 5. Prefer explicit casting over generic demographic language
+
+When people matter to the visual story, describe them specifically.
+
+Prefer:
+
+- **“a distinguished Nigerian man in his 50s”**
+- **“a group of distinguished Black African professionals”**
+- **“a diverse group of African, European, and Asian professionals”**
+- **“a distinguished Nigerian professional in his 30s–40s, seen from behind”**
+
+Avoid unqualified phrases such as:
+
+- “a diverse group of professionals”
+- “a multicultural group”
+- “an international audience”
+
+unless the prompt deliberately intends that demographic composition.
+
+### 6. People are not required when the visual story does not require them
+
+Where an image can communicate the concept through architecture, objects, shadows, rooms, documents, books, landscapes, silhouettes, or other symbolic elements, do not add people merely to create human diversity.
+
+### 7. Prompt architecture
+
+Each image prompt should establish, in order where useful:
+
+**subject identity → demographic composition (if relevant) → role → setting → action → visual story → composition → lighting/brand treatment → negative constraints.**
+
+The individual prompt remains the primary creative authority. These global rules support consistency; they do not override a deliberate, explicit instruction inside an individual prompt.
+
+### 8. Reference-photo discipline
+
+When an individual prompt says to use a reference photo, the reference controls the identity characteristics specified by that prompt. Do not substitute a different demographic identity.
 
 ---
+
 
 
 ## Global style block — append to every generated-image prompt
@@ -89,7 +139,7 @@ The following prompts are for the current production engagement experiences insi
 ### `mentoring-hero.jpg` — Strategic Mentoring hero background (16:9, full-bleed)
 **Route:** `/mentoring/`
 
-Use the supplied Segun Samuel reference photograph to preserve likeness. Create a premium editorial-cinematic portrait of Segun Samuel as a thoughtful strategic mentor rather than a conventional corporate coach: a distinguished Nigerian man in his 40s, calm and composed, wearing an impeccably tailored deep forest-green suit with an understated cream shirt, no tie, standing in a refined contemporary study or architectural advisory room with dark wood, deep green wall planes, warm natural window light and subtle evening ambience. Place Segun primarily in the **right third of the frame**, with generous, visually quiet negative space across the left half for the page's overlaid eyebrow, headline and supporting copy. His expression should communicate intellectual confidence, attention and quiet authority—not performance or salesmanship. Include restrained architectural depth, books, a leather notebook or one subtle brass object as environmental details, but keep the composition uncluttered. Deep forest green, warm cream, muted amber and a very restrained crimson accent. No visible UI, no readable books, no signage, no text, no logos, no watermark. The image must remain sophisticated when cropped on tablet and mobile; keep the face and torso comfortably inside the safe central/right crop area. **Horizontal 16:9 master, minimum 2400px on the long edge.**
+Use the supplied Segun Samuel reference photograph to preserve likeness. Create a premium editorial-cinematic portrait of Segun Samuel as a thoughtful strategic mentor rather than a conventional corporate coach: a distinguished Nigerian man in his 50s, calm and composed, wearing an impeccably tailored deep forest-green suit with an understated cream shirt, no tie, standing in a refined contemporary study or architectural advisory room with dark wood, deep green wall planes, warm natural window light and subtle evening ambience. Place Segun primarily in the **right third of the frame**, with generous, visually quiet negative space across the left half for the page's overlaid eyebrow, headline and supporting copy. His expression should communicate intellectual confidence, attention and quiet authority—not performance or salesmanship. Include restrained architectural depth, books, a leather notebook or one subtle brass object as environmental details, but keep the composition uncluttered. Deep forest green, warm cream, muted amber and a very restrained crimson accent. No visible UI, no readable books, no signage, no text, no logos, no watermark. The image must remain sophisticated when cropped on tablet and mobile; keep the face and torso comfortably inside the safe central/right crop area. **Horizontal 16:9 master, minimum 2400px on the long edge.**
 
 ### `inner-dimension.jpg` — The Inner Dimension / The War Within background (16:9, full-bleed)
 **Route:** `/mentoring/` — “The Inner Dimension” section
@@ -528,7 +578,7 @@ Create a premium editorial-cinematic image of a **small strategic roundtable**: 
 **Placeholder:** Approved gradient + `segunsamuel-logo-badge-01.png`.
 
 ### `event-case-study-lab.jpg` — Case Study Lab (16:9 master)
-Create a premium editorial-cinematic photograph of a **case-study analysis laboratory**: a diverse group of professionals gathered around a large table examining a complex real-world situation through printed maps, charts, notes and a laptop, with one facilitator guiding the diagnosis. The visual story is situation → diagnosis → interpretation → application. Avoid generic classroom imagery; make it feel like a strategic working session where people are testing assumptions and connecting evidence. Use warm controlled lighting, deep green and cream surroundings, restrained crimson and gold accents, natural human interaction and tactile paper materials. No readable text, logos or legible chart labels. Horizontal 16:9 master.
+Create a premium editorial-cinematic photograph of a **case-study analysis laboratory**: a group of distinguished professionals gathered around a large table examining a complex real-world situation through printed maps, charts, notes and a laptop, with one facilitator guiding the diagnosis. The visual story is situation → diagnosis → interpretation → application. Avoid generic classroom imagery; make it feel like a strategic working session where people are testing assumptions and connecting evidence. Use warm controlled lighting, deep green and cream surroundings, restrained crimson and gold accents, natural human interaction and tactile paper materials. No readable text, logos or legible chart labels. Horizontal 16:9 master.
 
 **Route:** `/events/case-study-lab/`
 **Used for:** Listing card and event-detail hero.
@@ -1189,9 +1239,9 @@ Create a premium editorial-cinematic conceptual photograph representing The War 
 
 **Placeholder behaviour:** Until the exact file exists, display the approved gradient + `segunsamuel-logo-badge-01.png` placeholder. Once supplied, replace only the placeholder artwork; preserve the existing frame, crop and layout.
 
-# UNIVERSAL IMAGE SLOT REGISTRY — V88 AUDIT
+## UNIVERSAL IMAGE SLOT REGISTRY — V91
 
-This registry is generated from the implemented `data-image-slot` attributes. Every slot maps to an exact production filename in this canonical prompt file. Runtime loading is handled by `/assets/js/image-slots.js`; absent assets retain the approved placeholder.
+Generated from implemented `data-image-slot` attributes. Every slot maps to an exact production filename. The canonical runtime loader is `/assets/js/image-slots.js`.
 
 | Route | Production image | Prompt present |
 |---|---|---|
