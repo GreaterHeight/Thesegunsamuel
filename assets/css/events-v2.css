@@ -42,3 +42,29 @@
 .ev-share{text-align:center;padding:72px 0 90px}.ev-share .ev-actions{justify-content:center}.ev-share-label{font:600 9px "Tenor Sans",Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#6c7d76}
 @media(max-width:900px){.ev-hero-grid,.ev-feature-grid,.ev-detail-grid,.ev-promise{grid-template-columns:1fr}.ev-grid{grid-template-columns:1fr 1fr}.ev-intel-grid{grid-template-columns:1fr 1fr}.ev-promise-list{grid-template-columns:1fr 1fr}.ev-related{grid-template-columns:1fr 1fr}.ev-hero{padding:70px 0}.ev-placeholder{min-height:280px}}
 @media(max-width:620px){.ev-wrap{width:calc(100% - 32px)}.ev-hero h1,.ev-detail-hero h1{font-size:52px}.ev-lead{font-size:18px}.ev-grid,.ev-promise-list,.ev-highlight-grid,.ev-why-grid,.ev-related{grid-template-columns:1fr}.ev-discovery{grid-template-columns:1fr}.ev-intel-grid{grid-template-columns:1fr 1fr}.ev-section,.ev-detail-section,.ev-dark{padding:68px 0}.ev-tabs-inner{gap:18px}.ev-detail-hero .ev-placeholder{min-height:250px}.ev-card-media{height:190px}}
+
+/* Real-image state for the event placeholder system.
+   The gradient/badge placeholder remains the fallback until the exact asset exists. */
+.ev-placeholder {
+  position: relative;
+  overflow: hidden;
+}
+.ev-placeholder[data-image-slot] > [data-event-image] {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease;
+}
+.ev-placeholder[data-image-slot].has-real-image > [data-event-image] {
+  opacity: 1;
+  visibility: visible;
+}
+.ev-placeholder[data-image-slot].has-real-image > span {
+  opacity: 0;
+  visibility: hidden;
+}
