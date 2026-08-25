@@ -1,0 +1,62 @@
+
+/* Global WhatsApp contact float */
+.whatsapp-float {
+    position: fixed;
+    right: clamp(1rem, 3vw, 1.5rem);
+    bottom: clamp(1rem, 3vw, 1.5rem);
+    z-index: 95;
+    width: 56px;
+    height: 56px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    box-shadow: 0 8px 24px rgba(0, 48, 32, 0.35);
+    border-radius: 50%;
+    background: rgb(37, 211, 102);
+    text-decoration: none;
+    transition:
+        transform var(--t-fast, 180ms) var(--ease-out, ease-out),
+        box-shadow var(--t-fast, 180ms) var(--ease-soft, ease);
+}
+
+.whatsapp-float img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 10px 28px rgba(0, 48, 32, 0.42);
+}
+
+.whatsapp-float:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.95);
+    outline-offset: 3px;
+}
+
+.whatsapp-float:active {
+    transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 600px) {
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        right: 1rem;
+        bottom: 1rem;
+    }
+
+    .whatsapp-float img {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float {
+        transition: none;
+    }
+}
