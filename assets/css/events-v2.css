@@ -223,3 +223,19 @@
 .ev-tabs a[aria-selected="true"] {
   color: #8C0D0C;
 }
+
+/* V94 — event utility buttons */
+.ev-actions .ev-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .65rem;
+}
+.ev-actions .ev-btn svg {
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+}
+.ev-intel-card span {
+  text-transform: uppercase;
+}
