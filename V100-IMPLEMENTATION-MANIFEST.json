@@ -1,0 +1,42 @@
+{
+  "version": "V100",
+  "baseline": "V99",
+  "purpose": "Complete Event Detail tab system across all event detail pages",
+  "event_pages": [
+    "ai-strategy-workshop",
+    "architects-roundtable",
+    "case-study-lab",
+    "frameworks-in-practice",
+    "institution-builders-forum",
+    "leadership-power-systems-workshop",
+    "prepared-mind-live",
+    "strategic-intelligence-intensive",
+    "strategic-intelligence-live"
+  ],
+  "top_level_tabs": [
+    "Overview",
+    "Exhibitors",
+    "Sponsors",
+    "Delegate",
+    "Speakers",
+    "FAQ"
+  ],
+  "nested_tabs": {
+    "Exhibitors": [
+      "Why Exhibit?",
+      "Exhibition Packages"
+    ],
+    "Sponsors": [
+      "Why Sponsor?",
+      "Packages",
+      "Our Sponsors"
+    ],
+    "Speakers": [
+      "Why Speak?",
+      "Meet Speaker"
+    ]
+  },
+  "exhibition_action": "Apply to Exhibit opens the exhibition application modal",
+  "content_policy": "Event-specific copy; no invented confirmed sponsors/speakers; Architects Roundtable remains reference implementation.",
+  "packaging": "Clean root build; no nested previous-version website directory."
+}
