@@ -181,3 +181,45 @@
   height: 21px;
   fill: currentColor;
 }
+
+/* V93 — Event hero spacing and secondary CTA contrast */
+.ev-detail-hero .ev-detail-grid > div:first-child {
+  width: min(780px, calc(100% - 2rem));
+  margin-left: clamp(1.25rem, 5vw, 5rem);
+  padding-left: clamp(.75rem, 2vw, 2rem);
+}
+.ev-detail-hero .ev-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-3);
+}
+.ev-detail-hero .ev-btn.ev-btn-secondary {
+  color: #FDFAF4;
+  background: rgba(0,48,32,.72);
+  border: 1px solid rgba(253,250,244,.72);
+  box-shadow: 0 6px 22px rgba(0,0,0,.18);
+}
+.ev-detail-hero .ev-btn.ev-btn-secondary:hover,
+.ev-detail-hero .ev-btn.ev-btn-secondary:focus-visible {
+  color: #003020;
+  background: #FDFAF4;
+  border-color: #FDFAF4;
+}
+@media (max-width: 900px) {
+  .ev-detail-hero .ev-detail-grid > div:first-child {
+    width: calc(100% - 1.5rem);
+    margin-left: .75rem;
+    padding-left: .5rem;
+  }
+}
+
+/* V93 — Event detail tab panels */
+.ev-tab-panel[hidden] {
+  display: none !important;
+}
+.ev-tabs [role="tab"] {
+  cursor: pointer;
+}
+.ev-tabs a[aria-selected="true"] {
+  color: #8C0D0C;
+}
