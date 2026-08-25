@@ -1,55 +1,71 @@
+/* UNIVERSAL IMAGE SLOT SYSTEM — CANONICAL RENDERING CONTRACT
+ *
+ * data-image-slot="filename.ext"
+ *   -> /assets/images/filename.ext
+ *
+ * If the file exists, the real image is preloaded and decoded before the
+ * slot is revealed. If it does not exist, the approved placeholder remains.
+ *
+ * No publication-specific image CSS is required for these slots.
+ */
 
-/* Universal image-slot renderer */
 [data-image-slot] {
   position: relative;
   overflow: hidden;
 }
 
 [data-image-slot] > [data-image-renderer] {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 180ms ease;
-  z-index: 1;
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  z-index: 2 !important;
+}
+
+[data-image-slot].image-checking > [data-image-renderer] {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+[data-image-slot].image-checking > :not([data-image-renderer]) {
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 [data-image-slot].has-real-image > [data-image-renderer] {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
-[data-image-slot].has-real-image > .image-placeholder,
-[data-image-slot].has-real-image > .ev-placeholder-content,
-[data-image-slot].has-real-image > .placeholder-content {
-  opacity: 0;
-  visibility: hidden;
+[data-image-slot].has-real-image > :not([data-image-renderer]) {
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
-[data-image-slot] > :not([data-image-renderer]) {
-  transition: opacity 180ms ease;
+/* If an older stylesheet tries to hide a direct child image, this canonical
+   contract wins. */
+[data-image-slot].has-real-image > img[data-image-renderer] {
+  display: block !important;
 }
 
 [data-image-slot].image-load-failed > [data-image-renderer] {
-  opacity: 0;
-  visibility: hidden;
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
   [data-image-slot] > [data-image-renderer] {
-    transition: none;
+    transition: none !important;
   }
-}
-
-[data-image-slot].image-checking > [data-image-renderer] {
-  opacity: 0;
-  visibility: hidden;
-}
-[data-image-slot].image-checking > :not([data-image-renderer]) {
-  opacity: 0;
-  visibility: hidden;
 }
