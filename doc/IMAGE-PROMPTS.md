@@ -1,31 +1,37 @@
 # IMAGE GENERATION PROMPTS — segunsamuel.com
 
 ## DIVERSITY OPTIONS — GLOBAL SUBJECT SYSTEM
+**REFERENCE ONLY — DO NOT APPEND THIS SECTION TO A GENERATION PROMPT.**
 
-Each image-generation prompt that contains **`[SUBJECT]`** uses the following controlled diversity system. These are **explicit generation options, not automatic defaults**.
+This section defines an optional, controlled representation system. It is **not a default visual instruction**. Do not let the existence of this section cause a prompt to introduce a mixture of races, ethnicities, or demographics.
 
-- **Option A — Mixed:** replace `[SUBJECT]` with **“a distinguished Nigerian man in his 40s”** for portraits of Segun; for group scenes use **“a diverse group of African, European, and Asian professionals”**.
-- **Option B — All Black:** portraits as Option A; group scenes use **“a group of distinguished Black African professionals”**.
-- **Option C — All White:** only applicable to group/atmosphere scenes where the subject is not Segun himself; use **“a group of White European professionals”**. **Portraits representing Segun should always depict a Nigerian man.**
+- **Option A — Mixed:** for Segun portraits, replace `[SUBJECT]` with **“a distinguished Nigerian man in his 40s”**; for explicitly selected mixed group scenes, use **“a diverse group of African, European, and Asian professionals”**.
+- **Option B — All Black:** for Segun portraits, use the same Nigerian-man subject; for explicitly selected group scenes, use **“a group of distinguished Black African professionals”**.
+- **Option C — All White:** only for explicitly selected group/atmosphere scenes where the subject is not Segun; use **“a group of White European professionals”**. **Never use Option C for a Segun portrait.**
 
-### Critical default rule
+### Absolute default rule
 
-**Do not automatically apply Option A, Option B, or Option C.** The diversity option must be explicitly selected for the individual generation request.
+**No diversity option is selected unless the generation request explicitly selects one.**
 
-If no diversity option is specified, **preserve the subject composition already written in the master prompt**. Do not introduce additional ethnicities, races, or demographic groups merely because `[SUBJECT]` appears in the prompt.
+If no diversity option is specified:
+1. Preserve the people/subject composition already written in the individual master prompt.
+2. Do not introduce additional ethnicities, races, nationalities, or demographic groups.
+3. Do not interpret `[SUBJECT]` as a request for a mixed group.
+4. Do not infer Option A merely because it is listed first.
+5. For a Segun portrait, `[SUBJECT]` resolves to **“a distinguished Nigerian man in his 40s”** unless the prompt explicitly specifies another compliant Nigerian-man description.
 
-`[SUBJECT]` is a controlled substitution token. Before generation, replace it only when a specific diversity option has been selected.
+`[SUBJECT]` is a controlled substitution token. It is not an invitation for the image model to invent a demographic composition.
 
-**Identity rule:** Any image representing Segun Samuel himself must use the Nigerian-man subject specification. Option C must never be used for a Segun portrait.
-
-**Prompt architecture:** Keep the master creative prompt intact. Diversity variation is an optional controlled substitution, not an instruction to make every scene racially mixed. Do not create three duplicated prompts merely to represent the three options.
-
-### Diversity token examples
+### Usage examples
 
 - **`segun-portrait-studio.png`** — `[SUBJECT] in an impeccably tailored deep forest-green suit...`
 - **`og-image.jpg`** — `Wide cinematic composition: [SUBJECT] in a forest-green suit...`
 
-For a Segun portrait, an explicitly selected portrait option resolves `[SUBJECT]` to **“a distinguished Nigerian man in his 40s”**. For a group/atmosphere scene, an explicitly selected Option A, B, or C supplies the corresponding group phrase.
+For these examples, resolve `[SUBJECT]` to the specified subject **before** generation. The diversity options are only used when an explicit variation is requested.
+
+### Generation safeguard
+
+When copying an individual prompt for image generation, copy **the individual prompt itself and the applicable global style/rules only**. Do not paste this diversity reference block into the generation prompt unless you are deliberately selecting a diversity option.
 
 ---
 

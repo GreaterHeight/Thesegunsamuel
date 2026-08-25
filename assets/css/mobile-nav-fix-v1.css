@@ -1,17 +1,41 @@
+/* V90 canonical mobile navigation fallback */
+@media (max-width: 1020px) {
+  .ss-nav-toggle {
+    display: block !important;
+    margin-left: auto !important;
+    position: relative !important;
+    z-index: 2101 !important;
+  }
 
-/* Canonical mobile navigation fallback */
-@media (max-width: 900px) {
-  .ss-mobile-nav,
-  .mobile-nav,
-  .site-mobile-nav {
-    display: none;
+  .ss-primary-nav {
+    display: none !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    order: 5 !important;
   }
-  .ss-mobile-nav.is-open,
-  .mobile-nav.is-open,
-  .site-mobile-nav.is-open {
-    display: block;
+
+  .ss-primary-nav.ss-mobile-open {
+    display: flex !important;
   }
-  body.nav-open {
-    overflow: hidden;
+
+  .ss-nav-container {
+    flex-wrap: wrap !important;
+  }
+
+  .ss-nav-group {
+    width: 100% !important;
+  }
+
+  .ss-nav-group .ss-nav-dropdown {
+    position: static !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .ss-primary-nav.ss-mobile-open {
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }

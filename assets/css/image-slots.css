@@ -1,17 +1,28 @@
-/* UNIVERSAL IMAGE SLOT SYSTEM — CANONICAL RENDERING CONTRACT
+/* UNIVERSAL IMAGE SLOT SYSTEM — V90 CANONICAL RENDERING CONTRACT
  *
- * data-image-slot="filename.ext"
- *   -> /assets/images/filename.ext
+ * Critical behaviour:
+ *   1. Image slots are invisible BEFORE JavaScript runs, so the placeholder
+ *      cannot flash on first paint.
+ *   2. The loader preloads and decodes the real image.
+ *   3. Only then does .has-real-image reveal the real image.
+ *   4. If the asset is missing, .image-load-failed reveals the approved placeholder.
  *
- * If the file exists, the real image is preloaded and decoded before the
- * slot is revealed. If it does not exist, the approved placeholder remains.
- *
- * No publication-specific image CSS is required for these slots.
+ * One system only. Do not add page-specific image swap scripts.
  */
 
 [data-image-slot] {
   position: relative;
   overflow: hidden;
+  visibility: hidden !important;
+}
+
+[data-image-slot].image-checking {
+  visibility: hidden !important;
+}
+
+[data-image-slot].has-real-image,
+[data-image-slot].image-load-failed {
+  visibility: visible !important;
 }
 
 [data-image-slot] > [data-image-renderer] {
@@ -32,16 +43,6 @@
   z-index: 2 !important;
 }
 
-[data-image-slot].image-checking > [data-image-renderer] {
-  opacity: 0 !important;
-  visibility: hidden !important;
-}
-
-[data-image-slot].image-checking > :not([data-image-renderer]) {
-  opacity: 0 !important;
-  visibility: hidden !important;
-}
-
 [data-image-slot].has-real-image > [data-image-renderer] {
   opacity: 1 !important;
   visibility: visible !important;
@@ -52,16 +53,16 @@
   visibility: hidden !important;
 }
 
-/* If an older stylesheet tries to hide a direct child image, this canonical
-   contract wins. */
-[data-image-slot].has-real-image > img[data-image-renderer] {
-  display: block !important;
-}
-
 [data-image-slot].image-load-failed > [data-image-renderer] {
   display: none !important;
   opacity: 0 !important;
   visibility: hidden !important;
+}
+
+/* Keep the approved placeholder artwork intact when no real asset exists. */
+[data-image-slot].image-load-failed > :not([data-image-renderer]) {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
