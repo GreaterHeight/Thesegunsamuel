@@ -1,0 +1,47 @@
+
+/* V106 — Podcast hero containment refinement
+   The artwork is decorative/background media for the hero only.
+   It must not become a viewport-sized page background and must not cover hero content.
+*/
+.podcast-hero,
+.podcast-detail-hero,
+.podcast-page-hero,
+.podcast-hero-section{
+  position:relative;
+  min-height:0 !important;
+  height:auto !important;
+  max-height:520px;
+  overflow:hidden;
+}
+.podcast-hero::before,
+.podcast-detail-hero::before,
+.podcast-page-hero::before,
+.podcast-hero-section::before{
+  position:absolute !important;
+  inset:0 !important;
+  height:auto !important;
+  min-height:0 !important;
+  max-height:none !important;
+  background-size:cover !important;
+  background-position:center !important;
+  pointer-events:none !important;
+}
+.podcast-hero > *,
+.podcast-detail-hero > *,
+.podcast-page-hero > *,
+.podcast-hero-section > *{
+  position:relative;
+  z-index:1;
+}
+@media (max-width:900px){
+  .podcast-hero,
+  .podcast-detail-hero,
+  .podcast-page-hero,
+  .podcast-hero-section{max-height:460px}
+}
+@media (max-width:600px){
+  .podcast-hero,
+  .podcast-detail-hero,
+  .podcast-page-hero,
+  .podcast-hero-section{max-height:410px}
+}
