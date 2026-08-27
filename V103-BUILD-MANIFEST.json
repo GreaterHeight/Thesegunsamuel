@@ -1,0 +1,13 @@
+{
+  "version": "V103",
+  "title": "Article Consolidation + Application and Case Studies Contrast Fix",
+  "baseline": "V101",
+  "changes": [
+    "Consolidated standalone Articles into Blog",
+    "Preserved legacy article URLs as noindex redirects",
+    "Removed article destinations from primary navigation and sitemap",
+    "Improved Application hero and method-section text contrast",
+    "Improved Case Studies hero and bridge-section text contrast"
+  ],
+  "image_prompt_changes": false
+}

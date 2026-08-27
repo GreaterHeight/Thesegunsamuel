@@ -288,7 +288,7 @@
 
     <div class="ss-footer-v2-col">
       <h3>KNOWLEDGE</h3>
-      <a href="/Thesegunsamuel/articles/">INSIGHTS</a>
+      
       <a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a>
       <a href="/Thesegunsamuel/events/">EVENTS</a>
       <a href="/Thesegunsamuel/events/architects-roundtable/">ARCHITECT TABLE</a>
@@ -333,4 +333,12 @@ document.addEventListener('DOMContentLoaded',function(){
  function run(){const q=input.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const ok=!q||c.dataset.search.toLowerCase().includes(q);c.hidden=!ok;if(ok)n++;});if(count)count.textContent=n+' application'+(n===1?'':'s')+' shown';}
  input.addEventListener('input',run);run();
 });
-</script></body></html>
+</script></body></html><style id="v103-hero-contrast-fix">
+.ss-app-hero{position:relative;isolation:isolate;background:linear-gradient(135deg,#003020 0%,#0D3D28 58%,#092c20 100%)!important;color:#FDFAF4!important}
+.ss-app-hero .ss-hero-grid,.ss-app-hero .eyebrow,.ss-app-hero h1,.ss-app-hero .ss-lede,.ss-app-hero .ss-hero-note,.ss-app-hero .ss-hero-note strong,.ss-app-hero .ss-hero-note p{position:relative;z-index:1;color:#FDFAF4!important}
+.ss-app-hero .ss-lede,.ss-app-hero .ss-hero-note p{color:rgba(253,250,244,.88)!important}
+.ss-app-hero .ss-outline-link{color:#FDFAF4!important;border-bottom-color:rgba(253,250,244,.65)!important}
+.ss-dark-method{background:#003020!important;color:#FDFAF4!important}
+.ss-dark-method .ss-section-head,.ss-dark-method .ss-section-head h2,.ss-dark-method .ss-section-head p,.ss-dark-method .ss-section-head .eyebrow,.ss-dark-method .ss-method-grid>div,.ss-dark-method .ss-method-grid span,.ss-dark-method .ss-method-grid h3,.ss-dark-method .ss-method-grid p{color:#FDFAF4!important}
+.ss-dark-method .ss-method-grid>div{background:#003020!important}
+</style>

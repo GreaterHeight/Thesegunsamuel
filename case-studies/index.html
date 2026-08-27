@@ -177,7 +177,7 @@
 </div>
 <div class="ss-nav-group">
 <button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">THINK <span aria-hidden="true">⌄</span></button>
-<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/think/">THINK OVERVIEW</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/articles/">INSIGHTS</a><a href="/Thesegunsamuel/blog/">BLOG · DECLASSIFIED</a><a href="/Thesegunsamuel/forbidden/">FORBIDDEN ARCHIVES</a></div>
+<div class="ss-nav-dropdown"><a href="/Thesegunsamuel/think/">THINK OVERVIEW</a><a href="/Thesegunsamuel/frameworks/">FRAMEWORKS</a><a href="/Thesegunsamuel/models/">MODELS &amp; PRINCIPLES</a><a href="/Thesegunsamuel/books/">BOOKS</a><a href="/Thesegunsamuel/blog/">BLOG · DECLASSIFIED</a><a href="/Thesegunsamuel/forbidden/">FORBIDDEN ARCHIVES</a></div>
 </div>
 <div class="ss-nav-group">
 <button class="ss-nav-group-toggle" type="button" aria-haspopup="true" aria-expanded="false">APPLY <span aria-hidden="true">⌄</span></button>
@@ -385,7 +385,7 @@
 
     <div class="ss-footer-v2-col">
       <h3>KNOWLEDGE</h3>
-      <a href="/Thesegunsamuel/articles/">INSIGHTS</a>
+      
       <a href="/Thesegunsamuel/case-studies/">CASE STUDIES</a>
       <a href="/Thesegunsamuel/events/">EVENTS</a>
       <a href="/Thesegunsamuel/events/architects-roundtable/">ARCHITECT TABLE</a>
@@ -462,4 +462,12 @@ document.addEventListener('DOMContentLoaded',function(){
  function run(){const q=input.value.trim().toLowerCase();let n=0;cards.forEach(c=>{const ok=!q||c.dataset.search.toLowerCase().includes(q);c.hidden=!ok;if(ok)n++;});if(count)count.textContent=n+' case'+(n===1?'':'s')+' shown';}
  input.addEventListener('input',run);run();
 });
-</script></body></html>
+</script></body></html><style id="v103-case-contrast-fix">
+.ss-case-hero{position:relative;isolation:isolate;background:linear-gradient(135deg,#003020 0%,#0D3D28 58%,#092c20 100%)!important;color:#FDFAF4!important}
+.ss-case-hero .ss-hero-grid,.ss-case-hero .eyebrow,.ss-case-hero h1,.ss-case-hero .ss-lede,.ss-case-hero .ss-hero-note,.ss-case-hero .ss-hero-note strong,.ss-case-hero .ss-hero-note p{position:relative;z-index:1;color:#FDFAF4!important}
+.ss-case-hero .ss-lede,.ss-case-hero .ss-hero-note p{color:rgba(253,250,244,.88)!important}
+.ss-case-hero .ss-outline-link{color:#FDFAF4!important;border-bottom-color:rgba(253,250,244,.65)!important}
+.ss-bridge{background:#003020!important;color:#FDFAF4!important}
+.ss-bridge .eyebrow,.ss-bridge h2,.ss-bridge p{color:#FDFAF4!important}
+.ss-bridge p{color:rgba(253,250,244,.86)!important}
+</style>
