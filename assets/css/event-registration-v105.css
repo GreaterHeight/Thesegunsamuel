@@ -1,0 +1,21 @@
+
+/* V105 — Event list registration modal */
+.ev-registration-modal{position:fixed;inset:0;z-index:1000;display:none}
+.ev-registration-modal.is-open{display:block}
+.ev-registration-backdrop{position:absolute;inset:0;background:rgba(0,24,16,.72);backdrop-filter:blur(3px)}
+.ev-registration-dialog{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(680px,calc(100% - 32px));max-height:calc(100vh - 32px);overflow:auto;background:#fdfaf4;color:#173f34;padding:38px 40px 42px;box-shadow:0 28px 80px rgba(0,0,0,.28)}
+.ev-registration-close{position:absolute;right:16px;top:12px;border:0;background:transparent;color:#173f34;font-size:30px;line-height:1;cursor:pointer}
+.ev-registration-dialog h2{font:500 clamp(38px,5vw,56px)/.95 Cormorant Garamond,Georgia,serif;margin:10px 0 14px;color:#103d33}
+.ev-registration-intro{font:18px/1.55 Crimson Pro,Georgia,serif;color:#59665f;max-width:560px}
+.ev-registration-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:26px 0 18px}
+.ev-registration-grid label{font:9px Tenor Sans,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#53645d}
+.ev-registration-grid label span{font-size:8px;letter-spacing:0;text-transform:none}
+.ev-registration-grid input,.ev-registration-grid select{display:block;width:100%;margin-top:7px;height:48px;border:1px solid #cfc7bc;border-radius:0;background:#fff;padding:0 13px;color:#173f34;font:16px Crimson Pro,Georgia,serif}
+.ev-registration-grid input:focus,.ev-registration-grid select:focus{outline:2px solid rgba(140,13,12,.25);outline-offset:1px}
+.ev-registration-consent{display:flex;gap:9px;align-items:flex-start;margin:6px 0 20px;font:12px/1.45 Crimson Pro,Georgia,serif;color:#59665f}
+.ev-registration-consent input{margin-top:2px}
+.ev-registration-status{min-height:20px;margin:12px 0 0;font:12px Crimson Pro,Georgia,serif;color:#8c0d0c}
+.ev-registration-success h3{font:500 44px/1 Cormorant Garamond,Georgia,serif;margin:8px 0}
+.ev-registration-success p{font:17px/1.55 Crimson Pro,Georgia,serif;color:#59665f}
+body.ev-modal-open{overflow:hidden}
+@media(max-width:620px){.ev-registration-dialog{padding:32px 22px 28px}.ev-registration-grid{grid-template-columns:1fr}.ev-registration-dialog .ev-btn{width:100%}}

@@ -1,5 +1,5 @@
 {
-  "build": "v3.0",
+  "build": "Search, Explore & Event Registration",
   "name": "Segun Samuel Complete Platform Build",
   "source": "v2.0 Student Experience Integrated",
   "html_pages": 202,
@@ -28,5 +28,13 @@
     "persistent progress",
     "certificates"
   ],
-  "sitemap_public_urls": 199
+  "sitemap_public_urls": 199,
+  "version": "V105",
+  "notes": [
+    "Strengthened /search/ visual hierarchy and discovery controls.",
+    "Strengthened /explore/ Knowledge Graph framing and relationship discovery.",
+    "JOIN EVENT LIST on all event detail pages now opens a first-party registration modal.",
+    "Event registration collects name, email, organisation, interest and consent.",
+    "Email delivery/provider integration intentionally deferred for later mail-strategy decision."
+  ]
 }

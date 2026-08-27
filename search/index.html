@@ -35,6 +35,32 @@ body{margin:0;background:var(--cream);color:var(--green);font-family:Arial,sans-
 .empty{grid-column:1/-1;padding:34px;background:var(--soft);border-radius:12px;color:#36564b}.empty h2{font-family:Georgia,serif;color:var(--green);margin-top:0}
 @media(max-width:900px){.discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.discovery-toolbar{grid-template-columns:1fr 160px}.discovery-status{grid-column:1/-1}}
 @media(max-width:620px){.search-main{padding:38px 16px 65px}.search-hero{padding:30px 22px}.discovery-grid{grid-template-columns:1fr}.discovery-toolbar{grid-template-columns:1fr}.discovery-status{grid-column:auto}.discovery-card{min-height:210px}}
+
+/* V105 — Search experience refinement */
+.search-main{max-width:1240px;margin:auto;padding:54px 24px 96px}
+.search-hero{position:relative;overflow:hidden;border-radius:0;padding:58px 56px;background:
+  radial-gradient(circle at 84% 18%,rgba(201,166,75,.16),transparent 28%),
+  linear-gradient(125deg,#003020 0%,#0d3d28 62%,#174536 100%);box-shadow:0 22px 60px rgba(0,48,32,.14)}
+.search-hero:after{content:"";position:absolute;width:340px;height:340px;right:-110px;bottom:-190px;border:1px solid rgba(253,250,244,.12);border-radius:50%;box-shadow:0 0 0 44px rgba(253,250,244,.025),0 0 0 88px rgba(253,250,244,.02);pointer-events:none}
+.search-hero h1{font-family:Cormorant Garamond,Georgia,serif;font-weight:500;letter-spacing:-.025em}
+.search-hero p:not(.eyebrow){font-family:Crimson Pro,Georgia,serif;font-size:1.16rem}
+.search-metrics{border-top:1px solid rgba(253,250,244,.16);padding-top:18px}
+.searchbox{margin:28px 0 18px}
+.searchbox input{border-radius:0;height:58px;padding-left:20px;font-family:Crimson Pro,Georgia,serif;font-size:18px;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.discovery-toolbar{padding:14px 0;border-bottom:1px solid #ddd6cc}
+.discovery-toolbar select{border-radius:0}
+.suggestions{margin:18px 0 30px}
+.suggestion{border-radius:0;padding:10px 14px;font-family:Tenor Sans,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.discovery-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.discovery-card{border-radius:0;padding:24px;min-height:260px;position:relative;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.discovery-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--wine)}
+.discovery-card:hover{transform:translateY(-3px);box-shadow:0 16px 36px rgba(0,48,32,.09);border-color:rgba(0,48,32,.28)}
+.discovery-card h2{font-family:Cormorant Garamond,Georgia,serif;font-weight:500;font-size:1.7rem}
+.discovery-card p{font-family:Crimson Pro,Georgia,serif;font-size:15px}
+@media(max-width:900px){.discovery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.search-main{padding:30px 16px 70px}.search-hero{padding:36px 24px}.discovery-grid{grid-template-columns:1fr}}
+
+.search-orientation{font:11px/1.6 Tenor Sans,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#5f6e68;margin:20px 0 0}
 </style>
 <style id="v332-footer-restoration">
 .site-footer{background:#003020!important;color:#fdfaf4!important;padding:54px 4vw 26px!important;margin:0!important;font-family:inherit}
@@ -142,6 +168,7 @@ body{margin:0;background:var(--cream);color:var(--green);font-family:Arial,sans-
   <input id="ecosystemSearch" type="search" autocomplete="off" placeholder="Search Pattern Intelligence, War Within, strategic foresight, leadership…" aria-describedby="searchStatus">
   <button class="clear-search" id="clearSearch" type="button" aria-label="Clear search">×</button>
 </div>
+<div class="search-orientation">Search the knowledge system by idea, object, or destination. Results connect back to the wider ecosystem.</div>
 <div class="discovery-toolbar">
   <select id="typeFilter" aria-label="Filter by knowledge type"><option value="">ALL KNOWLEDGE TYPES</option></select>
   <div class="discovery-status" id="searchStatus" aria-live="polite">Loading ecosystem…</div>

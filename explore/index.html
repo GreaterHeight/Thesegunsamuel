@@ -32,6 +32,32 @@
 .explore-note p{font:20px/1.5 "Crimson Pro",Georgia,serif;color:#59665f;max-width:740px;margin:0}
 @media(max-width:1000px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}.explore-controls{grid-template-columns:minmax(0,1fr) 180px}.explore-stats{grid-column:1/-1}.explore-note{grid-template-columns:1fr;gap:22px}}
 @media(max-width:700px){.explore-wrap{width:calc(100% - 36px)}.explore-hero{padding:110px 0 60px}.explore-main{padding:52px 0 70px}.results{grid-template-columns:1fr}.explore-controls{grid-template-columns:1fr}.explore-stats{grid-column:auto}.explore-note{margin-top:38px}}
+
+/* V105 — Knowledge Graph experience refinement */
+.explore-hero{position:relative;overflow:hidden;background:
+ radial-gradient(circle at 82% 20%,rgba(197,163,92,.13),transparent 24%),
+ linear-gradient(120deg,#052d25 0%,#003020 70%,#123f32 100%);min-height:520px;display:flex;align-items:center}
+.explore-hero:after{content:"";position:absolute;right:-120px;bottom:-210px;width:520px;height:520px;border:1px solid rgba(253,250,244,.1);border-radius:50%;box-shadow:0 0 0 55px rgba(253,250,244,.025),0 0 0 110px rgba(253,250,244,.018);pointer-events:none}
+.explore-hero h1{font-weight:500}
+.explore-hero .lede{font-family:Crimson Pro,Georgia,serif}
+.explore-main{padding-top:58px}
+.explore-controls{position:sticky;top:0;z-index:8;background:#fbf8f1;padding:14px 0 16px;border-bottom:1px solid #ded7cc}
+.search,#type-filter{border-radius:0}
+.results{gap:18px}
+.results .node{border-radius:0;min-height:250px;padding:26px;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.results .node:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(16,61,51,.08);border-color:rgba(16,61,51,.3)}
+.results .node h2{font-weight:500}
+.relationship-panel{margin-top:18px}
+.explore-note{background:#eaf5f1;margin-top:64px;padding:42px;grid-template-columns:3fr 9fr;border-top:3px solid #8c0d0c}
+.explore-note h2{font-weight:500}
+.explore-note p{font-family:Crimson Pro,Georgia,serif}
+.explore-principles{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:46px;border-top:1px solid rgba(16,61,51,.16)}
+.explore-principle{padding:22px 20px 10px;border-right:1px solid rgba(16,61,51,.12)}
+.explore-principle:last-child{border-right:0}
+.explore-principle span{font:9px Tenor Sans,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#8c0d0c}
+.explore-principle h3{font:500 27px/1.05 Cormorant Garamond,Georgia,serif;color:#103d33;margin:10px 0 7px}
+.explore-principle p{font:16px/1.45 Crimson Pro,Georgia,serif;color:#59665f;margin:0}
+@media(max-width:700px){.explore-hero{min-height:470px}.explore-note{padding:28px 22px}.explore-principles{grid-template-columns:1fr}.explore-principle{border-right:0;border-bottom:1px solid rgba(16,61,51,.12);padding-left:0;padding-right:0}.explore-principle:last-child{border-bottom:0}}
 </style><link rel="stylesheet" href="../assets/css/privacy.css"><link rel="stylesheet" href="../assets/css/accessibility-v31.css"><!-- v3.1.1 footer -->
 
 <style id="v311-footer">
@@ -202,7 +228,11 @@
 <div class="explore-controls"><input id="q" class="search" placeholder="Search frameworks, courses, insights…" aria-label="Search knowledge graph"><select id="type-filter" aria-label="Filter by knowledge type"><option value="">ALL TYPES</option></select><div class="explore-stats" id="explore-stats">Loading knowledge relationships…</div></div>
 <div id="results" class="results" aria-live="polite"></div>
 <div class="explore-note"><h2>A map, not a menu.</h2><p>The Knowledge Graph is designed to reveal relationships rather than simply list content. Start with one idea, then follow the connections into the wider body of work.</p></div>
-</div></main></div>
+<div class="explore-principles" aria-label="How to use the Knowledge Graph">
+<div class="explore-principle"><span>START</span><h3>Follow a question.</h3><p>Begin with a concept, problem or capability that you want to understand.</p></div>
+<div class="explore-principle"><span>CONNECT</span><h3>Follow the relationships.</h3><p>Move from one knowledge object into the frameworks, learning and applications around it.</p></div>
+<div class="explore-principle"><span>DISCOVER</span><h3>Build the wider picture.</h3><p>The graph is designed to reveal the architecture behind the individual pages.</p></div>
+</div></div></main></div>
 <footer class="site-footer ss-footer-v2" aria-label="Site footer">
   <div class="ss-footer-v2-main">
     <div class="ss-footer-v2-brand">

@@ -1,46 +1,68 @@
-/* V94 — Event calendar + invitation utilities */
+/* V104 — Generic event calendar + invitation utilities.
+ * Event pages provide data-event-* attributes on .ev-detail-hero.
+ * Calendar generation is enabled only when real start/end values exist.
+ */
 (function () {
-  var EVENT = {
-    title: 'The Architects Roundtable',
-    start: '20261004T140000',
-    end: '20261004T180000',
-    location: 'Online',
-    url: 'https://greaterheight.github.io/Thesegunsamuel/events/architects-roundtable/',
-    description: 'Small-group conversations for leaders, builders and strategic thinkers working on complex problems.'
-  };
+  "use strict";
+
+  function getHero() {
+    return document.querySelector(".ev-detail-hero");
+  }
+
+  function getEvent() {
+    var hero = getHero();
+    if (!hero) return null;
+
+    return {
+      title: hero.getAttribute("data-event-title") || ((hero.querySelector("h1") || {}).textContent || "Event").trim(),
+      start: hero.getAttribute("data-event-start") || "",
+      end: hero.getAttribute("data-event-end") || "",
+      location: hero.getAttribute("data-event-location") || "Online",
+      url: hero.getAttribute("data-event-url") || window.location.href,
+      description: hero.getAttribute("data-event-description") ||
+        ((hero.querySelector(".ev-detail-copy") || {}).textContent || "").trim(),
+      dateLabel: hero.getAttribute("data-event-date-label") || "",
+      timeLabel: hero.getAttribute("data-event-time-label") || "",
+      venueLabel: hero.getAttribute("data-event-venue-label") || "",
+      seatsLabel: hero.getAttribute("data-event-seats-label") || ""
+    };
+  }
 
   function icsEscape(value) {
     return String(value)
-      .replace(/\\/g, '\\\\')
-      .replace(/\r?\n/g, '\\n')
-      .replace(/,/g, '\\,')
-      .replace(/;/g, '\\;');
+      .replace(/\\/g, "\\\\")
+      .replace(/\r?\n/g, "\\n")
+      .replace(/,/g, "\\,")
+      .replace(/;/g, "\\;");
   }
 
-  function downloadCalendar() {
-    var ics = [
-      'BEGIN:VCALENDAR',
-      'VERSION:2.0',
-      'PRODID:-//Segun Samuel//Events//EN',
-      'CALSCALE:GREGORIAN',
-      'METHOD:PUBLISH',
-      'BEGIN:VEVENT',
-      'UID:architects-roundtable-20261004@segunsamuel',
-      'DTSTAMP:20260825T000000Z',
-      'DTSTART:' + EVENT.start,
-      'DTEND:' + EVENT.end,
-      'SUMMARY:' + icsEscape(EVENT.title),
-      'LOCATION:' + icsEscape(EVENT.location),
-      'DESCRIPTION:' + icsEscape(EVENT.description + ' ' + EVENT.url),
-      'URL:' + EVENT.url,
-      'END:VEVENT',
-      'END:VCALENDAR'
-    ].join('\r\n');
+  function downloadCalendar(event) {
+    if (!event.start || !event.end) return;
 
-    var blob = new Blob([ics], {type: 'text/calendar;charset=utf-8'});
-    var a = document.createElement('a');
+    var uidSlug = event.title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+    var ics = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Segun Samuel//Events//EN",
+      "CALSCALE:GREGORIAN",
+      "METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      "UID:" + uidSlug + "@segunsamuel",
+      "DTSTAMP:20260827T000000Z",
+      "DTSTART:" + event.start,
+      "DTEND:" + event.end,
+      "SUMMARY:" + icsEscape(event.title),
+      "LOCATION:" + icsEscape(event.location),
+      "DESCRIPTION:" + icsEscape(event.description + " " + event.url),
+      "URL:" + event.url,
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n");
+
+    var blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+    var a = document.createElement("a");
     a.href = URL.createObjectURL(blob);
-    a.download = 'the-architects-roundtable-2026-10-04.ics';
+    a.download = uidSlug + ".ics";
     document.body.appendChild(a);
     a.click();
     setTimeout(function () {
@@ -49,56 +71,69 @@
     }, 500);
   }
 
-  function copyInvitation(button) {
-    var text = [
-      'The Architects Roundtable',
-      '',
-      'Date: October 4, 2026',
-      'Time: 2:00pm – 6:00pm',
-      'Venue: Online',
-      'Seats: Limited',
-      '',
-      'Small-group conversations for leaders, builders and strategic thinkers working on complex problems.',
-      '',
-      EVENT.url
-    ].join('\n');
+  function copyInvitation(button, event) {
+    var lines = [
+      event.title,
+      "",
+      event.dateLabel ? "Date: " + event.dateLabel : "Schedule: To be announced",
+      event.timeLabel ? "Time: " + event.timeLabel : "",
+      event.venueLabel ? "Venue: " + event.venueLabel : "",
+      event.seatsLabel ? "Seats: " + event.seatsLabel : "",
+      "",
+      event.description,
+      "",
+      event.url
+    ].filter(function (line) { return line !== ""; });
+
+    var text = lines.join("\n");
 
     function success() {
       var original = button.innerHTML;
-      button.textContent = 'Invitation Copied';
+      button.textContent = "Invitation Copied";
       setTimeout(function () { button.innerHTML = original; }, 1800);
     }
 
+    function fallbackCopy() {
+      var area = document.createElement("textarea");
+      area.value = text;
+      area.style.position = "fixed";
+      area.style.opacity = "0";
+      document.body.appendChild(area);
+      area.focus();
+      area.select();
+      try { document.execCommand("copy"); success(); }
+      finally { area.remove(); }
+    }
+
     if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(text).then(success).catch(function () {
-        fallbackCopy(text, success);
-      });
+      navigator.clipboard.writeText(text).then(success).catch(fallbackCopy);
     } else {
-      fallbackCopy(text, success);
+      fallbackCopy();
     }
   }
 
-  function fallbackCopy(text, success) {
-    var area = document.createElement('textarea');
-    area.value = text;
-    area.style.position = 'fixed';
-    area.style.opacity = '0';
-    document.body.appendChild(area);
-    area.focus();
-    area.select();
-    try { document.execCommand('copy'); success(); }
-    finally { area.remove(); }
-  }
-
   function init() {
+    var event = getEvent();
+    if (!event) return;
+
     document.querySelectorAll('[data-action="add-calendar"]').forEach(function (button) {
-      button.addEventListener('click', downloadCalendar);
+      if (event.start && event.end) {
+        button.disabled = false;
+        button.removeAttribute("title");
+        button.addEventListener("click", function () { downloadCalendar(event); });
+      } else {
+        button.disabled = true;
+      }
     });
+
     document.querySelectorAll('[data-action="copy-invite"]').forEach(function (button) {
-      button.addEventListener('click', function () { copyInvitation(button); });
+      button.addEventListener("click", function () { copyInvitation(button, event); });
     });
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
-})();
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
+  } else {
+    init();
+  }
+}());

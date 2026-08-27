@@ -521,3 +521,107 @@
   font-size:0!important;
   color:transparent!important;
 }
+
+
+/* V104 — Full-bleed podcast hero image treatment.
+ * The universal image-slot loader owns image visibility/loading.
+ * The hero itself is the image slot so the loaded renderer becomes
+ * the full background without a placeholder flash.
+ */
+.podcast-hero--image-bg,
+.podcast-detail-hero--image-bg {
+  min-height: clamp(560px, 72vh, 780px);
+  padding: 0 !important;
+  color: var(--pod-cream, #FDFAF4);
+  background: var(--pod-green, #003020);
+  position: relative;
+  overflow: hidden;
+}
+.podcast-hero--image-bg > [data-image-renderer],
+.podcast-detail-hero--image-bg > [data-image-renderer] {
+  z-index: 0 !important;
+}
+.podcast-hero--image-bg::after,
+.podcast-detail-hero--image-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(0,48,32,.94) 0%, rgba(0,48,32,.76) 43%, rgba(0,48,32,.28) 76%, rgba(0,48,32,.16) 100%),
+    linear-gradient(0deg, rgba(0,0,0,.34), transparent 48%, rgba(0,48,32,.20));
+}
+.podcast-hero-overlay,
+.podcast-detail-hero-overlay {
+  position: relative;
+  z-index: 2;
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+}
+.podcast-hero--image-bg .podcast-hero-grid,
+.podcast-detail-hero--image-bg .podcast-detail-grid {
+  width: 100%;
+}
+.podcast-hero--image-bg .podcast-hero-grid {
+  min-height: clamp(560px, 72vh, 780px);
+}
+.podcast-hero--image-bg .podcast-kicker,
+.podcast-detail-hero--image-bg .podcast-kicker {
+  color: #f5c800;
+}
+.podcast-hero--image-bg h1,
+.podcast-detail-hero--image-bg h1 {
+  color: #FDFAF4;
+}
+.podcast-hero--image-bg .lead,
+.podcast-detail-hero--image-bg .podcast-detail-summary {
+  color: rgba(253,250,244,.90);
+}
+.podcast-hero--image-bg .podcast-btn-secondary {
+  color: #FDFAF4;
+  border-color: rgba(253,250,244,.48);
+  background: rgba(0,48,32,.22);
+}
+.podcast-hero--image-bg .podcast-btn-secondary:hover {
+  background: rgba(253,250,244,.12);
+  border-color: rgba(253,250,244,.78);
+}
+.podcast-detail-hero--image-bg .podcast-detail-grid {
+  min-height: clamp(560px, 72vh, 780px);
+  align-items: end;
+  padding-bottom: 76px;
+}
+.podcast-detail-hero--image-bg .podcast-detail-meta .podcast-pill {
+  color: #FDFAF4;
+  border-color: rgba(253,250,244,.35);
+  background: rgba(0,48,32,.30);
+}
+.podcast-detail-art-spacer,
+.podcast-hero-spacer {
+  min-height: 1px;
+}
+@media (max-width: 760px) {
+  .podcast-hero--image-bg,
+  .podcast-detail-hero--image-bg,
+  .podcast-hero--image-bg .podcast-hero-grid,
+  .podcast-detail-hero--image-bg .podcast-detail-grid {
+    min-height: 650px;
+  }
+  .podcast-hero--image-bg::after,
+  .podcast-detail-hero--image-bg::after {
+    background:
+      linear-gradient(180deg, rgba(0,48,32,.76) 0%, rgba(0,48,32,.88) 58%, rgba(0,48,32,.96) 100%);
+  }
+  .podcast-hero--image-bg .podcast-hero-grid,
+  .podcast-detail-hero--image-bg .podcast-detail-grid {
+    grid-template-columns: 1fr;
+    align-content: end;
+    padding-bottom: 48px;
+  }
+  .podcast-hero--image-bg .podcast-hero-spacer,
+  .podcast-detail-hero--image-bg .podcast-detail-art-spacer {
+    display: none;
+  }
+}
