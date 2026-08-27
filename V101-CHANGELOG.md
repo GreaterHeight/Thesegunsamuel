@@ -1,10 +1,12 @@
-# V101 — Case Studies + Applications Architecture Refinement
+# V101 — Case Studies + Applications Architecture Upgrade
 
-- Preserved existing ecosystem roles and content.
-- Case Studies strengthened as an examination/interpretation layer rather than a generic portfolio.
-- Added the five-stage case-study lens: Observe → Diagnose → Interpret → Architect → Learn.
-- Refined Case Studies hero proposition without replacing the existing case catalogue.
-- Applications strengthened as the practical intervention layer.
-- Added See → Interpret → Design → Execute pathway before the existing application catalogue.
-- No new image placeholders or image assets introduced; no IMAGE-PROMPTS.md additions required for these changes.
-- Speaking was used as a strategic benchmark, not as a visual template to clone.
+- Reframed Case Studies as examination of reality through the ecosystem's intellectual architecture.
+- Reframed Applications as the applied intervention/project layer.
+- Preserved all existing Case Study detail routes.
+- Preserved all 21 existing Application detail routes.
+- Added case-study method: Observe → Diagnose → Interpret → Architect → Learn.
+- Added application method: See → Interpret → Design → Execute.
+- Added searchable case/application libraries.
+- Added explicit bridge between Case Studies and Applications.
+- No new image placeholders or generated-image dependencies introduced.
+- No existing detail-route content was replaced.

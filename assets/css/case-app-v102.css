@@ -1,0 +1,112 @@
+
+/* V102 — Case Studies / Applications visual system */
+.ss-case-page, .ss-app-page{--v102-ink:#003020;--v102-forest:#0D3D28;--v102-cream:#FDFAF4;--v102-teal:#EAF5F1;--v102-wine:#8C0D0C;--v102-gold:#C9A64B}
+.ss-case-page .ss-hero, .ss-app-page .ss-hero{
+ position:relative; overflow:hidden; isolation:isolate;
+ min-height:clamp(560px,72vh,760px); display:flex; align-items:flex-end;
+ border-bottom:1px solid rgba(253,250,244,.16);
+}
+.ss-case-page .ss-hero::before, .ss-app-page .ss-hero::before{
+ content:""; position:absolute; inset:0; z-index:-2;
+ background:
+ radial-gradient(circle at 78% 22%, rgba(201,166,75,.14), transparent 25%),
+ linear-gradient(110deg, #003020 0%, #0D3D28 52%, #08281d 100%);
+}
+.ss-case-page .ss-hero::after, .ss-app-page .ss-hero::after{
+ content:""; position:absolute; inset:0; z-index:-1; opacity:.42; pointer-events:none;
+ background-image:linear-gradient(rgba(253,250,244,.055) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(253,250,244,.055) 1px,transparent 1px);
+ background-size:72px 72px;
+ mask-image:linear-gradient(to bottom,black,transparent 82%);
+}
+.ss-case-page .ss-hero-grid, .ss-app-page .ss-hero-grid{width:100%; padding-top:2rem; padding-bottom:1rem}
+.ss-case-page .ss-hero h1, .ss-app-page .ss-hero h1{letter-spacing:-.035em}
+.ss-case-page .ss-hero .eyebrow, .ss-app-page .ss-hero .eyebrow{color:#C9A64B}
+.ss-case-page .ss-hero-actions .btn, .ss-app-page .ss-hero-actions .btn{
+ box-shadow:0 12px 30px rgba(0,0,0,.16)
+}
+.ss-case-page .ss-hero-note, .ss-app-page .ss-hero-note{
+ align-self:stretch; display:flex; flex-direction:column; justify-content:flex-end;
+ padding-bottom:.5rem; position:relative;
+}
+.ss-case-page .ss-hero-note::before, .ss-app-page .ss-hero-note::before{
+ content:""; position:absolute; left:0; top:12%; bottom:0; width:1px;
+ background:linear-gradient(transparent,rgba(201,166,75,.65),transparent);
+}
+.ss-case-page .ss-method, .ss-app-page .ss-method{position:relative}
+.ss-case-page .ss-method::before, .ss-app-page .ss-method::before{
+ content:"01"; position:absolute; right:clamp(1.25rem,5vw,5rem); top:clamp(2rem,4vw,4rem);
+ font:600 clamp(5rem,12vw,10rem)/1 var(--serif,"Cormorant Garamond",serif);
+ color:rgba(0,48,32,.055); pointer-events:none;
+}
+.ss-app-page .ss-method::before{content:"02"}
+.ss-case-page .ss-method-grid, .ss-app-page .ss-method-grid{
+ box-shadow:0 20px 55px rgba(0,48,32,.07);
+}
+.ss-case-page .ss-method-grid>div, .ss-app-page .ss-method-grid>div{
+ transition:transform .25s ease, background .25s ease;
+}
+.ss-case-page .ss-method-grid>div:hover, .ss-app-page .ss-method-grid>div:hover{
+ transform:translateY(-4px); position:relative; z-index:2;
+}
+.ss-case-page .ss-method-grid span, .ss-app-page .ss-method-grid span{
+ color:var(--v102-wine); font-weight:700;
+}
+.ss-case-page .ss-library, .ss-app-page .ss-library{border-top:1px solid rgba(0,48,32,.08)}
+.ss-case-page .ss-library-head h2, .ss-app-page .ss-library-head h2{letter-spacing:-.025em}
+.ss-case-page .ss-case-grid, .ss-app-page .ss-app-grid{
+ background:transparent; gap:14px;
+}
+.ss-case-page .ss-case-card, .ss-app-page .ss-app-card{
+ position:relative; border:1px solid rgba(0,48,32,.13);
+ background:rgba(255,255,255,.72); box-shadow:0 8px 24px rgba(0,48,32,.035);
+ transition:transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+ overflow:hidden;
+}
+.ss-case-page .ss-case-card::before, .ss-app-page .ss-app-card::before{
+ content:""; position:absolute; left:0; top:0; bottom:0; width:3px;
+ background:var(--v102-wine); transform:scaleY(0); transform-origin:bottom;
+ transition:transform .25s ease;
+}
+.ss-case-page .ss-case-card:hover, .ss-app-page .ss-app-card:hover{
+ transform:translateY(-6px); border-color:rgba(0,48,32,.28);
+ box-shadow:0 20px 40px rgba(0,48,32,.10);
+}
+.ss-case-page .ss-case-card:hover::before, .ss-app-page .ss-app-card:hover::before{transform:scaleY(1)}
+.ss-case-page .ss-card-meta, .ss-app-page .ss-card-meta{
+ border-bottom:1px solid rgba(0,48,32,.10); padding-bottom:.8rem;
+}
+.ss-case-page .ss-card-meta span:first-child, .ss-app-page .ss-card-meta span:first-child{color:var(--v102-wine)}
+.ss-case-page .ss-case-card h3, .ss-app-page .ss-app-card h3{max-width:18ch}
+.ss-case-page .ss-case-card p, .ss-app-page .ss-app-card p{max-width:42ch}
+.ss-case-page .ss-text-link, .ss-app-page .ss-text-link{
+ display:inline-flex; align-items:center; gap:.35rem; width:max-content;
+ border-bottom:1px solid rgba(0,48,32,.25); padding-bottom:.35rem;
+ transition:border-color .2s ease, color .2s ease;
+}
+.ss-case-page .ss-text-link:hover, .ss-app-page .ss-text-link:hover{border-color:var(--v102-wine);color:var(--v102-wine)}
+.ss-case-page .ss-bridge, .ss-app-page .ss-bridge{
+ position:relative; overflow:hidden;
+}
+.ss-case-page .ss-bridge::after, .ss-app-page .ss-bridge::after{
+ content:""; position:absolute; width:340px; height:340px; right:-100px; top:-150px;
+ border:1px solid rgba(201,166,75,.24); border-radius:50%;
+ box-shadow:0 0 0 70px rgba(201,166,75,.035),0 0 0 140px rgba(201,166,75,.025);
+}
+.ss-app-page .ss-dark-method .ss-section-head h2, .ss-app-page .ss-dark-method .ss-section-head p{color:var(--v102-cream)}
+.ss-app-page .ss-dark-method .ss-method-grid>div{background:rgba(0,48,32,.35)}
+.ss-app-page .ss-dark-method .ss-method-grid>div:hover{background:rgba(253,250,244,.07)}
+.ss-app-page .ss-dark-method .ss-method-grid span{color:#C9A64B}
+@media(max-width:900px){
+ .ss-case-page .ss-hero,.ss-app-page .ss-hero{min-height:auto}
+ .ss-case-page .ss-hero-grid,.ss-app-page .ss-hero-grid{padding-bottom:3.5rem}
+ .ss-case-page .ss-hero-note,.ss-app-page .ss-hero-note{padding-left:0;margin-top:1rem}
+ .ss-case-page .ss-hero-note::before,.ss-app-page .ss-hero-note::before{display:none}
+ .ss-case-page .ss-case-grid,.ss-app-page .ss-app-grid{gap:12px}
+}
+@media(max-width:600px){
+ .ss-case-page .ss-hero,.ss-app-page .ss-hero{padding-top:4rem}
+ .ss-case-page .ss-hero::after,.ss-app-page .ss-hero::after{background-size:48px 48px}
+ .ss-case-page .ss-case-card,.ss-app-page .ss-app-card{padding:1.5rem}
+ .ss-case-page .ss-method::before,.ss-app-page .ss-method::before{font-size:5rem}
+}
