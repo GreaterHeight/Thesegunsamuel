@@ -1,5 +1,5 @@
 {
-  "version": "V103",
+  "version": "V110",
   "title": "Article Consolidation + Application and Case Studies Contrast Fix",
   "baseline": "V101",
   "changes": [
@@ -9,5 +9,12 @@
     "Improved Application hero and method-section text contrast",
     "Improved Case Studies hero and bridge-section text contrast"
   ],
-  "image_prompt_changes": false
+  "image_prompt_changes": false,
+  "build": "Guides & Ebooks Integration",
+  "notes": [
+    "Integrated /ebooks-guides/ from supplied HTML proposal into the current ecosystem shell.",
+    "Updated all footer GUIDES & EBOOKS links from /books/ to /ebooks-guides/.",
+    "Added nine declared guide image slots with automatic placeholder-to-real-image swap.",
+    "Added nine guide generation prompts to doc/IMAGE-PROMPTS.md."
+  ]
 }

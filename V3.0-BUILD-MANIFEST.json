@@ -1,5 +1,5 @@
 {
-  "build": "Books Hero Compact Architecture",
+  "build": "Guides & Ebooks Integration",
   "name": "Segun Samuel Complete Platform Build",
   "source": "v2.0 Student Experience Integrated",
   "html_pages": 202,
@@ -29,7 +29,7 @@
     "certificates"
   ],
   "sitemap_public_urls": 199,
-  "version": "V108",
+  "version": "V110",
   "notes": [
     "Strengthened /search/ visual hierarchy and discovery controls.",
     "Strengthened /explore/ Knowledge Graph framing and relationship discovery.",
@@ -47,6 +47,13 @@
     "Recomposed /books/ landing hero into a compact editorial two-column structure.",
     "Featured book cover and featured copy now occupy one horizontal composition instead of stacking vertically.",
     "Reduced desktop and mobile hero padding and tightened featured typography/actions.",
-    "Preserved existing book content, links, imagery and information architecture."
+    "Preserved existing book content, links, imagery and information architecture.",
+    "Added a controlled horizontal inset to podcast and podcast-detail hero foreground content.",
+    "The hero artwork remains full-bleed within the hero; only the content container receives the inset.",
+    "Responsive content inset: 24px mobile, 20px narrow mobile, up to 64px on large screens.",
+    "Integrated /ebooks-guides/ from supplied HTML proposal into the current ecosystem shell.",
+    "Updated all footer GUIDES & EBOOKS links from /books/ to /ebooks-guides/.",
+    "Added nine declared guide image slots with automatic placeholder-to-real-image swap.",
+    "Added nine guide generation prompts to doc/IMAGE-PROMPTS.md."
   ]
 }

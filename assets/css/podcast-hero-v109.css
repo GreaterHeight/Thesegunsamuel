@@ -1,0 +1,31 @@
+/* V109 — Podcast hero content edge inset */
+
+
+/* V109 — HERO CONTENT EDGE INSET
+   Keep the full-bleed artwork, but never allow foreground hero content
+   to touch the browser edge. The inset is applied to the hero's inner
+   container, not to the artwork itself.
+*/
+.podcast-shell .podcast-hero--image-bg > .podcast-hero-overlay > .container.podcast-hero-grid,
+.podcast-shell .podcast-detail-hero--image-bg > .podcast-detail-hero-overlay > .container.podcast-detail-grid{
+  width:100% !important;
+  box-sizing:border-box !important;
+  padding-left:clamp(24px, 4vw, 64px) !important;
+  padding-right:clamp(24px, 4vw, 64px) !important;
+}
+
+@media(max-width:760px){
+  .podcast-shell .podcast-hero--image-bg > .podcast-hero-overlay > .container.podcast-hero-grid,
+  .podcast-shell .podcast-detail-hero--image-bg > .podcast-detail-hero-overlay > .container.podcast-detail-grid{
+    padding-left:24px !important;
+    padding-right:24px !important;
+  }
+}
+
+@media(max-width:480px){
+  .podcast-shell .podcast-hero--image-bg > .podcast-hero-overlay > .container.podcast-hero-grid,
+  .podcast-shell .podcast-detail-hero--image-bg > .podcast-detail-hero-overlay > .container.podcast-detail-grid{
+    padding-left:20px !important;
+    padding-right:20px !important;
+  }
+}

@@ -550,6 +550,40 @@ Professionals examining a completed project artefact, dashboard, system architec
 
 ---
 
+
+
+# 10A. GUIDES & EBOOKS
+
+The `/ebooks-guides/` page contains nine declared image slots. These are intentionally **object-led and symbolic**, so the artwork communicates the framework without relying on generic stock photography or unrequested human subjects. Each image is horizontal 3:2 and should work as a card image. No readable text, logos, UI labels or watermarks should be baked into the artwork.
+
+### `guide-techspibus.jpg` — TECHSPIBUS™ Primer (3:2)
+A refined geometric compass rose rendered as a clean line illustration on a deep forest-green field, three thin radiating lines meeting at a precise centre point, subtle architectural drafting character, restrained selective gold detail, quiet premium editorial composition, generous negative space. Horizontal 3:2.
+
+### `guide-prepared-mind.jpg` — Prepared Mind Method™ Starter Guide (3:2)
+A single open ledger book on a sophisticated dark wood planning surface, four small hand-drawn checkmarks arranged down the left margin, warm controlled gold light falling across the paper, disciplined preparation atmosphere, no readable writing, deep forest-green and warm-cream environment. Horizontal 3:2.
+
+### `guide-war-within.jpg` — The War Within Companion Reading Guide (3:2)
+A single lit lamp inside a stripped, unfurnished room, a doorway barely visible at the edge of frame, quiet psychological tension, controlled warm light against deep green shadow, tactile architectural surfaces, restrained and contemplative rather than horror-like. Horizontal 3:2.
+
+### `guide-plan-framework.jpg` — PLAN Framework™ Field Guide (3:2)
+Four thin directional arrows arranged as a compass-like cross, each pointing in a different direction while converging on one precise centre point, elegant architectural line-art treatment, deep forest-green field with restrained gold and crimson accents, intelligent strategic geometry. Horizontal 3:2.
+
+### `guide-fiags.jpg` — FIAGS™ Diagnostic Worksheet (3:2)
+An open handwritten worksheet resting on a dark planning table, five short handwritten lines visible only as abstract marks and intentionally too soft to read, one pencil nearby, warm controlled light, deep forest-green shadows, tactile paper texture, diagnostic and reflective atmosphere. Horizontal 3:2.
+
+### `guide-ibonk.jpg` — IBONK™ Five Levels of Influence (3:2)
+Five ascending architectural platforms or steps rendered as a simple refined line illustration, each platform slightly wider than the last, clear progression from one level to another, deep forest-green background, subtle gold edge detail, strong negative space, premium systems-architecture aesthetic. Horizontal 3:2.
+
+### `guide-data-literacy.jpg` — Reading the Numbers: Data Literacy Guide (3:2)
+A single clean line chart rendered as minimalist geometric editorial art, one point on the line circled in restrained gold, deep forest-green field, subtle grid structure without readable labels or numbers, precise analytical character, quiet premium composition. Horizontal 3:2.
+
+### `guide-mentoring-process.jpg` — MentoringOS™ Guide (3:2)
+Two refined chairs facing each other at a slight angle rather than head-on, warm lamplight positioned between them, an open notebook on a small table separating the chairs, intimate serious mentoring environment, no people, deep green and warm-cream palette, understated editorial realism. Horizontal 3:2.
+
+### `guide-career-disciplines.jpg` — Seven Disciplines Career Guide (3:2)
+Seven thin vertical architectural columns of varying height arranged like a minimalist bar chart, ascending from left to right, one restrained gold column among deep green columns, sophisticated architectural drafting aesthetic, no numbers or text, clear visual sense of disciplined progression. Horizontal 3:2.
+
+
 # 11. EVENTS
 
 The Events system uses the established **gradient placeholder + Segun Samuel badge** until the exact production image exists. The placeholder is not the final creative direction; it is a controlled pre-production state. Each event image below therefore has its own generation contract.
