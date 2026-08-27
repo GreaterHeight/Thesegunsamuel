@@ -68,3 +68,77 @@
   .guide-card-content{padding:24px 17px 17px;}
   .guides-page .guide-modal-panel{padding:28px 20px;}
 }
+
+
+/* V111 — GUIDES & EBOOKS UI CORRECTIONS
+   1. Guide images use the canonical ecosystem placeholder system.
+   2. Get the Guide is centered and crimson.
+   3. Success state is hidden until form submission.
+   4. Download Now is compact and has no arrow.
+   5. Modal/form width is deliberately reduced so the complete form fits comfortably.
+*/
+.guides-page .guide-card-image[data-placeholder="image"]{
+  background:transparent;
+}
+.guides-page .guide-card-image[data-placeholder="image"]::after{
+  background-size:min(42%,180px);
+  opacity:.88;
+}
+.guides-page .guide-card .btn[data-guide-open]{
+  align-self:center !important;
+  width:auto !important;
+  max-width:100%;
+  white-space:nowrap;
+  background:var(--crimson,#8C0D0C) !important;
+  border-color:var(--crimson,#8C0D0C) !important;
+  color:#fff !important;
+  padding:10px 18px !important;
+  font-size:10px !important;
+}
+.guides-page .guide-card .btn[data-guide-open] svg{display:none !important;}
+.guides-page .guide-modal-panel{
+  width:min(100%,440px) !important;
+  max-height:calc(100vh - 48px) !important;
+  padding:30px !important;
+}
+.guides-page .guide-modal-panel h3{
+  font-size:31px !important;
+  line-height:1.08 !important;
+  margin-bottom:12px !important;
+}
+.guides-page .guide-modal-panel>p{margin-bottom:18px !important;line-height:1.55;}
+.guides-page .guide-modal .field{margin:11px 0 !important;}
+.guides-page .guide-modal .field input{padding:11px 12px !important;}
+.guides-page .guide-modal form > .btn--primary{
+  width:100% !important;
+  margin-top:3px;
+  white-space:nowrap;
+  background:var(--crimson,#8C0D0C) !important;
+  border-color:var(--crimson,#8C0D0C) !important;
+  color:#fff !important;
+}
+.guides-page .guide-modal .form-success[hidden]{display:none !important;}
+.guides-page .guide-download-btn{
+  display:inline-flex !important;
+  width:auto !important;
+  max-width:100%;
+  margin-top:8px;
+  padding:10px 18px !important;
+  font-size:10px !important;
+  line-height:1.2;
+  white-space:nowrap;
+  text-align:center;
+  justify-content:center;
+  background:var(--crimson,#8C0D0C) !important;
+  border-color:var(--crimson,#8C0D0C) !important;
+  color:#fff !important;
+}
+@media(max-width:600px){
+  .guides-page .guide-modal{padding:12px !important;}
+  .guides-page .guide-modal-panel{
+    width:min(100%,390px) !important;
+    max-height:calc(100vh - 24px) !important;
+    padding:28px 20px !important;
+  }
+  .guides-page .guide-modal-panel h3{font-size:27px !important;}
+}

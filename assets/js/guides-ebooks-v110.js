@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (img.complete && img.naturalWidth > 0) reveal();
   });
 
+  // Success panels are never visible on first open; they are revealed only after a valid submission.
+  page.querySelectorAll('.form-success').forEach(function (success) { success.hidden = true; });
+
   const modals = Array.from(page.querySelectorAll('.guide-modal'));
   const openers = Array.from(page.querySelectorAll('[data-guide-open]'));
   let lastFocus = null;
