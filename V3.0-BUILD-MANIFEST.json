@@ -1,5 +1,5 @@
 {
-  "build": "Search & Explore Visual Polish; Podcast Hero Containment",
+  "build": "Books Hero Compact Architecture",
   "name": "Segun Samuel Complete Platform Build",
   "source": "v2.0 Student Experience Integrated",
   "html_pages": 202,
@@ -29,7 +29,7 @@
     "certificates"
   ],
   "sitemap_public_urls": 199,
-  "version": "V106",
+  "version": "V108",
   "notes": [
     "Strengthened /search/ visual hierarchy and discovery controls.",
     "Strengthened /explore/ Knowledge Graph framing and relationship discovery.",
@@ -38,6 +38,15 @@
     "Email delivery/provider integration intentionally deferred for later mail-strategy decision.",
     "Podcast index and detail hero artwork is contained strictly within the hero section.",
     "Podcast hero height is constrained and responsive rather than viewport-sized.",
-    "Search and Explore receive an additional editorial visual-polish layer without changing their core information architecture."
+    "Search and Explore receive an additional editorial visual-polish layer without changing their core information architecture.",
+    "Corrected podcast index and all podcast detail heroes after visual QA.",
+    "Hero artwork is now explicitly constrained to the hero box and cannot create viewport-height behavior.",
+    "Removed viewport-height sizing from the final hero contract.",
+    "Foreground content is protected by a controlled readability gradient rather than being treated as a separate image column.",
+    "Responsive hero heights are explicitly capped for desktop, tablet and mobile.",
+    "Recomposed /books/ landing hero into a compact editorial two-column structure.",
+    "Featured book cover and featured copy now occupy one horizontal composition instead of stacking vertically.",
+    "Reduced desktop and mobile hero padding and tightened featured typography/actions.",
+    "Preserved existing book content, links, imagery and information architecture."
   ]
 }

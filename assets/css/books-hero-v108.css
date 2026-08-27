@@ -1,0 +1,106 @@
+
+/* V108 — BOOKS HERO COMPACT ARCHITECTURE
+   The landing hero is intentionally composed as a compact editorial band:
+   proposition on the left; featured work on the right with cover + copy in one row.
+   This removes the previous vertical stacking that made the hero unnecessarily tall.
+*/
+.books-page-hero{
+  padding:64px 0 58px !important;
+}
+.books-page-hero__container{
+  grid-template-columns:minmax(0,1fr) minmax(500px,.95fr) !important;
+  gap:52px !important;
+  align-items:center !important;
+}
+.books-page-hero__copy h1{
+  margin-bottom:16px !important;
+  max-width:700px !important;
+}
+.books-page-hero__copy .lead{
+  max-width:620px !important;
+  margin-bottom:0 !important;
+}
+.books-page-hero__featured{
+  padding:24px !important;
+  display:grid !important;
+  grid-template-columns:150px minmax(0,1fr) !important;
+  gap:24px !important;
+  align-items:center !important;
+  min-height:0 !important;
+}
+.books-page-hero__featured .books-featured__copy{
+  min-width:0;
+}
+.books-page-hero__featured .books-featured__copy h2{
+  font-size:clamp(2rem,3.4vw,3.15rem) !important;
+  line-height:1 !important;
+  margin:.2rem 0 .5rem !important;
+}
+.books-page-hero__featured .books-featured__copy p{
+  font-size:.94rem !important;
+  line-height:1.55 !important;
+  margin:0 !important;
+}
+.books-page-hero__featured .books-featured__cover{
+  max-width:150px !important;
+  margin:0 !important;
+  order:-1 !important;
+}
+.books-page-hero__featured .books-featured__cover img{
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:2/3;
+  object-fit:cover;
+}
+.books-page-hero__featured .books-actions{
+  display:flex !important;
+  flex-wrap:wrap !important;
+  gap:8px !important;
+  margin-top:14px !important;
+}
+.books-page-hero__featured .books-actions .btn{
+  padding:.7rem .9rem !important;
+  font-size:.72rem !important;
+}
+@media(max-width:1050px){
+  .books-page-hero__container{
+    grid-template-columns:1fr !important;
+    gap:30px !important;
+  }
+  .books-page-hero__featured{
+    max-width:760px;
+  }
+}
+@media(max-width:650px){
+  .books-page-hero{
+    padding:48px 0 44px !important;
+  }
+  .books-page-hero__container{
+    gap:24px !important;
+  }
+  .books-page-hero__featured{
+    grid-template-columns:105px minmax(0,1fr) !important;
+    gap:16px !important;
+    padding:18px !important;
+  }
+  .books-page-hero__featured .books-featured__cover{
+    max-width:105px !important;
+  }
+  .books-page-hero__featured .books-featured__copy h2{
+    font-size:2rem !important;
+  }
+  .books-page-hero__featured .books-featured__copy p{
+    font-size:.86rem !important;
+    line-height:1.5 !important;
+  }
+}
+@media(max-width:470px){
+  .books-page-hero__featured{
+    grid-template-columns:1fr !important;
+  }
+  .books-page-hero__featured .books-featured__cover{
+    max-width:120px !important;
+    margin:0 auto 4px !important;
+  }
+}

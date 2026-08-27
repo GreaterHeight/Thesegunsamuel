@@ -1,0 +1,130 @@
+
+/* V107 — FINAL PODCAST HERO CONTRACT
+   - Artwork belongs to the hero section only.
+   - Artwork fills the hero box, never the viewport.
+   - Hero content remains in the foreground and receives a controlled
+     readability field; the artwork never becomes a separate content column.
+   - No viewport-height sizing.
+*/
+.podcast-shell .podcast-hero--image-bg,
+.podcast-shell .podcast-detail-hero--image-bg{
+  position:relative !important;
+  width:100% !important;
+  height:clamp(330px, 38vw, 460px) !important;
+  min-height:330px !important;
+  max-height:460px !important;
+  padding:0 !important;
+  overflow:hidden !important;
+  isolation:isolate !important;
+  display:block !important;
+  background:#003020 !important;
+}
+
+.podcast-shell .podcast-hero--image-bg > [data-image-renderer],
+.podcast-shell .podcast-detail-hero--image-bg > [data-image-renderer]{
+  position:absolute !important;
+  inset:0 !important;
+  width:100% !important;
+  height:100% !important;
+  min-width:100% !important;
+  min-height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  display:block !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  z-index:0 !important;
+}
+
+.podcast-shell .podcast-hero--image-bg::after,
+.podcast-shell .podcast-detail-hero--image-bg::after{
+  content:"" !important;
+  position:absolute !important;
+  inset:0 !important;
+  z-index:1 !important;
+  pointer-events:none !important;
+  background:
+    linear-gradient(90deg,
+      rgba(0,48,32,.97) 0%,
+      rgba(0,48,32,.88) 27%,
+      rgba(0,48,32,.57) 48%,
+      rgba(0,48,32,.18) 73%,
+      rgba(0,48,32,.08) 100%),
+    linear-gradient(0deg,
+      rgba(0,48,32,.28) 0%,
+      transparent 45%,
+      rgba(0,48,32,.14) 100%) !important;
+}
+
+.podcast-shell .podcast-hero--image-bg > .podcast-hero-overlay,
+.podcast-shell .podcast-detail-hero--image-bg > .podcast-detail-hero-overlay{
+  position:relative !important;
+  z-index:2 !important;
+  width:100% !important;
+  height:100% !important;
+  min-height:0 !important;
+  display:flex !important;
+  align-items:center !important;
+}
+
+.podcast-shell .podcast-hero--image-bg .podcast-hero-grid,
+.podcast-shell .podcast-detail-hero--image-bg .podcast-detail-grid{
+  width:100% !important;
+  min-height:0 !important;
+  height:auto !important;
+  padding:0 !important;
+  grid-template-columns:minmax(0, 1.15fr) minmax(180px, .85fr) !important;
+  align-items:center !important;
+  gap:48px !important;
+}
+
+.podcast-shell .podcast-hero--image-bg .podcast-hero-grid > div:first-child,
+.podcast-shell .podcast-detail-hero--image-bg .podcast-detail-grid > div:first-child{
+  max-width:760px;
+}
+
+.podcast-shell .podcast-hero--image-bg h1,
+.podcast-shell .podcast-detail-hero--image-bg h1{
+  margin-top:0 !important;
+}
+
+.podcast-shell .podcast-hero--image-bg .podcast-hero-spacer,
+.podcast-shell .podcast-detail-hero--image-bg .podcast-detail-art-spacer{
+  min-height:0 !important;
+  height:100% !important;
+}
+
+@media(max-width:760px){
+  .podcast-shell .podcast-hero--image-bg,
+  .podcast-shell .podcast-detail-hero--image-bg{
+    height:350px !important;
+    min-height:350px !important;
+    max-height:350px !important;
+  }
+  .podcast-shell .podcast-hero--image-bg::after,
+  .podcast-shell .podcast-detail-hero--image-bg::after{
+    background:
+      linear-gradient(180deg,
+        rgba(0,48,32,.62) 0%,
+        rgba(0,48,32,.78) 48%,
+        rgba(0,48,32,.95) 100%) !important;
+  }
+  .podcast-shell .podcast-hero--image-bg .podcast-hero-grid,
+  .podcast-shell .podcast-detail-hero--image-bg .podcast-detail-grid{
+    grid-template-columns:1fr !important;
+    gap:0 !important;
+    align-content:center !important;
+  }
+  .podcast-shell .podcast-hero--image-bg .podcast-hero-spacer,
+  .podcast-shell .podcast-detail-hero--image-bg .podcast-detail-art-spacer{
+    display:none !important;
+  }
+}
+@media(max-width:480px){
+  .podcast-shell .podcast-hero--image-bg,
+  .podcast-shell .podcast-detail-hero--image-bg{
+    height:320px !important;
+    min-height:320px !important;
+    max-height:320px !important;
+  }
+}
