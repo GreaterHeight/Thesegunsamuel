@@ -1,0 +1,14 @@
+{
+  "homepage_exists": true,
+  "hero_video_desktop": true,
+  "hero_video_mobile": true,
+  "poster": true,
+  "hero_css_linked": true,
+  "hero_js_linked": true,
+  "old_static_hero_absent": true,
+  "video_autoplay": true,
+  "video_muted": true,
+  "video_loop": true,
+  "video_playsinline": true,
+  "desktop_scrim_refined": true
+}
