@@ -1,0 +1,16 @@
+{
+  "version": "V114",
+  "project": "SegunSamuel.com",
+  "change": "Homepage Hero V3 video integration",
+  "source": "SegunSamuel_V113_Cookie_Consent_Redesign",
+  "hero_assets": [
+    "assets/hero/segun-samuel-hero.mp4",
+    "assets/hero/segun-samuel-hero-720p.mp4",
+    "assets/hero/hero-video-poster.jpg"
+  ],
+  "hero_css": "assets/css/home-hero-video-v3.css",
+  "hero_js": "assets/js/home-hero-video-v3.js",
+  "homepage": "index.html",
+  "reduced_motion": true,
+  "autoplay_muted_inline_loop": true
+}
