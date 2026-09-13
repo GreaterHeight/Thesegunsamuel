@@ -1,0 +1,13 @@
+{
+  "version": "V118",
+  "title": "Hero Cinematic Height Refinement",
+  "source": "V117",
+  "hero_video_regenerated": false,
+  "desktop_min_height": "clamp(620px, 72vh, 700px)",
+  "desktop_object_position": "center center",
+  "preserves": [
+    "V116 typography scale",
+    "V115 reduced scrim",
+    "mobile/tablet responsive behavior"
+  ]
+}
