@@ -37,7 +37,7 @@
 
 @media (min-width: 901px) {
   .ss-home-hero-video__video {
-    object-position: 50% center;
+    object-position: 50% 25%;
   }
 }
 
